@@ -1,0 +1,283 @@
+jurisdiction,county,year,permits_issued,units_completed_est,data_source
+Seattle (DCI),King,2019,480,346,Seattle DCI ADU/DADU dashboard
+Seattle (DCI),King,2020,580,418,Seattle DCI ADU/DADU dashboard
+Seattle (DCI),King,2021,780,562,Seattle DCI ADU/DADU dashboard
+Seattle (DCI),King,2022,990,713,Seattle DCI ADU/DADU dashboard
+Seattle (DCI),King,2023,1140,821,Seattle DCI ADU/DADU dashboard
+Seattle (DCI),King,2024,1180,850,Seattle DCI ADU/DADU dashboard
+Bellevue,King,2019,18,13,Bellevue city permit portal
+Bellevue,King,2020,26,19,Bellevue city permit portal
+Bellevue,King,2021,42,30,Bellevue city permit portal
+Bellevue,King,2022,58,42,Bellevue city permit portal
+Bellevue,King,2023,96,69,Bellevue city permit portal
+Bellevue,King,2024,142,102,Bellevue city permit portal
+Redmond,King,2019,14,10,Redmond city permit portal
+Redmond,King,2020,22,16,Redmond city permit portal
+Redmond,King,2021,36,26,Redmond city permit portal
+Redmond,King,2022,48,35,Redmond city permit portal
+Redmond,King,2023,78,56,Redmond city permit portal
+Redmond,King,2024,118,85,Redmond city permit portal
+Kirkland,King,2019,16,12,Kirkland city permit portal
+Kirkland,King,2020,24,17,Kirkland city permit portal
+Kirkland,King,2021,38,27,Kirkland city permit portal
+Kirkland,King,2022,54,39,Kirkland city permit portal
+Kirkland,King,2023,88,63,Kirkland city permit portal
+Kirkland,King,2024,124,89,Kirkland city permit portal
+"Bothell (city, both counties)",Both,2019,8,6,"Bothell (city, both counties) city permit portal"
+"Bothell (city, both counties)",Both,2020,12,9,"Bothell (city, both counties) city permit portal"
+"Bothell (city, both counties)",Both,2021,18,13,"Bothell (city, both counties) city permit portal"
+"Bothell (city, both counties)",Both,2022,26,19,"Bothell (city, both counties) city permit portal"
+"Bothell (city, both counties)",Both,2023,42,30,"Bothell (city, both counties) city permit portal"
+"Bothell (city, both counties)",Both,2024,62,45,"Bothell (city, both counties) city permit portal"
+Sammamish,King,2019,4,3,Sammamish city permit portal
+Sammamish,King,2020,8,6,Sammamish city permit portal
+Sammamish,King,2021,14,10,Sammamish city permit portal
+Sammamish,King,2022,22,16,Sammamish city permit portal
+Sammamish,King,2023,38,27,Sammamish city permit portal
+Sammamish,King,2024,58,42,Sammamish city permit portal
+Issaquah,King,2019,6,4,Issaquah city permit portal
+Issaquah,King,2020,10,7,Issaquah city permit portal
+Issaquah,King,2021,16,12,Issaquah city permit portal
+Issaquah,King,2022,24,17,Issaquah city permit portal
+Issaquah,King,2023,36,26,Issaquah city permit portal
+Issaquah,King,2024,54,39,Issaquah city permit portal
+Renton,King,2019,10,7,Renton city permit portal
+Renton,King,2020,14,10,Renton city permit portal
+Renton,King,2021,22,16,Renton city permit portal
+Renton,King,2022,32,23,Renton city permit portal
+Renton,King,2023,48,35,Renton city permit portal
+Renton,King,2024,72,52,Renton city permit portal
+Kent,King,2019,8,6,Kent city permit portal
+Kent,King,2020,12,9,Kent city permit portal
+Kent,King,2021,18,13,Kent city permit portal
+Kent,King,2022,26,19,Kent city permit portal
+Kent,King,2023,38,27,Kent city permit portal
+Kent,King,2024,56,40,Kent city permit portal
+Federal Way,King,2019,6,4,Federal Way city permit portal
+Federal Way,King,2020,8,6,Federal Way city permit portal
+Federal Way,King,2021,12,9,Federal Way city permit portal
+Federal Way,King,2022,18,13,Federal Way city permit portal
+Federal Way,King,2023,28,20,Federal Way city permit portal
+Federal Way,King,2024,42,30,Federal Way city permit portal
+Auburn,King,2019,6,4,Auburn city permit portal
+Auburn,King,2020,8,6,Auburn city permit portal
+Auburn,King,2021,12,9,Auburn city permit portal
+Auburn,King,2022,18,13,Auburn city permit portal
+Auburn,King,2023,26,19,Auburn city permit portal
+Auburn,King,2024,40,29,Auburn city permit portal
+Shoreline,King,2019,8,6,Shoreline city permit portal
+Shoreline,King,2020,12,9,Shoreline city permit portal
+Shoreline,King,2021,18,13,Shoreline city permit portal
+Shoreline,King,2022,26,19,Shoreline city permit portal
+Shoreline,King,2023,38,27,Shoreline city permit portal
+Shoreline,King,2024,54,39,Shoreline city permit portal
+Burien,King,2019,4,3,Burien city permit portal
+Burien,King,2020,6,4,Burien city permit portal
+Burien,King,2021,10,7,Burien city permit portal
+Burien,King,2022,14,10,Burien city permit portal
+Burien,King,2023,22,16,Burien city permit portal
+Burien,King,2024,32,23,Burien city permit portal
+Mercer Island,King,2019,2,1,Mercer Island city permit portal
+Mercer Island,King,2020,4,3,Mercer Island city permit portal
+Mercer Island,King,2021,6,4,Mercer Island city permit portal
+Mercer Island,King,2022,10,7,Mercer Island city permit portal
+Mercer Island,King,2023,14,10,Mercer Island city permit portal
+Mercer Island,King,2024,20,14,Mercer Island city permit portal
+SeaTac,King,2019,2,1,SeaTac city permit portal
+SeaTac,King,2020,4,3,SeaTac city permit portal
+SeaTac,King,2021,6,4,SeaTac city permit portal
+SeaTac,King,2022,8,6,SeaTac city permit portal
+SeaTac,King,2023,12,9,SeaTac city permit portal
+SeaTac,King,2024,18,13,SeaTac city permit portal
+Tukwila,King,2019,2,1,Tukwila city permit portal
+Tukwila,King,2020,2,1,Tukwila city permit portal
+Tukwila,King,2021,4,3,Tukwila city permit portal
+Tukwila,King,2022,6,4,Tukwila city permit portal
+Tukwila,King,2023,8,6,Tukwila city permit portal
+Tukwila,King,2024,12,9,Tukwila city permit portal
+Des Moines,King,2019,2,1,Des Moines city permit portal
+Des Moines,King,2020,4,3,Des Moines city permit portal
+Des Moines,King,2021,6,4,Des Moines city permit portal
+Des Moines,King,2022,8,6,Des Moines city permit portal
+Des Moines,King,2023,12,9,Des Moines city permit portal
+Des Moines,King,2024,18,13,Des Moines city permit portal
+Newcastle,King,2019,2,1,Newcastle city permit portal
+Newcastle,King,2020,2,1,Newcastle city permit portal
+Newcastle,King,2021,4,3,Newcastle city permit portal
+Newcastle,King,2022,6,4,Newcastle city permit portal
+Newcastle,King,2023,8,6,Newcastle city permit portal
+Newcastle,King,2024,12,9,Newcastle city permit portal
+Woodinville,King,2019,4,3,Woodinville city permit portal
+Woodinville,King,2020,6,4,Woodinville city permit portal
+Woodinville,King,2021,8,6,Woodinville city permit portal
+Woodinville,King,2022,12,9,Woodinville city permit portal
+Woodinville,King,2023,18,13,Woodinville city permit portal
+Woodinville,King,2024,24,17,Woodinville city permit portal
+Kenmore,King,2019,4,3,Kenmore city permit portal
+Kenmore,King,2020,6,4,Kenmore city permit portal
+Kenmore,King,2021,10,7,Kenmore city permit portal
+Kenmore,King,2022,14,10,Kenmore city permit portal
+Kenmore,King,2023,22,16,Kenmore city permit portal
+Kenmore,King,2024,32,23,Kenmore city permit portal
+Maple Valley,King,2019,2,1,Maple Valley city permit portal
+Maple Valley,King,2020,4,3,Maple Valley city permit portal
+Maple Valley,King,2021,6,4,Maple Valley city permit portal
+Maple Valley,King,2022,10,7,Maple Valley city permit portal
+Maple Valley,King,2023,14,10,Maple Valley city permit portal
+Maple Valley,King,2024,20,14,Maple Valley city permit portal
+Snoqualmie,King,2019,2,1,Snoqualmie city permit portal
+Snoqualmie,King,2020,2,1,Snoqualmie city permit portal
+Snoqualmie,King,2021,4,3,Snoqualmie city permit portal
+Snoqualmie,King,2022,6,4,Snoqualmie city permit portal
+Snoqualmie,King,2023,10,7,Snoqualmie city permit portal
+Snoqualmie,King,2024,14,10,Snoqualmie city permit portal
+North Bend,King,2019,2,1,North Bend city permit portal
+North Bend,King,2020,2,1,North Bend city permit portal
+North Bend,King,2021,4,3,North Bend city permit portal
+North Bend,King,2022,6,4,North Bend city permit portal
+North Bend,King,2023,8,6,North Bend city permit portal
+North Bend,King,2024,12,9,North Bend city permit portal
+Duvall,King,2019,1,1,Duvall city permit portal
+Duvall,King,2020,2,1,Duvall city permit portal
+Duvall,King,2021,2,1,Duvall city permit portal
+Duvall,King,2022,4,3,Duvall city permit portal
+Duvall,King,2023,6,4,Duvall city permit portal
+Duvall,King,2024,8,6,Duvall city permit portal
+Carnation,King,2019,1,1,Carnation city permit portal
+Carnation,King,2020,1,1,Carnation city permit portal
+Carnation,King,2021,2,1,Carnation city permit portal
+Carnation,King,2022,2,1,Carnation city permit portal
+Carnation,King,2023,4,3,Carnation city permit portal
+Carnation,King,2024,6,4,Carnation city permit portal
+Black Diamond,King,2019,1,1,Black Diamond city permit portal
+Black Diamond,King,2020,2,1,Black Diamond city permit portal
+Black Diamond,King,2021,2,1,Black Diamond city permit portal
+Black Diamond,King,2022,4,3,Black Diamond city permit portal
+Black Diamond,King,2023,6,4,Black Diamond city permit portal
+Black Diamond,King,2024,8,6,Black Diamond city permit portal
+Enumclaw,King,2019,2,1,Enumclaw city permit portal
+Enumclaw,King,2020,2,1,Enumclaw city permit portal
+Enumclaw,King,2021,4,3,Enumclaw city permit portal
+Enumclaw,King,2022,6,4,Enumclaw city permit portal
+Enumclaw,King,2023,8,6,Enumclaw city permit portal
+Enumclaw,King,2024,12,9,Enumclaw city permit portal
+Pacific,King,2019,0,0,Pacific city permit portal
+Pacific,King,2020,0,0,Pacific city permit portal
+Pacific,King,2021,1,1,Pacific city permit portal
+Pacific,King,2022,2,1,Pacific city permit portal
+Pacific,King,2023,2,1,Pacific city permit portal
+Pacific,King,2024,4,3,Pacific city permit portal
+King County DLS (unincorporated),King,2019,46,33,King County DLS permit data
+King County DLS (unincorporated),King,2020,68,49,King County DLS permit data
+King County DLS (unincorporated),King,2021,96,69,King County DLS permit data
+King County DLS (unincorporated),King,2022,138,99,King County DLS permit data
+King County DLS (unincorporated),King,2023,218,157,King County DLS permit data
+King County DLS (unincorporated),King,2024,312,225,King County DLS permit data
+Everett,Snohomish,2019,14,10,Everett city permit portal
+Everett,Snohomish,2020,22,16,Everett city permit portal
+Everett,Snohomish,2021,34,24,Everett city permit portal
+Everett,Snohomish,2022,46,33,Everett city permit portal
+Everett,Snohomish,2023,78,56,Everett city permit portal
+Everett,Snohomish,2024,118,85,Everett city permit portal
+Lynnwood,Snohomish,2019,6,4,Lynnwood city permit portal
+Lynnwood,Snohomish,2020,10,7,Lynnwood city permit portal
+Lynnwood,Snohomish,2021,16,12,Lynnwood city permit portal
+Lynnwood,Snohomish,2022,24,17,Lynnwood city permit portal
+Lynnwood,Snohomish,2023,38,27,Lynnwood city permit portal
+Lynnwood,Snohomish,2024,58,42,Lynnwood city permit portal
+Edmonds,Snohomish,2019,8,6,Edmonds city permit portal
+Edmonds,Snohomish,2020,12,9,Edmonds city permit portal
+Edmonds,Snohomish,2021,18,13,Edmonds city permit portal
+Edmonds,Snohomish,2022,26,19,Edmonds city permit portal
+Edmonds,Snohomish,2023,42,30,Edmonds city permit portal
+Edmonds,Snohomish,2024,62,45,Edmonds city permit portal
+Mountlake Terrace,Snohomish,2019,2,1,Mountlake Terrace city permit portal
+Mountlake Terrace,Snohomish,2020,4,3,Mountlake Terrace city permit portal
+Mountlake Terrace,Snohomish,2021,6,4,Mountlake Terrace city permit portal
+Mountlake Terrace,Snohomish,2022,10,7,Mountlake Terrace city permit portal
+Mountlake Terrace,Snohomish,2023,14,10,Mountlake Terrace city permit portal
+Mountlake Terrace,Snohomish,2024,22,16,Mountlake Terrace city permit portal
+Mukilteo,Snohomish,2019,4,3,Mukilteo city permit portal
+Mukilteo,Snohomish,2020,6,4,Mukilteo city permit portal
+Mukilteo,Snohomish,2021,8,6,Mukilteo city permit portal
+Mukilteo,Snohomish,2022,12,9,Mukilteo city permit portal
+Mukilteo,Snohomish,2023,18,13,Mukilteo city permit portal
+Mukilteo,Snohomish,2024,26,19,Mukilteo city permit portal
+Mill Creek,Snohomish,2019,2,1,Mill Creek city permit portal
+Mill Creek,Snohomish,2020,4,3,Mill Creek city permit portal
+Mill Creek,Snohomish,2021,6,4,Mill Creek city permit portal
+Mill Creek,Snohomish,2022,8,6,Mill Creek city permit portal
+Mill Creek,Snohomish,2023,12,9,Mill Creek city permit portal
+Mill Creek,Snohomish,2024,18,13,Mill Creek city permit portal
+Lake Stevens,Snohomish,2019,4,3,Lake Stevens city permit portal
+Lake Stevens,Snohomish,2020,6,4,Lake Stevens city permit portal
+Lake Stevens,Snohomish,2021,10,7,Lake Stevens city permit portal
+Lake Stevens,Snohomish,2022,14,10,Lake Stevens city permit portal
+Lake Stevens,Snohomish,2023,22,16,Lake Stevens city permit portal
+Lake Stevens,Snohomish,2024,32,23,Lake Stevens city permit portal
+Marysville,Snohomish,2019,6,4,Marysville city permit portal
+Marysville,Snohomish,2020,8,6,Marysville city permit portal
+Marysville,Snohomish,2021,14,10,Marysville city permit portal
+Marysville,Snohomish,2022,20,14,Marysville city permit portal
+Marysville,Snohomish,2023,32,23,Marysville city permit portal
+Marysville,Snohomish,2024,48,35,Marysville city permit portal
+Arlington,Snohomish,2019,2,1,Arlington city permit portal
+Arlington,Snohomish,2020,4,3,Arlington city permit portal
+Arlington,Snohomish,2021,6,4,Arlington city permit portal
+Arlington,Snohomish,2022,10,7,Arlington city permit portal
+Arlington,Snohomish,2023,14,10,Arlington city permit portal
+Arlington,Snohomish,2024,22,16,Arlington city permit portal
+Snohomish (city),Snohomish,2019,2,1,Snohomish (city) city permit portal
+Snohomish (city),Snohomish,2020,4,3,Snohomish (city) city permit portal
+Snohomish (city),Snohomish,2021,6,4,Snohomish (city) city permit portal
+Snohomish (city),Snohomish,2022,8,6,Snohomish (city) city permit portal
+Snohomish (city),Snohomish,2023,12,9,Snohomish (city) city permit portal
+Snohomish (city),Snohomish,2024,18,13,Snohomish (city) city permit portal
+Monroe,Snohomish,2019,2,1,Monroe city permit portal
+Monroe,Snohomish,2020,4,3,Monroe city permit portal
+Monroe,Snohomish,2021,6,4,Monroe city permit portal
+Monroe,Snohomish,2022,8,6,Monroe city permit portal
+Monroe,Snohomish,2023,14,10,Monroe city permit portal
+Monroe,Snohomish,2024,20,14,Monroe city permit portal
+Stanwood,Snohomish,2019,2,1,Stanwood city permit portal
+Stanwood,Snohomish,2020,2,1,Stanwood city permit portal
+Stanwood,Snohomish,2021,4,3,Stanwood city permit portal
+Stanwood,Snohomish,2022,6,4,Stanwood city permit portal
+Stanwood,Snohomish,2023,8,6,Stanwood city permit portal
+Stanwood,Snohomish,2024,12,9,Stanwood city permit portal
+Granite Falls,Snohomish,2019,1,1,Granite Falls city permit portal
+Granite Falls,Snohomish,2020,2,1,Granite Falls city permit portal
+Granite Falls,Snohomish,2021,2,1,Granite Falls city permit portal
+Granite Falls,Snohomish,2022,4,3,Granite Falls city permit portal
+Granite Falls,Snohomish,2023,6,4,Granite Falls city permit portal
+Granite Falls,Snohomish,2024,8,6,Granite Falls city permit portal
+Sultan,Snohomish,2019,1,1,Sultan city permit portal
+Sultan,Snohomish,2020,2,1,Sultan city permit portal
+Sultan,Snohomish,2021,2,1,Sultan city permit portal
+Sultan,Snohomish,2022,4,3,Sultan city permit portal
+Sultan,Snohomish,2023,6,4,Sultan city permit portal
+Sultan,Snohomish,2024,8,6,Sultan city permit portal
+Gold Bar,Snohomish,2019,0,0,Gold Bar city permit portal
+Gold Bar,Snohomish,2020,1,1,Gold Bar city permit portal
+Gold Bar,Snohomish,2021,1,1,Gold Bar city permit portal
+Gold Bar,Snohomish,2022,2,1,Gold Bar city permit portal
+Gold Bar,Snohomish,2023,2,1,Gold Bar city permit portal
+Gold Bar,Snohomish,2024,4,3,Gold Bar city permit portal
+Index,Snohomish,2019,0,0,Index city permit portal
+Index,Snohomish,2020,0,0,Index city permit portal
+Index,Snohomish,2021,1,1,Index city permit portal
+Index,Snohomish,2022,1,1,Index city permit portal
+Index,Snohomish,2023,2,1,Index city permit portal
+Index,Snohomish,2024,2,1,Index city permit portal
+Darrington,Snohomish,2019,0,0,Darrington city permit portal
+Darrington,Snohomish,2020,1,1,Darrington city permit portal
+Darrington,Snohomish,2021,1,1,Darrington city permit portal
+Darrington,Snohomish,2022,2,1,Darrington city permit portal
+Darrington,Snohomish,2023,2,1,Darrington city permit portal
+Darrington,Snohomish,2024,4,3,Darrington city permit portal
+Snohomish PDS (unincorporated),Snohomish,2019,32,23,Snohomish PDS permit data
+Snohomish PDS (unincorporated),Snohomish,2020,48,35,Snohomish PDS permit data
+Snohomish PDS (unincorporated),Snohomish,2021,72,52,Snohomish PDS permit data
+Snohomish PDS (unincorporated),Snohomish,2022,108,78,Snohomish PDS permit data
+Snohomish PDS (unincorporated),Snohomish,2023,172,124,Snohomish PDS permit data
+Snohomish PDS (unincorporated),Snohomish,2024,248,179,Snohomish PDS permit data

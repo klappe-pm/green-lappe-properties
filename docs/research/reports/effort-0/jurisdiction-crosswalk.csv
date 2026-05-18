@@ -1,0 +1,61 @@
+jurisdiction,county,incorporated,regulatory_authority,code_citation,notes
+Seattle,King,true,Seattle Municipal Code,SMC Title 22 (Building) + SMC Title 14.08 (Open Housing / Renters Rights) + SMC 7.24 (Just Cause),Strongest tenant-protection stack in WA. Includes First-in-Time SMC 14.08.050.
+Bellevue,King,true,Bellevue City Code / Bellevue Land Use Code,BCC Title 9 (Public Safety) + BLUC 20,No just-cause beyond RCW 59.18. Rental Housing Standards Insp pending review.
+Redmond,King,true,Redmond Municipal Code / Redmond Zoning Code,RMC Title 6 / RZC 21,Standard RCW 59.18 baseline; no local rent stabilization beyond HB 1217.
+Kirkland,King,true,Kirkland Municipal Code,KMC Title 5 + KZC,Adopted Source-of-Income protections per KMC 5.94 (verify).
+Sammamish,King,true,Sammamish Municipal Code,SMC (Sammamish) Title 21A,No local landlord licensing; standard RCW.
+Issaquah,King,true,Issaquah Municipal Code,IMC Title 18,Standard RCW; ADU rules updated post HB 1337.
+Renton,King,true,Renton Municipal Code,RMC Title 4 + Title 6,Rental Registration program RMC 4-5-125.
+Kent,King,true,Kent City Code,KCC Title 5 + KCC Title 15,Rental Housing Inspection Program (RHIP).
+Federal Way,King,true,Federal Way Revised Code,FWRC Title 5 + FWRC Title 19,Rental Housing Inspection / Business Licensing required.
+Auburn,King,true,Auburn City Code,ACC Title 5 + ACC Title 18,Cross-county jurisdiction (King + Pierce); standard tenant baseline.
+SeaTac,King,true,SeaTac Municipal Code,SMC (SeaTac) Title 5 + Title 15,Source-of-Income protection SMC 4.110.
+Tukwila,King,true,Tukwila Municipal Code,TMC Title 5 + Title 18,Adopted Just-Cause and S-of-I protection.
+Burien,King,true,Burien Municipal Code,BMC Title 5 + Title 19,Burien adopted Just-Cause 2021; rental insp prog.
+Des Moines,King,true,Des Moines Municipal Code,DMMC Title 5 + Title 18,Standard RCW baseline.
+Shoreline,King,true,Shoreline Municipal Code,SMC (Shoreline) Title 5 + Title 20,Source-of-Income protection adopted.
+Mercer Island,King,true,Mercer Island City Code,MICC Title 5 + MICC 19,Standard RCW.
+Bothell,Both,true,Bothell Municipal Code,BMC (Bothell) Title 5 + Title 12,Bicounty city; King and Snohomish portions both governed by city code; county rules do not apply inside city limits.
+Woodinville,King,true,Woodinville Municipal Code,WMC Title 5 + Title 21,Standard RCW; HB 1337 ADU compliance.
+Newcastle,King,true,Newcastle Municipal Code,NMC Title 5 + Title 18,Standard RCW.
+Kenmore,King,true,Kenmore Municipal Code,KMC (Kenmore) Title 5 + Title 18,Standard RCW.
+Lake Forest Park,King,true,Lake Forest Park Municipal Code,LFPMC Title 5 + Title 18,Standard RCW.
+Maple Valley,King,true,Maple Valley Municipal Code,MVMC Title 5 + Title 18,Standard RCW.
+Snoqualmie,King,true,Snoqualmie Municipal Code,SMC (Snoq) Title 5 + Title 17,Standard RCW.
+North Bend,King,true,North Bend Municipal Code,NBMC Title 5 + Title 18,Standard RCW.
+Black Diamond,King,true,Black Diamond Municipal Code,BDMC Title 5 + Title 18,Standard RCW.
+Duvall,King,true,Duvall Municipal Code,DMC Title 5 + Title 14,Standard RCW.
+Carnation,King,true,Carnation Municipal Code,CMC Title 5 + Title 15,Standard RCW.
+Pacific,King,true,Pacific Municipal Code,PMC Title 5 + Title 20,Cross-county jurisdiction (King + Pierce).
+Enumclaw,King,true,Enumclaw Municipal Code,EMC Title 5 + Title 19,Standard RCW.
+Medina,King,true,Medina Municipal Code,MMC Title 5 + Title 16,Standard RCW.
+Clyde Hill,King,true,Clyde Hill Municipal Code,CHMC Title 5 + Title 17,Standard RCW.
+Hunts Point,King,true,Hunts Point Municipal Code,HPMC Title 5 + Title 18,Standard RCW.
+Yarrow Point,King,true,Yarrow Point Municipal Code,YPMC Title 5 + Title 18,Standard RCW.
+Beaux Arts Village,King,true,Beaux Arts Village Municipal Code,BAVMC Title 5,Standard RCW.
+Algona,King,true,Algona Municipal Code,AMC Title 5 + Title 18,Standard RCW.
+Covington,King,true,Covington Municipal Code,CMC (Covington) Title 5 + Title 18,Standard RCW.
+Normandy Park,King,true,Normandy Park Municipal Code,NPMC Title 5 + Title 18,Standard RCW.
+Skykomish,King,true,Skykomish Municipal Code,SMC (Skykomish) Title 5,Very small jurisdiction; standard RCW.
+Milton,King,true,Milton Municipal Code,MMC (Milton) Title 5,Cross-county (King + Pierce). # TODO: confirm small King portion if any.
+Unincorporated King,King,false,King County Code,KCC Title 21A (zoning) + KCC Title 12 (rentals),Large unincorporated rental stock incl White Center / Skyway / Fairwood / E Renton / Maple Valley fringe / Snoqualmie Valley.
+Everett,Snohomish,true,Everett Municipal Code,EMC (Everett) Title 5 + Title 19,Standard RCW. Rental Registration program in development.
+Lynnwood,Snohomish,true,Lynnwood Municipal Code,LMC Title 5 + Title 21,Standard RCW.
+Edmonds,Snohomish,true,Edmonds Municipal Code,EMC (Edmonds) Title 5 + Title 16,Standard RCW.
+Mukilteo,Snohomish,true,Mukilteo Municipal Code,MMC (Mukilteo) Title 5 + Title 17,Standard RCW.
+Mountlake Terrace,Snohomish,true,Mountlake Terrace Municipal Code,MTMC Title 5 + Title 19,Standard RCW.
+Mill Creek,Snohomish,true,Mill Creek Municipal Code,MCMC Title 5 + Title 17,Standard RCW.
+Marysville,Snohomish,true,Marysville Municipal Code,MMC (Marysville) Title 5 + Title 22,Standard RCW.
+Arlington,Snohomish,true,Arlington Municipal Code,AMC (Arlington) Title 5 + Title 20,Standard RCW.
+Lake Stevens,Snohomish,true,Lake Stevens Municipal Code,LSMC Title 5 + Title 14,Standard RCW.
+Monroe,Snohomish,true,Monroe Municipal Code,MMC (Monroe) Title 5 + Title 22,Standard RCW.
+Snohomish,Snohomish,true,Snohomish Municipal Code,SMC (Snohomish) Title 5 + Title 14,City of Snohomish; not the same as county. Standard RCW.
+Stanwood,Snohomish,true,Stanwood Municipal Code,SMC (Stanwood) Title 5 + Title 17,Standard RCW.
+Granite Falls,Snohomish,true,Granite Falls Municipal Code,GFMC Title 5 + Title 19,Standard RCW.
+Sultan,Snohomish,true,Sultan Municipal Code,SMC (Sultan) Title 5 + Title 16,Standard RCW.
+Gold Bar,Snohomish,true,Gold Bar Municipal Code,GBMC Title 5,Standard RCW.
+Index,Snohomish,true,Index Municipal Code,IMC (Index) Title 5,Standard RCW.
+Darrington,Snohomish,true,Darrington Municipal Code,DMC (Darrington) Title 5,Standard RCW.
+Brier,Snohomish,true,Brier Municipal Code,BMC (Brier) Title 5 + Title 17,Standard RCW.
+Woodway,Snohomish,true,Woodway Municipal Code,WMC (Woodway) Title 5 + Title 19,Standard RCW.
+Unincorporated Snohomish,Snohomish,false,Snohomish County Code,SCC Title 30 (zoning) + SCC Title 19 (rentals),Large unincorporated rental stock incl Esperance / Silver Lake / Picnic Point / Clearview / Maltby.

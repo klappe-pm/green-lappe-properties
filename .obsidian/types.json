@@ -1,0 +1,13 @@
+{
+  "types": {
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "llm-model": "multitext",
+    "llm-session": "multitext",
+    "llm-session-data": "multitext",
+    "date-created": "date",
+    "date-revised": "date",
+    "personas": "multitext"
+  }
+}

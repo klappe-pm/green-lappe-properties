@@ -1,0 +1,38 @@
+﻿KEVIN LAPPE 
+Senior Product Leader, Developer Platforms and Engineering Acceleration kevin@averageintelligence.ai | 415-488-6198 | linkedin.com/in/kevinlappe 
+Senior product leader focused on developer platforms, experimentation systems, and engineering acceleration. Fifteen years across Google, AWS Developer Tools, Capital One, and startups, with ownership of platforms used by engineering populations in the thousands. Led work that reduced launch time, improved release velocity, expanded platform measurement, and improved developer experience across deployment, testing, observability, and AI-assisted engineering workflows. 
+EXPERIENCE 
+Senior Product Manager, Experimentation Platform | Google 2022 to Present Owned the experiment authoring and configuration surface for Google's experimentation platform, used to gate, ramp, and measure production changes across major Google product areas. 
+• Defined product strategy around launch velocity as the platform's highest-leverage investment. Segmented users by workflow frequency and complexity, separating high-volume simple launches (roughly 70% of volume) from specialist study workflows to focus automation on the largest source of platform friction. 
+• Led a configuration-automation initiative that reduced median time-to-launch for simple launches from 24 days to 14 days. At 70% adoption across approximately 200,000 simple launches per year, reduced aggregate launch wait time by an estimated 1.4 million wall-clock days annually, based on median pre/post launch-cycle reduction. 
+• Eliminated a median of 30 manual configuration tasks per launch workflow, reducing boilerplate by 95% and reframing launch authoring around the high-volume case: single-flag production changes. • Partnered with senior engineering leadership to fund instrumentation, logging, and analysis investments that extended velocity, quality, trust, launch-readiness, and operational diagnosis signals across broader Google business units. 
+• Evaluated AI-assisted developer workflows for authoring, configuration validation, operational diagnosis, and launch-readiness checks, with emphasis on human-reviewed automation for high-risk production changes. 
+Senior Product Manager, Developer Tools Research | AWS 2019 to 2022 Senior product strategy and customer research leader for the AWS Developer Tools portfolio, spanning CI/CD, IDE, observability, code management, and developer-experience surfaces across 20 services and two pre-launch developer experiences. 
+• Built an organization-wide developer-tools research program across 20 AWS services, combining survey data, executive interviews, and usage telemetry to guide roadmap prioritization, service rescoping, feature rationalization, and new investment areas. 
+• Planned and executed global, multi-language quantitative survey programs measuring cloud developer attitudes, perceptions, and productivity. Identified emerging productivity trends that informed AWS Developer Tools strategy and senior-leader bets on AI-assisted and automated developer workflows. 
+• Shipped recommendations as written investment memos that named the build, buy, or partner call, aligned senior leaders, and paired longitudinal product-usage telemetry with structured executive interview evidence. 
+Platform Product Manager, Clinical Diagnostics Platform | Genalyte 2019 Platform product lead at an early-stage clinical-diagnostics company building services that returned blood-test results in 20 minutes, replacing the multi-day turnaround common in clinical labs. 
+• Drove initiatives that doubled release frequency and reduced mean time to resolution for software issues while preserving patient-safety review.
+• Managed six product team members, partnered with two development teams accountable for revenue and patient-safety outcomes, and established the platform's first formal incident-review cadence and evidence-gated promotion path between environments. 
+Digital Product Manager | Capital One Financial 2015 to 2018 Product manager for cardholder authentication, enrollment, paperless enrollment, and private-label credit-card platform migration. 
+• Partnered with engineering leadership to deliver an automated deployment and testing pipeline that reduced deployment time from two weeks to 15 minutes, improving release confidence and response time for customer-experience and security issues. 
+• Migrated the user-credential store to AWS, generating $1.5 million in cost savings from on-premise database retirement while improving security and performance. 
+• Identified a latent credential-security gap and partnered with information security and engineering to launch a password-update experience that captured and stored case-sensitive credentials, strengthening authentication controls in a regulated financial-services environment. 
+• Recommended a new account-lock UX flow that delivered more than $5 million per year in operational cost savings and reclaimed over 100,000 minutes per month of customer and call-center-agent phone time. 
+Head of Product Management | Blockforce Capital / Onramp Invest 2018 to 2019 First product hire for a seed-stage cryptocurrency venture studio building trading, education, and custody services for registered investment advisors. 
+• Launched an actively traded cryptocurrency marketplace app on iOS and Android from zero to public availability. 
+• Built a five-person product, design, operations, and marketing team and established the company's first compliance-aware release process under a registered-investment-advisor regulatory frame. 
+Senior Project Manager | Cohesive Solutions 2013 to 2015 • Led multi-vendor ERP engagements in energy and offshore drilling, including B2B projects valued above $10 million. 
+• Managed four direct reports across business analysis and junior project management. 
+Earlier experience 
+• Product Management Consultant, CloudVirga. 
+• Inventory Management Planner, Gap Inc. 
+• Merchandise Analyst, Kohl's Department Stores. 
+EDUCATION 
+B.A., Economics | Michigan State University 
+Graduate coursework, Management | Harvard Extension School 
+SELECTED PLATFORMS, METHODS, AND TECHNICAL FLUENCY 
+• Developer platforms: experimentation systems, feature-flag platforms, CI/CD workflows, deployment automation, promotion pipelines. 
+• Measurement: DORA, SPACE, DevEx, DX Core 4, platform-health instrumentation, decision-velocity measurement. 
+• AI-assisted developer tooling: LLM-assisted authoring, evaluation-driven quality checks, prompt design, agent workflows, schema validation, retry-with-correction patterns, and human review for high-risk testing, deployment, and operational diagnosis workflows. 
+• Technical fluency: Python, SQL, JavaScript and TypeScript; able to review infrastructure RFCs involving Go and C++.

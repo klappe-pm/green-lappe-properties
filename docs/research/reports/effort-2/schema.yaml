@@ -1,0 +1,100 @@
+domain: green-lappe-properties
+category: market-research
+sub-category: demographics
+effort: 2
+date-created: 2026-05-18
+date-revised: 2026-05-18
+
+files:
+  housing-zip.csv:
+    primary_key: zcta
+    rows: 107
+    columns:
+      zcta: { type: string, len: 5, source: "Effort 0 zip-master" }
+      county_primary: { type: enum, values: [King, Snohomish], source: "Effort 0" }
+      city_primary: { type: string, source: "Effort 0" }
+      classification: { type: enum, values: [urban-core, urban, suburban, exurban, rural], source: "Effort 0" }
+      median_home_value_2025: { type: int, units: USD, source: "Zillow ZHVI ZIP Q3-2025", modeled: false }
+      median_home_value_3yr_change_pct: { type: float, units: pct, source: "Zillow ZHVI delta 2022->2025" }
+      median_rent_1br: { type: int, units: USD/mo, source: "HUD SAFMR FY2025 40th-pct" }
+      median_rent_2br: { type: int, units: USD/mo, source: "HUD SAFMR FY2025 40th-pct" }
+      median_rent_3br: { type: int, units: USD/mo, source: "HUD SAFMR FY2025 40th-pct" }
+      median_rent_4br: { type: int, units: USD/mo, source: "HUD SAFMR FY2025 40th-pct" }
+      rent_growth_12mo_pct: { type: float, units: pct, source: "Zillow ZORI 2025 re-anchored" }
+      rent_growth_36mo_pct: { type: float, units: pct, source: "Zillow ZORI stitched 2022-2025", caveat: "re-anchor 2024 introduces <1pp discontinuity" }
+      rent_to_price_ratio_monthly_pct: { type: float, units: pct, modeled: true, formula: "blended_rent/median_home_value*100; weights 1br 0.18, 2br 0.38, 3br 0.30, 4br 0.14" }
+      vacancy_rate: { type: float, units: pct, source: "ACS 5-year 2019-2023 B25002" }
+      days_on_market_rental: { type: int, units: days, source: "ApartmentList + Zumper 2025 90-day" }
+      days_on_market_sale: { type: int, units: days, source: "Redfin Data Center 2025 90-day" }
+      concession_flag_rate_pct: { type: float, units: pct, source: "ApartmentList concession tracker 2025" }
+      owner_occupied_pct: { type: float, units: pct, source: "ACS B25003" }
+      renter_occupied_pct: { type: float, units: pct, source: "ACS B25003" }
+      single_family_pct: { type: float, units: pct, source: "ACS B25032 1-unit detached share" }
+      units_1to4_pct: { type: float, units: pct, source: "ACS B25032 1-unit + 2-4 unit" }
+      units_5to19_pct: { type: float, units: pct, source: "ACS B25032 5-9 + 10-19 unit" }
+      units_20plus_pct: { type: float, units: pct, source: "ACS B25032 20+ unit" }
+      renter_households_est: { type: int, modeled: true, formula: "population/avg_hh_size*renter_pct; avg_hh King 2.46, Snohomish 2.62" }
+      renter_hh_in_small_portfolio_est: { type: int, modeled: true, formula: "renter_hh*(u14*0.68+u519*0.18)*county_calibration; calibration King 1.287, Snohomish 1.254" }
+      new_construction_pipeline_units_18mo: { type: int, source: "Seattle DCI + King DLS + Snohomish PDS + city permit portals" }
+      adu_permits_2019_2024_cumulative: { type: int, source: "city permit portals + county DLS/PDS" }
+      adu_permits_2024_annual: { type: int, source: "city permit portals + county DLS/PDS" }
+      rate_locked_owner_pct_est: { type: int, modeled: true, formula: "FHFA NMDB + Redfin Lock-In Seattle MSA modulated by ZIP tenure proxy" }
+      mom_avg_rent_growth_yoy_pct: { type: float, source: "ZORI monthly 2024-2025 YoY avg" }
+      safmr_zori_gap_flag: { type: bool, computed: "DOM_rental>25 OR concession>12%" }
+      data_source_notes: { type: string, free_text: true }
+
+  permits-adu-dadu.csv:
+    primary_key: [jurisdiction, year]
+    columns:
+      jurisdiction: { type: string }
+      county: { type: enum, values: [King, Snohomish, Both] }
+      year: { type: int, range: [2019, 2024] }
+      permits_issued: { type: int }
+      units_completed_est: { type: int, modeled: true, formula: "permits_issued * 0.72 (Sightline WA permit-to-CO 2019-2023)" }
+      data_source: { type: string }
+
+  small-portfolio-stock-modeled.csv:
+    primary_key: zcta
+    columns:
+      zcta: { type: string, len: 5 }
+      county_primary: { type: enum, values: [King, Snohomish] }
+      city_primary: { type: string }
+      total_rental_units_est: { type: int, modeled: true, source: "renter_households_est from housing-zip.csv" }
+      small_owner_units_est: { type: int, modeled: true, formula: "RHFS-adjusted shares * county calibration" }
+      pct_self_managed_est: { type: float, default: 0.78, deviations: "rural/exurban 0.84; urban-core 0.62" }
+      pct_professionally_managed_est: { type: float, computed: "1 - pct_self_managed" }
+      avg_blended_monthly_rent: { type: int, units: USD/mo }
+      annual_rent_roll_est_dollars: { type: int, units: USD/yr }
+      reconciliation_note: { type: string }
+
+modeled_columns:
+  - housing-zip.rent_to_price_ratio_monthly_pct
+  - housing-zip.renter_households_est
+  - housing-zip.renter_hh_in_small_portfolio_est
+  - housing-zip.rate_locked_owner_pct_est
+  - housing-zip.safmr_zori_gap_flag
+  - permits-adu-dadu.units_completed_est
+  - small-portfolio-stock-modeled.total_rental_units_est
+  - small-portfolio-stock-modeled.small_owner_units_est
+  - small-portfolio-stock-modeled.pct_self_managed_est
+  - small-portfolio-stock-modeled.annual_rent_roll_est_dollars
+
+caveats:
+  - ZORI was re-anchored in 2024; pre/post-2024 series are NOT directly comparable. 36mo rent-growth column stitches the two series with <1pp methodology discontinuity.
+  - HUD SAFMR is 40th-percentile, used as the Section-8-ceiling-anchored primary rent series. ZORI used as sanity check; gap >25% flagged in safmr_zori_gap_flag.
+  - Asking-rent sources may overstate effective rents by 5-15% in soft submarkets (DOM_rental>25 OR concession>12%).
+  - Cross-county ZIPs (98001, 98022, 98047, 98092) carry Zillow ZIP series values that include the Pierce portion; ADU permits are King-DLS-only.
+  - Bothell is bi-county; 98011 King, 98012/98021 Snohomish. ADU permits split city portal (in-city) + county portal (unincorporated).
+  - 26 LARGE_UNINC ZCTAs route to King DLS or Snohomish PDS for permit data, not city portals.
+  - Calibration scalars (King 1.287, Snohomish 1.254) reconcile the small-portfolio aggregate to the Green Lappe TAM baseline (228K / 74K). The calibration is uniform within each county; ZIP-level distribution is preserved.
+
+reconciliation:
+  green_lappe_tam_baseline:
+    king_small_owner_units: 228000
+    snohomish_small_owner_units: 74000
+  effort_2_calibrated_total:
+    king: 228000
+    snohomish: 74000
+  variance_pct:
+    king: 0.0
+    snohomish: 0.0

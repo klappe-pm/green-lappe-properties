@@ -1,0 +1,144 @@
+---
+domain: green-lappe-properties
+category: market-research
+sub-category: demographics
+date-created: 2026-05-18
+date-revised: 2026-05-18
+doc-type: schema
+effort: 5
+aliases:
+tags:
+---
+
+# schema.yaml — Effort 5
+
+effort: 5
+title: Childcare Supply and Regulatory Matrix
+join_key_primary: zcta            # 5-digit string, joins to zip-master.csv
+join_key_secondary: jurisdiction  # joins to jurisdiction-crosswalk.csv
+scope:
+  zctas_in_scope: 107
+  jurisdictions: 65   # 60 incorporated cities + Unincorporated King + Unincorporated Snohomish + Tulalip Tribes (sovereignty overlay) + 2 county Pierce-adjoining rows + Bothell-King / Bothell-Snohomish disambiguation rows
+  vintage_window: 2022-2026
+
+files:
+  - name: childcare-facilities.csv
+    grain: one row per DCYF licensed provider
+    columns:
+      license_number: { type: string, source: WA DCYF Child Care Search }
+      provider_name: { type: string }
+      provider_type: { type: enum, values: [family-home, center] }
+      address: { type: string }
+      city: { type: string }
+      zip: { type: string, format: 5-digit }
+      zcta: { type: string, format: 5-digit, fk: zip-master.zcta }
+      licensed_capacity: { type: integer }
+      infant_capacity: { type: integer, notes: "ages 1mo-11mo per DCYF" }
+      toddler_capacity: { type: integer, notes: "ages 12mo-29mo" }
+      preschool_capacity: { type: integer, notes: "ages 30mo-5yr" }
+      license_open_date: { type: date, format: yyyy-MM-dd }
+      license_status: { type: enum, values: [active, probationary, suspended, closed] }
+      last_inspection_date: { type: date }
+      monthly_tuition_est_infant: { type: integer, currency: USD, notes: "TRIANGULATED from Child Care Aware WA market rate survey 2024" }
+      monthly_tuition_est_preschool: { type: integer, currency: USD }
+    source: DCYF Child Care Search — https://www.dcyf.wa.gov/services/earlylearning-childcare/find-childcare
+    notes: |
+      Full provider universe enumeration was not executable in this session
+      (DCYF lacks an open bulk export). The deliverable holds an aggregated
+      facility frame keyed by ZCTA pending direct portal export. Provider-
+      level rows that ARE included are anchored to verifiable license numbers;
+      ZCTA aggregate counts use the DCYF county-level 2024 totals
+      (King ~2,180 family-home + ~870 center; Snohomish ~810 family-home + ~340 center)
+      apportioned by under-5 population.
+
+  - name: childcare-gap-zip.csv
+    grain: one row per in-scope ZCTA (107 rows)
+    columns:
+      zcta: { type: string, fk: zip-master.zcta }
+      under_5_population: { type: integer, source: ACS B01001 2019-2023 5yr, notes: "MODELED via population_2024 * national under-5 share adjusted by ACS county ratio; see effort-5-narrative" }
+      total_licensed_slots: { type: integer, notes: "MODELED — apportioned from DCYF county totals" }
+      children_per_100_slots: { type: float, formula: "(under_5_population / total_licensed_slots) * 100" }
+      gap_severity: { type: enum, values: [severe, high, moderate, balanced, surplus], thresholds: "severe>250; high 175-250; moderate 125-175; balanced 75-125; surplus<75" }
+      facility_open_3yr: { type: integer, notes: "TODO: DCYF license-open-date window 2022-2025 not pulled at row grain" }
+      facility_close_3yr: { type: integer, notes: "TODO same" }
+      avg_tuition_infant: { type: integer, currency: USD, source: Child Care Aware WA 2024 Market Rate Survey, sub-county scoped }
+      tuition_to_median_income_ratio: { type: float, formula: "(avg_tuition_infant * 12) / median_hh_income; depends on Effort 3 column — provisional county-median substitute used here" }
+
+  - name: daycare-zoning-matrix.csv
+    grain: one row per jurisdiction (~65 rows including unincorporated and Tulalip overlay)
+    columns:
+      jurisdiction: { type: string, fk: jurisdiction-crosswalk.jurisdiction }
+      county: { type: enum, values: [King, Snohomish, Both, Tribal] }
+      in_home_residential_status:
+        type: enum
+        values: [by-right, conditional, prohibited]
+        notes: "by-right = permitted in all residential zones with no CUP; conditional = CUP/admin permit/limited zones; prohibited = not allowed"
+      in_home_capacity_limit: { type: integer, notes: "12 is the WA DCYF Family Home License ceiling; some cities cap below" }
+      commercial_daycare_zones: { type: string, format: "semicolon-separated zone codes" }
+      parking_requirement: { type: string }
+      setback_requirement: { type: string }
+      notable_restrictions: { type: string }
+      source_citation: { type: string, format: "code title.chapter.section" }
+
+  - name: rental-regulatory-matrix.csv
+    grain: one row per jurisdiction (same ~65 rows)
+    columns:
+      jurisdiction: { type: string }
+      county: { type: string }
+      just_cause_eviction: { type: enum, values: [yes, no, statewide-only], notes: "Statewide RCW 59.18.650 (HB 1217) imposes just-cause floor; 'yes' = local stack stricter than RCW" }
+      rent_stabilization_local: { type: enum, values: [yes, no, hb1217-only] }
+      source_of_income_protection: { type: enum, values: [yes, no, statewide-only], notes: "WA statewide RCW 59.18.255 — all jurisdictions baseline 'yes'; 'yes' here means local stack adds beyond" }
+      fair_chance_housing: { type: enum, values: [yes, no] }
+      landlord_licensing_required: { type: enum, values: [yes, no] }
+      rental_inspection_program: { type: enum, values: [yes, no] }
+      str_restrictions: { type: string, notes: "free text — primary residence only, cap, permit, none" }
+      first_in_time_tenant_selection: { type: enum, values: [yes, no], notes: "Seattle SMC 14.08.050 ONLY" }
+      notable_other_rules: { type: string }
+      source_citation: { type: string }
+
+  - name: pending-ordinances.md
+    grain: free-form list of announced/rumored ordinance changes in next 24 months
+
+  - name: exogenous-risks.md
+    grain: free-form catalog with 7 sections (federal immigration / AI hiring / HB 1217 SFR / HB 1217 cap-reset / rate environment / climate migration / Boeing production)
+
+  - name: effort-5-narrative.md
+    grain: free-form synthesis
+
+code_lists:
+  gap_severity:
+    severe: children_per_100_slots > 250
+    high: 175 <= children_per_100_slots <= 250
+    moderate: 125 <= children_per_100_slots < 175
+    balanced: 75 <= children_per_100_slots < 125
+    surplus: children_per_100_slots < 75
+  in_home_status:
+    by-right: "permitted in all residential zones with no CUP; DCYF licensing only"
+    conditional: "limited zones / CUP / admin permit / neighborhood notification"
+    prohibited: "not allowed in residential zones"
+
+todo_inventory:
+  childcare-facilities.csv:
+    - Bulk export of DCYF Child Care Search not executable in session.
+      File contains methodological framework + county-level aggregates;
+      provider-level rows TODO pending portal export.
+  childcare-gap-zip.csv:
+    - facility_open_3yr and facility_close_3yr columns marked TODO per row
+      pending DCYF license-history pull.
+    - tuition_to_median_income_ratio depends on Effort 3 demographics-zip.csv
+      median_hh_income column; substituted with county median pending join.
+  daycare-zoning-matrix.csv:
+    - Several smaller jurisdictions (Algona, Beaux Arts Village, Hunts Point,
+      Yarrow Point, Index, Woodway, Brier, Skykomish) carry "TODO verify"
+      on commercial zoning codes — these jurisdictions either have no
+      commercial zones or codes were not independently verified.
+  rental-regulatory-matrix.csv:
+    - Verified against MRSC summaries and primary code citations for
+      Seattle, Burien, Tukwila, Kent, Federal Way, Renton, Kirkland,
+      Bellevue, Redmond. Smaller jurisdictions inferred from standard
+      RCW 59.18 baseline and noted as such.
+
+changelog:
+  - version: 0.1
+    date: 2026-05-18
+    note: Initial Effort 5 schema and deliverable framework.
