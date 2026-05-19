@@ -1,0 +1,36 @@
+{
+  "artifact": "green-lappe-partner-pitch-deck.pptx",
+  "output": "/Users/kevinlappe/Projects/green-lappe-properties/docs/opportunities/green-lappe-partner-pitch-deck.pptx",
+  "outputBytes": 55112,
+  "slideCount": 12,
+  "slideSize": {
+    "width": 1280,
+    "height": 720
+  },
+  "source": "/Users/kevinlappe/Projects/green-lappe-properties/docs/opportunities/partner-pitch-deck-source.md",
+  "styleGuide": "/Users/kevinlappe/Projects/green-lappe-properties/docs/opportunities/pnw-blue-green-style-guide.md",
+  "verification": [
+    {
+      "check": "PowerPoint archive integrity",
+      "command": "unzip -t /Users/kevinlappe/Projects/green-lappe-properties/docs/opportunities/green-lappe-partner-pitch-deck.pptx",
+      "result": "pass"
+    },
+    {
+      "check": "Artifact-tool layout QA",
+      "command": "check_layout_quality.mjs --layout /Users/kevinlappe/Projects/green-lappe-properties/outputs/manual-20260519-1530/presentations/opportunity-materials/layout --warn-only",
+      "result": "pass",
+      "details": "0 errors and 0 warnings before temporary presentation scratch cleanup."
+    },
+    {
+      "check": "Visual contact-sheet review",
+      "result": "pass",
+      "details": "Reviewed rendered 12-slide contact sheet before temporary presentation scratch cleanup."
+    },
+    {
+      "check": "Corpus index script syntax",
+      "command": "node --check /Users/kevinlappe/Projects/green-lappe-properties/docs/opportunities/_tools/build-corpus-index.mjs",
+      "result": "pass"
+    }
+  ],
+  "scratchArtifacts": "Temporary presentation previews and layout JSON were removed after verification. Durable deliverables live under /Users/kevinlappe/Projects/green-lappe-properties/docs/opportunities."
+}
