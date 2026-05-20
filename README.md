@@ -50,7 +50,6 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 | [`outputs/`](outputs/) | Generated or exported analytical outputs, including workbook artifacts. |
 | [`project-management/`](project-management/) | Legacy project-management history and meta-analysis notes. |
 | [`project-management/meta/`](project-management/meta/) | Meta-analysis artifacts and project retrospectives. |
-| [`project-management/status-updates/`](project-management/status-updates/) | Legacy dated status updates retained for history. |
 
 ## Research deliverable: the 7 efforts
 
@@ -81,7 +80,7 @@ The driving plan is [`docs/research/plans/Demographic Research Plan.md`](docs/re
 
 - Session handoff is governed by `~/.claude/PASSOFF.md`. Passoffs land in [`docs/passoffs/`](docs/passoffs/). Resume the next session with `/resume`; close it with `/pass`.
 - Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
-- Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` convention. `project-management/status-updates/` is retained as legacy history.
+- Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` or `YYYY-MM-DD-HHMM-status-update.md` convention. Historical status updates have been migrated there from `project-management/status-updates/`.
 - Forward plans land in [`docs/plans/`](docs/plans/) using the dated `YYYY-MM-DD-<slug>.md` convention.
 
 ## Conventions
