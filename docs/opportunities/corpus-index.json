@@ -1,7 +1,7 @@
 {
   "repoRoot": "/Users/kevinlappe/Projects/green-lappe-properties",
-  "generatedAt": "2026-05-20T17:51:35.186Z",
-  "entryCount": 203,
+  "generatedAt": "2026-05-20T21:02:24.289Z",
+  "entryCount": 204,
   "entries": [
     {
       "repoRelativePath": "docs/backlog/backlinks-backlog.md",
@@ -33,9 +33,9 @@
     {
       "repoRelativePath": "docs/backlog/backlog.md",
       "class": "process-or-backlog",
-      "bytes": 1576,
+      "bytes": 1565,
       "lineCount": 49,
-      "sha256_16": "fd83be484a2b2a0e",
+      "sha256_16": "f3ba76e3fadb9d9f",
       "frontmatter": {
         "domain": "green-lappe-properties",
         "category": "backlog",
@@ -68,17 +68,17 @@
         {
           "level": 3,
           "text": "Launch Readiness",
-          "line": 27
+          "line": 26
         },
         {
           "level": 3,
           "text": "Operations",
-          "line": 34
+          "line": 33
         },
         {
           "level": 2,
           "text": "Completed",
-          "line": 40
+          "line": 39
         },
         {
           "level": 2,
@@ -1713,9 +1713,9 @@
     {
       "repoRelativePath": "docs/passoffs/2026-05-20-1051-passoff-file.md",
       "class": "process-or-backlog",
-      "bytes": 2568,
+      "bytes": 2623,
       "lineCount": 49,
-      "sha256_16": "84eaf88d31920b7b",
+      "sha256_16": "737989fb8adb84fd",
       "frontmatter": {},
       "title": "Summary",
       "headings": [
@@ -1753,6 +1753,52 @@
           "level": 1,
           "text": "Do not do",
           "line": 44
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/passoffs/2026-05-20-1355-passoff-file.md",
+      "class": "process-or-backlog",
+      "bytes": 2220,
+      "lineCount": 47,
+      "sha256_16": "d4a26022e7ffb2e4",
+      "frontmatter": {},
+      "title": "Summary",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Summary",
+          "line": 1
+        },
+        {
+          "level": 1,
+          "text": "Files changed",
+          "line": 5
+        },
+        {
+          "level": 1,
+          "text": "Key decisions",
+          "line": 16
+        },
+        {
+          "level": 1,
+          "text": "Risks and open questions",
+          "line": 22
+        },
+        {
+          "level": 1,
+          "text": "State",
+          "line": 28
+        },
+        {
+          "level": 1,
+          "text": "Next actions",
+          "line": 34
+        },
+        {
+          "level": 1,
+          "text": "Do not do",
+          "line": 42
         }
       ]
     },
@@ -14376,6 +14422,82 @@
       ]
     },
     {
+      "repoRelativePath": "docs/status/2026-05-18-1230-status-update.md",
+      "class": "supporting-analysis",
+      "bytes": 5421,
+      "lineCount": 84,
+      "sha256_16": "3f5b6447121e5f3a",
+      "frontmatter": {
+        "domain": "green-lappe-properties",
+        "category": "status",
+        "sub-category": "status-update",
+        "date-created": "2026-05-18",
+        "date-revised": "2026-05-20",
+        "doc-type": "status-update",
+        "version": "0.1",
+        "doc-status": "done",
+        "llm-provider": "Claude",
+        "llm-model": "Opus 4.7",
+        "llm-session": "",
+        "llm-session-data": "",
+        "aliases": "[]",
+        "tags": "[status, launch-readiness, legacy-migrated]"
+      },
+      "title": "2026-05-18-1230",
+      "headings": [
+        {
+          "level": 1,
+          "text": "2026-05-18-1230",
+          "line": 18
+        },
+        {
+          "level": 2,
+          "text": "Name",
+          "line": 20
+        },
+        {
+          "level": 2,
+          "text": "What's Decided",
+          "line": 24
+        },
+        {
+          "level": 2,
+          "text": "What's Researched and Sitting in Project",
+          "line": 35
+        },
+        {
+          "level": 2,
+          "text": "What Isn't Decided (open from `green-lappe-two-sided-marketplace.md` §12)",
+          "line": 45
+        },
+        {
+          "level": 2,
+          "text": "Gating Constraint",
+          "line": 55
+        },
+        {
+          "level": 2,
+          "text": "Startup Capital Floor (from Ops plan)",
+          "line": 59
+        },
+        {
+          "level": 2,
+          "text": "First 180 Days (already mapped)",
+          "line": 63
+        },
+        {
+          "level": 2,
+          "text": "What is Missing from Project Knowledge",
+          "line": 67
+        },
+        {
+          "level": 2,
+          "text": "Next Decision Points, Ordered",
+          "line": 77
+        }
+      ]
+    },
+    {
       "repoRelativePath": "docs/status/2026-05-20-status-report.md",
       "class": "supporting-analysis",
       "bytes": 4011,
@@ -15089,87 +15211,11 @@
       ]
     },
     {
-      "repoRelativePath": "project-management/status-updates/2026-05-18-1230.md",
-      "class": "process-or-backlog",
-      "bytes": 5385,
-      "lineCount": 84,
-      "sha256_16": "fac0632284c48acc",
-      "frontmatter": {
-        "domain": "green-lappe-properties",
-        "category": "project-management",
-        "sub-category": "status-update",
-        "date-created": "2026-05-18",
-        "date-revised": "2026-05-18",
-        "doc-type": "project",
-        "version": ".1",
-        "doc-status": "DONE",
-        "llm-provider": "Claude",
-        "llm-model": "Opus 4.7",
-        "llm-session": "",
-        "llm-session-data": "",
-        "aliases": "[]",
-        "tags": "[]"
-      },
-      "title": "2026-05-18-1230",
-      "headings": [
-        {
-          "level": 1,
-          "text": "2026-05-18-1230",
-          "line": 18
-        },
-        {
-          "level": 2,
-          "text": "Name",
-          "line": 20
-        },
-        {
-          "level": 2,
-          "text": "What's Decided",
-          "line": 24
-        },
-        {
-          "level": 2,
-          "text": "What's Researched and Sitting in Project",
-          "line": 35
-        },
-        {
-          "level": 2,
-          "text": "What Isn't Decided (open from `green-lappe-two-sided-marketplace.md` §12)",
-          "line": 45
-        },
-        {
-          "level": 2,
-          "text": "Gating Constraint",
-          "line": 55
-        },
-        {
-          "level": 2,
-          "text": "Startup Capital Floor (from Ops plan)",
-          "line": 59
-        },
-        {
-          "level": 2,
-          "text": "First 180 Days (already mapped)",
-          "line": 63
-        },
-        {
-          "level": 2,
-          "text": "What is Missing from Project Knowledge",
-          "line": 67
-        },
-        {
-          "level": 2,
-          "text": "Next Decision Points, Ordered",
-          "line": 77
-        }
-      ]
-    },
-    {
       "repoRelativePath": "README.md",
       "class": "primary-synthesis",
-      "bytes": 9176,
-      "lineCount": 96,
-      "sha256_16": "8bc97149ba5e53f4",
+      "bytes": 9109,
+      "lineCount": 95,
+      "sha256_16": "492f096c7d9567bc",
       "frontmatter": {
         "domain": "green-lappe-properties",
         "category": "configuration",
@@ -15202,27 +15248,27 @@
         {
           "level": 2,
           "text": "Research deliverable: the 7 efforts",
-          "line": 55
+          "line": 54
         },
         {
           "level": 2,
           "text": "Headline outputs to read first",
-          "line": 71
+          "line": 70
         },
         {
           "level": 2,
           "text": "Workflow",
-          "line": 80
+          "line": 79
         },
         {
           "level": 2,
           "text": "Conventions",
-          "line": 87
+          "line": 86
         },
         {
           "level": 2,
           "text": "Out of scope",
-          "line": 93
+          "line": 92
         }
       ]
     }

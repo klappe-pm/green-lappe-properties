@@ -13,9 +13,9 @@ tags: [corpus, index, generated]
 
 # Corpus Pointer Index
 
-Generated: 2026-05-20T17:51:35.186Z
+Generated: 2026-05-20T21:02:24.289Z
 
-Indexed files: 203
+Indexed files: 204
 
 ## Counts by Class
 
@@ -25,7 +25,7 @@ Indexed files: 203
 | `metric-definition` | 101 |
 | `primary-synthesis` | 7 |
 | `process-or-backlog` | 12 |
-| `supporting-analysis` | 47 |
+| `supporting-analysis` | 48 |
 
 ## Primary Reading Path
 
@@ -61,6 +61,7 @@ Indexed files: 203
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1041-passoff-file.md` | 56 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1046-passoff-file.md` | 40 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1051-passoff-file.md` | 49 | Summary |
+| `process-or-backlog` | `docs/passoffs/2026-05-20-1355-passoff-file.md` | 47 | Summary |
 | `supporting-analysis` | `docs/plans/2026-05-20-forward-plan.md` | 174 | Green Lappe Properties Forward Plan |
 | `supporting-analysis` | `docs/research/competitors/Competitor Research Dimensions.md` | 163 | Competitor Research Dimensions |
 | `supporting-analysis` | `docs/research/competitors/Independent Property Management Companies, King and Snohomish Counties.md` | 463 | Independent Property Management Companies, King and Snohomish Counties |
@@ -237,11 +238,11 @@ Indexed files: 203
 | `supporting-analysis` | `docs/research/unit-economics/Customer Acquisition Costs (CAC) Model.md` | 301 | Customer Acquisition Costs (CAC) Model |
 | `primary-synthesis` | `docs/research/unit-economics/Total Addressable Market (TAM) — Residential Property Management Services.md` | 295 | Total Addressable Market (TAM)—Residential Property Management Services |
 | `primary-synthesis` | `docs/research/unit-economics/Total Addressable Market (TAM).md` | 814 | Total Addressable Market (TAM) |
+| `supporting-analysis` | `docs/status/2026-05-18-1230-status-update.md` | 84 | 2026-05-18-1230 |
 | `supporting-analysis` | `docs/status/2026-05-20-status-report.md` | 70 | Green Lappe Properties Status Report |
 | `supporting-analysis` | `docs/strategies/DHM Framework.md` | 120 | DHM Framework |
 | `supporting-analysis` | `docs/strategies/Family Child Care (FCC).md` | 207 | Family Child Care (FCC) |
 | `supporting-analysis` | `docs/strategies/Two-Sided Marketplace.md` | 301 | Two Sided Marketplace |
 | `supporting-analysis` | `docs/strategies/Validation Strategies.md` | 346 | Validation Strategies |
 | `process-or-backlog` | `project-management/meta/2026-05-17 Meta-Analysis.md` | 360 | 2026-05-17 Meta-Analysis |
-| `process-or-backlog` | `project-management/status-updates/2026-05-18-1230.md` | 84 | 2026-05-18-1230 |
-| `primary-synthesis` | `README.md` | 96 | green-lappe-properties |
+| `primary-synthesis` | `README.md` | 95 | green-lappe-properties |

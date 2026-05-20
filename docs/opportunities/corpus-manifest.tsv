@@ -1,6 +1,6 @@
 class	repoRelativePath	lineCount	bytes	sha256_16	title
 process-or-backlog	docs/backlog/backlinks-backlog.md	17	467	18b46ad48e9ea238	Backlinks Backlog
-process-or-backlog	docs/backlog/backlog.md	49	1576	fd83be484a2b2a0e	Backlog
+process-or-backlog	docs/backlog/backlog.md	49	1565	f3ba76e3fadb9d9f	Backlog
 supporting-analysis	docs/design/Brand Style Guide.md	280	16562	7ec71c774be6380c	Green-lappe-brand-style-guide
 supporting-analysis	docs/design/PNW Property Management Pain Points - Three Personas, One Broken Middle.md	297	38290	0cf0126370630ce3	PNW Property Management Pain Points - Three Personas, One Broken Middle
 supporting-analysis	docs/design/User Journey Map v1.md	901	58964	98e337bfba4f54d1	User Journey Map V1
@@ -17,7 +17,8 @@ process-or-backlog	docs/passoffs/2026-05-20-1036-passoff-file.md	70	3036	567d66e
 process-or-backlog	docs/passoffs/2026-05-20-1039-passoff-file.md	45	1534	b8eea17fae9e5a50	Summary
 process-or-backlog	docs/passoffs/2026-05-20-1041-passoff-file.md	56	3161	21daa98d9460513f	Summary
 process-or-backlog	docs/passoffs/2026-05-20-1046-passoff-file.md	40	1530	2e3d5f55eb9a8aa7	Summary
-process-or-backlog	docs/passoffs/2026-05-20-1051-passoff-file.md	49	2568	84eaf88d31920b7b	Summary
+process-or-backlog	docs/passoffs/2026-05-20-1051-passoff-file.md	49	2623	737989fb8adb84fd	Summary
+process-or-backlog	docs/passoffs/2026-05-20-1355-passoff-file.md	47	2220	d4a26022e7ffb2e4	Summary
 supporting-analysis	docs/plans/2026-05-20-forward-plan.md	174	6430	0f2768b93a570b64	Green Lappe Properties Forward Plan
 supporting-analysis	docs/research/competitors/Competitor Research Dimensions.md	163	5460	de0f43b182c79bcc	Competitor Research Dimensions
 supporting-analysis	docs/research/competitors/Independent Property Management Companies, King and Snohomish Counties.md	463	42291	bf4e85c483b26355	Independent Property Management Companies, King and Snohomish Counties
@@ -194,11 +195,11 @@ supporting-analysis	docs/research/reports/Market Research Insights - Demographic
 supporting-analysis	docs/research/unit-economics/Customer Acquisition Costs (CAC) Model.md	301	17141	2a81657136709def	Customer Acquisition Costs (CAC) Model
 primary-synthesis	docs/research/unit-economics/Total Addressable Market (TAM) — Residential Property Management Services.md	295	26133	9a3ef061c006cbb2	Total Addressable Market (TAM)—Residential Property Management Services
 primary-synthesis	docs/research/unit-economics/Total Addressable Market (TAM).md	814	48141	29e856bebe3650d4	Total Addressable Market (TAM)
+supporting-analysis	docs/status/2026-05-18-1230-status-update.md	84	5421	3f5b6447121e5f3a	2026-05-18-1230
 supporting-analysis	docs/status/2026-05-20-status-report.md	70	4011	67ba34db85e2cbee	Green Lappe Properties Status Report
 supporting-analysis	docs/strategies/DHM Framework.md	120	5329	30c05185f3ec1da8	DHM Framework
 supporting-analysis	docs/strategies/Family Child Care (FCC).md	207	13011	69f7fccc5be5f6dc	Family Child Care (FCC)
 supporting-analysis	docs/strategies/Two-Sided Marketplace.md	301	16942	99e6ed1ab369eaa6	Two Sided Marketplace
 supporting-analysis	docs/strategies/Validation Strategies.md	346	17027	8e1c31bc54c6433d	Validation Strategies
 process-or-backlog	project-management/meta/2026-05-17 Meta-Analysis.md	360	24737	73a3186c46097ca6	2026-05-17 Meta-Analysis
-process-or-backlog	project-management/status-updates/2026-05-18-1230.md	84	5385	fac0632284c48acc	2026-05-18-1230
-primary-synthesis	README.md	96	9176	8bc97149ba5e53f4	green-lappe-properties
+primary-synthesis	README.md	95	9109	492f096c7d9567bc	green-lappe-properties
