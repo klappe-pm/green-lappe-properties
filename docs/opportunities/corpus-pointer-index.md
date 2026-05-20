@@ -13,9 +13,9 @@ tags: [corpus, index, generated]
 
 # Corpus Pointer Index
 
-Generated: 2026-05-20T17:41:05.504Z
+Generated: 2026-05-20T17:51:35.186Z
 
-Indexed files: 200
+Indexed files: 203
 
 ## Counts by Class
 
@@ -24,7 +24,7 @@ Indexed files: 200
 | `data-table` | 36 |
 | `metric-definition` | 101 |
 | `primary-synthesis` | 7 |
-| `process-or-backlog` | 9 |
+| `process-or-backlog` | 12 |
 | `supporting-analysis` | 47 |
 
 ## Primary Reading Path
@@ -58,6 +58,9 @@ Indexed files: 200
 | `process-or-backlog` | `docs/passoffs/2026-05-20-0930-passoff-file.md` | 57 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1036-passoff-file.md` | 70 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1039-passoff-file.md` | 45 | Summary |
+| `process-or-backlog` | `docs/passoffs/2026-05-20-1041-passoff-file.md` | 56 | Summary |
+| `process-or-backlog` | `docs/passoffs/2026-05-20-1046-passoff-file.md` | 40 | Summary |
+| `process-or-backlog` | `docs/passoffs/2026-05-20-1051-passoff-file.md` | 49 | Summary |
 | `supporting-analysis` | `docs/plans/2026-05-20-forward-plan.md` | 174 | Green Lappe Properties Forward Plan |
 | `supporting-analysis` | `docs/research/competitors/Competitor Research Dimensions.md` | 163 | Competitor Research Dimensions |
 | `supporting-analysis` | `docs/research/competitors/Independent Property Management Companies, King and Snohomish Counties.md` | 463 | Independent Property Management Companies, King and Snohomish Counties |
@@ -241,4 +244,4 @@ Indexed files: 200
 | `supporting-analysis` | `docs/strategies/Validation Strategies.md` | 346 | Validation Strategies |
 | `process-or-backlog` | `project-management/meta/2026-05-17 Meta-Analysis.md` | 360 | 2026-05-17 Meta-Analysis |
 | `process-or-backlog` | `project-management/status-updates/2026-05-18-1230.md` | 84 | 2026-05-18-1230 |
-| `primary-synthesis` | `README.md` | 94 | green-lappe-properties |
+| `primary-synthesis` | `README.md` | 96 | green-lappe-properties |

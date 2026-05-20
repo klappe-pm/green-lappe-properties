@@ -21,7 +21,6 @@ This document tracks open work, completed items, and ghost links for Green Lappe
 
 ### Repo Hygiene
 
-- [P1] Select the canonical partner deck and archive or remove superseded deck exports.
 - [P2] Decide whether `project-management/status-updates/` remains active or becomes legacy-only.
 - [P2] Regenerate opportunity corpus indexes after any major file move or rename.
 
@@ -44,5 +43,6 @@ This document tracks open work, completed items, and ghost links for Green Lappe
 - [x] Move competitor research markdown into `docs/research/competitors/`.
 - [x] Move dated competitor insight into `docs/insights/`.
 - [x] Remove obsolete competitor dataset exports.
+- [x] Select `docs/opportunities/green-lappe-partner-pitch-deck.pptx` as the canonical partner deck and document archived deck variants.
 
 ## Ghost Links
