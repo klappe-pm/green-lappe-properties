@@ -21,34 +21,36 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 
 ## Repo layout
 
-```
-docs/
-  backlog/                append-only backlog and backlink companion notes
-  design/                 brand, personas, user-journey artifacts
-  fund/                   capital-raise materials
-  gtm/                    go-to-market plans, launch prioritization
-  insights/               dated synthesized insight notes
-  marketing/              founder bios, channel collateral
-  opportunities/          partner-readiness briefs, decks, source, and indexes
-  passoffs/               session handoff files (see ~/.claude/PASSOFF.md)
-  plans/                  execution plans and forward plans
-  questions/              open research questions
-  research/
-    competitors/          competitor and small-owner PM market analyses
-    metrics/              metric definitions
-    plans/                research plans (Demographic Research Plan, etc.)
-    prompts/              prompts used to drive research efforts
-    references/           metrics glossary, methodology
-    reports/              the 7-effort research output (effort-0 through effort-6)
-    unit-economics/       TAM, CAC, unit-economics models
-  roadmap/                product / business roadmap
-  status/                 dated repo and project status reports
-  strategies/             DHM, FCC, two-sided marketplace, validation
-project-management/
-  meta/                   meta-analyses
-  status-updates/         legacy dated status updates
-.obsidian/                Obsidian vault configuration
-```
+| Folder | Summary |
+| --- | --- |
+| [`docs/`](docs/) | Main working corpus for research, strategy, planning, status, and partner materials. |
+| [`docs/backlog/`](docs/backlog/) | Append-only backlog and backlink companion notes for project work and repo hygiene. |
+| [`docs/design/`](docs/design/) | Brand, persona, pain-point, and journey artifacts that shape the service experience. |
+| [`docs/fund/`](docs/fund/) | Capital-raise, market opportunity, and financial-model interpretation materials. |
+| [`docs/gtm/`](docs/gtm/) | Go-to-market plans, launch sequencing, and prioritization logic. |
+| [`docs/insights/`](docs/insights/) | Dated synthesized insight notes pulled out of broader research work. |
+| [`docs/marketing/`](docs/marketing/) | Marketing collateral and founder-facing materials. |
+| [`docs/marketing/founder-bios/`](docs/marketing/founder-bios/) | Founder biography and resume source material. |
+| [`docs/opportunities/`](docs/opportunities/) | Partner-readiness package: briefs, deck source, generated indexes, and opportunity narrative. |
+| [`docs/opportunities/decks/`](docs/opportunities/decks/) | PowerPoint deck variants and deck archive material pending canonical-deck selection. |
+| [`docs/passoffs/`](docs/passoffs/) | Session handoff files governed by `~/.claude/PASSOFF.md`. |
+| [`docs/plans/`](docs/plans/) | Forward plans and execution plans for moving the project from research to operating proof. |
+| [`docs/questions/`](docs/questions/) | Open research and decision questions. |
+| [`docs/research/`](docs/research/) | Research source tree for market, demographic, regulatory, scoring, and unit-economics work. |
+| [`docs/research/competitors/`](docs/research/competitors/) | Competitor and small-owner property-management market analyses. |
+| [`docs/research/metrics/`](docs/research/metrics/) | Metric definitions, north-star metric notes, and competitor metric glossary entries. |
+| [`docs/research/plans/`](docs/research/plans/) | Research plans and promptable research scopes. |
+| [`docs/research/prompts/`](docs/research/prompts/) | Prompts used to drive or reproduce research efforts. |
+| [`docs/research/references/`](docs/research/references/) | Methodology, glossary, and reference material for interpreting research outputs. |
+| [`docs/research/reports/`](docs/research/reports/) | The 7-effort analytical output, including the final scoring synthesis and supporting datasets. |
+| [`docs/research/unit-economics/`](docs/research/unit-economics/) | TAM, CAC, and related economics models. |
+| [`docs/roadmap/`](docs/roadmap/) | Product and business roadmap area. |
+| [`docs/status/`](docs/status/) | Dated project and repo status reports. |
+| [`docs/strategies/`](docs/strategies/) | Strategic frameworks and wedges, including DHM, FCC, marketplace, and validation strategy. |
+| [`outputs/`](outputs/) | Generated or exported analytical outputs, including workbook artifacts. |
+| [`project-management/`](project-management/) | Legacy project-management history and meta-analysis notes. |
+| [`project-management/meta/`](project-management/meta/) | Meta-analysis artifacts and project retrospectives. |
+| [`project-management/status-updates/`](project-management/status-updates/) | Legacy dated status updates retained for history. |
 
 ## Research deliverable: the 7 efforts
 
