@@ -1,21 +1,24 @@
 {
   "repoRoot": "/Users/kevinlappe/Projects/green-lappe-properties",
-  "generatedAt": "2026-05-19T22:30:16.546Z",
-  "entryCount": 194,
+  "generatedAt": "2026-05-20T17:41:05.504Z",
+  "entryCount": 200,
   "entries": [
     {
-      "repoRelativePath": "docs/backlog/Backlinks Backlog.md",
+      "repoRelativePath": "docs/backlog/backlinks-backlog.md",
       "class": "process-or-backlog",
-      "bytes": 381,
-      "lineCount": 14,
-      "sha256_16": "b80b9d122c2d9ab9",
+      "bytes": 467,
+      "lineCount": 17,
+      "sha256_16": "18b46ad48e9ea238",
       "frontmatter": {
-        "domain": "claude-skills",
+        "domain": "green-lappe-properties",
         "category": "backlinks",
-        "type": "backlinks-companion",
+        "sub-category": "backlog-companion",
         "date-created": "2026-05-18",
-        "date-revised": "2026-05-18",
-        "aliases": "",
+        "date-revised": "2026-05-20",
+        "doc-type": "backlinks-companion",
+        "version": "0.1",
+        "doc-status": "active",
+        "aliases": "[]",
         "tags": "[backlinks]"
       },
       "title": "Backlinks Backlog",
@@ -23,30 +26,26 @@
         {
           "level": 1,
           "text": "Backlinks Backlog",
-          "line": 11
+          "line": 14
         }
       ]
     },
     {
-      "repoRelativePath": "docs/backlog/Backlog copy.md",
+      "repoRelativePath": "docs/backlog/backlog.md",
       "class": "process-or-backlog",
-      "bytes": 2711,
-      "lineCount": 69,
-      "sha256_16": "cd2c837d04575b7e",
+      "bytes": 1527,
+      "lineCount": 49,
+      "sha256_16": "e856b24a66c2b712",
       "frontmatter": {
-        "domain": "claude-skills",
+        "domain": "green-lappe-properties",
         "category": "backlog",
-        "sub-category": "",
+        "sub-category": "project-backlog",
         "date-created": "2026-05-18",
-        "date-revised": "2026-05-18",
-        "type": "backlog",
-        "version": "\"0.1\"",
-        "status": "active",
-        "llm-provider": "Claude",
-        "llm-model": "",
-        "llm-session": "",
-        "llm-session-data": "",
-        "aliases": "",
+        "date-revised": "2026-05-20",
+        "doc-type": "backlog",
+        "version": "0.1",
+        "doc-status": "active",
+        "aliases": "[]",
         "tags": "[backlog, project-management]"
       },
       "title": "Backlog",
@@ -54,47 +53,37 @@
         {
           "level": 1,
           "text": "Backlog",
-          "line": 18
+          "line": 14
         },
         {
           "level": 2,
           "text": "Active",
-          "line": 24
+          "line": 20
         },
         {
           "level": 3,
-          "text": "Cross-tool",
-          "line": 26
+          "text": "Repo Hygiene",
+          "line": 22
         },
         {
           "level": 3,
-          "text": "Infrastructure",
-          "line": 36
+          "text": "Launch Readiness",
+          "line": 28
         },
         {
           "level": 3,
-          "text": "Skills",
-          "line": 46
-        },
-        {
-          "level": 3,
-          "text": "Taxonomy",
-          "line": 53
-        },
-        {
-          "level": 3,
-          "text": "Workflow",
-          "line": 60
+          "text": "Operations",
+          "line": 35
         },
         {
           "level": 2,
           "text": "Completed",
-          "line": 66
+          "line": 41
         },
         {
           "level": 2,
           "text": "Ghost Links",
-          "line": 68
+          "line": 48
         }
       ]
     },
@@ -1402,9 +1391,9 @@
     {
       "repoRelativePath": "docs/passoffs/2026-05-19-1529-passoff-file.md",
       "class": "process-or-backlog",
-      "bytes": 3098,
+      "bytes": 3153,
       "lineCount": 43,
-      "sha256_16": "5a1ab39c7d8897e7",
+      "sha256_16": "a5c3359b314486df",
       "frontmatter": {},
       "title": "Summary",
       "headings": [
@@ -1442,6 +1431,272 @@
           "level": 1,
           "text": "Do not do",
           "line": 38
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/passoffs/2026-05-19-1547-passoff-file.md",
+      "class": "process-or-backlog",
+      "bytes": 4381,
+      "lineCount": 60,
+      "sha256_16": "de5216babbc7bbdb",
+      "frontmatter": {},
+      "title": "Summary",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Summary",
+          "line": 1
+        },
+        {
+          "level": 1,
+          "text": "Files changed",
+          "line": 5
+        },
+        {
+          "level": 1,
+          "text": "Key decisions",
+          "line": 24
+        },
+        {
+          "level": 1,
+          "text": "Risks and open questions",
+          "line": 33
+        },
+        {
+          "level": 1,
+          "text": "State",
+          "line": 41
+        },
+        {
+          "level": 1,
+          "text": "Next actions",
+          "line": 47
+        },
+        {
+          "level": 1,
+          "text": "Do not do",
+          "line": 54
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/passoffs/2026-05-20-0930-passoff-file.md",
+      "class": "process-or-backlog",
+      "bytes": 3887,
+      "lineCount": 57,
+      "sha256_16": "24df15275d249286",
+      "frontmatter": {},
+      "title": "Summary",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Summary",
+          "line": 1
+        },
+        {
+          "level": 1,
+          "text": "Files changed",
+          "line": 7
+        },
+        {
+          "level": 1,
+          "text": "Key decisions",
+          "line": 16
+        },
+        {
+          "level": 1,
+          "text": "Risks and open questions",
+          "line": 25
+        },
+        {
+          "level": 1,
+          "text": "State",
+          "line": 34
+        },
+        {
+          "level": 1,
+          "text": "Next actions",
+          "line": 40
+        },
+        {
+          "level": 1,
+          "text": "Do not do",
+          "line": 50
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/passoffs/2026-05-20-1036-passoff-file.md",
+      "class": "process-or-backlog",
+      "bytes": 3036,
+      "lineCount": 70,
+      "sha256_16": "567d66eaba1b46e6",
+      "frontmatter": {},
+      "title": "Summary",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Summary",
+          "line": 1
+        },
+        {
+          "level": 1,
+          "text": "Files changed",
+          "line": 10
+        },
+        {
+          "level": 1,
+          "text": "Key decisions",
+          "line": 27
+        },
+        {
+          "level": 1,
+          "text": "Risks and open questions",
+          "line": 36
+        },
+        {
+          "level": 1,
+          "text": "State",
+          "line": 48
+        },
+        {
+          "level": 1,
+          "text": "Next actions",
+          "line": 54
+        },
+        {
+          "level": 1,
+          "text": "Do not do",
+          "line": 63
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/passoffs/2026-05-20-1039-passoff-file.md",
+      "class": "process-or-backlog",
+      "bytes": 1479,
+      "lineCount": 45,
+      "sha256_16": "371af88f30b7821d",
+      "frontmatter": {},
+      "title": "Summary",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Summary",
+          "line": 1
+        },
+        {
+          "level": 1,
+          "text": "Files changed",
+          "line": 9
+        },
+        {
+          "level": 1,
+          "text": "Key decisions",
+          "line": 17
+        },
+        {
+          "level": 1,
+          "text": "Risks and open questions",
+          "line": 23
+        },
+        {
+          "level": 1,
+          "text": "State",
+          "line": 29
+        },
+        {
+          "level": 1,
+          "text": "Next actions",
+          "line": 35
+        },
+        {
+          "level": 1,
+          "text": "Do not do",
+          "line": 41
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/plans/2026-05-20-forward-plan.md",
+      "class": "supporting-analysis",
+      "bytes": 6430,
+      "lineCount": 174,
+      "sha256_16": "0f2768b93a570b64",
+      "frontmatter": {
+        "domain": "green-lappe-properties",
+        "category": "planning",
+        "sub-category": "forward-plan",
+        "date-created": "2026-05-20",
+        "date-revised": "2026-05-20",
+        "doc-type": "execution-plan",
+        "version": "0.1",
+        "doc-status": "draft",
+        "aliases": "[]",
+        "tags": "[plan, proof-sprint, operations, gaps, decisions]"
+      },
+      "title": "Green Lappe Properties Forward Plan",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Green Lappe Properties Forward Plan",
+          "line": 14
+        },
+        {
+          "level": 2,
+          "text": "Objective",
+          "line": 18
+        },
+        {
+          "level": 2,
+          "text": "Planning principles",
+          "line": 22
+        },
+        {
+          "level": 2,
+          "text": "Phase 0: Repo and decision hygiene",
+          "line": 31
+        },
+        {
+          "level": 2,
+          "text": "Phase 1: Legal and launch gates",
+          "line": 49
+        },
+        {
+          "level": 2,
+          "text": "Phase 2: Customer proof",
+          "line": 69
+        },
+        {
+          "level": 2,
+          "text": "Phase 3: Pricing and economics",
+          "line": 87
+        },
+        {
+          "level": 2,
+          "text": "Phase 4: Systems proof",
+          "line": 105
+        },
+        {
+          "level": 2,
+          "text": "Phase 5: First cohort decision",
+          "line": 126
+        },
+        {
+          "level": 2,
+          "text": "Gaps to close before scale",
+          "line": 146
+        },
+        {
+          "level": 2,
+          "text": "Measures of success",
+          "line": 158
+        },
+        {
+          "level": 2,
+          "text": "Measures that should not be overclaimed",
+          "line": 168
         }
       ]
     },
@@ -13983,6 +14238,63 @@
       ]
     },
     {
+      "repoRelativePath": "docs/status/2026-05-20-status-report.md",
+      "class": "supporting-analysis",
+      "bytes": 4011,
+      "lineCount": 70,
+      "sha256_16": "67ba34db85e2cbee",
+      "frontmatter": {
+        "domain": "green-lappe-properties",
+        "category": "status",
+        "sub-category": "project-review",
+        "date-created": "2026-05-20",
+        "date-revised": "2026-05-20",
+        "doc-type": "status-report",
+        "version": "0.1",
+        "doc-status": "draft",
+        "aliases": "[]",
+        "tags": "[status, git, project-review, planning]"
+      },
+      "title": "Green Lappe Properties Status Report",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Green Lappe Properties Status Report",
+          "line": 14
+        },
+        {
+          "level": 2,
+          "text": "Executive status",
+          "line": 18
+        },
+        {
+          "level": 2,
+          "text": "Git and branch state",
+          "line": 22
+        },
+        {
+          "level": 2,
+          "text": "Working tree status",
+          "line": 31
+        },
+        {
+          "level": 2,
+          "text": "Project structure observations",
+          "line": 50
+        },
+        {
+          "level": 2,
+          "text": "Current pain points",
+          "line": 57
+        },
+        {
+          "level": 2,
+          "text": "Recommended next checkpoint",
+          "line": 67
+        }
+      ]
+    },
+    {
       "repoRelativePath": "docs/strategies/DHM Framework.md",
       "class": "supporting-analysis",
       "bytes": 5329,
@@ -14717,15 +15029,15 @@
     {
       "repoRelativePath": "README.md",
       "class": "primary-synthesis",
-      "bytes": 7058,
-      "lineCount": 92,
-      "sha256_16": "b66b9ec24f17b293",
+      "bytes": 7374,
+      "lineCount": 94,
+      "sha256_16": "08c6a546710d2a5a",
       "frontmatter": {
         "domain": "green-lappe-properties",
         "category": "configuration",
         "sub-category": "readme",
         "date-created": "2026-05-18",
-        "date-revised": "2026-05-18",
+        "date-revised": "2026-05-20",
         "doc-type": "readme",
         "version": "0.1",
         "doc-status": "draft",
@@ -14752,27 +15064,27 @@
         {
           "level": 2,
           "text": "Research deliverable: the 7 efforts",
-          "line": 52
+          "line": 53
         },
         {
           "level": 2,
           "text": "Headline outputs to read first",
-          "line": 68
+          "line": 69
         },
         {
           "level": 2,
           "text": "Workflow",
-          "line": 77
+          "line": 78
         },
         {
           "level": 2,
           "text": "Conventions",
-          "line": 83
+          "line": 85
         },
         {
           "level": 2,
           "text": "Out of scope",
-          "line": 89
+          "line": 91
         }
       ]
     }

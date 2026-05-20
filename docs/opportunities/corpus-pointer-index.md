@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: opportunity-materials
 sub-category: corpus-index
 date-created: 2026-05-19
-date-revised: 2026-05-19
+date-revised: 2026-05-20
 doc-type: pointer-index
 version: 0.1
 doc-status: generated
@@ -13,9 +13,9 @@ tags: [corpus, index, generated]
 
 # Corpus Pointer Index
 
-Generated: 2026-05-19T22:30:16.546Z
+Generated: 2026-05-20T17:41:05.504Z
 
-Indexed files: 194
+Indexed files: 200
 
 ## Counts by Class
 
@@ -24,8 +24,8 @@ Indexed files: 194
 | `data-table` | 36 |
 | `metric-definition` | 101 |
 | `primary-synthesis` | 7 |
-| `process-or-backlog` | 5 |
-| `supporting-analysis` | 45 |
+| `process-or-backlog` | 9 |
+| `supporting-analysis` | 47 |
 
 ## Primary Reading Path
 
@@ -42,8 +42,8 @@ Indexed files: 194
 
 | Class | Path | Lines | Title |
 |---|---|---:|---|
-| `process-or-backlog` | `docs/backlog/Backlinks Backlog.md` | 14 | Backlinks Backlog |
-| `process-or-backlog` | `docs/backlog/Backlog copy.md` | 69 | Backlog |
+| `process-or-backlog` | `docs/backlog/backlinks-backlog.md` | 17 | Backlinks Backlog |
+| `process-or-backlog` | `docs/backlog/backlog.md` | 49 | Backlog |
 | `supporting-analysis` | `docs/design/Brand Style Guide.md` | 280 | Green-lappe-brand-style-guide |
 | `supporting-analysis` | `docs/design/PNW Property Management Pain Points - Three Personas, One Broken Middle.md` | 297 | PNW Property Management Pain Points - Three Personas, One Broken Middle |
 | `supporting-analysis` | `docs/design/User Journey Map v1.md` | 901 | User Journey Map V1 |
@@ -54,6 +54,11 @@ Indexed files: 194
 | `supporting-analysis` | `docs/insights/2026-05-18-1300-Competitor Research Insight.md` | 23 | 2026-05-18-1300-Competitor Research Insight |
 | `supporting-analysis` | `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt` | 38 | Kevin-Lappe-Resume.txt |
 | `process-or-backlog` | `docs/passoffs/2026-05-19-1529-passoff-file.md` | 43 | Summary |
+| `process-or-backlog` | `docs/passoffs/2026-05-19-1547-passoff-file.md` | 60 | Summary |
+| `process-or-backlog` | `docs/passoffs/2026-05-20-0930-passoff-file.md` | 57 | Summary |
+| `process-or-backlog` | `docs/passoffs/2026-05-20-1036-passoff-file.md` | 70 | Summary |
+| `process-or-backlog` | `docs/passoffs/2026-05-20-1039-passoff-file.md` | 45 | Summary |
+| `supporting-analysis` | `docs/plans/2026-05-20-forward-plan.md` | 174 | Green Lappe Properties Forward Plan |
 | `supporting-analysis` | `docs/research/competitors/Competitor Research Dimensions.md` | 163 | Competitor Research Dimensions |
 | `supporting-analysis` | `docs/research/competitors/Independent Property Management Companies, King and Snohomish Counties.md` | 463 | Independent Property Management Companies, King and Snohomish Counties |
 | `supporting-analysis` | `docs/research/competitors/King County and Snohomish County Small-Owner Rental Listings Dataset.md` | 405 | King County and Snohomish County Small-Owner Rental Listings Dataset |
@@ -229,10 +234,11 @@ Indexed files: 194
 | `supporting-analysis` | `docs/research/unit-economics/Customer Acquisition Costs (CAC) Model.md` | 301 | Customer Acquisition Costs (CAC) Model |
 | `primary-synthesis` | `docs/research/unit-economics/Total Addressable Market (TAM) — Residential Property Management Services.md` | 295 | Total Addressable Market (TAM)—Residential Property Management Services |
 | `primary-synthesis` | `docs/research/unit-economics/Total Addressable Market (TAM).md` | 814 | Total Addressable Market (TAM) |
+| `supporting-analysis` | `docs/status/2026-05-20-status-report.md` | 70 | Green Lappe Properties Status Report |
 | `supporting-analysis` | `docs/strategies/DHM Framework.md` | 120 | DHM Framework |
 | `supporting-analysis` | `docs/strategies/Family Child Care (FCC).md` | 207 | Family Child Care (FCC) |
 | `supporting-analysis` | `docs/strategies/Two-Sided Marketplace.md` | 301 | Two Sided Marketplace |
 | `supporting-analysis` | `docs/strategies/Validation Strategies.md` | 346 | Validation Strategies |
 | `process-or-backlog` | `project-management/meta/2026-05-17 Meta-Analysis.md` | 360 | 2026-05-17 Meta-Analysis |
 | `process-or-backlog` | `project-management/status-updates/2026-05-18-1230.md` | 84 | 2026-05-18-1230 |
-| `primary-synthesis` | `README.md` | 92 | green-lappe-properties |
+| `primary-synthesis` | `README.md` | 94 | green-lappe-properties |
