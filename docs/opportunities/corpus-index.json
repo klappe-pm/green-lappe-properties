@@ -1,7 +1,7 @@
 {
   "repoRoot": "/Users/kevinlappe/Projects/green-lappe-properties",
-  "generatedAt": "2026-05-20T17:41:05.504Z",
-  "entryCount": 200,
+  "generatedAt": "2026-05-20T17:51:35.186Z",
+  "entryCount": 203,
   "entries": [
     {
       "repoRelativePath": "docs/backlog/backlinks-backlog.md",
@@ -33,9 +33,9 @@
     {
       "repoRelativePath": "docs/backlog/backlog.md",
       "class": "process-or-backlog",
-      "bytes": 1527,
+      "bytes": 1576,
       "lineCount": 49,
-      "sha256_16": "e856b24a66c2b712",
+      "sha256_16": "fd83be484a2b2a0e",
       "frontmatter": {
         "domain": "green-lappe-properties",
         "category": "backlog",
@@ -68,17 +68,17 @@
         {
           "level": 3,
           "text": "Launch Readiness",
-          "line": 28
+          "line": 27
         },
         {
           "level": 3,
           "text": "Operations",
-          "line": 35
+          "line": 34
         },
         {
           "level": 2,
           "text": "Completed",
-          "line": 41
+          "line": 40
         },
         {
           "level": 2,
@@ -1575,9 +1575,9 @@
     {
       "repoRelativePath": "docs/passoffs/2026-05-20-1039-passoff-file.md",
       "class": "process-or-backlog",
-      "bytes": 1479,
+      "bytes": 1534,
       "lineCount": 45,
-      "sha256_16": "371af88f30b7821d",
+      "sha256_16": "b8eea17fae9e5a50",
       "frontmatter": {},
       "title": "Summary",
       "headings": [
@@ -1615,6 +1615,144 @@
           "level": 1,
           "text": "Do not do",
           "line": 41
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/passoffs/2026-05-20-1041-passoff-file.md",
+      "class": "process-or-backlog",
+      "bytes": 3161,
+      "lineCount": 56,
+      "sha256_16": "21daa98d9460513f",
+      "frontmatter": {},
+      "title": "Summary",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Summary",
+          "line": 1
+        },
+        {
+          "level": 1,
+          "text": "Files changed",
+          "line": 7
+        },
+        {
+          "level": 1,
+          "text": "Key decisions",
+          "line": 22
+        },
+        {
+          "level": 1,
+          "text": "Risks and open questions",
+          "line": 30
+        },
+        {
+          "level": 1,
+          "text": "State",
+          "line": 36
+        },
+        {
+          "level": 1,
+          "text": "Next actions",
+          "line": 42
+        },
+        {
+          "level": 1,
+          "text": "Do not do",
+          "line": 51
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/passoffs/2026-05-20-1046-passoff-file.md",
+      "class": "process-or-backlog",
+      "bytes": 1530,
+      "lineCount": 40,
+      "sha256_16": "2e3d5f55eb9a8aa7",
+      "frontmatter": {},
+      "title": "Summary",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Summary",
+          "line": 1
+        },
+        {
+          "level": 1,
+          "text": "Files changed",
+          "line": 5
+        },
+        {
+          "level": 1,
+          "text": "Key decisions",
+          "line": 10
+        },
+        {
+          "level": 1,
+          "text": "Risks and open questions",
+          "line": 16
+        },
+        {
+          "level": 1,
+          "text": "State",
+          "line": 21
+        },
+        {
+          "level": 1,
+          "text": "Next actions",
+          "line": 27
+        },
+        {
+          "level": 1,
+          "text": "Do not do",
+          "line": 35
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/passoffs/2026-05-20-1051-passoff-file.md",
+      "class": "process-or-backlog",
+      "bytes": 2568,
+      "lineCount": 49,
+      "sha256_16": "84eaf88d31920b7b",
+      "frontmatter": {},
+      "title": "Summary",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Summary",
+          "line": 1
+        },
+        {
+          "level": 1,
+          "text": "Files changed",
+          "line": 7
+        },
+        {
+          "level": 1,
+          "text": "Key decisions",
+          "line": 17
+        },
+        {
+          "level": 1,
+          "text": "Risks and open questions",
+          "line": 24
+        },
+        {
+          "level": 1,
+          "text": "State",
+          "line": 30
+        },
+        {
+          "level": 1,
+          "text": "Next actions",
+          "line": 36
+        },
+        {
+          "level": 1,
+          "text": "Do not do",
+          "line": 44
         }
       ]
     },
@@ -15029,9 +15167,9 @@
     {
       "repoRelativePath": "README.md",
       "class": "primary-synthesis",
-      "bytes": 7374,
-      "lineCount": 94,
-      "sha256_16": "08c6a546710d2a5a",
+      "bytes": 9176,
+      "lineCount": 96,
+      "sha256_16": "8bc97149ba5e53f4",
       "frontmatter": {
         "domain": "green-lappe-properties",
         "category": "configuration",
@@ -15064,27 +15202,27 @@
         {
           "level": 2,
           "text": "Research deliverable: the 7 efforts",
-          "line": 53
+          "line": 55
         },
         {
           "level": 2,
           "text": "Headline outputs to read first",
-          "line": 69
+          "line": 71
         },
         {
           "level": 2,
           "text": "Workflow",
-          "line": 78
+          "line": 80
         },
         {
           "level": 2,
           "text": "Conventions",
-          "line": 85
+          "line": 87
         },
         {
           "level": 2,
           "text": "Out of scope",
-          "line": 91
+          "line": 93
         }
       ]
     }

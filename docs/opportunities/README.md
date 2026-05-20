@@ -22,7 +22,8 @@ Partner-readiness package for Megan. Built from the local project corpus only; n
 | [green-lappe-opportunity-2-pager.md](green-lappe-opportunity-2-pager.md) | Short partner brief: thesis, numbers, wedge, decision agenda. |
 | [green-lappe-market-deep-dive.md](green-lappe-market-deep-dive.md) | 6-12 page market narrative around TAM, SAM, SOM, assumptions, questions, and risks. |
 | [green-lappe-partner-pitch-deck.pptx](green-lappe-partner-pitch-deck.pptx) | Editable PowerPoint pitch deck for a Megan partner conversation. |
-| [decks/archive/](decks/archive/) | Preserved exported deck variants moved out of the repo root pending canonical-deck selection. |
+| [decks/README.md](decks/README.md) | Canonical deck decision and inventory of archived deck variants. |
+| [decks/archive/](decks/archive/) | Preserved exported deck variants moved out of the repo root. |
 | [partner-pitch-deck-source.md](partner-pitch-deck-source.md) | Slide-by-slide message source, proof object, notes, and data pointers. |
 | [datastory-claim-spine.md](datastory-claim-spine.md) | Nancy Duarte DataStory-style claim spine: situation, tension, insight, action. |
 | [pnw-blue-green-style-guide.md](pnw-blue-green-style-guide.md) | Pacific Northwest blue/green visual system for slides and docs. |
