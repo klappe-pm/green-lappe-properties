@@ -1,11 +1,12 @@
 class	repoRelativePath	lineCount	bytes	sha256_16	title
 process-or-backlog	docs/backlog/backlinks-backlog.md	17	467	18b46ad48e9ea238	Backlinks Backlog
-process-or-backlog	docs/backlog/backlog.md	49	1565	f3ba76e3fadb9d9f	Backlog
+process-or-backlog	docs/backlog/backlog.md	50	1637	700d32112e180f7e	Backlog
 supporting-analysis	docs/design/Brand Style Guide.md	280	16562	7ec71c774be6380c	Green-lappe-brand-style-guide
 supporting-analysis	docs/design/PNW Property Management Pain Points - Three Personas, One Broken Middle.md	297	38290	0cf0126370630ce3	PNW Property Management Pain Points - Three Personas, One Broken Middle
 supporting-analysis	docs/design/User Journey Map v1.md	901	58964	98e337bfba4f54d1	User Journey Map V1
 supporting-analysis	docs/fund/Green Lappe Market Opportunity and Financial Model Analysis.md	277	17058	0c910083a8a887dc	Green Lappe Market Opportunity and Financial Model Analysis
 primary-synthesis	docs/fund/Pitch Deck Prep v.1.md	313	32771	d035adc03dc6bb97	Pitch Deck Prep v.1
+supporting-analysis	docs/gtm/2026-05-20-owner-discovery-guide.md	115	5409	07a16e610ada25ef	Owner Discovery Guide
 supporting-analysis	docs/gtm/Go-to-Market (GTM) Plan v.1.md	534	40733	b4c45c87bdbc4b8f	King-snohomish-pm-startup-operations-plan
 primary-synthesis	docs/gtm/Launch Prioritization.md	156	9926	5f7249811606719e	Launch Prioritization
 supporting-analysis	docs/insights/2026-05-18-1300-Competitor Research Insight.md	23	1590	742606669078ea06	2026-05-18-1300-Competitor Research Insight
@@ -18,8 +19,10 @@ process-or-backlog	docs/passoffs/2026-05-20-1039-passoff-file.md	45	1534	b8eea17
 process-or-backlog	docs/passoffs/2026-05-20-1041-passoff-file.md	56	3161	21daa98d9460513f	Summary
 process-or-backlog	docs/passoffs/2026-05-20-1046-passoff-file.md	40	1530	2e3d5f55eb9a8aa7	Summary
 process-or-backlog	docs/passoffs/2026-05-20-1051-passoff-file.md	49	2623	737989fb8adb84fd	Summary
-process-or-backlog	docs/passoffs/2026-05-20-1355-passoff-file.md	47	2220	d4a26022e7ffb2e4	Summary
+process-or-backlog	docs/passoffs/2026-05-20-1355-passoff-file.md	47	2275	7f595ac77939c9d0	Summary
+process-or-backlog	docs/passoffs/2026-05-20-1405-passoff-file.md	50	2442	19c502ab1503f79f	Summary
 supporting-analysis	docs/plans/2026-05-20-forward-plan.md	174	6430	0f2768b93a570b64	Green Lappe Properties Forward Plan
+supporting-analysis	docs/plans/2026-05-20-launch-readiness-gates.md	160	5740	b2355e13f846db66	Launch Readiness Gates
 supporting-analysis	docs/research/competitors/Competitor Research Dimensions.md	163	5460	de0f43b182c79bcc	Competitor Research Dimensions
 supporting-analysis	docs/research/competitors/Independent Property Management Companies, King and Snohomish Counties.md	463	42291	bf4e85c483b26355	Independent Property Management Companies, King and Snohomish Counties
 supporting-analysis	docs/research/competitors/King County and Snohomish County Small-Owner Rental Listings Dataset.md	405	42665	ac0d3d8b71517449	King County and Snohomish County Small-Owner Rental Listings Dataset
