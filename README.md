@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: configuration
 sub-category: readme
 date-created: 2026-05-18
-date-revised: 2026-05-18
+date-revised: 2026-05-20
 doc-type: readme
 version: 0.1
 doc-status: draft
@@ -23,16 +23,18 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 
 ```
 docs/
-  backlog.md              append-only feature/bug/chore list (use /backlog)
+  backlog/                append-only backlog and backlink companion notes
   design/                 brand, personas, user-journey artifacts
   fund/                   capital-raise materials
   gtm/                    go-to-market plans, launch prioritization
+  insights/               dated synthesized insight notes
   marketing/              founder bios, channel collateral
+  opportunities/          partner-readiness briefs, decks, source, and indexes
   passoffs/               session handoff files (see ~/.claude/PASSOFF.md)
+  plans/                  execution plans and forward plans
   questions/              open research questions
   research/
-    datasets/             raw and intermediate CSVs / geojson
-    market/               competitor and market analyses
+    competitors/          competitor and small-owner PM market analyses
     metrics/              metric definitions
     plans/                research plans (Demographic Research Plan, etc.)
     prompts/              prompts used to drive research efforts
@@ -40,12 +42,11 @@ docs/
     reports/              the 7-effort research output (effort-0 through effort-6)
     unit-economics/       TAM, CAC, unit-economics models
   roadmap/                product / business roadmap
+  status/                 dated repo and project status reports
   strategies/             DHM, FCC, two-sided marketplace, validation
 project-management/
   meta/                   meta-analyses
-  status-updates/         dated status updates
-vault/
-  templates/              Obsidian note templates
+  status-updates/         legacy dated status updates
 .obsidian/                Obsidian vault configuration
 ```
 
@@ -77,8 +78,9 @@ The driving plan is [`docs/research/plans/Demographic Research Plan.md`](docs/re
 ## Workflow
 
 - Session handoff is governed by `~/.claude/PASSOFF.md`. Passoffs land in [`docs/passoffs/`](docs/passoffs/). Resume the next session with `/resume`; close it with `/pass`.
-- Backlog items go in [`docs/backlog.md`](docs/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
-- Status updates land in [`project-management/status-updates/`](project-management/status-updates/) using the dated `YYYY-MM-DD-HHMM.md` convention.
+- Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
+- Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` convention. `project-management/status-updates/` is retained as legacy history.
+- Forward plans land in [`docs/plans/`](docs/plans/) using the dated `YYYY-MM-DD-<slug>.md` convention.
 
 ## Conventions
 

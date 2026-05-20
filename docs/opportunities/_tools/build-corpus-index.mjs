@@ -136,13 +136,14 @@ async function main() {
     acc[entry.class] = (acc[entry.class] || 0) + 1;
     return acc;
   }, {});
+  const generatedDate = generatedAt.slice(0, 10);
   const md = [
     "---",
     "domain: green-lappe-properties",
     "category: opportunity-materials",
     "sub-category: corpus-index",
     "date-created: 2026-05-19",
-    "date-revised: 2026-05-19",
+    `date-revised: ${generatedDate}`,
     "doc-type: pointer-index",
     "version: 0.1",
     "doc-status: generated",
