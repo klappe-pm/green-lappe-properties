@@ -69,7 +69,7 @@ Follow-up evidence: [`2026-05-20-domain-clearance-check.md`](../references/2026-
 | Enable auto-renew, registrar lock, MFA, recovery email, and billing owner. | Account owner | Domain-control checklist. |
 | Export/save domain receipt, registrar account owner, renewal date, and DNS host. | Account owner | Domain inventory entry. |
 
-Use [`2026-05-21-domain-purchase-evidence-runbook.md`](../runbooks/2026-05-21-domain-purchase-evidence-runbook.md) for the approved checkout evidence checklist and post-purchase inventory fields.
+Use [`2026-05-21-domain-purchase-evidence-runbook.md`](../runbooks/2026-05-21-domain-purchase-evidence-runbook.md) for the approved checkout evidence checklist and post-purchase inventory fields. Use [`2026-05-21-launch-evidence-storage-runbook.md`](../runbooks/2026-05-21-launch-evidence-storage-runbook.md) before saving receipts, account screenshots, or other sensitive launch evidence outside Git.
 
 ### Registrar and DNS recommendation
 

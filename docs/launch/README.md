@@ -36,6 +36,7 @@ This folder is the canonical home for Green Lappe launch execution artifacts: bu
 | [`references/2026-05-20-domain-clearance-check.md`](references/2026-05-20-domain-clearance-check.md) | Domain, USPTO, and web-collision evidence for the website domain decision. |
 | [`references/2026-05-21-registrar-price-snapshot.md`](references/2026-05-21-registrar-price-snapshot.md) | Current registry/DNS availability and public registrar price evidence before domain purchase approval. |
 | [`runbooks/2026-05-21-domain-purchase-evidence-runbook.md`](runbooks/2026-05-21-domain-purchase-evidence-runbook.md) | Account-owner checklist for approved domain purchase evidence, checkout controls, and post-purchase domain inventory. |
+| [`runbooks/2026-05-21-launch-evidence-storage-runbook.md`](runbooks/2026-05-21-launch-evidence-storage-runbook.md) | Storage-control checklist for keeping sensitive launch evidence outside Git while preserving usable pointers in repo docs. |
 
 ## Operating Rule
 
