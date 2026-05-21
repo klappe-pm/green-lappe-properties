@@ -32,6 +32,7 @@ This folder is the canonical home for Green Lappe launch execution artifacts: bu
 | [`plans/2026-05-20-website-domain-internal-launch-plan.md`](plans/2026-05-20-website-domain-internal-launch-plan.md) | Domain, DNS, hosting, protected preview, and internal testing plan for website launch infrastructure. |
 | [`legal/2026-05-20-launch-readiness-gates.md`](legal/2026-05-20-launch-readiness-gates.md) | Gate checklist for designated broker, firm licensing, trust accounting, contracts, insurance, and role boundaries. |
 | [`discovery/2026-05-20-owner-discovery-guide.md`](discovery/2026-05-20-owner-discovery-guide.md) | Warm-owner discovery guide for the 20-conversation proof sprint. |
+| [`references/2026-05-20-domain-clearance-check.md`](references/2026-05-20-domain-clearance-check.md) | Current domain, USPTO, and web-collision evidence for the website domain decision. |
 
 ## Operating Rule
 
