@@ -25,10 +25,9 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 | --- | --- |
 | [`docs/`](docs/) | Main working corpus for research, strategy, planning, status, and partner materials. |
 | [`docs/backlog/`](docs/backlog/) | Append-only backlog and backlink companion notes for project work and repo hygiene. |
-| [`docs/_archive/`](docs/_archive/) | Superseded brand, design, and strategy artifacts retained for reference. |
+| [`docs/_archive/`](docs/_archive/) | Superseded brand, design, fund, prompt, and strategy artifacts retained for reference. |
 | [`docs/branding/`](docs/branding/) | Brand-system source files, style guide material, tokens, schemas, and implementation references. |
 | [`docs/design-system/`](docs/design-system/) | Canonical design-system documentation for identity, voice, tokens, components, UX, accessibility, governance, and implementation architecture. |
-| [`docs/fund/`](docs/fund/) | Capital-raise, market opportunity, and financial-model interpretation materials. |
 | [`docs/gtm/`](docs/gtm/) | Go-to-market plans, launch sequencing, and prioritization logic. |
 | [`docs/insights/`](docs/insights/) | Dated synthesized insight notes pulled out of broader research work. |
 | [`docs/launch/`](docs/launch/) | Canonical launch execution folder for business launch plans, legal gates, discovery guides, and launch references. |
@@ -41,9 +40,8 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 | [`docs/meta/`](docs/meta/) | Meta-analysis, retrospectives, and project-level reflection notes. |
 | [`docs/opportunities/`](docs/opportunities/) | Partner-readiness package: briefs, deck source, generated indexes, and opportunity narrative. |
 | [`docs/opportunities/decks/`](docs/opportunities/decks/) | PowerPoint deck variants and deck archive material pending canonical-deck selection. |
-| [`docs/outputs/`](docs/outputs/) | Generated or exported analytical outputs, including workbook artifacts. |
+| [`docs/financial/`](docs/financial/) | Financial-model workbook artifacts. |
 | [`docs/passoffs/`](docs/passoffs/) | Session handoff files governed by `~/.claude/PASSOFF.md`. |
-| [`docs/prompts/`](docs/prompts/) | Prompt source material for reproducible brand and design-system work. |
 | [`docs/questions/`](docs/questions/) | Open research and decision questions. |
 | [`docs/research/`](docs/research/) | Research source tree for market, demographic, regulatory, scoring, and unit-economics work. |
 | [`docs/research/competitors/`](docs/research/competitors/) | Competitor and small-owner property-management market analyses. |
