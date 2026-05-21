@@ -79,7 +79,7 @@ Required proof:
 Current official references:
 
 - WAC 308-124E trust account procedures: `https://app.leg.wa.gov/wac/default.aspx?cite=308-124E`
-- WAC 308-124E-105 general trust procedures: `https://app.leg.wa.gov/wac/default.aspx/default.aspx?cite=308-124E-105`
+- WAC 308-124E-105 general trust procedures: `https://app.leg.wa.gov/documents/LAWS/WACPDF/WAC%20308%20%20TITLE/WAC%20308%20-124E%20CHAPTER/WAC%20308%20-124E-105.pdf`
 
 Output:
 

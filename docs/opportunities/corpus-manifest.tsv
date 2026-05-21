@@ -1,6 +1,6 @@
 class	repoRelativePath	lineCount	bytes	sha256_16	title
 process-or-backlog	docs/backlog/backlinks-backlog.md	17	467	18b46ad48e9ea238	Backlinks Backlog
-process-or-backlog	docs/backlog/backlog.md	50	1637	700d32112e180f7e	Backlog
+process-or-backlog	docs/backlog/backlog.md	51	1731	2f395e03f275da5c	Backlog
 supporting-analysis	docs/design/Brand Style Guide.md	280	16562	7ec71c774be6380c	Green-lappe-brand-style-guide
 supporting-analysis	docs/design/PNW Property Management Pain Points - Three Personas, One Broken Middle.md	297	38290	0cf0126370630ce3	PNW Property Management Pain Points - Three Personas, One Broken Middle
 supporting-analysis	docs/design/User Journey Map v1.md	901	58964	98e337bfba4f54d1	User Journey Map V1
@@ -20,9 +20,11 @@ process-or-backlog	docs/passoffs/2026-05-20-1041-passoff-file.md	56	3161	21daa98
 process-or-backlog	docs/passoffs/2026-05-20-1046-passoff-file.md	40	1530	2e3d5f55eb9a8aa7	Summary
 process-or-backlog	docs/passoffs/2026-05-20-1051-passoff-file.md	49	2623	737989fb8adb84fd	Summary
 process-or-backlog	docs/passoffs/2026-05-20-1355-passoff-file.md	47	2275	7f595ac77939c9d0	Summary
-process-or-backlog	docs/passoffs/2026-05-20-1405-passoff-file.md	50	2442	19c502ab1503f79f	Summary
+process-or-backlog	docs/passoffs/2026-05-20-1405-passoff-file.md	50	2498	4fda71db4b36badf	Summary
+process-or-backlog	docs/passoffs/2026-05-20-1826-passoff-file.md	54	3225	1e0cde9aaf775262	Summary
+supporting-analysis	docs/plans/2026-05-20-business-launch-project-plan.md	327	26406	57ef45f1ee3bb2e5	Business Launch Project Plan
 supporting-analysis	docs/plans/2026-05-20-forward-plan.md	174	6430	0f2768b93a570b64	Green Lappe Properties Forward Plan
-supporting-analysis	docs/plans/2026-05-20-launch-readiness-gates.md	160	5740	b2355e13f846db66	Launch Readiness Gates
+supporting-analysis	docs/plans/2026-05-20-launch-readiness-gates.md	160	5789	63bf9199b6aa0824	Launch Readiness Gates
 supporting-analysis	docs/research/competitors/Competitor Research Dimensions.md	163	5460	de0f43b182c79bcc	Competitor Research Dimensions
 supporting-analysis	docs/research/competitors/Independent Property Management Companies, King and Snohomish Counties.md	463	42291	bf4e85c483b26355	Independent Property Management Companies, King and Snohomish Counties
 supporting-analysis	docs/research/competitors/King County and Snohomish County Small-Owner Rental Listings Dataset.md	405	42665	ac0d3d8b71517449	King County and Snohomish County Small-Owner Rental Listings Dataset

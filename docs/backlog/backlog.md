@@ -45,5 +45,6 @@ This document tracks open work, completed items, and ghost links for Green Lappe
 - [x] Select `docs/opportunities/green-lappe-partner-pitch-deck.pptx` as the canonical partner deck and document archived deck variants.
 - [x] Migrate legacy `project-management/status-updates/` content into `docs/status/`.
 - [x] Create launch-readiness gate checklist and owner discovery guide.
+- [x] Create researched, dependency-ordered business launch project plan with official links.
 
 ## Ghost Links

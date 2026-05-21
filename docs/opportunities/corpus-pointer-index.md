@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: opportunity-materials
 sub-category: corpus-index
 date-created: 2026-05-19
-date-revised: 2026-05-20
+date-revised: 2026-05-21
 doc-type: pointer-index
 version: 0.1
 doc-status: generated
@@ -13,9 +13,9 @@ tags: [corpus, index, generated]
 
 # Corpus Pointer Index
 
-Generated: 2026-05-20T21:05:44.912Z
+Generated: 2026-05-21T01:27:03.793Z
 
-Indexed files: 207
+Indexed files: 209
 
 ## Counts by Class
 
@@ -24,8 +24,8 @@ Indexed files: 207
 | `data-table` | 36 |
 | `metric-definition` | 101 |
 | `primary-synthesis` | 7 |
-| `process-or-backlog` | 13 |
-| `supporting-analysis` | 50 |
+| `process-or-backlog` | 14 |
+| `supporting-analysis` | 51 |
 
 ## Primary Reading Path
 
@@ -43,7 +43,7 @@ Indexed files: 207
 | Class | Path | Lines | Title |
 |---|---|---:|---|
 | `process-or-backlog` | `docs/backlog/backlinks-backlog.md` | 17 | Backlinks Backlog |
-| `process-or-backlog` | `docs/backlog/backlog.md` | 50 | Backlog |
+| `process-or-backlog` | `docs/backlog/backlog.md` | 51 | Backlog |
 | `supporting-analysis` | `docs/design/Brand Style Guide.md` | 280 | Green-lappe-brand-style-guide |
 | `supporting-analysis` | `docs/design/PNW Property Management Pain Points - Three Personas, One Broken Middle.md` | 297 | PNW Property Management Pain Points - Three Personas, One Broken Middle |
 | `supporting-analysis` | `docs/design/User Journey Map v1.md` | 901 | User Journey Map V1 |
@@ -64,6 +64,8 @@ Indexed files: 207
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1051-passoff-file.md` | 49 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1355-passoff-file.md` | 47 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1405-passoff-file.md` | 50 | Summary |
+| `process-or-backlog` | `docs/passoffs/2026-05-20-1826-passoff-file.md` | 54 | Summary |
+| `supporting-analysis` | `docs/plans/2026-05-20-business-launch-project-plan.md` | 327 | Business Launch Project Plan |
 | `supporting-analysis` | `docs/plans/2026-05-20-forward-plan.md` | 174 | Green Lappe Properties Forward Plan |
 | `supporting-analysis` | `docs/plans/2026-05-20-launch-readiness-gates.md` | 160 | Launch Readiness Gates |
 | `supporting-analysis` | `docs/research/competitors/Competitor Research Dimensions.md` | 163 | Competitor Research Dimensions |

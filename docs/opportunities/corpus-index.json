@@ -1,7 +1,7 @@
 {
   "repoRoot": "/Users/kevinlappe/Projects/green-lappe-properties",
-  "generatedAt": "2026-05-20T21:05:44.912Z",
-  "entryCount": 207,
+  "generatedAt": "2026-05-21T01:27:03.793Z",
+  "entryCount": 209,
   "entries": [
     {
       "repoRelativePath": "docs/backlog/backlinks-backlog.md",
@@ -33,9 +33,9 @@
     {
       "repoRelativePath": "docs/backlog/backlog.md",
       "class": "process-or-backlog",
-      "bytes": 1637,
-      "lineCount": 50,
-      "sha256_16": "700d32112e180f7e",
+      "bytes": 1731,
+      "lineCount": 51,
+      "sha256_16": "2f395e03f275da5c",
       "frontmatter": {
         "domain": "green-lappe-properties",
         "category": "backlog",
@@ -83,7 +83,7 @@
         {
           "level": 2,
           "text": "Ghost Links",
-          "line": 49
+          "line": 50
         }
       ]
     },
@@ -1872,9 +1872,9 @@
     {
       "repoRelativePath": "docs/passoffs/2026-05-20-1405-passoff-file.md",
       "class": "process-or-backlog",
-      "bytes": 2442,
+      "bytes": 2498,
       "lineCount": 50,
-      "sha256_16": "19c502ab1503f79f",
+      "sha256_16": "4fda71db4b36badf",
       "frontmatter": {},
       "title": "Summary",
       "headings": [
@@ -1912,6 +1912,174 @@
           "level": 1,
           "text": "Do not do",
           "line": 44
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/passoffs/2026-05-20-1826-passoff-file.md",
+      "class": "process-or-backlog",
+      "bytes": 3225,
+      "lineCount": 54,
+      "sha256_16": "1e0cde9aaf775262",
+      "frontmatter": {},
+      "title": "Summary",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Summary",
+          "line": 1
+        },
+        {
+          "level": 1,
+          "text": "Files changed",
+          "line": 7
+        },
+        {
+          "level": 1,
+          "text": "Key decisions",
+          "line": 19
+        },
+        {
+          "level": 1,
+          "text": "Risks and open questions",
+          "line": 27
+        },
+        {
+          "level": 1,
+          "text": "State",
+          "line": 34
+        },
+        {
+          "level": 1,
+          "text": "Next actions",
+          "line": 40
+        },
+        {
+          "level": 1,
+          "text": "Do not do",
+          "line": 48
+        }
+      ]
+    },
+    {
+      "repoRelativePath": "docs/plans/2026-05-20-business-launch-project-plan.md",
+      "class": "supporting-analysis",
+      "bytes": 26406,
+      "lineCount": 327,
+      "sha256_16": "57ef45f1ee3bb2e5",
+      "frontmatter": {
+        "domain": "green-lappe-properties",
+        "category": "planning",
+        "sub-category": "business-launch",
+        "date-created": "2026-05-20",
+        "date-revised": "2026-05-20",
+        "doc-type": "launch-project-plan",
+        "version": "0.1",
+        "doc-status": "draft",
+        "aliases": "[]",
+        "tags": "[launch-plan, business-formation, licensing, property-management, washington]"
+      },
+      "title": "Business Launch Project Plan",
+      "headings": [
+        {
+          "level": 1,
+          "text": "Business Launch Project Plan",
+          "line": 14
+        },
+        {
+          "level": 2,
+          "text": "Critical path",
+          "line": 18
+        },
+        {
+          "level": 2,
+          "text": "Dependency map",
+          "line": 31
+        },
+        {
+          "level": 2,
+          "text": "0. Immediate governance setup",
+          "line": 45
+        },
+        {
+          "level": 2,
+          "text": "1. Designated broker and license gate",
+          "line": 54
+        },
+        {
+          "level": 2,
+          "text": "2. Entity formation and federal setup",
+          "line": 73
+        },
+        {
+          "level": 2,
+          "text": "3. Washington business license, tax, and local endorsements",
+          "line": 92
+        },
+        {
+          "level": 2,
+          "text": "4. Real estate firm license",
+          "line": 110
+        },
+        {
+          "level": 2,
+          "text": "5. Trust accounting and banking",
+          "line": 128
+        },
+        {
+          "level": 2,
+          "text": "6. Contracts, fair housing, and landlord-tenant compliance",
+          "line": 147
+        },
+        {
+          "level": 2,
+          "text": "7. Insurance and risk transfer",
+          "line": 165
+        },
+        {
+          "level": 2,
+          "text": "8. Software, accounting, and records",
+          "line": 180
+        },
+        {
+          "level": 2,
+          "text": "9. Employment, contractors, and payroll",
+          "line": 197
+        },
+        {
+          "level": 2,
+          "text": "10. Vendor and professional services bench",
+          "line": 214
+        },
+        {
+          "level": 2,
+          "text": "11. Website, brand, and pre-launch communications",
+          "line": 229
+        },
+        {
+          "level": 2,
+          "text": "12. Owner discovery and first cohort",
+          "line": 244
+        },
+        {
+          "level": 2,
+          "text": "13. First-property onboarding",
+          "line": 261
+        },
+        {
+          "level": 2,
+          "text": "14. FCC wedge, deferred",
+          "line": 279
+        },
+        {
+          "level": 2,
+          "text": "Lead-time summary",
+          "line": 289
+        },
+        {
+          "level": 2,
+          "text": "Source links used",
+          "line": 305
         }
       ]
     },
@@ -2000,9 +2168,9 @@
     {
       "repoRelativePath": "docs/plans/2026-05-20-launch-readiness-gates.md",
       "class": "supporting-analysis",
-      "bytes": 5740,
+      "bytes": 5789,
       "lineCount": 160,
-      "sha256_16": "b2355e13f846db66",
+      "sha256_16": "63bf9199b6aa0824",
       "frontmatter": {
         "domain": "green-lappe-properties",
         "category": "planning",
