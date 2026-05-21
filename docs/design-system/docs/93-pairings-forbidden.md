@@ -5,6 +5,7 @@ sub-category: pairings-forbidden
 date-created: 2026-05-21
 date-revised: 2026-05-21
 status: spec-v3
+version: 3.0.0
 depends-on:
   - 10-color-system
   - 22-typography-usage

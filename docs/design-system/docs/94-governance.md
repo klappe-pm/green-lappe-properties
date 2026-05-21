@@ -1,24 +1,25 @@
 ---
-domain: design-system
-category: governance
+domain: brand
+category: design-system
 sub-category: ownership-and-change-management
 date-created: 2026-05-21
 date-revised: 2026-05-21
+status: locked
+version: 3.0.0
 depends-on:
-  - 00-index.md
-  - 90-file-naming.md
-  - 91-accessibility.md
-  - 92-dark-mode.md
-  - 93-pairings-forbidden.md
-outputs:
+  - 00-index
+  - 90-file-naming
+  - 91-accessibility
+  - 92-dark-mode
+  - 93-pairings-forbidden
+produces:
   - governance-charter
   - change-proposal-template
   - versioning-policy
   - deprecation-policy
   - override-exception-log-schema
   - annual-review-checklist
-executor: human-and-llm
-status: locked
+executor: strategy
 aliases:
 tags:
   - governance
@@ -31,6 +32,23 @@ tags:
 # 94-governance
 
 Defines who owns the Green PM design system, how changes are proposed and approved, how versions are numbered, how things get deprecated, how exceptions are logged, and how the system is reviewed on a recurring cadence. Governance is the safety net that prevents drift between the locked v3 specification and shipped product.
+
+## Dependencies
+
+- [[00-index|design system master index]] for the doc contract and execution graph
+- [[90-file-naming|file naming conventions]] for repository and artifact naming
+- [[91-accessibility|accessibility requirements]] for governance-level compliance obligations
+- [[92-dark-mode|dark mode policy]] for deferred-mode governance
+- [[93-pairings-forbidden|approved pairings and forbidden patterns]] for drift detection
+
+## Outputs
+
+1. Governance charter
+2. Change proposal template
+3. Versioning policy
+4. Deprecation policy
+5. Override and exception log schema
+6. Annual review checklist
 
 ## 1. Scope and intent
 
@@ -87,7 +105,7 @@ For Green PM at launch (1-20 doors), Megan holds Broker and Operator roles. Kevi
 | `72-document-templates.md` | System owner | Broker AND Counsel for lease/notice |
 | `73-email-notifications.md` to `75-social-media.md` | System owner | Broker for voice |
 | `80-system-architecture.md` to `85-sanity-schemas.md` | System owner | None |
-| `90-file-naming.md` to `95-quick-reference.md` | System owner | None |
+| `90-file-naming.md` to `96-numbering-convention.md` | System owner | None |
 
 ### 2.3 Owner transition
 
@@ -570,7 +588,7 @@ When a proposal ships:
 3. Post a one-line entry to `docs/changelog.md`.
 4. If user-facing, post to the operator (Megan) with what changed and where to look.
 
-## 12. Acceptance criteria
+## 12. Acceptance
 
 This document is acceptable when:
 
@@ -591,3 +609,4 @@ This document is acceptable when:
 - [[92-dark-mode|dark mode policy]]
 - [[93-pairings-forbidden|approved pairings and forbidden patterns]]
 - [[95-quick-reference|one-page quick reference]]
+- [[96-numbering-convention|numbering convention]]

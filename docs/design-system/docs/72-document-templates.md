@@ -5,6 +5,7 @@ sub-category: document-templates
 date-created: 2026-05-21
 date-revised: 2026-05-21
 status: spec-v3
+version: 3.0.0
 depends-on:
   - 22-typography-usage
   - 30-design-tokens
@@ -193,7 +194,7 @@ The most important document in the system. The owner reads this on the 10th of e
   </div>
   <div>
     <p class="font-display font-medium text-xs uppercase tracking-wide text-ink-60">Lease term</p>
-    <p class="font-display font-regular text-sm text-ink mt-1">Jun 1, 2025 — May 31, 2027</p>
+    <p class="font-display font-regular text-sm text-ink mt-1">Jun 1, 2025 to May 31, 2027</p>
   </div>
 </section>
 ```
@@ -246,12 +247,12 @@ Each expense line includes the vendor name and the date the expense posted, not 
     <tbody>
       <tr class="border-b border-ink-20">
         <td class="font-display font-regular text-sm text-ink-60 tabular py-3">Nov 14, 2026</td>
-        <td class="font-display font-regular text-sm text-ink py-3">Plumbing repair — Anderson Plumbing (kitchen sink leak)</td>
+        <td class="font-display font-regular text-sm text-ink py-3">Plumbing repair: Anderson Plumbing (kitchen sink leak)</td>
         <td class="font-display font-regular text-sm text-ink-60 tabular text-right py-3">−$185.00</td>
       </tr>
       <tr class="border-b border-ink-20">
         <td class="font-display font-regular text-sm text-ink-60 tabular py-3">Nov 22, 2026</td>
-        <td class="font-display font-regular text-sm text-ink py-3">Gutter cleaning — North Seattle Gutters</td>
+        <td class="font-display font-regular text-sm text-ink py-3">Gutter cleaning: North Seattle Gutters</td>
         <td class="font-display font-regular text-sm text-ink-60 tabular text-right py-3">−$140.00</td>
       </tr>
       <tr class="border-b border-ink-20">
@@ -477,7 +478,7 @@ Used for HB 1217 rent-increase notices, Just Cause termination notices, lease vi
 
 1. Letterhead
 2. Eyebrow: notice type (e.g., `Notice of rent increase`)
-3. Title: short specific descriptor (e.g., `90-day notice — 1823 NW 65th St`)
+3. Title: short specific descriptor (e.g., `90-day notice: 1823 NW 65th St`)
 4. Recipient block (full legal name and address)
 5. Date
 6. Body (legally required language; varies by notice type)

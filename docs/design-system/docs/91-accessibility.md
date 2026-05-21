@@ -5,6 +5,7 @@ sub-category: accessibility
 date-created: 2026-05-21
 date-revised: 2026-05-21
 status: spec-v3
+version: 3.0.0
 depends-on:
   - 30-design-tokens
   - 52-component-grammar
@@ -292,9 +293,9 @@ Every page has a unique `<title>` that describes the page:
 
 ```html
 <!-- Right -->
-<title>Owner services — Green Property Management</title>
-<title>1823 NW 65th St — Available March 1 — Green PM</title>
-<title>Why I replaced this boiler now — Field notes — Green PM</title>
+<title>Owner services | Green Property Management</title>
+<title>1823 NW 65th St | Available March 1 | Green PM</title>
+<title>Why I replaced this boiler now | Field notes | Green PM</title>
 
 <!-- Wrong -->
 <title>Home</title>

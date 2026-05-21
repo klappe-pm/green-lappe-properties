@@ -1,21 +1,22 @@
 ---
-domain: design-system
-category: governance
+domain: brand
+category: design-system
 sub-category: numbering-convention
 date-created: 2026-05-21
 date-revised: 2026-05-21
+status: locked
+version: 3.0.0
 depends-on:
-  - 00-index.md
-  - 90-file-naming.md
-  - 94-governance.md
-outputs:
+  - 00-index
+  - 90-file-naming
+  - 94-governance
+produces:
   - numbering-scheme-definition
   - tier-allocation-table
   - reserved-slot-map
   - insertion-rules
   - renumbering-policy
-executor: human-and-llm
-status: locked
+executor: strategy
 aliases:
   - numbering
   - doc-numbering
@@ -33,6 +34,20 @@ tags:
 Defines the two-digit numerical prefix scheme used on every spec doc in this design system. The prefix encodes tier (tens digit) and order within tier (ones digit). Gaps are intentional and reserved for future growth. Renumbering existing docs is forbidden except under tightly defined conditions.
 
 This document exists because numbering schemes drift when undocumented. A drifted scheme is worse than no scheme.
+
+## Dependencies
+
+- [[00-index|design system master index]] for the current inventory and tier plan
+- [[90-file-naming|file naming conventions]] for kebab-case and path rules
+- [[94-governance|governance and change management]] for proposal and renumbering authority
+
+## Outputs
+
+1. Numbering scheme definition
+2. Tier allocation table
+3. Reserved slot map
+4. Insertion rules
+5. Renumbering policy
 
 ## 1. The scheme in one sentence
 
@@ -108,7 +123,7 @@ Tier 9 (Governance):
   96-numbering-convention
 ```
 
-Used: 42 slots. Reserved: 58 slots. Capacity headroom: 138%.
+Used: 43 slots. Reserved: 57 slots. Capacity headroom: 133%.
 
 ### 3.3 Reserved slots (do not assume "empty equals available")
 
@@ -225,14 +240,14 @@ The system currently has six tiers and capacity for at least four more (tier `1x
 
 ### 6.1 Current capacity
 
-100 slots total (`00`-`99`). 42 used, 58 unused or reserved. At the current rate of doc growth (≈10 new docs per year of active development, slowing as the system stabilizes), the scheme has 5-6 years of growth runway before tier saturation becomes a real concern.
+100 slots total (`00`-`99`). 43 used, 57 unused or reserved. At the current rate of doc growth (about 10 new docs per year of active development, slowing as the system stabilizes), the scheme has 5-6 years of growth runway before tier saturation becomes a real concern.
 
 ### 6.2 Per-tier capacity
 
 | Tier | Slots | Used | Free | Reserved |
 |------|-------|------|------|----------|
 | 0 (Foundation) | 10 | 5 | 5 | 5 |
-| 1-3 (Primitives) | 30 | 7 | 23 | 22 |
+| 1-3 (Primitives) | 30 | 7 | 23 | 23 |
 | 4-5 (Components) | 20 | 9 | 11 | 11 |
 | 6-7 (Surfaces) | 20 | 9 | 11 | 11 |
 | 8 (Architecture) | 10 | 6 | 4 | 4 |
@@ -242,7 +257,7 @@ Tier 9 has only 3 free slots. Watch this one; it fills first as the system matur
 
 ### 6.3 Tier saturation handling
 
-When a tier approaches saturation (≥ 8 of 10 slots used):
+When a tier approaches saturation (8 or more of 10 slots used):
 
 1. Audit the tier for docs that should be split, merged, or moved.
 2. Consider whether the tier is genuinely too large or whether the system has accidentally accumulated trivia in that tier.
