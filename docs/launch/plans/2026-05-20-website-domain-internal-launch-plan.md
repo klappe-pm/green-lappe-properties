@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: launch
 sub-category: website-domain-internal-launch
 date-created: 2026-05-20
-date-revised: 2026-05-20
+date-revised: 2026-05-21
 doc-type: launch-plan
 version: 0.1
 doc-status: draft
@@ -46,7 +46,7 @@ Launch internal testing before public launch:
 
 Checked via Verisign WHOIS on `2026-05-20 18:36 PDT` / `2026-05-21T01:36Z`.
 
-Follow-up evidence: [`2026-05-20-domain-clearance-check.md`](../references/2026-05-20-domain-clearance-check.md) records a 2026-05-20 19:25 PDT Verisign RDAP/DNS re-check plus USPTO and web-collision notes. It keeps `greenlappe.com` as the primary purchase candidate and `greenlappeproperties.com` as the only recommended initial defensive domain.
+Follow-up evidence: [`2026-05-20-domain-clearance-check.md`](../references/2026-05-20-domain-clearance-check.md) records a 2026-05-20 19:25 PDT Verisign RDAP/DNS re-check plus USPTO and web-collision notes. [`2026-05-21-registrar-price-snapshot.md`](../references/2026-05-21-registrar-price-snapshot.md) records a 2026-05-21 09:56 PDT registry/DNS refresh plus public registrar price evidence. Both keep `greenlappe.com` as the primary purchase candidate and `greenlappeproperties.com` as the only recommended initial defensive domain.
 
 | Domain | Snapshot result | Proposed use |
 |---|---|---|
@@ -228,7 +228,7 @@ Public launch needs a separate approval gate covering:
 |---|---|---|
 | Primary domain | `greenlappe.com`, long-form `.com`, other | Try to purchase `greenlappe.com` first. |
 | Defensive domains | None, one, several | Buy at most one long-form defensive domain initially. |
-| Registrar/DNS pattern | Cloudflare-only, registrar separated from DNS | Cloudflare-only for simplicity unless portability is prioritized. |
+| Registrar/DNS pattern | Cloudflare-only, registrar separated from DNS | Cloudflare-only for one-console simplicity; independent registrar plus Cloudflare DNS if registrar/DNS portability is more important. |
 | Hosting provider | Cloudflare Pages, Vercel, Netlify | Cloudflare Pages for static/lightweight; Vercel for Next.js. |
 | Website code location | Current repo subfolder, separate repo | Decide based on whether this repo should remain docs-first. |
 | Email provider | Google Workspace, Microsoft 365, defer | Defer unless email is required for launch testing. |
