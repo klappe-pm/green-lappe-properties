@@ -46,5 +46,6 @@ This document tracks open work, completed items, and ghost links for Green Lappe
 - [x] Migrate legacy `project-management/status-updates/` content into `docs/status/`.
 - [x] Create launch-readiness gate checklist and owner discovery guide.
 - [x] Create researched, dependency-ordered business launch project plan with official links.
+- [x] Consolidate launch documents, generated outputs, and meta-analysis artifacts under `docs/`.
 
 ## Ghost Links

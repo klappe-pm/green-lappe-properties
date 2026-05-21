@@ -31,7 +31,7 @@ function classify(relativePath) {
   if (relativePath.startsWith("docs/opportunities/")) return "opportunity-output";
   if (relativePath.startsWith("docs/research/metrics/pm-competitor-metrics/")) return "metric-definition";
   if (relativePath.endsWith(".csv") || relativePath.endsWith(".tsv") || relativePath.endsWith(".json") || relativePath.endsWith(".geojson") || relativePath.endsWith(".yaml")) return "data-table";
-  if (relativePath.includes("/passoffs/") || relativePath.includes("/backlog/") || relativePath.startsWith("project-management/")) return "process-or-backlog";
+  if (relativePath.includes("/passoffs/") || relativePath.includes("/backlog/") || relativePath.startsWith("docs/meta/")) return "process-or-backlog";
   if (
     relativePath === "README.md" ||
     relativePath.includes("effort-6/final-report.md") ||

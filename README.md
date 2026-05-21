@@ -29,12 +29,19 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 | [`docs/fund/`](docs/fund/) | Capital-raise, market opportunity, and financial-model interpretation materials. |
 | [`docs/gtm/`](docs/gtm/) | Go-to-market plans, launch sequencing, and prioritization logic. |
 | [`docs/insights/`](docs/insights/) | Dated synthesized insight notes pulled out of broader research work. |
+| [`docs/launch/`](docs/launch/) | Canonical launch execution folder for business launch plans, legal gates, discovery guides, and launch references. |
+| [`docs/launch/plans/`](docs/launch/plans/) | Dependency-ordered launch plans and critical-path task sequencing. |
+| [`docs/launch/legal/`](docs/launch/legal/) | Launch-readiness, licensing, trust-accounting, and legal-gate checklists. |
+| [`docs/launch/discovery/`](docs/launch/discovery/) | Owner discovery guides, scripts, and proof-sprint discovery artifacts. |
+| [`docs/launch/references/`](docs/launch/references/) | Launch-specific reference notes and source-link summaries. |
 | [`docs/marketing/`](docs/marketing/) | Marketing collateral and founder-facing materials. |
 | [`docs/marketing/founder-bios/`](docs/marketing/founder-bios/) | Founder biography and resume source material. |
+| [`docs/meta/`](docs/meta/) | Meta-analysis, retrospectives, and project-level reflection notes. |
 | [`docs/opportunities/`](docs/opportunities/) | Partner-readiness package: briefs, deck source, generated indexes, and opportunity narrative. |
 | [`docs/opportunities/decks/`](docs/opportunities/decks/) | PowerPoint deck variants and deck archive material pending canonical-deck selection. |
+| [`docs/outputs/`](docs/outputs/) | Generated or exported analytical outputs, including workbook artifacts. |
 | [`docs/passoffs/`](docs/passoffs/) | Session handoff files governed by `~/.claude/PASSOFF.md`. |
-| [`docs/plans/`](docs/plans/) | Forward plans and execution plans for moving the project from research to operating proof. |
+| [`docs/plans/`](docs/plans/) | Broad forward plans and execution plans that are not specific launch artifacts. |
 | [`docs/questions/`](docs/questions/) | Open research and decision questions. |
 | [`docs/research/`](docs/research/) | Research source tree for market, demographic, regulatory, scoring, and unit-economics work. |
 | [`docs/research/competitors/`](docs/research/competitors/) | Competitor and small-owner property-management market analyses. |
@@ -47,9 +54,6 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 | [`docs/roadmap/`](docs/roadmap/) | Product and business roadmap area. |
 | [`docs/status/`](docs/status/) | Dated project and repo status reports. |
 | [`docs/strategies/`](docs/strategies/) | Strategic frameworks and wedges, including DHM, FCC, marketplace, and validation strategy. |
-| [`outputs/`](outputs/) | Generated or exported analytical outputs, including workbook artifacts. |
-| [`project-management/`](project-management/) | Legacy project-management history and meta-analysis notes. |
-| [`project-management/meta/`](project-management/meta/) | Meta-analysis artifacts and project retrospectives. |
 
 ## Research deliverable: the 7 efforts
 
@@ -81,7 +85,8 @@ The driving plan is [`docs/research/plans/Demographic Research Plan.md`](docs/re
 - Session handoff is governed by `~/.claude/PASSOFF.md`. Passoffs land in [`docs/passoffs/`](docs/passoffs/). Resume the next session with `/resume`; close it with `/pass`.
 - Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
 - Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` or `YYYY-MM-DD-HHMM-status-update.md` convention. Historical status updates have been migrated there from `project-management/status-updates/`.
-- Forward plans land in [`docs/plans/`](docs/plans/) using the dated `YYYY-MM-DD-<slug>.md` convention.
+- Launch execution documents land in [`docs/launch/`](docs/launch/) under `plans/`, `legal/`, `discovery/`, or `references/`.
+- Broad forward plans land in [`docs/plans/`](docs/plans/) using the dated `YYYY-MM-DD-<slug>.md` convention.
 
 ## Conventions
 
