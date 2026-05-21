@@ -23,6 +23,7 @@ This folder is the canonical home for Green Lappe launch execution artifacts: bu
 | [`legal/`](legal/) | Legal, licensing, trust-accounting, and launch gate checklists. Planning support only, not legal advice. |
 | [`discovery/`](discovery/) | Owner discovery guides, scripts, scorecards, and prospecting notes. |
 | [`references/`](references/) | Launch-specific reference notes, source-link summaries, and agency/counsel notes. |
+| [`runbooks/`](runbooks/) | Operator checklists for approved launch actions, account-owner steps, and evidence capture. |
 
 ## Current Launch Files
 
@@ -34,6 +35,7 @@ This folder is the canonical home for Green Lappe launch execution artifacts: bu
 | [`discovery/2026-05-20-owner-discovery-guide.md`](discovery/2026-05-20-owner-discovery-guide.md) | Warm-owner discovery guide for the 20-conversation proof sprint. |
 | [`references/2026-05-20-domain-clearance-check.md`](references/2026-05-20-domain-clearance-check.md) | Domain, USPTO, and web-collision evidence for the website domain decision. |
 | [`references/2026-05-21-registrar-price-snapshot.md`](references/2026-05-21-registrar-price-snapshot.md) | Current registry/DNS availability and public registrar price evidence before domain purchase approval. |
+| [`runbooks/2026-05-21-domain-purchase-evidence-runbook.md`](runbooks/2026-05-21-domain-purchase-evidence-runbook.md) | Account-owner checklist for approved domain purchase evidence, checkout controls, and post-purchase domain inventory. |
 
 ## Operating Rule
 

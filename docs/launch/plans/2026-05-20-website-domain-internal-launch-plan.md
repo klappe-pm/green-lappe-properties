@@ -69,6 +69,8 @@ Follow-up evidence: [`2026-05-20-domain-clearance-check.md`](../references/2026-
 | Enable auto-renew, registrar lock, MFA, recovery email, and billing owner. | Account owner | Domain-control checklist. |
 | Export/save domain receipt, registrar account owner, renewal date, and DNS host. | Account owner | Domain inventory entry. |
 
+Use [`2026-05-21-domain-purchase-evidence-runbook.md`](../runbooks/2026-05-21-domain-purchase-evidence-runbook.md) for the approved checkout evidence checklist and post-purchase inventory fields.
+
 ### Registrar and DNS recommendation
 
 Shortlist two patterns:
@@ -211,7 +213,7 @@ Public launch needs a separate approval gate covering:
 | 1 | Confirm domain candidates and registrar pattern. | None | Domain decision record. |
 | 1 | Re-check `greenlappe.com` and defensive domains in registrar cart. | Domain candidates | Purchase-ready shortlist. |
 | 1 | Run USPTO and web collision checks. | Domain candidates | Clearance notes. |
-| 1 | Purchase selected domain(s). | Approval | Domain registration receipt. |
+| 1 | Purchase selected domain(s). | Partner approval and purchase evidence runbook | Domain registration receipt and domain inventory entry. |
 | 2 | Configure registrar security and renewal controls. | Domain purchase | Security checklist. |
 | 2 | Configure DNS zone and staging hostname. | DNS provider decision | Working staging DNS. |
 | 2 | Configure email DNS only if email provider is selected. | Email provider decision | MX/SPF/DKIM/DMARC records. |
