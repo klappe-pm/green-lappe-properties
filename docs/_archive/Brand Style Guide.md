@@ -6,13 +6,17 @@ date-created: 2026-05-17
 date-revised: 2026-05-18
 doc-type:
 version: 0.1
-doc-status: draft
+doc-status: OBSOLETE
 llm-provider: Claude
 llm-model: Opus 4.7
 llm-session:
 llm-session-data:
 aliases: []
-tags: [brand, identity, property-management, prototype]
+tags:
+  - brand
+  - identity
+  - property-management
+  - prototype
 status: prototype
 ---
 

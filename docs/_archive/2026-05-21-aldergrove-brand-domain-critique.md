@@ -5,9 +5,12 @@ sub-category: domain-strategy
 date-created: 2026-05-21
 date-revised: 2026-05-21
 type: critique
-status: draft
+status: OBSOLETE
 aliases: []
-tags: [branding, domains, property-management]
+tags:
+  - branding
+  - domains
+  - property-management
 ---
 
 # Critique of the `green<function>pnw.com` Pattern
