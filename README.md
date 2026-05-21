@@ -25,8 +25,9 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 | --- | --- |
 | [`docs/`](docs/) | Main working corpus for research, strategy, planning, status, and partner materials. |
 | [`docs/backlog/`](docs/backlog/) | Append-only backlog and backlink companion notes for project work and repo hygiene. |
-| [`docs/design/`](docs/design/) | Brand, persona, pain-point, and journey artifacts that shape the service experience. |
-| [`docs/fund/`](docs/fund/) | Capital-raise, market opportunity, and financial-model interpretation materials. |
+| [`docs/_archive/`](docs/_archive/) | Superseded brand, design, fund, prompt, and strategy artifacts retained for reference. |
+| [`docs/branding/`](docs/branding/) | Brand-system source files, style guide material, tokens, schemas, and implementation references. |
+| [`docs/design-system/`](docs/design-system/) | Canonical design-system documentation for identity, voice, tokens, components, UX, accessibility, governance, and implementation architecture. |
 | [`docs/gtm/`](docs/gtm/) | Go-to-market plans, launch sequencing, and prioritization logic. |
 | [`docs/insights/`](docs/insights/) | Dated synthesized insight notes pulled out of broader research work. |
 | [`docs/launch/`](docs/launch/) | Canonical launch execution folder for business launch plans, legal gates, discovery guides, and launch references. |
@@ -39,9 +40,8 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 | [`docs/meta/`](docs/meta/) | Meta-analysis, retrospectives, and project-level reflection notes. |
 | [`docs/opportunities/`](docs/opportunities/) | Partner-readiness package: briefs, deck source, generated indexes, and opportunity narrative. |
 | [`docs/opportunities/decks/`](docs/opportunities/decks/) | PowerPoint deck variants and deck archive material pending canonical-deck selection. |
-| [`docs/outputs/`](docs/outputs/) | Generated or exported analytical outputs, including workbook artifacts. |
+| [`docs/financial/`](docs/financial/) | Financial-model workbook artifacts. |
 | [`docs/passoffs/`](docs/passoffs/) | Session handoff files governed by `~/.claude/PASSOFF.md`. |
-| [`docs/plans/`](docs/plans/) | Broad forward plans and execution plans that are not specific launch artifacts. |
 | [`docs/questions/`](docs/questions/) | Open research and decision questions. |
 | [`docs/research/`](docs/research/) | Research source tree for market, demographic, regulatory, scoring, and unit-economics work. |
 | [`docs/research/competitors/`](docs/research/competitors/) | Competitor and small-owner property-management market analyses. |
@@ -54,6 +54,7 @@ Concentrate property-management entry on Eastside and central-Seattle ZIPs where
 | [`docs/roadmap/`](docs/roadmap/) | Product and business roadmap area. |
 | [`docs/status/`](docs/status/) | Dated project and repo status reports. |
 | [`docs/strategies/`](docs/strategies/) | Strategic frameworks and wedges, including DHM, FCC, marketplace, and validation strategy. |
+| [`docs/uxd/`](docs/uxd/) | Persona, pain-point, and journey artifacts that shape the service experience. |
 
 ## Research deliverable: the 7 efforts
 
@@ -86,7 +87,7 @@ The driving plan is [`docs/research/plans/Demographic Research Plan.md`](docs/re
 - Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
 - Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` or `YYYY-MM-DD-HHMM-status-update.md` convention. Historical status updates have been migrated there from `project-management/status-updates/`.
 - Launch execution documents land in [`docs/launch/`](docs/launch/) under `plans/`, `legal/`, `discovery/`, or `references/`.
-- Broad forward plans land in [`docs/plans/`](docs/plans/) using the dated `YYYY-MM-DD-<slug>.md` convention.
+- Design-system prompts land in [`docs/prompts/`](docs/prompts/) using descriptive slug names.
 
 ## Conventions
 

@@ -5,9 +5,12 @@ sub-category: brand-architecture
 date-created: 2026-05-21
 date-revised: 2026-05-21
 type: rationale
-status: draft
+status: OBSOLETE
 aliases: []
-tags: [branding, property-management, naming]
+tags:
+  - branding
+  - property-management
+  - naming
 ---
 
 # Why This Recommendation

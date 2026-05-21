@@ -5,9 +5,12 @@ sub-category: high-end-positioning
 date-created: 2026-05-21
 date-revised: 2026-05-21
 type: strategy
-status: draft
+status: OBSOLETE
 aliases: []
-tags: [branding, property-management, positioning]
+tags:
+  - branding
+  - property-management
+  - positioning
 ---
 
 # What Changes When the Rent Is $4,000 to $6,000
