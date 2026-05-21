@@ -20,3 +20,4 @@ Use this folder for operational checklists that convert launch plans into accoun
 | File | Purpose |
 |---|---|
 | [`2026-05-21-domain-purchase-evidence-runbook.md`](2026-05-21-domain-purchase-evidence-runbook.md) | Account-owner checklist for approved domain purchase evidence, checkout controls, and post-purchase domain inventory. |
+| [`2026-05-21-launch-evidence-storage-runbook.md`](2026-05-21-launch-evidence-storage-runbook.md) | Storage-control checklist for keeping sensitive launch evidence outside Git while preserving usable pointers in repo docs. |

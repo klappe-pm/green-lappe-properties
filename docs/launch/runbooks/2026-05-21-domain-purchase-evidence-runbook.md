@@ -15,7 +15,7 @@ tags: [domain, registrar, evidence, runbook, website, launch]
 
 Purpose: give the account owner a step-by-step evidence checklist for an approved domain purchase. This runbook does not authorize buying domains, does not reserve any domain, and is not legal, trademark, licensing, tax, insurance, or domain-purchase advice.
 
-Use only after partner approval and account-owner readiness. Keep public website content parked, protected, or unpublished until licensing, counsel, and content gates clear.
+Use only after partner approval and account-owner readiness. Choose the evidence container in [`2026-05-21-launch-evidence-storage-runbook.md`](2026-05-21-launch-evidence-storage-runbook.md) before saving registrar cart screenshots, receipts, or account-control evidence. Keep public website content parked, protected, or unpublished until licensing, counsel, and content gates clear.
 
 ## Purchase boundary
 
@@ -41,6 +41,7 @@ Complete this section immediately before purchase, because availability and pric
 | Defensive-domain decision | Written approval or deferral note for `greenlappeproperties.com` | Pending |
 | Cart search for `greenlappeproperties.com`, if approved | Screenshot/PDF showing exact domain availability | Pending |
 | Counsel review status | Note that counsel review is complete, scheduled, or explicitly pending | Pending |
+| Evidence storage location | Outside-repo evidence container and folder path selected | Pending |
 
 Suggested evidence filename pattern:
 
@@ -101,6 +102,14 @@ Create one record per purchased domain.
 | Nameservers | TBD |
 | Receipt/evidence location | TBD |
 | Notes | TBD |
+
+Use a pointer rather than a sensitive link or file contents:
+
+```text
+Evidence location: Launch Evidence / 01-domain-and-dns / yyyy-MM-dd-domain-receipt-registrar-domain.pdf
+Stored outside repo: yes
+Contains sensitive data: yes
+```
 
 ## DNS handoff boundary
 
