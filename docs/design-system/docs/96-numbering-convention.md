@@ -101,7 +101,7 @@ Tier 1 (System primitives):
   10-color-system, 11-audience-modes,
   20-typography-strategy, 21-typography-tokens,
   22-typography-usage, 23-typography-migration,
-  30-design-tokens
+  30-design-tokens, 31-token-atomic-execution
 
 Tier 4-5 (Layout and components):
   40-spacing-layout, 41-radius-shadow, 42-motion, 43-z-index,
@@ -123,7 +123,7 @@ Tier 9 (Governance):
   96-numbering-convention
 ```
 
-Used: 43 slots. Reserved: 57 slots. Capacity headroom: 133%.
+Used: 44 slots. Reserved: 56 slots. Capacity headroom: 127%.
 
 ### 3.3 Reserved slots (do not assume "empty equals available")
 
@@ -134,7 +134,7 @@ Some unused numbers are deliberately held for anticipated future docs. Filling t
 | `05`-`09` | Foundation expansion (mission, founding story, ethics statement) | When operator (broker) writes a public-facing statement of values. |
 | `12`-`19` | Color expansion (palette extensions, print variants, accessibility deep-dive) | If color system grows beyond seven primitives. |
 | `24`-`29` | Typography expansion (variable font config, multi-script support, performance budget) | If font stack changes or international rollout. |
-| `31`-`39` | Design token expansion (semantic layers, theming API, token export formats) | When tokens are exported to Figma or other platforms. |
+| `32`-`39` | Design token expansion (semantic layers, theming API, token export formats) | When tokens are exported to Figma or other platforms. |
 | `44`-`49` | Layout expansion (grid system formalization, breakpoint additions, container query patterns) | When responsive system grows beyond current 5 breakpoints. |
 | `55`-`59` | Component expansion (advanced patterns: command palette, data tables, multi-step wizards) | When product surfaces require richer components. |
 | `63`-`69` | Surface expansion (video, audio, AR/VR if ever relevant; signage; vehicle wraps) | When physical or media surfaces are added. |
@@ -240,14 +240,14 @@ The system currently has six tiers and capacity for at least four more (tier `1x
 
 ### 6.1 Current capacity
 
-100 slots total (`00`-`99`). 43 used, 57 unused or reserved. At the current rate of doc growth (about 10 new docs per year of active development, slowing as the system stabilizes), the scheme has 5-6 years of growth runway before tier saturation becomes a real concern.
+100 slots total (`00`-`99`). 44 used, 56 unused or reserved. At the current rate of doc growth (about 10 new docs per year of active development, slowing as the system stabilizes), the scheme has 5-6 years of growth runway before tier saturation becomes a real concern.
 
 ### 6.2 Per-tier capacity
 
 | Tier | Slots | Used | Free | Reserved |
 |------|-------|------|------|----------|
 | 0 (Foundation) | 10 | 5 | 5 | 5 |
-| 1-3 (Primitives) | 30 | 7 | 23 | 23 |
+| 1-3 (Primitives) | 30 | 8 | 22 | 22 |
 | 4-5 (Components) | 20 | 9 | 11 | 11 |
 | 6-7 (Surfaces) | 20 | 9 | 11 | 11 |
 | 8 (Architecture) | 10 | 6 | 4 | 4 |

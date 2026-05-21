@@ -74,6 +74,7 @@ Design system version 3.0.0. Breaking changes from v2:
 | `22-typography-usage.md` | Every interface element with font, weight, size, color, mobile, desktop | `21`, `11` | Engineering |
 | `23-typography-migration.md` | Step-by-step migration from v2 type system to v3 | `21`, `22` | Engineering |
 | `30-design-tokens.md` | Full token CSS file (color + type + spacing + radius + shadow + motion + z-index) | `10`, `21` | Engineering |
+| `31-token-atomic-execution.md` | Token atomicity contract and parallel agent implementation plan | `00`, `30`, `94`, `96` | Strategy |
 
 ### Tier 2: Layout and components (parallel after Tier 1)
 
@@ -144,6 +145,7 @@ Produce in order. Each blocks the next.
 10-color-system.md → 11-audience-modes.md
 20-typography-strategy.md → 21-typography-tokens.md → 22-typography-usage.md → 23-typography-migration.md
 30-design-tokens.md (requires both color and typography tokens)
+31-token-atomic-execution.md (canonical plan for token-first parallel work; requires governance docs when used for shipped work)
 ```
 
 ### Parallel batch 1: Layout and components
