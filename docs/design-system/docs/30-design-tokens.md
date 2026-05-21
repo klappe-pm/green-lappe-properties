@@ -5,6 +5,7 @@ sub-category: design-tokens
 date-created: 2026-05-21
 date-revised: 2026-05-21
 status: spec-v3
+version: 3.0.0
 depends-on:
   - 10-color-system
   - 11-audience-modes
@@ -123,6 +124,7 @@ Full content specified in the companion file at `green-pm-tokens.css` in this re
 ### Spacing
 
 ```css
+--space-0:  0;         /*  0px */
 --space-1:  0.25rem;   /*  4px */
 --space-2:  0.5rem;    /*  8px */
 --space-3:  0.75rem;   /* 12px */
@@ -186,6 +188,7 @@ Full content specified in the companion file at `green-pm-tokens.css` in this re
 --measure-prose: 65ch;
 --measure-form:  40ch;
 --measure-card:  40ch;
+--measure-modal: 480px;
 
 --touch-target: 44px;
 ```

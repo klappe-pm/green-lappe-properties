@@ -5,6 +5,7 @@ sub-category: spacing-layout
 date-created: 2026-05-21
 date-revised: 2026-05-21
 status: spec-v3
+version: 3.0.0
 depends-on:
   - 30-design-tokens
 produces:
@@ -31,7 +32,7 @@ The complete spacing, layout, and container system. Defines the 4px-based spacin
 
 ## Outputs
 
-1. The 13-step spacing scale with per-step use cases
+1. The 14-step spacing scale with per-step use cases
 2. The container width matrix across all five breakpoints
 3. The grid system specification (single-column default, 12-column at desktop)
 4. The four measure caps (prose, form, card, modal)

@@ -4,7 +4,7 @@ Production design system for Green Property Management. Modular specification se
 
 ## What this is
 
-Forty-two specification documents plus four production CSS/JS asset files. The full v3 refactor of the previous monolithic style guide (`green-pm-style-guide.md`, 4,219 lines, now superseded).
+Forty-three specification documents plus four production CSS/JS asset files. The full v3 refactor of the previous monolithic style guide (`green-pm-style-guide.md`, 4,219 lines, now superseded).
 
 ## Version
 
@@ -14,7 +14,7 @@ Breaking changes from v2:
 
 - Typography pivot: Geist (display/UI/financial) + Newsreader (body prose) + Fraunces italic (signature accent only).
 - JetBrains Mono removed.
-- Style guide decomposed from one 4,219-line file into 42 modular spec docs.
+- Style guide decomposed from one 4,219-line file into 43 modular spec docs.
 - Each section is independently executable, with declared dependencies, outputs, executor role, and acceptance criteria.
 
 ## Locked brand foundation
@@ -89,7 +89,8 @@ gpm-design-system/
         ├── 92-dark-mode.md
         ├── 93-pairings-forbidden.md
         ├── 94-governance.md
-        └── 95-quick-reference.md
+        ├── 95-quick-reference.md
+        └── 96-numbering-convention.md
 ```
 
 ## How to use this set
@@ -110,7 +111,7 @@ Start at `docs/00-index.md`. Read the foundation tier (`01` through `04`) to abs
 
 1. Pin `docs/95-quick-reference.md` to your second monitor.
 2. Import `green-pm-tokens.css`, then `modes.css`, then `base.css`, then Tailwind utilities (order matters).
-3. Set `data-audience` on `<body>` to one of five values (see `docs/11-audience-modes.md`).
+3. Set `data-audience` on the document root (`<html>` preferred, `<body>` accepted) to one of five values (see `docs/11-audience-modes.md`).
 4. Use only tokens; never raw hex, never raw px outside the scale.
 5. If something is missing from the system, file a change proposal per `docs/94-governance.md`.
 

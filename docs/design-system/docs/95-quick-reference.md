@@ -1,26 +1,27 @@
 ---
-domain: design-system
-category: governance
+domain: brand
+category: design-system
 sub-category: quick-reference
 date-created: 2026-05-21
 date-revised: 2026-05-21
+status: locked
+version: 3.0.0
 depends-on:
-  - 10-color-system.md
-  - 20-typography-strategy.md
-  - 21-typography-tokens.md
-  - 22-typography-usage.md
-  - 30-design-tokens.md
-  - 40-spacing-layout.md
-  - 41-radius-shadow.md
-  - 42-motion.md
-  - 52-component-grammar.md
-  - 93-pairings-forbidden.md
-outputs:
+  - 10-color-system
+  - 20-typography-strategy
+  - 21-typography-tokens
+  - 22-typography-usage
+  - 30-design-tokens
+  - 40-spacing-layout
+  - 41-radius-shadow
+  - 42-motion
+  - 52-component-grammar
+  - 93-pairings-forbidden
+produces:
   - single-page-cheat-sheet
   - printable-reference-card
   - llm-system-prompt-snippet
-executor: human-and-llm
-status: locked
+executor: strategy
 aliases:
   - cheat-sheet
   - quick-ref
@@ -37,6 +38,25 @@ tags:
 The single page every designer, developer, vendor, and LLM consults before producing anything for Green PM. If something here conflicts with a full spec doc, the full spec wins. This page exists for speed, not authority.
 
 Print it. Pin it. Paste it into the system prompt of every LLM workflow.
+
+## Dependencies
+
+- [[10-color-system|color system]]
+- [[20-typography-strategy|typography strategy]]
+- [[21-typography-tokens|typography tokens]]
+- [[22-typography-usage|typography usage]]
+- [[30-design-tokens|design tokens]]
+- [[40-spacing-layout|spacing and layout]]
+- [[41-radius-shadow|radius and shadow]]
+- [[42-motion|motion]]
+- [[52-component-grammar|component grammar]]
+- [[93-pairings-forbidden|approved pairings and forbidden patterns]]
+
+## Outputs
+
+1. Single-page cheat sheet
+2. Printable reference card
+3. LLM system prompt snippet
 
 ## 1. Brand foundation (5 facts)
 
@@ -83,11 +103,11 @@ System colors: Success `#3E7A55`, Warning `#A8741A`, Error `#9C2D1F`, Info `#3A6
 
 **Forbidden families**: Inter, Helvetica, Arial as primary (fallback only), JetBrains Mono (removed in v3), any cursive script other than Fraunces italic, any pixel font, any all-caps display font.
 
-## 5. Spacing (4px base, 13 steps)
+## 5. Spacing (4px base, 14 steps)
 
-Steps: 0, 4, 8, 12, 16, 24, 32, 48, 64, 96, 128, 160, 192.
+Steps: 0, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128.
 
-Token names: `--space-0` through `--space-12`.
+Token names: `--space-0`, `--space-1`, `--space-2`, `--space-3`, `--space-4`, `--space-5`, `--space-6`, `--space-8`, `--space-10`, `--space-12`, `--space-16`, `--space-20`, `--space-24`, `--space-32`.
 
 Never use values outside the scale. Never use odd pixel values.
 
@@ -95,12 +115,12 @@ Never use values outside the scale. Never use odd pixel values.
 
 | Token | Width | Use |
 |-------|-------|-----|
-| `--container-prose` | 65ch | Body text, blog, owner letter. |
-| `--container-form` | 40ch | Forms, login. |
-| `--container-narrow` | 720px | Documents, statements. |
-| `--container-default` | 1080px | Standard marketing pages. |
-| `--container-wide` | 1280px | Dashboards, multi-column. |
-| `--container-full` | 100% | Hero sections only. |
+| `--measure-prose` | 65ch | Body text, blog, owner letter. |
+| `--measure-form` | 40ch | Forms, login. |
+| `--measure-card` | 40ch | Listing cards, evidence cards. |
+| `--measure-modal` | 480px | Modal dialog content. |
+| `--container-lg` | 1024px | Standard desktop container. |
+| `--container-xl` | 1280px | Wide pages and dashboards. |
 
 Touch target minimum: 44px.
 
@@ -111,7 +131,7 @@ Touch target minimum: 44px.
 | `--radius-sm` | 4px | Inputs, small chips. |
 | `--radius-md` | 8px | Buttons, cards. |
 | `--radius-lg` | 16px | Modals, large cards. |
-| `--radius-pill` | 9999px | Pill badges, avatar. |
+| `--radius-pill` | 999px | Pill badges, avatar. |
 
 Default: `--radius-md`. Cards do not nest with same radius; inner elements step down one level.
 
@@ -121,9 +141,9 @@ Default: `--radius-md`. Cards do not nest with same radius; inner elements step 
 
 | Token | Use |
 |-------|-----|
-| `--shadow-sm` | Floating buttons, dropdowns. |
-| `--shadow-md` | Modals, popovers. |
-| `--shadow-lg` | Toasts, command palette. |
+| `--shadow-1` | Cards floating on a same-color surface. |
+| `--shadow-2` | Dropdowns, popovers, sticky nav, hovered cards. |
+| `--shadow-3` | Modals, takeovers, toast notifications. |
 
 Default: no shadow. Use Stone border instead.
 
@@ -133,9 +153,9 @@ Evidence cards use a 4px Cedar left border, no shadow.
 
 | Token | Value | Use |
 |-------|-------|-----|
-| `--duration-instant` | 100ms | Hover state changes. |
-| `--duration-fast` | 150ms | Buttons, links, form focus. |
-| `--duration-base` | 200ms | Cards, dropdowns, accordions. |
+| `--duration-fast` | 100ms | Tooltips, micro-feedback, iconography state changes. |
+| `--duration-quick` | 150ms | Links, small text color shifts, focus ring fade-in. |
+| `--duration-default` | 200ms | Buttons, cards, dropdowns, accordions. |
 | `--duration-slow` | 250ms | Modals, drawers, page transitions. |
 
 Easing: `cubic-bezier(0.4, 0, 0.2, 1)`. Single curve, everywhere.
@@ -148,7 +168,7 @@ Reduced motion: respect `prefers-reduced-motion: reduce`. All animations become 
 
 | Token | Value | Use |
 |-------|-------|-----|
-| `--z-base` | 0 | Default flow. |
+| `--z-base` | 1 | Explicit in-flow stacking context. |
 | `--z-dropdown` | 10 | Select menus, autocomplete. |
 | `--z-sticky` | 20 | Sticky headers. |
 | `--z-skip` | 25 | Skip-to-content link. |
@@ -164,12 +184,12 @@ Never use raw numbers. Never use values like `z-index: 9999`.
 | Mode | Background | Use |
 |------|------------|-----|
 | `neutral-acquisition` | Cream | Homepage, generic marketing. |
-| `owner-acquisition` | Cream | For-owners marketing, proposal. |
-| `owner-product` | Paper | Owner portal, statements. |
+| `owner-acquisition` | Paper | For-owners marketing, proposal. |
+| `owner-product` | Paper exclusive | Owner portal, statements. |
 | `renter-acquisition` | Cream | Listings, application. |
-| `renter-product` | Paper | Resident portal. |
+| `renter-product` | Paper plus Cream accent | Resident portal. |
 
-Set on `<body>` as `data-audience="owner-product"`. CSS in `modes.css` switches surface tokens.
+Set on the document root (`<html>` preferred, `<body>` accepted) as `data-audience="owner-product"`. CSS in `modes.css` switches surface tokens.
 
 ## 12. Buttons (memorize 5 sizes, 5 variants)
 
@@ -410,8 +430,18 @@ CTA per view. Refer to docs/95-quick-reference.md and docs/93-pairings-forbidden
 before producing.
 ```
 
-## 27. References (every spec, for deep dives)
+## 27. Acceptance
 
+This document is acceptable when:
+
+- Every high-risk quick rule matches the authoritative full spec.
+- Every token name in this document exists in `green-pm-tokens.css` or `tailwind.config.js`.
+- Every linked full spec resolves through an Obsidian wikilink.
+- The LLM prompt snippet preserves the locked colors, type families, spacing rule, voice, and one-primary-CTA rule.
+
+## 28. References (specs for deep dives)
+
+- [[00-index]]
 - [[01-positioning]]
 - [[02-brand-identity]]
 - [[03-voice]]
@@ -452,3 +482,4 @@ before producing.
 - [[92-dark-mode]]
 - [[93-pairings-forbidden]]
 - [[94-governance]]
+- [[96-numbering-convention]]

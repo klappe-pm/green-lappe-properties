@@ -5,6 +5,7 @@ sub-category: component-states
 date-created: 2026-05-21
 date-revised: 2026-05-21
 status: spec-v3
+version: 3.0.0
 depends-on:
   - 52-component-grammar
   - 42-motion

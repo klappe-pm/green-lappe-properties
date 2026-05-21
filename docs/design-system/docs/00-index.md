@@ -6,6 +6,12 @@ date-created: 2026-05-21
 date-revised: 2026-05-21
 status: spec-v3
 version: 3.0.0
+depends-on: []
+produces:
+  - master-doc-inventory
+  - execution-graph
+  - doc-contract
+executor: strategy
 aliases:
 tags:
 ---
@@ -24,6 +30,17 @@ Every doc in this set has:
 - A defined acceptance test (how to verify it is complete)
 
 This index is the routing layer. An orchestrator LLM consults this index to determine which docs to produce, in what order, and which can run in parallel.
+
+## Dependencies
+
+None. This is the root routing document for the design-system package.
+
+## Outputs
+
+1. Master inventory of every numbered design-system spec
+2. Tiered execution graph for human and LLM orchestration
+3. Required document contract and frontmatter schema
+4. Locked stack summary for downstream implementation
 
 ## Version
 
@@ -107,6 +124,7 @@ Design system version 3.0.0. Breaking changes from v2:
 | `93-pairings-forbidden.md` | Best pairings, forbidden color and type combinations | `10`, `22` | Design |
 | `94-governance.md` | Ownership, change proposal, versioning, deprecation | None | Strategy |
 | `95-quick-reference.md` | One-page cheat sheet of all critical rules | All | Strategy |
+| `96-numbering-convention.md` | Numbering scheme, reserved slots, insertion and renumbering rules | `00`, `90`, `94` | Strategy |
 
 ## Execution plan
 
@@ -171,7 +189,7 @@ After everything else, can run in parallel:
 Agent A: 90-file-naming.md
 Agent B: 91-accessibility.md
 Agent C: 92-dark-mode.md, 93-pairings-forbidden.md
-Agent D: 94-governance.md
+Agent D: 94-governance.md → 96-numbering-convention.md
 Agent E: 95-quick-reference.md
 ```
 
@@ -247,7 +265,8 @@ This index is acceptable when:
 
 ## Related
 
-- `green-pm-tokens.css` machine-readable token export
-- `tailwind.config.js` Tailwind configuration mirroring tokens
+- [`green-pm-tokens.css`](../green-pm-tokens.css) machine-readable token export
+- [`tailwind.config.js`](../tailwind.config.js) Tailwind configuration mirroring tokens
+- [[96-numbering-convention|design-system numbering convention]]
 - Sanity schemas in `sanity/schemas/`
 - Astro repo at `green-pm-site/`
