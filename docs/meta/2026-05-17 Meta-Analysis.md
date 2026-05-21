@@ -1,7 +1,7 @@
 ---
 domain: green-lappe-properties
-category: project-management
-sub-category: analysis
+category: meta
+sub-category: project-analysis
 doc-type: framework
 date-created: 2026-05-18
 date-revised: 2026-05-18

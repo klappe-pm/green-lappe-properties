@@ -47,9 +47,9 @@ Purpose: dependency-ordered project plan for launching Green Lappe Properties as
 | ID | Task | Dependency | Lead time | Output | Links |
 |---|---|---|---:|---|---|
 | 0.1 | Assign owners for launch workstreams: legal/licensing, owner discovery, finance, operations, systems. | None | Same day | RACI or owner list | Internal |
-| 0.2 | Confirm launch scope: Snohomish/north King SFR first; no multifamily, HOA management, or FCC as day-one product. | Partner decision | Same day | Written scope lock | [`Launch Prioritization`](../gtm/Launch%20Prioritization.md) |
+| 0.2 | Confirm launch scope: Snohomish/north King SFR first; no multifamily, HOA management, or FCC as day-one product. | Partner decision | Same day | Written scope lock | [`Launch Prioritization`](../../gtm/Launch%20Prioritization.md) |
 | 0.3 | Create evidence folder for license records, counsel memos, bank docs, insurance quotes, and contracts. | None | Same day | Data-room structure | Internal |
-| 0.4 | Confirm whether any owner outreach before firm licensing is legally allowed and what language is safe. | Counsel | 1-5 business days | Counsel-approved discovery language | [`Owner Discovery Guide`](../gtm/2026-05-20-owner-discovery-guide.md) |
+| 0.4 | Confirm whether any owner outreach before firm licensing is legally allowed and what language is safe. | Counsel | 1-5 business days | Counsel-approved discovery language | [`Owner Discovery Guide`](../discovery/2026-05-20-owner-discovery-guide.md) |
 
 ## 1. Designated broker and license gate
 
@@ -245,12 +245,12 @@ Exit criteria:
 
 | ID | Task | Dependency | Lead time | Output | Links |
 |---|---|---|---:|---|---|
-| 12.1 | Build Megan warm-owner list of 40 names to yield 20 conversations. | Megan | 1 week | Contact list | [`Owner Discovery Guide`](../gtm/2026-05-20-owner-discovery-guide.md) |
-| 12.2 | Run 20 owner discovery conversations. | 0.4 | 2-4 weeks | Discovery notes | [`Owner Discovery Guide`](../gtm/2026-05-20-owner-discovery-guide.md) |
+| 12.1 | Build Megan warm-owner list of 40 names to yield 20 conversations. | Megan | 1 week | Contact list | [`Owner Discovery Guide`](../discovery/2026-05-20-owner-discovery-guide.md) |
+| 12.2 | Run 20 owner discovery conversations. | 0.4 | 2-4 weeks | Discovery notes | [`Owner Discovery Guide`](../discovery/2026-05-20-owner-discovery-guide.md) |
 | 12.3 | Score prospects by fit, timing, pain, location, legal complexity, pricing acceptance. | 12.2 | 2 days | Prospect scorecard | Internal |
 | 12.4 | Select 2-5 candidate first-cohort properties. | 12.3, legal go/no-go | 1 week | First-cohort shortlist | Internal |
-| 12.5 | Reject properties that violate first-cohort criteria. | 12.4 | Same day | Rejection log | [`Owner Discovery Guide`](../gtm/2026-05-20-owner-discovery-guide.md) |
-| 12.6 | Choose first owner-visible systems artifact based on discovery data. | 12.2 | 1 week | Artifact decision | [`Forward Plan`](2026-05-20-forward-plan.md) |
+| 12.5 | Reject properties that violate first-cohort criteria. | 12.4 | Same day | Rejection log | [`Owner Discovery Guide`](../discovery/2026-05-20-owner-discovery-guide.md) |
+| 12.6 | Choose first owner-visible systems artifact based on discovery data. | 12.2 | 1 week | Artifact decision | [`Forward Plan`](../../plans/2026-05-20-forward-plan.md) |
 
 Exit criteria:
 
@@ -282,7 +282,7 @@ FCC should remain optional until core PM is proven unless a uniquely strong prop
 
 | ID | Task | Dependency | Lead time | Output | Links |
 |---|---|---|---:|---|---|
-| 14.1 | Keep FCC as a watched opportunity, not launch product. | PM core proof | Ongoing | Opportunity log | [`FCC Strategy`](../strategies/Family%20Child%20Care%20%28FCC%29.md) |
+| 14.1 | Keep FCC as a watched opportunity, not launch product. | PM core proof | Ongoing | Opportunity log | [`FCC Strategy`](../../strategies/Family%20Child%20Care%20%28FCC%29.md) |
 | 14.2 | If candidate appears, run property/provider/legal/insurance screen. | Candidate property/provider | 2-4 weeks | FCC go/no-go | Counsel, insurance broker, DCYF |
 | 14.3 | Do not market FCC conversion before PM legal/operating base is stable. | PM proof | Ongoing | Constraint noted | Internal |
 

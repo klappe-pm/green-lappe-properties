@@ -13,9 +13,9 @@ tags: [corpus, index, generated]
 
 # Corpus Pointer Index
 
-Generated: 2026-05-21T01:27:03.793Z
+Generated: 2026-05-21T01:34:24.250Z
 
-Indexed files: 209
+Indexed files: 213
 
 ## Counts by Class
 
@@ -24,8 +24,8 @@ Indexed files: 209
 | `data-table` | 36 |
 | `metric-definition` | 101 |
 | `primary-synthesis` | 7 |
-| `process-or-backlog` | 14 |
-| `supporting-analysis` | 51 |
+| `process-or-backlog` | 16 |
+| `supporting-analysis` | 53 |
 
 ## Primary Reading Path
 
@@ -43,17 +43,23 @@ Indexed files: 209
 | Class | Path | Lines | Title |
 |---|---|---:|---|
 | `process-or-backlog` | `docs/backlog/backlinks-backlog.md` | 17 | Backlinks Backlog |
-| `process-or-backlog` | `docs/backlog/backlog.md` | 51 | Backlog |
+| `process-or-backlog` | `docs/backlog/backlog.md` | 52 | Backlog |
 | `supporting-analysis` | `docs/design/Brand Style Guide.md` | 280 | Green-lappe-brand-style-guide |
 | `supporting-analysis` | `docs/design/PNW Property Management Pain Points - Three Personas, One Broken Middle.md` | 297 | PNW Property Management Pain Points - Three Personas, One Broken Middle |
 | `supporting-analysis` | `docs/design/User Journey Map v1.md` | 901 | User Journey Map V1 |
 | `supporting-analysis` | `docs/fund/Green Lappe Market Opportunity and Financial Model Analysis.md` | 277 | Green Lappe Market Opportunity and Financial Model Analysis |
 | `primary-synthesis` | `docs/fund/Pitch Deck Prep v.1.md` | 313 | Pitch Deck Prep v.1 |
-| `supporting-analysis` | `docs/gtm/2026-05-20-owner-discovery-guide.md` | 115 | Owner Discovery Guide |
 | `supporting-analysis` | `docs/gtm/Go-to-Market (GTM) Plan v.1.md` | 534 | King-snohomish-pm-startup-operations-plan |
 | `primary-synthesis` | `docs/gtm/Launch Prioritization.md` | 156 | Launch Prioritization |
 | `supporting-analysis` | `docs/insights/2026-05-18-1300-Competitor Research Insight.md` | 23 | 2026-05-18-1300-Competitor Research Insight |
+| `supporting-analysis` | `docs/launch/discovery/2026-05-20-owner-discovery-guide.md` | 115 | Owner Discovery Guide |
+| `supporting-analysis` | `docs/launch/legal/2026-05-20-launch-readiness-gates.md` | 160 | Launch Readiness Gates |
+| `supporting-analysis` | `docs/launch/plans/2026-05-20-business-launch-project-plan.md` | 327 | Business Launch Project Plan |
+| `supporting-analysis` | `docs/launch/README.md` | 38 | Launch Documents |
+| `supporting-analysis` | `docs/launch/references/README.md` | 19 | Launch References |
 | `supporting-analysis` | `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt` | 38 | Kevin-Lappe-Resume.txt |
+| `process-or-backlog` | `docs/meta/2026-05-17 Meta-Analysis.md` | 360 | 2026-05-17 Meta-Analysis |
+| `process-or-backlog` | `docs/meta/README.md` | 17 | Meta |
 | `process-or-backlog` | `docs/passoffs/2026-05-19-1529-passoff-file.md` | 43 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-19-1547-passoff-file.md` | 60 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-20-0930-passoff-file.md` | 57 | Summary |
@@ -65,9 +71,8 @@ Indexed files: 209
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1355-passoff-file.md` | 47 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1405-passoff-file.md` | 50 | Summary |
 | `process-or-backlog` | `docs/passoffs/2026-05-20-1826-passoff-file.md` | 54 | Summary |
-| `supporting-analysis` | `docs/plans/2026-05-20-business-launch-project-plan.md` | 327 | Business Launch Project Plan |
+| `process-or-backlog` | `docs/passoffs/2026-05-20-1834-passoff-file.md` | 60 | Summary |
 | `supporting-analysis` | `docs/plans/2026-05-20-forward-plan.md` | 174 | Green Lappe Properties Forward Plan |
-| `supporting-analysis` | `docs/plans/2026-05-20-launch-readiness-gates.md` | 160 | Launch Readiness Gates |
 | `supporting-analysis` | `docs/research/competitors/Competitor Research Dimensions.md` | 163 | Competitor Research Dimensions |
 | `supporting-analysis` | `docs/research/competitors/Independent Property Management Companies, King and Snohomish Counties.md` | 463 | Independent Property Management Companies, King and Snohomish Counties |
 | `supporting-analysis` | `docs/research/competitors/King County and Snohomish County Small-Owner Rental Listings Dataset.md` | 405 | King County and Snohomish County Small-Owner Rental Listings Dataset |
@@ -249,5 +254,4 @@ Indexed files: 209
 | `supporting-analysis` | `docs/strategies/Family Child Care (FCC).md` | 207 | Family Child Care (FCC) |
 | `supporting-analysis` | `docs/strategies/Two-Sided Marketplace.md` | 301 | Two Sided Marketplace |
 | `supporting-analysis` | `docs/strategies/Validation Strategies.md` | 346 | Validation Strategies |
-| `process-or-backlog` | `project-management/meta/2026-05-17 Meta-Analysis.md` | 360 | 2026-05-17 Meta-Analysis |
-| `primary-synthesis` | `README.md` | 95 | green-lappe-properties |
+| `primary-synthesis` | `README.md` | 100 | green-lappe-properties |
