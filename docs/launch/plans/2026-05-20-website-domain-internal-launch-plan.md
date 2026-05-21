@@ -46,6 +46,8 @@ Launch internal testing before public launch:
 
 Checked via Verisign WHOIS on `2026-05-20 18:36 PDT` / `2026-05-21T01:36Z`.
 
+Follow-up evidence: [`2026-05-20-domain-clearance-check.md`](../references/2026-05-20-domain-clearance-check.md) records a 2026-05-20 19:25 PDT Verisign RDAP/DNS re-check plus USPTO and web-collision notes. It keeps `greenlappe.com` as the primary purchase candidate and `greenlappeproperties.com` as the only recommended initial defensive domain.
+
 | Domain | Snapshot result | Proposed use |
 |---|---|---|
 | `greenlappe.com` | No match | Primary candidate. |
@@ -253,4 +255,3 @@ Public launch needs a separate approval gate covering:
 | Cloudflare Access | [Cloudflare Access self-hosted applications](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/self-hosted-public-app/), [Cloudflare Access policies](https://developers.cloudflare.com/cloudflare-one/access-controls/policies/) |
 | Vercel deployment protection and generated URLs | [Vercel Deployment Protection](https://vercel.com/docs/deployment-protection), [Vercel generated deployment URLs](https://vercel.com/docs/deployments/generated-urls) |
 | Netlify deploy previews and protected access | [Netlify Deploy Previews](https://docs.netlify.com/deploy/deploy-types/deploy-previews/), [Netlify Password Protection](https://docs.netlify.com/manage/security/secure-access-to-sites/password-protection/) |
-
