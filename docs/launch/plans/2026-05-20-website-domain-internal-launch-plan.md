@@ -129,6 +129,8 @@ DNS setup sequence:
 6. Leave public apex/root parked or protected until public launch approval.
 7. Export DNS zone records after setup.
 
+Use [`2026-05-21-dns-staging-access-runbook.md`](../runbooks/2026-05-21-dns-staging-access-runbook.md) for DNS zone setup, protected staging, preview access controls, smoke commands, and stop conditions.
+
 ## Internal development workflow
 
 | Step | Output |
@@ -141,6 +143,8 @@ DNS setup sequence:
 | Add branch rules for production deploys. | Production deploy only from `main` or release branch. |
 | Document environment variables and secrets. | No secrets committed to repo; staging and production separated. |
 | Add rollback procedure. | Known path to restore last good deploy. |
+
+Use [`2026-05-21-website-deployment-rollback-runbook.md`](../runbooks/2026-05-21-website-deployment-rollback-runbook.md) for hosting decision records, CI/build settings, preview/staging workflows, production protection, and rollback testing.
 
 ## Internal testing gates
 
@@ -186,6 +190,8 @@ DNS setup sequence:
 - Non-production pages send `noindex` or equivalent crawler controls.
 - Browser smoke test passes on desktop and mobile widths.
 
+Use [`2026-05-21-website-qa-release-boundary-runbook.md`](../runbooks/2026-05-21-website-qa-release-boundary-runbook.md) for internal QA, browser smoke testing, release evidence, and public launch stop conditions.
+
 ## Public launch readiness boundary
 
 This plan ends when the team has:
@@ -223,6 +229,8 @@ Public launch needs a separate approval gate covering:
 | 4 | Run DNS, SSL, access, CI, and rollback tests. | Staging live | QA evidence log. |
 | 4 | Write runbook for domain/DNS/deploy operations. | Tests complete | Website ops runbook. |
 | 5 | Decide whether to keep production parked, protected, or unpublished. | Legal/content gate status | Production boundary decision. |
+
+[`2026-05-21-website-phase-completion-register.md`](2026-05-21-website-phase-completion-register.md) records which phase outputs are complete in the repository and which external execution steps remain blocked by account-owner action, credentials, purchased domains, counsel review, or public launch authority.
 
 ## Open decisions
 
