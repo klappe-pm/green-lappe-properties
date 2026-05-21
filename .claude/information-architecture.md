@@ -25,6 +25,7 @@ All durable project material belongs under one of these zones:
 | --- | --- | --- |
 | `README.md` | Repository orientation and top-level IA map | Update when a top-level docs zone changes meaning or a new durable zone is added. |
 | `.claude/` | Project-local agent rules, evaluators, and deterministic workflow guidance | Keep executable checks here when they are project-specific and not product code. |
+| `.githooks/` | Versioned Git hooks for this project | Keep hook wrappers small; delegate policy logic to `.claude/` evaluators. |
 | `docs/research/` | Market, demographic, regulatory, scoring, and unit-economics source work | Use subfolders for plans, prompts, references, metrics, competitors, reports, and unit economics. |
 | `docs/insights/` | Dated synthesized insight notes | Use dated filenames and link back to supporting research. |
 | `docs/branding/` | Superseded or companion brand-system source material | Do not confuse with the locked canonical design-system package. |
@@ -48,7 +49,7 @@ Do not create new durable top-level zones unless the repository `README.md` is u
 
 These requirements are enforceable at change time. They intentionally avoid subjective quality scoring.
 
-1. Every changed durable file must live under an allowed top-level path: `README.md`, `.claude/`, `.gitignore`, or `docs/`.
+1. Every changed durable file must live under an allowed top-level path: `README.md`, `.claude/`, `.githooks/`, `.gitignore`, or `docs/`.
 2. Every changed file under `docs/` must live in an allowed canonical docs zone.
 3. `.DS_Store` and other OS metadata files must never be part of a change.
 4. Filenames added under `docs/` must use lowercase kebab-case, with approved exceptions for `README.md`, design-system numbered specs, dated status files, dated launch files, and passoff files.
@@ -74,22 +75,21 @@ Use this order before creating a file:
 6. Is it status, backlog, GTM, strategy, UX, marketing, financial, or meta work? Use the matching canonical zone.
 7. If none of the above fits, update this IA plan and `README.md` before adding a new zone.
 
-## Pre-Commit IA Evaluation
+## Project Pre-Commit Hook
 
-Run this command before committing documentation or project-configuration changes:
+This repository has a versioned project hook at `.githooks/pre-commit`. Configure a checkout to use project hooks with:
+
+```bash
+git config core.hooksPath .githooks
+```
+
+The hook runs this IA evaluation before every commit:
 
 ```bash
 node "$(git rev-parse --show-toplevel)/.claude/evaluate-ia-change.mjs" --staged
 ```
 
-Suggested `.git/hooks/pre-commit` entry:
-
-```bash
-#!/bin/sh
-node "$(git rev-parse --show-toplevel)/.claude/evaluate-ia-change.mjs" --staged
-```
-
-The command evaluates the staged change only. It exits `0` when IA requirements pass and non-zero when the change violates deterministic IA rules.
+The command evaluates the staged change only. It exits `0` when IA requirements pass and non-zero when the change violates deterministic IA rules, which blocks the commit.
 
 To evaluate an already committed range, use:
 
