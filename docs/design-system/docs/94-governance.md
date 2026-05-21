@@ -98,7 +98,7 @@ For Green PM at launch (1-20 doors), Megan holds Broker and Operator roles. Kevi
 |----------------|-------|------------------------|
 | `00-index.md` | System owner | Broker |
 | `01-positioning.md` to `04-microcopy.md` | Broker | System owner consult |
-| `10-color-system.md` to `30-design-tokens.md` | System owner | Broker for brand colors only |
+| `10-color-system.md` to `31-token-atomic-execution.md` | System owner | Broker for brand colors only |
 | `40-spacing-layout.md` to `54-empty-loading-error.md` | System owner | None |
 | `60-iconography.md` to `62-illustration.md` | System owner | Broker for photography subjects |
 | `70-data-display.md` to `71-status-indicators.md` | System owner | None |

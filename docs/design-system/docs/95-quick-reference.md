@@ -453,6 +453,7 @@ This document is acceptable when:
 - [[22-typography-usage]]
 - [[23-typography-migration]]
 - [[30-design-tokens]]
+- [[31-token-atomic-execution]]
 - [[40-spacing-layout]]
 - [[41-radius-shadow]]
 - [[42-motion]]
