@@ -6,25 +6,25 @@ date-created: 2026-05-21
 date-revised: 2026-05-21
 type: critique
 status: draft
-aliases:
+aliases: []
 tags: [branding, domains, property-management]
 ---
 
-# Critique of the `green<function>pnw.com` pattern
+# Critique of the `green<function>pnw.com` Pattern
 
->[!success] Recommendation
->
+> [!success] Recommendation
+
 Consolidate to one primary root (`greenpnw.com` or, stronger, `greenpmpnw.com`) with path-based owner/renter segmentation, hold 3 functional siblings as 301 redirects (`greenpropertymanagementpnw.com`, `greenrentalspnw.com`, `greenownerspnw.com`), and register `greenrealtypnw.com` defensively on a completely separate root that the PM business never touches; if Megan is serious about a future real estate brand, the stronger move is Alternative 2: pick a non-surname brand for the PM business entirely (something like `Lappe PM` or a geographic brand) and fully preserve "Green" for the sales business, because surname-as-PM-brand spends optionality that is hard to get back, and "Green" as a modifier is doing weaker brand work than the surname interpretation assumes.
 
 ---
 
-[[Why this recommendation]]
-[[What changes when the rent is $4,000 to $6,000]]
+[[2026-05-21-why-non-surname-pm-brand]]
 
+[[2026-05-21-high-end-rent-brand-strategy]]
 
-## The brand
+## The Brand
 
-### Name candidates
+### Name Candidates
 
 Working from three naming families, each with different tradeoffs:
 
@@ -52,7 +52,7 @@ Working from three naming families, each with different tradeoffs:
 - `Rentline`
 - `Doorstead`-style (taken, but the pattern: `Doorpost`, `Doorframe`)
 
-### Recommended primary: `Aldergrove`
+### Recommended Primary: `Aldergrove`
 
 The argument:
 
@@ -90,7 +90,7 @@ The rest of this document assumes `Aldergrove` as the working brand. The strateg
 - Renter experience as an owner-side value (lower turnover, lower vacancy, lower legal exposure).
 - Local concentration over geographic expansion.
 
-## Brand voice
+## Brand Voice
 
 **Three voice attributes, in priority order:**
 
@@ -131,7 +131,7 @@ Renter-facing, maintenance acknowledgment:
 - Not aspirational. Not "Building wealth, one door at a time."
 - Not apologetic. Not "Sorry for the inconvenience!" when no inconvenience was caused.
 
-## Visual identity
+## Visual Identity
 
 The visual system supports the positioning: infrastructural, calm, competent, regionally PNW without being cliché. It deliberately rejects three visual languages that dominate the category:
 
@@ -139,7 +139,7 @@ The visual system supports the positioning: infrastructural, calm, competent, re
 2. **The local-Realtor aesthetic:** stock photos of houses, gold or burgundy accents, Times New Roman, "Serving the Eastside since 1987." Reads as dated.
 3. **The eco-greenwashed aesthetic:** sage green, leaf icons, kraft paper textures, "sustainable." This is the exact aesthetic to avoid, both because the brand is not green-the-color and because the eco read is the trap we are escaping by abandoning the "Green" surname.
 
-### Color palette
+### Color Palette
 
 The palette is built around a deep forest green that reads as PNW and as competent (not eco), warm neutrals that ground it, and a single accent for action.
 
@@ -182,7 +182,7 @@ Two typefaces, one serif for display and one sans for body and UI. Both are free
 - Never set Fraunces below 18px. It is a display face.
 - Never set Inter above 32px. It is a body face.
 
-### Logo and mark
+### Logo and Mark
 
 The logo system is a wordmark plus an optional symbol. The wordmark is the primary expression; the symbol is for app icons, social avatars, and signage.
 
@@ -192,7 +192,7 @@ The logo system is a wordmark plus an optional symbol. The wordmark is the prima
 
 **Lockup:** Wordmark and symbol can lock up horizontally (symbol left, wordmark right) or stack (symbol above, wordmark below). The wordmark alone should carry 80% of brand surface area; the symbol alone should appear in 15%; the lockup in 5%.
 
-### Pattern and texture
+### Pattern and Texture
 
 A single brand pattern, used sparingly. The pattern is a vertical line motif derived from the alder catkin: thin vertical strokes of varying lengths, arranged in irregular columns. Used as:
 
@@ -221,18 +221,15 @@ The brand's photography direction:
 
 Icons are line-only, single-weight (1.5px at 24px), rounded terminals, Alder green. Use the `Lucide` icon set as the base; customize only when a needed icon is missing. Do not mix icon styles.
 
-## Content strategy
+## Content Strategy
 
 The brand publishes deliberately and infrequently. The publication calendar is not a content marketing engine; it is a trust-building artifact.
 
 **Three content pillars:**
 
 1. **Market data.** Quarterly rental market reports for King and Snohomish counties: vacancy rates, rent comps by neighborhood, leasing velocity, days on market. Published as a downloadable PDF and a web page. Owners use these to benchmark their units. The reports are the single best lead-generation asset a small PM can produce, and almost no one does them well.
-    
 2. **Operational transparency.** Quarterly "how we did" posts: average days to lease, average maintenance response time, average tenant tenure, fee transparency. Numbers, not narrative. This is unusual in the category and earns disproportionate trust.
-    
 3. **Owner education.** Long-form, evergreen pieces on the actual operational questions small landlords have: when to renew vs. re-list, how Seattle's just-cause eviction ordinance actually works, how to handle a tenant who stops paying, when an LLC actually matters. These are not blog posts; they are reference documents.
-    
 
 **What the brand does not publish:**
 
@@ -249,7 +246,7 @@ The brand publishes deliberately and infrequently. The publication calendar is n
 4. Google Business Profile and local SEO. Reviews from owners, not renters.
 5. Instagram, minimally. Listings and occasional team photos. Not a marketing channel; a credibility check.
 
-## Style guide rules (the short version)
+## Style Guide Rules (the short version)
 
 - **Logo clear space:** equal to the height of the lowercase `a` in the wordmark, on all sides.
 - **Minimum logo size:** 80px wide digital, 0.75" wide print.
@@ -260,22 +257,18 @@ The brand publishes deliberately and infrequently. The publication calendar is n
 - **Numbers:** always tabular, always with explicit units (`$2,450/mo` not `$2,450`).
 - **Dates:** always written out (`June 1, 2026`) in customer-facing copy; ISO format (`2026-06-01`) in internal/operational copy.
 
-## What to debate
+## What to Debate
 
 The choices most worth challenging:
 
 1. **The brand name itself.** `Aldergrove` is a specific bet on an evocative coined-feeling name over a geographic-functional name. The safe alternative is `Cascade PM` or similar: easier to brief, easier to SEO, lower brand ceiling. The case for `Aldergrove` rests on the assumption that the brand will be built over 5+ years and benefits from a higher ceiling. If the horizon is shorter or the marketing budget is thinner, `Cascade PM` is the more conservative call.
-    
 2. **The orange accent.** `Ember` orange is a deliberate distinguishing choice, but it is also a risk. Orange polarizes; blue is safe. The argument for orange is that every other PM in the category uses blue or green, and a single distinguishing accent compounds over time. The argument against is that owners may read orange as "alarming" on a financial statement. Test it on actual owner statements before committing.
-    
 3. **The renter-as-product-experience framing.** The strategy explicitly treats renters as the product, not the customer. This is operationally correct but ethically uncomfortable to some operators. An alternative framing treats renters as a co-equal audience with their own brand promise. The case for the current framing is honesty about who pays; the case against is that renters who feel like products tend to leave bad reviews.
-    
 4. **The physical mail channel.** Real paper to a targeted list is expensive per touch and slow to test. The case for it is that no one in the category is doing it, so the inbox is empty and signal-to-noise is extreme. The case against is that it is a 12-to-18 month investment before you know if it works.
-    
 5. **`Fraunces` as display face.** Fraunces is a fashionable choice in 2024 to 2026, which means it will look dated by 2030. A more conservative serif (`Source Serif`, `Lora`) will age better. The case for Fraunces is that the brand needs personality now to break through; the case against is that personality is a depreciating asset.
-    
 
 The recommendation stands: build Aldergrove as a calm, infrastructural, regionally-PNW property management brand with deep green and warm neutrals, plainspoken voice, infrequent and substantive content, and a deliberate firewall from any future Megan Green real estate work. Each of the five debate points above is a real tradeoff worth pressure-testing before committing.
+
 ## Context
 
 - Business partner: Megan Green, currently a real estate agent under a broker. She may eventually branch into her own real estate business.
@@ -284,7 +277,7 @@ The recommendation stands: build Aldergrove as a calm, infrastructural, regional
 - Geographic scope: PNW (Pacific Northwest).
 - Naming pattern under consideration: `green<function>pnw.com`.
 
-## Domains under evaluation
+## Domains under Evaluation
 
 - `greenpropertymanagementpnw.com`
 - `greenpropertiespnw.com`
@@ -292,24 +285,24 @@ The recommendation stands: build Aldergrove as a calm, infrastructural, regional
 - `greenrentalspnw.com`
 - `greenownerspnw.com`
 
-## What I want from you
+## What I Want from You
 
 1. **Critique the naming strategy.** Specifically:
-    - Does the `green<function>pnw.com` pattern hold up as a brand system, or does it fragment equity across too many domains?
-    - Which domains are load-bearing (primary brand) vs. supporting (redirects, SEO, audience segmentation)?
-    - Where does "Green" risk conflicting with sustainability/eco connotations vs. the surname?
-    - Risk of confusion with existing PNW real estate brands using "Green."
-    - SEO and trust implications of running multiple sibling domains vs. subdomains or path-based segmentation on one root.
+	- Does the `green<function>pnw.com` pattern hold up as a brand system, or does it fragment equity across too many domains?
+	- Which domains are load-bearing (primary brand) vs. supporting (redirects, SEO, audience segmentation)?
+	- Where does "Green" risk conflicting with sustainability/eco connotations vs. the surname?
+	- Risk of confusion with existing PNW real estate brands using "Green."
+	- SEO and trust implications of running multiple sibling domains vs. subdomains or path-based segmentation on one root.
 2. **Debate the strategy.** Argue both sides:
-    - Case for multi-domain segmentation (owner-facing vs. renter-facing vs. management vs. future sales arm).
-    - Case for consolidation to one root domain with subdomains or paths (e.g., `owners.greenpnw.com`, `rent.greenpnw.com`).
-    - Recommend a position and state why.
+	- Case for multi-domain segmentation (owner-facing vs. renter-facing vs. management vs. future sales arm).
+	- Case for consolidation to one root domain with subdomains or paths (e.g., `owners.greenpnw.com`, `rent.greenpnw.com`).
+	- Recommend a position and state why.
 3. **Address the two-sided marketplace design implication.** How domain architecture should reinforce (or undermine) the owner/renter segmentation in UX and brand.
 4. **Visualize how the domains work together** in a Mermaid diagram showing:
-    - Parent brand and any future real estate arm.
-    - Owner-facing vs. renter-facing surfaces.
-    - Primary domain, redirects, and any subdomain alternatives.
-    - The boundary between the rental/PM business and Megan's potential future real estate business.
+	- Parent brand and any future real estate arm.
+	- Owner-facing vs. renter-facing surfaces.
+	- Primary domain, redirects, and any subdomain alternatives.
+	- The boundary between the rental/PM business and Megan's potential future real estate business.
 5. **Propose alternatives** if the current pattern is weak. Include at least one consolidated single-domain architecture and one alternative naming pattern that preserves Megan's optionality for a future real estate brand.
 
 ## Constraints
@@ -344,7 +337,7 @@ The pattern is structurally weak as a brand system. It works as a defensive SEO 
 
 None of these are strong primaries. `greenpropertymanagementpnw.com` is the most descriptively accurate but the longest and least brandable. `greenhomespnw.com` is the shortest but actively burns optionality for Megan's future sales business, which violates a stated constraint.
 
-## The debate
+## The Debate
 
 **Case for multi-domain segmentation.** Two-sided marketplaces have genuinely different audiences with different jobs-to-be-done. Owners want yield, vacancy data, and trust signals. Renters want listings, application speed, and responsiveness. Separate domains let each audience land in a context built for them, with separate analytics, separate ad accounts, and no cross-contamination of messaging. Separate domains also let the rental/PM brand and a future real estate brand live on entirely different roots, which is cleaner legally and operationally if Megan ever sells one and keeps the other.
 
@@ -352,7 +345,7 @@ None of these are strong primaries. `greenpropertymanagementpnw.com` is the most
 
 **Position: consolidate.** Run one primary domain with path-based segmentation for owners and renters. Hold 3 to 5 functional sibling domains as defensive redirects to the primary, not as parallel front doors. The two-sided audience problem is a UX problem. Solving it at the DNS level is over-engineering that creates real costs (SEO dilution, brand confusion, operational overhead) to solve a problem that path-based routing handles cleanly.
 
-## Marketplace design implication
+## Marketplace Design Implication
 
 Domain architecture should be invisible to audience segmentation. Owners and renters should never need to know they are on the same root. What they need is:
 
@@ -362,7 +355,7 @@ Domain architecture should be invisible to audience segmentation. Owners and ren
 
 Path-based routing (`x.com/owners`, `x.com/renters`) delivers all three. Separate domains deliver the first two but actively undermine the third, because owners doing due diligence on the company find a different domain with a different backlink profile and may not connect them. Trust compounds at the root; splitting roots splits trust.
 
-## Architecture diagram
+## Architecture Diagram
 
 ```mermaid
 flowchart TB
@@ -434,51 +427,3 @@ This is the stronger long-term move if Megan is serious about a future sales bus
 - Future real estate arm: `greenrealty.com` or similar, fully separate.
 - Pros: geographic anchor is sharper than "PNW" (which spans Oregon, Washington, BC, Idaho), and the surname operates as a trust endorsement, not a brand prefix. Easy to firewall.
 - Cons: requires building two brands eventually.
----
-
-
-
-
-```markdown
-
-I am evaluating a multi-domain naming strategy for a property management business and need critical feedback plus a visualization.
-## Context
-- Business partner: Megan Green, currently a real estate agent under a broker. She may eventually branch into her own real estate business.
-- Goal of multi-domain ownership: keep Megan's potential future real estate brand (sales) separate from the rental and property management brand, so the "Green" name is not boxed into rentals only.
-- Business model: two-sided marketplace serving property owners on one side and renters on the other. UX/brand direction will intentionally segment these audiences.
-- Geographic scope: PNW (Pacific Northwest).
-- Naming pattern under consideration: `green<function>pnw.com`.
-## Domains under evaluation
-- `greenpropertymanagementpnw.com`
-- `greenpropertiespnw.com`
-- `greenhomespnw.com`
-- `greenrentalspnw.com`
-- `greenownerspnw.com`
-## What I want from you
-1. **Critique the naming strategy.** Specifically:
-   - Does the `green<function>pnw.com` pattern hold up as a brand system, or does it fragment equity across too many domains?
-   - Which domains are load-bearing (primary brand) vs. supporting (redirects, SEO, audience segmentation)?
-   - Where does "Green" risk conflicting with sustainability/eco connotations vs. the surname?
-   - Risk of confusion with existing PNW real estate brands using "Green."
-   - SEO and trust implications of running multiple sibling domains vs. subdomains or path-based segmentation on one root.
-2. **Debate the strategy.** Argue both sides:
-   - Case for multi-domain segmentation (owner-facing vs. renter-facing vs. management vs. future sales arm).
-   - Case for consolidation to one root domain with subdomains or paths (e.g., `owners.greenpnw.com`, `rent.greenpnw.com`).
-   - Recommend a position and state why.
-3. **Address the two-sided marketplace design implication.** How domain architecture should reinforce (or undermine) the owner/renter segmentation in UX and brand.
-4. **Visualize how the domains work together** in a Mermaid diagram showing:
-   - Parent brand and any future real estate arm.
-   - Owner-facing vs. renter-facing surfaces.
-   - Primary domain, redirects, and any subdomain alternatives.
-   - The boundary between the rental/PM business and Megan's potential future real estate business.
-5. **Propose alternatives** if the current pattern is weak. Include at least one consolidated single-domain architecture and one alternative naming pattern that preserves Megan's optionality for a future real estate brand.
-## Constraints
-- Keep Megan's surname recoverable as a future real estate brand (do not burn "Green Realty" or equivalents on a rental business).
-- PNW geographic anchor should remain legible.
-- Assume budget for 5–10 domains is acceptable; the question is which ones and why, not cost.
-## Format
-- Direct prose, no opening filler.
-- Mermaid diagram for the architecture visualization.
-- End with a one-paragraph recommendation.
-  
-```
