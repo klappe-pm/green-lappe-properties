@@ -39,7 +39,7 @@ All durable project material belongs under one of these zones:
 | `docs/uxd/` | Personas, journeys, service-experience artifacts, and the Green PM design-system package | Use for user experience framing, journey evidence, and design-system specs/assets. |
 | `docs/uxr/` | User, market, demographic, regulatory, scoring, and unit-economics source work | Use subfolders for plans, prompts, references, metrics, competitors, reports, and unit economics. Legacy filenames may be preserved during the one-time research corpus relocation. |
 | `docs/marketing/` | Collateral and founder-facing material | Use subfolders for durable source material such as founder bios. |
-| `docs/_archive/` | Superseded artifacts retained for history | Never make this the primary home for active work. |
+| `docs/_archive/` | Superseded artifacts retained for history | Non-live. Do not use archived files as dependencies, blockers, or source-of-truth inputs for active work. |
 
 Do not create new durable top-level zones unless the repository `README.md` is updated in the same change and the zone has a distinct role that cannot fit the table above.
 
@@ -57,7 +57,7 @@ These requirements are enforceable at change time. They intentionally avoid subj
 8. New files under `docs/uxd/design-system/docs/` must be named `NN-kebab-slug.md`, must have an H1 matching the filename stem, and must declare `domain: brand`, `category: design-system`, and `version: 3.0.0` in frontmatter.
 9. Adding a design-system numbered spec requires updating both `docs/uxd/design-system/docs/00-index.md` and `docs/uxd/design-system/docs/96-numbering-convention.md` in the same change.
 10. Adding a durable launch Markdown file requires updating `docs/launch/README.md` unless the added file is itself a local README.
-11. Adding or restoring durable partner-opportunity material requires either placing it in an active canonical zone with an index update or explicitly retaining it under `docs/_archive/` with archive context.
+11. Any folder whose name starts with `_` is non-live. The IA evaluator logs changed non-live paths and ignores them for live IA requirements; active Markdown must not link to non-live `docs/_*` material as a dependency.
 12. Sensitive launch or legal-adjacent evidence must not be committed. Paths containing credentials, secrets, recovery codes, payment details, receipts, counsel memos, license documents, or sensitive screenshots fail IA evaluation.
 13. The IA evaluator is scoped to changed files. It does not attempt to clean up legacy filenames unless those files are newly added, copied, or renamed in the current change.
 
@@ -68,7 +68,7 @@ Use this order before creating a file:
 1. Is it a session handoff? Put it in `docs/passoffs/`.
 2. Is it launch execution, account-owner action, public-release gating, domain/DNS, legal gate tracking, discovery, or runbook material? Put it in `docs/launch/`.
 3. Is it a locked or proposed design-system spec, token, CSS, Tailwind config, or component-governance artifact? Put it in `docs/uxd/design-system/`.
-4. Is it a partner conversation package, deck source, opportunity memo, claim spine, or presentation index? Put current work in the best active canonical zone and preserve retired deck/package material in `docs/_archive/`.
+4. Is it a partner conversation package, deck source, opportunity memo, claim spine, or presentation index? Put current work in the best active canonical zone; retired materials may remain in non-live archive folders but must not block or feed active work.
 5. Is it raw or synthesized market research? Put it in `docs/uxr/`.
 6. Is it status, backlog, GTM, strategy, UX, marketing, financial, or meta work? Use the matching canonical zone.
 7. If none of the above fits, update this IA plan and `README.md` before adding a new zone.

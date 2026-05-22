@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: opportunity-materials
 sub-category: research-goals
 date-created: 2026-05-19
-date-revised: 2026-05-19
+date-revised: 2026-05-22
 doc-type: research-plan
 version: 0.1
 doc-status: draft
@@ -36,7 +36,7 @@ Megan does not need a cold introduction to the pain points or opportunity. She n
 | Market size | TAM, SAM, SOM, units, fee/door, greenfield share, current PM adoption. | `docs/uxr/unit-economics/Total Addressable Market (TAM).md`, `docs/uxr/competitors/Non-Institutional Small Landlord PM Market, King and Snohomish Counties.md` |
 | Pain and urgency | Renter, owner, and PM staff pain; regulatory and communication failures. | `docs/uxd/PNW Property Management Pain Points - Three Personas, One Broken Middle.md`, `docs/uxd/User Journey Map v1.md` |
 | Launch wedge | Snohomish-first, SFR-first, Megan network, deferred FCC sequencing. | `docs/gtm/Launch Prioritization.md`, `docs/strategies/market/Family Child Care (FCC).md` |
-| Partnership thesis | Megan trust capital plus Kevin systems leverage; two-principal hypothesis. | `docs/_archive/Pitch Deck Prep v.1.md`, `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt` |
+| Partnership thesis | Megan trust capital plus Kevin systems leverage; two-principal hypothesis. | `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt`, launch and GTM docs that describe the current operating model |
 | Geography | PM sequencing, rental acquisition, daycare conversion, dual-use shortlist. | `docs/uxr/reports/effort-6/final-report.md`, effort-6 top-10 files |
 | Metrics | North star, CAC, operating metrics, competitor measurement system. | `docs/uxr/metrics/Northstar-Leased Months.md`, `docs/uxr/unit-economics/Customer Acquisition Costs (CAC) Model.md`, `docs/uxr/metrics/pm-competitor-metrics/` |
 | Story method | Claim spine, proof objects, action path, tension between current state and desired state. | This folder |

@@ -32,7 +32,6 @@ The repo is in documentation, launch-prep, and decision-support mode. The GitHub
 | [`.claude/`](.claude/) | Project-local IA policy, validation logic, and deterministic workflow guidance. |
 | [`docs/`](docs/) | Main working corpus for research, strategy, planning, status, and partner materials. |
 | [`docs/backlog/`](docs/backlog/) | Append-only backlog and backlink companion notes for project work and repo hygiene. |
-| [`docs/_archive/`](docs/_archive/) | Superseded brand, design, fund, prompt, and strategy artifacts retained for reference. |
 | [`docs/branding/`](docs/branding/) | Brand-system source files, style guide material, tokens, schemas, and implementation references. |
 | [`docs/gtm/`](docs/gtm/) | Go-to-market plans, launch sequencing, and prioritization logic. |
 | [`docs/launch/`](docs/launch/) | Canonical launch execution folder for business launch plans, legal gates, discovery guides, and launch references. |
@@ -100,6 +99,7 @@ The driving plan is [`docs/uxr/plans/Demographic Research Plan.md`](docs/uxr/pla
 - Markdown files use the `base-yaml` frontmatter defined in `~/.claude/rules/markdown-frontmatter.md` (domain, category, sub-category, date-created, date-revised, aliases, tags). Research artifacts add `doc-type`, `version`, `doc-status`, and `llm-*` fields.
 - All dates are `yyyy-MM-dd` (America/Los_Angeles).
 - ZIPs are referenced as 5-digit ZCTAs throughout. Where ZCTA-level data is unavailable, the underlying field is flagged in the schema's `provenance` block.
+- Archive folders whose names start with `_` are non-live. Do not use archive files as dependencies, blockers, or source-of-truth inputs for active work.
 
 ## Out of scope
 

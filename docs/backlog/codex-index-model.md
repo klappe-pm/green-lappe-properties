@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: opportunity-materials
 sub-category: codex-index
 date-created: 2026-05-19
-date-revised: 2026-05-19
+date-revised: 2026-05-22
 doc-type: operating-model
 version: 0.1
 doc-status: draft
@@ -17,18 +17,17 @@ This model is for a second Codex session that needs to re-index the project quic
 
 ## Bootstrap Commands
 
-The old opportunity index builder now lives under
-`docs/_archive/decks/_tools/build-corpus-index.mjs` and still reflects the
-retired `docs/opportunities/` layout. Do not use it as an active bootstrap
-without first updating its path classifier.
+No generated corpus index is active. Archived deck tooling is non-live and
+must not be used as a bootstrap dependency unless a future task rebuilds a new
+tool in an active canonical zone.
 
 For current orientation, read:
 
 1. `README.md`
 2. `docs/uxr/reports/effort-6/final-report.md`
 3. `docs/uxr/green-lappe-market-deep-dive.md`
-4. `docs/_archive/green-lappe-opportunity-2-pager.md`
-5. `docs/_archive/decks/partner-pitch-deck-source.md`
+4. `docs/gtm/Launch Prioritization.md`
+5. `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt`
 
 ## Source Classes
 
@@ -39,7 +38,7 @@ For current orientation, read:
 | `data-table` | Machine-readable source data or scored output. | CSV, TSV, JSON, GeoJSON, YAML schemas. |
 | `metric-definition` | Defines a metric used for operations, competitors, or future eval. | `docs/uxr/metrics/pm-competitor-metrics/`. |
 | `process-or-backlog` | Workflow, backlog, passoff, project management. | backlog, status updates, passoffs. |
-| `opportunity-output` | Generated partner materials in this folder. | two-pager, market deep dive, deck source, style guide. |
+| `opportunity-output` | Future partner materials created in active zones. | marketing collateral, GTM summaries, founder-facing source files. |
 
 ## Retrieval Strategy
 
@@ -59,7 +58,7 @@ Use a claim-first retrieval model:
 | PM market fragmentation | `docs/uxr/competitors/Non-Institutional Small Landlord PM Market, King and Snohomish Counties.md` | `docs/uxr/competitors/Independent Property Management Companies, King and Snohomish Counties.md` |
 | Launch sequencing | `docs/gtm/Launch Prioritization.md` | `docs/uxr/reports/effort-6/final-report.md` |
 | Pain points | `docs/uxd/PNW Property Management Pain Points - Three Personas, One Broken Middle.md` | `docs/uxd/User Journey Map v1.md` |
-| Team thesis | `docs/_archive/Pitch Deck Prep v.1.md` | `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt` |
+| Team thesis | `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt` | Launch and GTM docs that describe the current operating model. |
 | FCC wedge | `docs/strategies/market/Family Child Care (FCC).md` | `docs/uxr/reports/effort-6/top-10-daycare-conversion-zips.md` |
 | Metrics | `docs/uxr/metrics/Northstar-Leased Months.md` | `docs/uxr/metrics/Key Property Management Metrics-MoC.md` |
 
@@ -69,4 +68,4 @@ Use a claim-first retrieval model:
 - The TAM memo controls broad full-stock TAM.
 - The non-institutional PM market memo controls practical PM SAM/SOM and competitor fragmentation.
 - Effort-6 controls ZCTA ranking and sensitivity.
-- Pitch Deck Prep controls the two-principal hypothesis but marks several items as gaps; do not treat gap sketches as validated facts.
+- Retired pitch and deck material does not control active claims. Rebuild any needed claim spine from active research, GTM, launch, UXD, and marketing files.
