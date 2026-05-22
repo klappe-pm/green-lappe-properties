@@ -61,7 +61,7 @@ The repo is in documentation, launch-prep, and decision-support mode. The GitHub
 | [`docs/roadmap/`](docs/roadmap/) | Product and business roadmap area. |
 | [`docs/status/`](docs/status/) | Dated project and repo status reports. |
 | [`docs/strategies/`](docs/strategies/) | Strategic frameworks and wedges, including DHM, FCC, marketplace, and validation strategy. |
-| [`docs/uxd/`](docs/uxd/) | Persona, pain-point, and journey artifacts that shape the service experience. |
+| [`docs/uxd/`](docs/uxd/) | Persona, pain-point, journey, user-flow, and Mermaid service-experience artifacts. |
 
 ## Research deliverable: the 7 efforts
 
@@ -87,6 +87,7 @@ The driving plan is [`docs/research/plans/Demographic Research Plan.md`](docs/re
 4. **[top-10-daycare-conversion-zips.md](docs/research/reports/effort-6/top-10-daycare-conversion-zips.md)** — sensitivity-fragile; HOA CC&R parcel-check mandatory before underwriting.
 5. **[mismatch-analysis.md](docs/research/reports/effort-6/mismatch-analysis.md)** — Quadrant A (high-school / low-rent buy candidates: 98024, 98045, 98050, 98025, 98051) is the cherry-pick set the headline rankings miss.
 6. **[hypothesis-resolution.md](docs/research/reports/effort-6/hypothesis-resolution.md)** — 10 validated / 2 partial / 2 refuted / 3 inconclusive; H3 (visa geography) and H11 (Eastside median income) are notable refutations.
+7. **[user-flow-and-experience-diagrams.md](docs/uxd/user-flow-and-experience-diagrams.md)** — standalone Mermaid.js user-flow, service-blueprint, and experience-recovery diagrams for renter, owner, and PM staff journeys.
 
 ## Workflow
 
@@ -95,7 +96,8 @@ The driving plan is [`docs/research/plans/Demographic Research Plan.md`](docs/re
 - Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
 - Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` or `YYYY-MM-DD-HHMM-status-update.md` convention. Historical status updates have been migrated there from `project-management/status-updates/`.
 - Launch execution documents land in [`docs/launch/`](docs/launch/) under `plans/`, `legal/`, `discovery/`, or `references/`.
-- Design-system prompts land in [`docs/prompts/`](docs/prompts/) using descriptive slug names.
+- Research prompts land in [`docs/research/prompts/`](docs/research/prompts/) using descriptive slug names.
+- UX and service-experience diagrams land in [`docs/uxd/`](docs/uxd/) using lowercase kebab-case filenames and Mermaid blocks where diagrams are useful.
 - Branch hygiene: keep `main` synced after PR merge, and delete merged feature/passoff branches once their work is present on `main`.
 
 ## Conventions
