@@ -41,10 +41,10 @@ These items remain active, but most launch readiness and operations items are bl
 ## Completed
 
 - [x] Create `docs/plans/`, `docs/status/`, and `docs/passoffs/`.
-- [x] Move competitor research markdown into `docs/research/competitors/`.
-- [x] Move dated competitor insight into `docs/insights/`.
+- [x] Move competitor research markdown into `docs/uxr/competitors/`.
+- [x] Move dated competitor insight into the `docs/uxr/` research tree.
 - [x] Remove obsolete competitor dataset exports.
-- [x] Select `docs/opportunities/green-lappe-partner-pitch-deck.pptx` as the canonical partner deck and document archived deck variants.
+- [x] Preserve the retired partner deck package under `docs/_archive/decks/` and document archived deck variants.
 - [x] Migrate legacy `project-management/status-updates/` content into `docs/status/`.
 - [x] Create launch-readiness gate checklist and owner discovery guide.
 - [x] Create researched, dependency-ordered business launch project plan with official links.

@@ -1,6 +1,6 @@
 # hypothesis-resolution
 
-Resolution of the 17 hypotheses defined in `docs/research/plans/Demographic Research Plan.md` §Hypotheses To Test. Each entry: status, evidence, decision implication.
+Resolution of the 17 hypotheses defined in `docs/uxr/plans/Demographic Research Plan.md` §Hypotheses To Test. Each entry: status, evidence, decision implication.
 
 **Status legend:** validated • partially-validated • refuted • inconclusive.
 

@@ -74,22 +74,16 @@ const allowedDocsZones = new Set([
   "_archive",
   "backlog",
   "branding",
-  "design-system",
   "financial",
-  "fund",
   "gtm",
-  "insights",
   "launch",
   "marketing",
-  "meta",
-  "opportunities",
   "passoffs",
-  "questions",
-  "research",
   "roadmap",
   "status",
   "strategies",
   "uxd",
+  "uxr",
 ]);
 
 const requiredFrontmatterKeys = [
@@ -135,6 +129,10 @@ function isMarkdown(filePath) {
 
 function isAddedLike(entry) {
   return entry.code === "A" || entry.code === "C" || entry.code === "R";
+}
+
+function isLegacyRelocatedCorpus(normalized) {
+  return normalized.startsWith("docs/uxr/") || normalized.startsWith("docs/strategies/market/");
 }
 
 function readChangedFile(filePath) {
@@ -275,7 +273,7 @@ for (const entry of entries) {
     continue;
   }
 
-  if (normalized.startsWith("docs/design-system/docs/")) {
+  if (normalized.startsWith("docs/uxd/design-system/docs/")) {
     if (basename !== "README.md" && !/^\d{2}-[a-z0-9]+(?:-[a-z0-9]+)*\.md$/.test(basename)) {
       fail(normalized, "design-system spec filenames must be NN-kebab-slug.md.");
     }
@@ -302,20 +300,25 @@ for (const entry of entries) {
     }
 
     if (isAddedLike(entry) && basename !== "00-index.md") {
-      if (!changedPaths.has("docs/design-system/docs/00-index.md")) {
-        fail(normalized, "adding a design-system spec requires updating docs/design-system/docs/00-index.md.");
+      if (!changedPaths.has("docs/uxd/design-system/docs/00-index.md")) {
+        fail(normalized, "adding a design-system spec requires updating docs/uxd/design-system/docs/00-index.md.");
       }
-      if (!changedPaths.has("docs/design-system/docs/96-numbering-convention.md")) {
+      if (!changedPaths.has("docs/uxd/design-system/docs/96-numbering-convention.md")) {
         fail(
           normalized,
-          "adding a design-system spec requires updating docs/design-system/docs/96-numbering-convention.md.",
+          "adding a design-system spec requires updating docs/uxd/design-system/docs/96-numbering-convention.md.",
         );
       }
     }
     continue;
   }
 
-  if (isAddedLike(entry) && normalized.startsWith("docs/") && basename !== "README.md") {
+  if (
+    isAddedLike(entry) &&
+    normalized.startsWith("docs/") &&
+    basename !== "README.md" &&
+    !isLegacyRelocatedCorpus(normalized)
+  ) {
     const allowedName =
       /^[a-z0-9]+(?:-[a-z0-9]+)*\.md$/.test(basename) ||
       /^\d{4}-\d{2}-\d{2}(?:-\d{4})?-[a-z0-9]+(?:-[a-z0-9]+)*\.md$/.test(basename);
@@ -341,17 +344,12 @@ for (const entry of entries) {
     }
   }
 
-  if (normalized.startsWith("docs/opportunities/") && isAddedLike(entry) && basename !== "README.md") {
-    if (!changedPaths.has("docs/opportunities/README.md")) {
-      fail(normalized, "adding an opportunities Markdown file requires updating docs/opportunities/README.md.");
-    }
-  }
-
   const frontmatterRequired =
     normalized.startsWith("docs/") &&
-    !normalized.startsWith("docs/design-system/") &&
+    !normalized.startsWith("docs/uxd/design-system/") &&
     !normalized.startsWith("docs/passoffs/") &&
     !normalized.startsWith("docs/_archive/") &&
+    !isLegacyRelocatedCorpus(normalized) &&
     basename !== "README.md";
 
   if (frontmatterRequired) {

@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: planning
 sub-category: business-launch
 date-created: 2026-05-20
-date-revised: 2026-05-20
+date-revised: 2026-05-22
 doc-type: launch-project-plan
 version: 0.1
 doc-status: draft
@@ -250,7 +250,7 @@ Exit criteria:
 | 12.3 | Score prospects by fit, timing, pain, location, legal complexity, pricing acceptance. | 12.2 | 2 days | Prospect scorecard | Internal |
 | 12.4 | Select 2-5 candidate first-cohort properties. | 12.3, legal go/no-go | 1 week | First-cohort shortlist | Internal |
 | 12.5 | Reject properties that violate first-cohort criteria. | 12.4 | Same day | Rejection log | [`Owner Discovery Guide`](../discovery/2026-05-20-owner-discovery-guide.md) |
-| 12.6 | Choose first owner-visible systems artifact based on discovery data. | 12.2 | 1 week | Artifact decision | [`Forward Plan`](../../plans/2026-05-20-forward-plan.md) |
+| 12.6 | Choose first owner-visible systems artifact based on discovery data. | 12.2 | 1 week | Artifact decision | Future forward plan |
 
 Exit criteria:
 
@@ -282,7 +282,7 @@ FCC should remain optional until core PM is proven unless a uniquely strong prop
 
 | ID | Task | Dependency | Lead time | Output | Links |
 |---|---|---|---:|---|---|
-| 14.1 | Keep FCC as a watched opportunity, not launch product. | PM core proof | Ongoing | Opportunity log | [`FCC Strategy`](../../strategies/Family%20Child%20Care%20%28FCC%29.md) |
+| 14.1 | Keep FCC as a watched opportunity, not launch product. | PM core proof | Ongoing | Opportunity log | [`FCC Strategy`](../../strategies/market/Family%20Child%20Care%20%28FCC%29.md) |
 | 14.2 | If candidate appears, run property/provider/legal/insurance screen. | Candidate property/provider | 2-4 weeks | FCC go/no-go | Counsel, insurance broker, DCYF |
 | 14.3 | Do not market FCC conversion before PM legal/operating base is stable. | PM proof | Ongoing | Constraint noted | Internal |
 
