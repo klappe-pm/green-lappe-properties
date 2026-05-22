@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: configuration
 sub-category: readme
 date-created: 2026-05-18
-date-revised: 2026-05-20
+date-revised: 2026-05-21
 doc-type: readme
 version: 0.1
 doc-status: draft
@@ -19,10 +19,17 @@ Working repository for Green Lappe Properties — a King + Snohomish County, Was
 
 Concentrate property-management entry on Eastside and central-Seattle ZIPs where multilingual screening (Mandarin, Hindi, Telugu, Russian/Ukrainian) is an uncontested moat against incumbent PMs; acquire small-portfolio rentals in top-school Eastside ZIPs (98074, 98075, 98029) and yield-mispriced rural-east edges (98024, 98045, 98050); structure the acquisition entity as a natural-person LLC on day one to preserve HB 1217's small-landlord exemption. See [docs/research/reports/effort-6/final-report.md](docs/research/reports/effort-6/final-report.md) for the synthesized rankings.
 
+## Current operating status
+
+The repo is in documentation, launch-prep, and decision-support mode. The GitHub PR queue is clean as of the latest handoff, and active work is tracked in [docs/backlog/backlog.md](docs/backlog/backlog.md). Launch readiness and operations items remain blocked until the user supplies owner, broker, counsel, account-owner, vendor, or market-conversation input; agents should not invent those decisions or evidence to close backlog items.
+
 ## Repo layout
 
 | Folder | Summary |
 | --- | --- |
+| [`AGENTS.md`](AGENTS.md) | Canonical project-local instructions for Claude, Codex, Warp, and Gemini. |
+| [`CLAUDE.md`](CLAUDE.md), [`WARP.md`](WARP.md), [`GEMINI.md`](GEMINI.md) | Cross-agent entrypoint files that route agents to `AGENTS.md`. |
+| [`.claude/`](.claude/) | Project-local IA policy, validation logic, and deterministic workflow guidance. |
 | [`docs/`](docs/) | Main working corpus for research, strategy, planning, status, and partner materials. |
 | [`docs/backlog/`](docs/backlog/) | Append-only backlog and backlink companion notes for project work and repo hygiene. |
 | [`docs/_archive/`](docs/_archive/) | Superseded brand, design, fund, prompt, and strategy artifacts retained for reference. |
@@ -84,10 +91,12 @@ The driving plan is [`docs/research/plans/Demographic Research Plan.md`](docs/re
 ## Workflow
 
 - Session handoff is governed by `~/.claude/PASSOFF.md`. Passoffs land in [`docs/passoffs/`](docs/passoffs/). Resume the next session with `/resume`; close it with `/pass`.
+- Project-local agent instructions live in [`AGENTS.md`](AGENTS.md). Keep `CLAUDE.md`, `WARP.md`, and `GEMINI.md` as entrypoint files that point back to the canonical instruction file.
 - Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
 - Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` or `YYYY-MM-DD-HHMM-status-update.md` convention. Historical status updates have been migrated there from `project-management/status-updates/`.
 - Launch execution documents land in [`docs/launch/`](docs/launch/) under `plans/`, `legal/`, `discovery/`, or `references/`.
 - Design-system prompts land in [`docs/prompts/`](docs/prompts/) using descriptive slug names.
+- Branch hygiene: keep `main` synced after PR merge, and delete merged feature/passoff branches once their work is present on `main`.
 
 ## Conventions
 
