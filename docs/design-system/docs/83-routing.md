@@ -17,8 +17,8 @@ produces:
   - canonical-url-rules
   - seo-meta-rules
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 83-routing

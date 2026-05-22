@@ -20,7 +20,7 @@ produces:
   - override-exception-log-schema
   - annual-review-checklist
 executor: strategy
-aliases:
+aliases: []
 tags:
   - governance
   - change-management

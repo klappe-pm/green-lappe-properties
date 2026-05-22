@@ -22,8 +22,8 @@ produces:
   - sticky-behavior-rules
   - active-state-rules
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 51-navigation

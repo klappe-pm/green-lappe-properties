@@ -15,8 +15,8 @@ produces:
   - data-audience-attribute-spec
   - layout-routing-mapping
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 11-audience-modes

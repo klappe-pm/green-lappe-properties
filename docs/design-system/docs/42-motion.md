@@ -16,8 +16,8 @@ produces:
   - reduced-motion-enforcement
   - forbidden-motion-patterns
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 42-motion

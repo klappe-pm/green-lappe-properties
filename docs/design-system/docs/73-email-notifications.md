@@ -20,8 +20,8 @@ produces:
   - inbox-rendering-rules
   - forbidden-email-patterns
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 73-email-notifications

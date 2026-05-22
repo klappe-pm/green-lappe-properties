@@ -18,8 +18,8 @@ produces:
   - repair-request-flow
   - lease-renewal-flow
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 81-user-flows

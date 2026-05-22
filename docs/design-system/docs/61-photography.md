@@ -16,8 +16,8 @@ produces:
   - property-photography-spec
   - forbidden-photography
 executor: brand
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 61-photography

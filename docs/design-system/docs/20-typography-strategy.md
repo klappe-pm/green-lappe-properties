@@ -15,8 +15,8 @@ produces:
   - rejected-alternatives
   - cost-and-licensing
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 20-typography-strategy

@@ -15,8 +15,8 @@ produces:
   - elevation-philosophy
   - forbidden-patterns
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 41-radius-shadow

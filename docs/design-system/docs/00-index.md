@@ -12,8 +12,8 @@ produces:
   - execution-graph
   - doc-contract
 executor: strategy
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 00-index

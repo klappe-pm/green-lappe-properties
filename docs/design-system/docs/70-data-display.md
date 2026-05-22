@@ -18,8 +18,8 @@ produces:
   - chart-spec
   - data-visualization-rules
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 70-data-display

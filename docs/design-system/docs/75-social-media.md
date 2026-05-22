@@ -20,8 +20,8 @@ produces:
   - posting-cadence
   - forbidden-social-patterns
 executor: brand
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 75-social-media

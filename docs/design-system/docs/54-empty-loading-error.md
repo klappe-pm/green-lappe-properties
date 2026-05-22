@@ -16,8 +16,8 @@ produces:
   - error-state-patterns
   - skeleton-patterns
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 54-empty-loading-error

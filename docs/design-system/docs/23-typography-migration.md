@@ -15,8 +15,8 @@ produces:
   - regression-test-checklist
   - rollback-plan
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 23-typography-migration

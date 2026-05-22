@@ -17,8 +17,8 @@ produces:
   - composite-role-tokens
   - tailwind-config-snippet
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 21-typography-tokens

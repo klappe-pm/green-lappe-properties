@@ -15,8 +15,8 @@ produces:
   - contrast-matrix
   - color-ratios-per-audience-mode
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 10-color-system

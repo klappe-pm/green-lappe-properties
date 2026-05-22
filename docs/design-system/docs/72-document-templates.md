@@ -22,8 +22,8 @@ produces:
   - document-architecture-rules
   - print-vs-pdf-vs-html-rules
 executor: content
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 72-document-templates
