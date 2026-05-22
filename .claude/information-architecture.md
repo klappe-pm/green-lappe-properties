@@ -24,6 +24,8 @@ All durable project material belongs under one of these zones:
 | Path | Role | Placement rule |
 | --- | --- | --- |
 | `README.md` | Repository orientation and top-level IA map | Update when a top-level docs zone changes meaning or a new durable zone is added. |
+| `AGENTS.md` | Canonical project-local agent instructions | Keep this synchronized with global passoff policy and current project boundaries. |
+| `CLAUDE.md`, `WARP.md`, `GEMINI.md` | Cross-agent entrypoint files | Keep these as thin pointers to `AGENTS.md` unless a tool requires a local compatibility note. |
 | `.claude/` | Project-local agent rules, evaluators, and deterministic workflow guidance | Keep executable checks here when they are project-specific and not product code. |
 | `.githooks/` | Versioned Git hooks for this project | Keep hook wrappers small; delegate policy logic to `.claude/` evaluators. |
 | `docs/research/` | Market, demographic, regulatory, scoring, and unit-economics source work | Use subfolders for plans, prompts, references, metrics, competitors, reports, and unit economics. |
@@ -49,7 +51,7 @@ Do not create new durable top-level zones unless the repository `README.md` is u
 
 These requirements are enforceable at change time. They intentionally avoid subjective quality scoring.
 
-1. Every changed durable file must live under an allowed top-level path: `README.md`, `.claude/`, `.githooks/`, `.gitignore`, or `docs/`.
+1. Every changed durable file must live under an allowed top-level path: `README.md`, `AGENTS.md`, `CLAUDE.md`, `WARP.md`, `GEMINI.md`, `.claude/`, `.githooks/`, `.gitignore`, or `docs/`.
 2. Every changed file under `docs/` must live in an allowed canonical docs zone.
 3. `.DS_Store` and other OS metadata files must never be part of a change.
 4. Filenames added under `docs/` must use lowercase kebab-case, with approved exceptions for `README.md`, design-system numbered specs, dated status files, dated launch files, and passoff files.

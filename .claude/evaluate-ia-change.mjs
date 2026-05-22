@@ -59,7 +59,17 @@ if (rangeIndex !== -1) {
   process.exit(2);
 }
 
-const allowedRootEntries = new Set(["README.md", ".claude", ".githooks", ".gitignore", "docs"]);
+const allowedRootEntries = new Set([
+  "README.md",
+  "AGENTS.md",
+  "CLAUDE.md",
+  "WARP.md",
+  "GEMINI.md",
+  ".claude",
+  ".githooks",
+  ".gitignore",
+  "docs",
+]);
 const allowedDocsZones = new Set([
   "_archive",
   "backlog",
