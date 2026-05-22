@@ -250,6 +250,7 @@ for (const entry of entries) {
       "Files changed",
       "Key decisions",
       "Risks and open questions",
+      "Lessons learned",
       "State",
       "Next actions",
       "Do not do",

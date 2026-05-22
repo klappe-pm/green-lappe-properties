@@ -71,7 +71,7 @@ Two alternative schemes were considered and rejected. Documented here so the rej
 
 | Alternative | Why rejected |
 |-------------|--------------|
-| No prefix; rely on Obsidian folders | Folders create another navigation layer; Obsidian wikilinks become `[[design-system/components/buttons]]` instead of `[[52-component-grammar]]`; cross-tool support degrades (VS Code, GitHub, `grep` all behave differently with nested paths). |
+| No prefix; rely on Obsidian folders | Folders create another navigation layer; Obsidian links would need path-like targets such as `design-system/components/buttons` instead of `[[52-component-grammar]]`; cross-tool support degrades (VS Code, GitHub, `grep` all behave differently with nested paths). |
 | Sequential numbering (`01`, `02`, ..., `42`) | Breaks the moment a new doc is inserted in the middle. Either every subsequent file renumbers (cascading rename, broken backlinks), or the new doc lands at the end of the list, divorced from its semantic neighbors. Defeats the purpose of ordering. |
 
 The decimal-tier scheme below preserves both stability and growth.
