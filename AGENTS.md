@@ -21,6 +21,7 @@ These project-local instructions augment the user's global Codex, Claude, Warp, 
 - Preserve the information architecture in `.claude/information-architecture.md`.
 - Update `README.md` when a top-level zone changes meaning or a new durable zone is added.
 - Update local indexes when adding durable launch, opportunities, or design-system files.
+- Put durable user-flow, user-journey, service-blueprint, and Mermaid UX diagram artifacts in `docs/uxd/`.
 - Use the repo's YAML frontmatter conventions for durable Markdown documents.
 - Run `node "$(git rev-parse --show-toplevel)/.claude/evaluate-ia-change.mjs" --staged` before claiming a change is ready.
 
@@ -29,6 +30,7 @@ These project-local instructions augment the user's global Codex, Claude, Warp, 
 - Work from the default branch unless the user asks otherwise, then create a short-lived feature branch.
 - Commit, push, create a PR, record the PR URL in the passoff, merge only when allowed by GitHub, and sync the local default branch before reporting completion.
 - Delete stale local or remote branches only when their tips are already merged into `main` or GitHub reports their PRs merged. Ask before deleting unmerged branches.
+- Before deleting stale branches, prune remotes and verify branch merge status against `main` or merged GitHub PRs.
 - Do not use `--no-verify`, force-push, reset, or bypass branch protections.
 
 ## Passoff
