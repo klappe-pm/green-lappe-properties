@@ -240,14 +240,14 @@ The package has two valid surfaces:
 | Surface | Purpose | Files |
 |---|---|---|
 | Package root | Current package source layout | `README.md`, `green-pm-tokens.css`, `base.css`, `modes.css`, `tailwind.config.js` |
-| Requested docs export folder | Operator-requested colocated copy for docs workflows | Same package files copied into `docs/design-system/docs/` |
+| Requested docs export folder | Operator-requested colocated copy for docs workflows | Same package files copied into `docs/uxd/design-system/docs/` |
 
 Passoffs do not follow the export folder. Passoffs always live in `docs/passoffs/`.
 
 ### 5.2 Implementation order
 
 1. Restore or update root package files.
-2. Mirror requested non-passoff files into `docs/design-system/docs/`.
+2. Mirror requested non-passoff files into `docs/uxd/design-system/docs/`.
 3. Add or update numbered specs.
 4. Update `00-index.md`, `95-quick-reference.md`, and `96-numbering-convention.md`.
 5. Run verification against numbered specs and mirrored package files.
@@ -256,7 +256,7 @@ Passoffs do not follow the export folder. Passoffs always live in `docs/passoffs
 
 ### 5.3 Mirror discipline
 
-When a root package file is mirrored into `docs/design-system/docs/`, the mirror must be byte-for-byte identical unless a future spec explicitly declares a docs-folder variant. If a mirror is edited directly, the same change must be reconciled back to the root package file before the work ships.
+When a root package file is mirrored into `docs/uxd/design-system/docs/`, the mirror must be byte-for-byte identical unless a future spec explicitly declares a docs-folder variant. If a mirror is edited directly, the same change must be reconciled back to the root package file before the work ships.
 
 The verification agent checks this with file hashes.
 

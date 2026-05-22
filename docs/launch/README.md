@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: launch
 sub-category: index
 date-created: 2026-05-21
-date-revised: 2026-05-21
+date-revised: 2026-05-22
 doc-type: readme
 version: 0.1
 doc-status: active
@@ -44,4 +44,6 @@ This folder is the canonical home for Green Lappe launch execution artifacts: bu
 
 ## Operating Rule
 
-Keep launch execution documents here. Keep broader strategic plans in [`../plans/`](../plans/) and market research in [`../research/`](../research/).
+Keep launch execution documents here. Keep go-to-market and strategic framing
+in [`../gtm/`](../gtm/) and [`../strategies/`](../strategies/). Keep market
+and user research in [`../uxr/`](../uxr/).

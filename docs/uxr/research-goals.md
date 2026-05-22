@@ -33,12 +33,12 @@ Megan does not need a cold introduction to the pain points or opportunity. She n
 
 | Goal | What to extract | Primary sources |
 |---|---|---|
-| Market size | TAM, SAM, SOM, units, fee/door, greenfield share, current PM adoption. | `docs/research/unit-economics/Total Addressable Market (TAM).md`, `docs/research/competitors/Non-Institutional Small Landlord PM Market, King and Snohomish Counties.md` |
-| Pain and urgency | Renter, owner, and PM staff pain; regulatory and communication failures. | `docs/design/PNW Property Management Pain Points - Three Personas, One Broken Middle.md`, `docs/design/User Journey Map v1.md` |
-| Launch wedge | Snohomish-first, SFR-first, Megan network, deferred FCC sequencing. | `docs/gtm/Launch Prioritization.md`, `docs/strategies/Family Child Care (FCC).md` |
-| Partnership thesis | Megan trust capital plus Kevin systems leverage; two-principal hypothesis. | `docs/fund/Pitch Deck Prep v.1.md`, `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt` |
-| Geography | PM sequencing, rental acquisition, daycare conversion, dual-use shortlist. | `docs/research/reports/effort-6/final-report.md`, effort-6 top-10 files |
-| Metrics | North star, CAC, operating metrics, competitor measurement system. | `docs/research/metrics/Northstar-Leased Months.md`, `docs/research/unit-economics/Customer Acquisition Costs (CAC) Model.md`, `docs/research/metrics/pm-competitor-metrics/` |
+| Market size | TAM, SAM, SOM, units, fee/door, greenfield share, current PM adoption. | `docs/uxr/unit-economics/Total Addressable Market (TAM).md`, `docs/uxr/competitors/Non-Institutional Small Landlord PM Market, King and Snohomish Counties.md` |
+| Pain and urgency | Renter, owner, and PM staff pain; regulatory and communication failures. | `docs/uxd/PNW Property Management Pain Points - Three Personas, One Broken Middle.md`, `docs/uxd/User Journey Map v1.md` |
+| Launch wedge | Snohomish-first, SFR-first, Megan network, deferred FCC sequencing. | `docs/gtm/Launch Prioritization.md`, `docs/strategies/market/Family Child Care (FCC).md` |
+| Partnership thesis | Megan trust capital plus Kevin systems leverage; two-principal hypothesis. | `docs/_archive/Pitch Deck Prep v.1.md`, `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt` |
+| Geography | PM sequencing, rental acquisition, daycare conversion, dual-use shortlist. | `docs/uxr/reports/effort-6/final-report.md`, effort-6 top-10 files |
+| Metrics | North star, CAC, operating metrics, competitor measurement system. | `docs/uxr/metrics/Northstar-Leased Months.md`, `docs/uxr/unit-economics/Customer Acquisition Costs (CAC) Model.md`, `docs/uxr/metrics/pm-competitor-metrics/` |
 | Story method | Claim spine, proof objects, action path, tension between current state and desired state. | This folder |
 
 ## Research Questions to Answer from the Corpus

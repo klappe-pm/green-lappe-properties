@@ -3,29 +3,29 @@ domain: green-lappe-properties
 category: opportunity-materials
 sub-category: deck-index
 date-created: 2026-05-20
-date-revised: 2026-05-20
+date-revised: 2026-05-22
 doc-type: deck-index
 version: 0.1
-doc-status: active
+doc-status: archive
 aliases: []
 tags: [deck, canonical, archive, partner-readiness]
 ---
 
 # Opportunity Decks
 
-## Canonical deck
+## Archived canonical deck
 
-The canonical partner deck is:
+The retired partner deck is:
 
-[`../green-lappe-partner-pitch-deck.pptx`](../green-lappe-partner-pitch-deck.pptx)
+[`green-lappe-partner-pitch-deck.pptx`](green-lappe-partner-pitch-deck.pptx)
 
-Use this deck for the Megan partner conversation unless a later passoff or deck decision note supersedes it.
+Do not treat this deck as current partner-conversation approval. It is
+preserved as historical source material until a new active deck decision lands.
 
 ## Why this deck is canonical
 
-- It is the only deck in the opportunity package with a matching slide-by-slide source file: [`../partner-pitch-deck-source.md`](../partner-pitch-deck-source.md).
-- It is tied to the opportunity style guide: [`../pnw-blue-green-style-guide.md`](../pnw-blue-green-style-guide.md).
-- It has a recorded build and verification manifest: [`../artifact-build-manifest.json`](../artifact-build-manifest.json).
+- It is the only preserved deck with a matching slide-by-slide source file: [`partner-pitch-deck-source.md`](partner-pitch-deck-source.md).
+- It is tied to the retired opportunity style guide: [`../pnw-blue-green-style-guide.md`](../pnw-blue-green-style-guide.md).
 - It has 12 slides, matching the intended partner-proof-sprint narrative in the source file.
 - It passed PowerPoint archive integrity verification.
 
@@ -33,7 +33,7 @@ Use this deck for the Megan partner conversation unless a later passoff or deck 
 
 | Path | Role | Slides | SHA-256 prefix | Notes |
 |---|---|---:|---|---|
-| [`../green-lappe-partner-pitch-deck.pptx`](../green-lappe-partner-pitch-deck.pptx) | Canonical | 12 | `ec0b60adf5c7` | Source-backed, verified partner opportunity deck. |
+| [`green-lappe-partner-pitch-deck.pptx`](green-lappe-partner-pitch-deck.pptx) | Retired canonical | 12 | `ec0b60adf5c7` | Source-backed, preserved partner opportunity deck. |
 | [`archive/green-lappe-opportunity-deck.pptx`](archive/green-lappe-opportunity-deck.pptx) | Archive | 22 | `a3743be1b4f1` | Preserved export variant. |
 | [`archive/green-lappe-properties-partner-alignment-1.pptx`](archive/green-lappe-properties-partner-alignment-1.pptx) | Archive | 11 | `5aa47947d2ca` | Preserved export variant. |
 | [`archive/green-lappe-properties-partner-alignment.pptx`](archive/green-lappe-properties-partner-alignment.pptx) | Archive | 11 | `8c57d7471934` | Preserved export variant. |
@@ -44,4 +44,6 @@ Use this deck for the Megan partner conversation unless a later passoff or deck 
 
 ## Archive rule
 
-Do not delete archived variants until Kevin or Megan explicitly confirms which historical exports are no longer needed. The archive is for preservation, not endorsement.
+Do not delete archived variants until Kevin or Megan explicitly confirms which
+historical exports are no longer needed. The archive is for preservation, not
+endorsement.

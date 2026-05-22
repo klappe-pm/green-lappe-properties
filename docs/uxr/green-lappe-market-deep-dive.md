@@ -29,7 +29,7 @@ The corpus contains two useful sizing lenses. They answer different questions an
 
 ### Broad Full-Stock TAM
 
-Source: `docs/research/unit-economics/Total Addressable Market (TAM).md`
+Source: `docs/uxr/unit-economics/Total Addressable Market (TAM).md`
 
 | Metric | Corpus value |
 |---|---:|
@@ -48,7 +48,7 @@ This is the "how big is the small-owner pool" lens. It is useful for confidence 
 
 ### Practical PM SAM
 
-Source: `docs/research/competitors/Non-Institutional Small Landlord PM Market, King and Snohomish Counties.md`
+Source: `docs/uxr/competitors/Non-Institutional Small Landlord PM Market, King and Snohomish Counties.md`
 
 | Market | Base annual revenue | Notes |
 |---|---:|---|

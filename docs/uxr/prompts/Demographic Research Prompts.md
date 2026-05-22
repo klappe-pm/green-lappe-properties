@@ -25,7 +25,7 @@ Each prompt is self-contained:
 - Effort 0 must finish before Efforts 1 through 5 begin. 
 - Efforts 1 through 5 can run in parallel. 
 - Effort 6 runs last.
-- Prompt responses and reports are written to this folder: /Users/kevinlappe/Projects/green-lappe-properties/docs/research/reports
+- Prompt responses and reports are written to this folder: /Users/kevinlappe/Projects/green-lappe-properties/docs/uxr/reports
 
 ## How To Use
 
