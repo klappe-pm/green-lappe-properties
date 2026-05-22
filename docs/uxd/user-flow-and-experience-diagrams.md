@@ -342,6 +342,6 @@ flowchart LR
       O[Market discovery findings]
     end
 
-    Prototype_Now --> Needs_Input
-    Needs_Input --> Do_Not_Assume
+    E --> F
+    J --> K
 ```
