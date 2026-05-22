@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: backlog
 sub-category: project-backlog
 date-created: 2026-05-18
-date-revised: 2026-05-21
+date-revised: 2026-05-22
 doc-type: backlog
 version: 0.1
 doc-status: active
@@ -23,7 +23,7 @@ These items remain active, but most launch readiness and operations items are bl
 
 ### Repo Hygiene
 
-- [P2] Regenerate opportunity corpus indexes after any major file move or rename.
+- [P2] Backlog any future rebuild of a live corpus index as a new active-zone tool, not as a dependency on archived deck tooling.
 
 ### Launch Readiness
 
@@ -44,7 +44,8 @@ These items remain active, but most launch readiness and operations items are bl
 - [x] Move competitor research markdown into `docs/uxr/competitors/`.
 - [x] Move dated competitor insight into the `docs/uxr/` research tree.
 - [x] Remove obsolete competitor dataset exports.
-- [x] Preserve the retired partner deck package under `docs/_archive/decks/` and document archived deck variants.
+- [x] Preserve the retired partner deck package in the non-live archive and document archived deck variants.
+- [x] Treat archived deck tooling and opportunity indexes as non-live; ignore them unless a future active-zone rebuild is explicitly planned.
 - [x] Migrate legacy `project-management/status-updates/` content into `docs/status/`.
 - [x] Create launch-readiness gate checklist and owner discovery guide.
 - [x] Create researched, dependency-ordered business launch project plan with official links.

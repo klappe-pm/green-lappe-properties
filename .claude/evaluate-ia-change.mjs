@@ -135,6 +135,15 @@ function isLegacyRelocatedCorpus(normalized) {
   return normalized.startsWith("docs/uxr/") || normalized.startsWith("docs/strategies/market/");
 }
 
+function isNonLivePath(normalized) {
+  const segments = normalized.split("/");
+  return segments.slice(0, -1).some((segment) => segment.startsWith("_"));
+}
+
+function hasNonLiveReference(content) {
+  return /(?:\]\(|`)(?:\.\/)?docs\/_[^`)]+/.test(content);
+}
+
 function readChangedFile(filePath) {
   if (mode === "staged") {
     try {
@@ -195,6 +204,7 @@ const rawDiff = git(diffArgs);
 const entries = parseNameStatus(rawDiff);
 const changedPaths = changedPathsSet(entries);
 const failures = [];
+const ignoredNonLivePaths = [];
 
 function fail(filePath, message) {
   failures.push(`${filePath}: ${message}`);
@@ -240,6 +250,11 @@ for (const entry of entries) {
     }
   }
 
+  if (isNonLivePath(normalized)) {
+    ignoredNonLivePaths.push(normalized);
+    continue;
+  }
+
   if (!isMarkdown(normalized)) {
     continue;
   }
@@ -247,6 +262,14 @@ for (const entry of entries) {
   const basename = path.basename(normalized);
   const content = readChangedFile(normalized);
   const fm = parseFrontmatter(content);
+
+  if (
+    !normalized.startsWith(".claude/") &&
+    !normalized.startsWith("docs/passoffs/") &&
+    hasNonLiveReference(content)
+  ) {
+    fail(normalized, "live documents must not depend on files inside docs/_* non-live folders.");
+  }
 
   if (normalized.startsWith("docs/passoffs/")) {
     if (!/^\d{4}-\d{2}-\d{2}-\d{4}-passoff-file\.md$/.test(basename)) {
@@ -383,6 +406,13 @@ if (failures.length > 0) {
     console.error(`- ${failure}`);
   }
   process.exit(1);
+}
+
+if (ignoredNonLivePaths.length > 0) {
+  console.log("IA evaluation ignored non-live changed paths:");
+  for (const filePath of ignoredNonLivePaths) {
+    console.log(`- ${filePath}`);
+  }
 }
 
 console.log(`IA evaluation passed for ${entries.length} changed file(s).`);

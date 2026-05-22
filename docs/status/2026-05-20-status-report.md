@@ -51,7 +51,7 @@ This status pass adds canonical top-level documentation folders:
 
 - `README.md` still references some older paths, including `docs/backlog.md`, `docs/research/datasets/`, and `docs/research/market/`, while the working tree currently contains `docs/backlog/`, `docs/research/competitors/`, and `docs/insights/`. This needs a deliberate cleanup commit.
 - The strongest synthesized business evidence is in `docs/research/reports/effort-6/final-report.md`.
-- The best partner-facing package is in `docs/opportunities/`, especially the 2-pager, market deep dive, deck source, and corpus pointer index.
+- Historical note: the then-current partner-facing package has since been retired into non-live archive material; use the README and active GTM, UXR, UXD, launch, and marketing folders for current orientation.
 - Status updates currently also exist under `project-management/status-updates/`; this pass creates `docs/status/` because the user requested a docs-native status folder.
 
 ## Current pain points
