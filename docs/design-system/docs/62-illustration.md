@@ -17,8 +17,8 @@ produces:
   - illustration-implementation
   - forbidden-illustration
 executor: brand
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 62-illustration

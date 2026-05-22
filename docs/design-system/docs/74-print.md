@@ -20,8 +20,8 @@ produces:
   - mailable-letterhead-spec
   - print-vendor-handoff-rules
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 74-print

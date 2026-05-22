@@ -13,8 +13,8 @@ produces:
   - banned-microcopy-phrases
   - cta-copy-bank
 executor: content
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 04-microcopy

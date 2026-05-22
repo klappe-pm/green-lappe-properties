@@ -15,8 +15,8 @@ produces:
   - forbidden-typography-patterns
   - eyebrow-and-signature-implementations
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 22-typography-usage

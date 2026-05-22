@@ -22,8 +22,8 @@ produces:
   - divider-spec
   - link-variants
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 52-component-grammar

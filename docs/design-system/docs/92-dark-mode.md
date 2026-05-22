@@ -16,8 +16,8 @@ produces:
   - audience-specific-dark-mode-policy
   - forbidden-patterns
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 92-dark-mode

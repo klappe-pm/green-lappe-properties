@@ -17,8 +17,8 @@ produces:
   - safe-area-rules
   - mobile-first-breakpoint-strategy
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 40-spacing-layout

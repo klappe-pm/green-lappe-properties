@@ -16,8 +16,8 @@ produces:
   - astro-route-naming
   - asset-naming
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 90-file-naming

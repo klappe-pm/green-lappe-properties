@@ -20,8 +20,8 @@ produces:
   - form-accessibility-spec
   - accessibility-statement
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 91-accessibility

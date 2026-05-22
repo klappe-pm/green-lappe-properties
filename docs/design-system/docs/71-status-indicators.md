@@ -15,8 +15,8 @@ produces:
   - icon-pairing-rules
   - status-aria-rules
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 71-status-indicators

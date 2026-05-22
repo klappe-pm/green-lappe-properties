@@ -15,8 +15,8 @@ produces:
   - sanity-studio-config
   - migration-and-versioning-rules
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 85-sanity-schemas

@@ -22,8 +22,8 @@ produces:
   - form-layout-spec
   - error-and-success-spec
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 50-form-components

@@ -16,8 +16,8 @@ produces:
   - tailwind-config-js
   - token-layer-architecture
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 30-design-tokens

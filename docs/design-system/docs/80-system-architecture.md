@@ -15,8 +15,8 @@ produces:
   - performance-budget
   - observability-spec
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 80-system-architecture

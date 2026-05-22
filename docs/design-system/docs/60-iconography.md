@@ -15,8 +15,8 @@ produces:
   - icon-implementation-pattern
   - forbidden-icon-patterns
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 60-iconography

@@ -18,8 +18,8 @@ produces:
   - forbidden-pairings-master-list
   - quick-decision-guide
 executor: design
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 93-pairings-forbidden

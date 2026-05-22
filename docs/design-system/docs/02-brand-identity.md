@@ -14,8 +14,8 @@ produces:
   - operator-signature-spec
   - pronunciation-rules
 executor: brand
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 02-brand-identity

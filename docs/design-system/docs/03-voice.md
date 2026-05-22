@@ -14,8 +14,8 @@ produces:
   - three-context-voice-samples
   - words-to-use-and-avoid
 executor: brand
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 03-voice

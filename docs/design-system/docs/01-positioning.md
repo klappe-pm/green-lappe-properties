@@ -12,8 +12,8 @@ produces:
   - competitive-whitespace-table
   - anti-positioning-statement
 executor: strategy
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 01-positioning

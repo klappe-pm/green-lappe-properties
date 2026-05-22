@@ -16,8 +16,8 @@ produces:
   - focus-management-rules
   - keyboard-interaction-spec
 executor: engineering
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 
 # 53-component-states
