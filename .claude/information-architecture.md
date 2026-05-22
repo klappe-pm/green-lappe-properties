@@ -55,7 +55,7 @@ These requirements are enforceable at change time. They intentionally avoid subj
 4. Filenames added under `docs/` must use lowercase kebab-case, with approved exceptions for `README.md`, design-system numbered specs, dated status files, dated launch files, and passoff files.
 5. New Markdown documents outside `docs/passoffs/`, `docs/_archive/`, and `docs/design-system/` must include YAML frontmatter with at least `domain`, `category`, `sub-category`, `date-created`, `date-revised`, `aliases`, and `tags`.
 6. Frontmatter dates must use `yyyy-MM-dd`.
-7. New files under `docs/passoffs/` must be named `yyyy-MM-dd-HHmm-passoff-file.md` and include the required sections in order: `Summary`, `Files changed`, `Key decisions`, `Risks and open questions`, `State`, `Next actions`, `Do not do`.
+7. New files under `docs/passoffs/` must be named `yyyy-MM-dd-HHmm-passoff-file.md` and include the required sections in order: `Summary`, `Files changed`, `Key decisions`, `Risks and open questions`, `Lessons learned`, `State`, `Next actions`, `Do not do`.
 8. New files under `docs/design-system/docs/` must be named `NN-kebab-slug.md`, must have an H1 matching the filename stem, and must declare `domain: brand`, `category: design-system`, and `version: 3.0.0` in frontmatter.
 9. Adding a design-system numbered spec requires updating both `docs/design-system/docs/00-index.md` and `docs/design-system/docs/96-numbering-convention.md` in the same change.
 10. Adding a durable launch Markdown file requires updating `docs/launch/README.md` unless the added file is itself a local README.

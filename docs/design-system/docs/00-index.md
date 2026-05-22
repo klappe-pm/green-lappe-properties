@@ -226,8 +226,8 @@ produces:
   - [artifact-1]
   - [artifact-2]
 executor: [strategy|brand|design|engineering|content]
-aliases:
-tags:
+aliases: []
+tags: []
 ---
 ```
 
