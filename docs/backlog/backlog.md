@@ -3,7 +3,7 @@ domain: green-lappe-properties
 category: backlog
 sub-category: project-backlog
 date-created: 2026-05-18
-date-revised: 2026-05-20
+date-revised: 2026-05-21
 doc-type: backlog
 version: 0.1
 doc-status: active
@@ -18,6 +18,8 @@ tags: [backlog, project-management]
 This document tracks open work, completed items, and ghost links for Green Lappe Properties.
 
 ## Active
+
+These items remain active, but most launch readiness and operations items are blocked on owner, broker, counsel, account-owner, vendor, or market-conversation input. Agents should not invent decisions, credentials, public launch approvals, legal conclusions, insurance requirements, trust-accounting requirements, vendor commitments, or discovery-call findings to close them.
 
 ### Repo Hygiene
 
