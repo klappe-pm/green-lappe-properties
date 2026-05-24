@@ -2,7 +2,7 @@
 """Quick rank inspector — prints top 15 per score for sanity checking."""
 import csv, os
 OUT = "/Users/kevinlappe/Projects/green-lappe-properties/docs/research/reports/effort-6"
-with open(os.path.join(OUT, "green-lappe-final-dataset.csv")) as f:
+with open(os.path.join(OUT, "green-property-management-final-dataset.csv")) as f:
     rows = list(csv.DictReader(f))
 
 def show(label, score_col, rank_col, n=15):

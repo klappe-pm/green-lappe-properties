@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: design
 sub-category: user-journey-maps
 date-created: 2026-05-17
@@ -13,7 +13,7 @@ llm-session:
 llm-session-data:
 aliases: []
 tags:
-  - green-lappe
+  - green-property-management
   - journey-mapping
   - pnw
   - property-management
@@ -628,7 +628,7 @@ flowchart LR
     style F fill:#ffd43b,stroke:#333
 ```
 
-Strategic implication for Green Lappe Properties: Snohomish County is the cleanest proving ground. Without the Seattle ordinance overlay, PM operational quality is the only variable. A PM that wins on operational quality there can absorb Seattle's regulatory complexity as a separate compliance layer later.
+Strategic implication for Green Property Management: Snohomish County is the cleanest proving ground. Without the Seattle ordinance overlay, PM operational quality is the only variable. A PM that wins on operational quality there can absorb Seattle's regulatory complexity as a separate compliance layer later.
 
 ---
 

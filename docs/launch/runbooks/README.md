@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: launch
 sub-category: runbooks
 date-created: 2026-05-21

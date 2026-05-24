@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: demographics
 date-created: 2026-05-18
@@ -108,7 +108,7 @@ Notable clustering signal:
   98007 + 98004 sum to ~22,000 speakers, a tight cluster anchored on
   Microsoft / Bellevue tech.  This is the highest-rent-capacity LEP
   community in either county and the largest single-language ROI
-  opportunity Green Lappe can underwrite.
+  opportunity Green Property Management can underwrite.
 - **Russian/Ukrainian South Snohomish + South King**: 98030 (Kent) +
   98087 (Lynnwood/Mill Creek) + 98204 (Everett) sum to ~16,000 Slavic
   speakers, 40% LEP.  Mukilteo-Lynnwood is the historical Russian
@@ -193,7 +193,7 @@ intake forms are not optional inside Seattle.  Outside Seattle —
 unincorporated King, all of Snohomish, every King city other than Burien
 which adopted a similar rule — informal accommodation remains legal and is
 the default operating mode of incumbent small landlords.  This bifurcates
-Green Lappe's product surface: Seattle requires the most formal compliance
+Green Property Management's product surface: Seattle requires the most formal compliance
 stack; the rest of the two-county geography rewards (but does not require)
 the same formality.
 

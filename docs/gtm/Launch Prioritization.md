@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: go-to-market
 sub-category: priorities
 date-created: 2026-05-18
@@ -37,7 +37,7 @@ Phases overlap. The FCC wedge can be initiated in phase 1 if an owner relationsh
 
 The launch is not a cold-start. Megan Green has documented existing relationships in Snohomish County across three counterparty types:
 
-|Counterparty type|What they want|How Green Lappe serves them|
+|Counterparty type|What they want|How Green Property Management serves them|
 |---|---|---|
 |`recent-buyer`|Bought a home, may turn it into a rental at some point.|First-call relationship when conversion to rental happens.|
 |`recent-seller`|Sold a home, often relocating. May have other properties they did not sell.|First-call relationship for those retained properties.|
@@ -49,7 +49,7 @@ The third group is the launch ICP. It is the highest-intent segment available wi
 
 - Megan's transaction history is concentrated in single-family homes; the network is the network.
 - Single-family is the same asset class as the founding Bothell property, so operational templates transfer cleanly.
-- Single-family rentals are the most common ownership pattern among accidental-landlord and small-portfolio-investor segments (the [[green-lappe-two-sided-marketplace|marketplace supply segments]]).
+- Single-family rentals are the most common ownership pattern among accidental-landlord and small-portfolio-investor segments (the [[green-property-management-two-sided-marketplace|marketplace supply segments]]).
 - Single-family is the property type that maps to the FCC wedge later. Conversion path is preserved.
 - Multifamily, condos with restrictive HOAs, and commercial property are explicitly out of scope for phase 1.
 
@@ -100,7 +100,7 @@ The following are real opportunities but are out of scope for phase 1. Deferring
 - Multifamily and small commercial.
 - HOA management.
 - Property acquisitions by the company itself (PropCo owning inventory).
-- A full FCC operator-as-a-service play (Structure C from [[green-lappe-fcc-strategy|FCC Strategy]]).
+- A full FCC operator-as-a-service play (Structure C from [[green-property-management-fcc-strategy|FCC Strategy]]).
 - Public-facing listings portal.
 - Paid marketing channels.
 - Out-of-state owner pursuit beyond Megan's existing network.

@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: opportunity-materials
 sub-category: market-deep-dive
 date-created: 2026-05-19
@@ -11,17 +11,17 @@ aliases: []
 tags: [market, tam, sam, som, assumptions, megan]
 ---
 
-# Green Lappe Market Deep Dive
+# Green Property Management Market Deep Dive
 
 Audience: Megan Green. Purpose: partner decision support. Built from the local repo corpus only; no web search used.
 
 ## 1. Executive Summary
 
-The Green Lappe opportunity is real, but the strongest launch framing is narrower than the broad market numbers. The two-county small-owner rental market is large enough to support many strategies: the broad corpus model estimates 302,000 small-owner rental units, $7.636B in annual rent roll, and $763.6M of full-stock annual PM TAM at a 10% management fee. The practical near-term PM market is smaller but still ample: the reconciled market memo sizes King County at $185M, Snohomish County at $34M, and the two-county base at $219M annually.
+The Green Property Management opportunity is real, but the strongest launch framing is narrower than the broad market numbers. The two-county small-owner rental market is large enough to support many strategies: the broad corpus model estimates 302,000 small-owner rental units, $7.636B in annual rent roll, and $763.6M of full-stock annual PM TAM at a 10% management fee. The practical near-term PM market is smaller but still ample: the reconciled market memo sizes King County at $185M, Snohomish County at $34M, and the two-county base at $219M annually.
 
 Those numbers are not the reason to launch. They establish that the pond is large enough. The actual reason to launch is a narrower, more actionable wedge: small-owner and accidental-landlord single-family homes in Megan's trust graph, starting in Snohomish County and adjacent north King corridors. The first proof should be 2-5 homes in year one, not 700 doors. The company can then earn the right to expand.
 
-The key strategic shift is to stop pitching Green Lappe as "another PM company" and frame it as an owner-operated operating system for small portfolios. Megan supplies the local trust, property judgment, vendor relationships, and owner acquisition path. Kevin supplies the systems layer: compliance, owner reporting, workflow automation, and evaluation discipline. The partnership only works if the systems layer actually preserves Megan's time and improves service quality. That is the central assumption to test.
+The key strategic shift is to stop pitching Green Property Management as "another PM company" and frame it as an owner-operated operating system for small portfolios. Megan supplies the local trust, property judgment, vendor relationships, and owner acquisition path. Kevin supplies the systems layer: compliance, owner reporting, workflow automation, and evaluation discipline. The partnership only works if the systems layer actually preserves Megan's time and improves service quality. That is the central assumption to test.
 
 ## 2. Sizing Lens: TAM, SAM, SOM
 
@@ -44,7 +44,7 @@ Source: `docs/uxr/unit-economics/Total Addressable Market (TAM).md`
 | Turnover-only leasing TAM at 75% of one month rent | $186.0M |
 | Combined greenfield ongoing plus leasing opportunity | $781.6M/yr |
 
-This is the "how big is the small-owner pool" lens. It is useful for confidence that the market is not niche. It is less useful for launch planning because it assumes a broad universe of small-owner units and does not yet apply Green Lappe's actual constraints: Megan's network, first geography, licensing, capacity, and the two-principal model.
+This is the "how big is the small-owner pool" lens. It is useful for confidence that the market is not niche. It is less useful for launch planning because it assumes a broad universe of small-owner units and does not yet apply Green Property Management's actual constraints: Megan's network, first geography, licensing, capacity, and the two-principal model.
 
 ### Practical PM SAM
 
@@ -57,13 +57,13 @@ Source: `docs/uxr/competitors/Non-Institutional Small Landlord PM Market, King a
 | Combined two-county base | $219M | About 0.9% of national in-scope PM revenue. |
 | King SAM addressable subsegment | $216M | 56,000 doors, $3,850 fee/door/year. |
 
-This is the better lens for a partner conversation because it reflects real PM adoption, incumbent fragmentation, and serviceable subsegments. It also highlights an important fact: the market is fragmented enough that Green Lappe does not need to take much share to matter.
+This is the better lens for a partner conversation because it reflects real PM adoption, incumbent fragmentation, and serviceable subsegments. It also highlights an important fact: the market is fragmented enough that Green Property Management does not need to take much share to matter.
 
 ## 3. Market Fragmentation and Entry Conditions
 
 The market memo estimates the top five in-scope King County operators at roughly 6,180 doors combined, or about 11% of SAM. No single operator exceeds 7% of SAM. The remaining managed doors are spread across many independent operators, franchises, and tech-forward entrants.
 
-This matters because Green Lappe is not trying to unseat a monopoly. The opportunity is a services market with:
+This matters because Green Property Management is not trying to unseat a monopoly. The opportunity is a services market with:
 
 - many small operators;
 - aging founder-led shops;
@@ -73,13 +73,13 @@ This matters because Green Lappe is not trying to unseat a monopoly. The opportu
 - owner dissatisfaction around maintenance and statements;
 - staff burnout that makes service quality hard to sustain.
 
-The corpus also identifies M&A optionality: 50-300 door tuck-ins at $400-$800 per door are a standard exit path in the memo's framing. That does not mean the launch should be acquisition-led. It means the eventual book has a path to value even if Green Lappe stays capped and partner-operated.
+The corpus also identifies M&A optionality: 50-300 door tuck-ins at $400-$800 per door are a standard exit path in the memo's framing. That does not mean the launch should be acquisition-led. It means the eventual book has a path to value even if Green Property Management stays capped and partner-operated.
 
 ## 4. The Pain Is a Design Input, Not the Pitch
 
 The pain-point docs are unusually rich. They show three personas harmed by the same broken operating model:
 
-| Persona | Dominant pain | Green Lappe implication |
+| Persona | Dominant pain | Green Property Management implication |
 |---|---|---|
 | Owner/small landlord | Opaque fees, slow responses, vendor markups, regulatory landmines, exit friction. | Publish fee posture, enforce owner approval thresholds, show source invoices, build compliance as a product. |
 | Resident | Maintenance silence, deposit disputes, surprise fees, hostile communication. | SLA-visible maintenance, shared condition documentation, plain-language resident communication. |
@@ -119,7 +119,7 @@ The market memo contains venture-style SOM scenarios:
 | Funded boutique | 700-1,000 | $2.7M-$3.85M | 1,800-2,500 | $7M-$9.6M |
 | Funded + M&A | 1,200-1,400 | $4.6M-$5.4M | 3,000-3,500 | $11.5M-$13.5M |
 
-Those are market-capacity scenarios, not current Green Lappe operating plans. For Megan, the relevant SOM is staged:
+Those are market-capacity scenarios, not current Green Property Management operating plans. For Megan, the relevant SOM is staged:
 
 | Stage | Door target | Purpose | Success condition |
 |---|---:|---|---|
@@ -140,7 +140,7 @@ The corpus documents the incumbent pricing range:
 - maintenance markup from 0%-15%;
 - setup fees of $200-$500.
 
-Green Lappe's brand promise points away from undisclosed markups and toward transparent pricing. There are two credible launch choices:
+Green Property Management's brand promise points away from undisclosed markups and toward transparent pricing. There are two credible launch choices:
 
 ### Option A: Flat-Fee Premium
 
@@ -237,4 +237,4 @@ The next meeting should decide or assign owners for:
 
 ## 13. Bottom Line
 
-The market is large, fragmented, and pain-rich. That alone is not enough. Green Lappe becomes compelling if the launch stays narrow enough to prove the promise and if the partnership turns Megan's trust capital plus Kevin's systems leverage into measurable operating quality. The recommended next move is a 90-day proof sprint, not a broad launch.
+The market is large, fragmented, and pain-rich. That alone is not enough. Green Property Management becomes compelling if the launch stays narrow enough to prove the promise and if the partnership turns Megan's trust capital plus Kevin's systems leverage into measurable operating quality. The recommended next move is a 90-day proof sprint, not a broad launch.

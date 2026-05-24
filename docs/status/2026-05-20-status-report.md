@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: status
 sub-category: project-review
 date-created: 2026-05-20
@@ -11,13 +11,13 @@ aliases: []
 tags: [status, git, project-review, planning]
 ---
 
-# Green Lappe Properties Status Report
+# Green Property Management Status Report
 
 Generated: 2026-05-20 09:30 PDT
 
 ## Executive status
 
-Green Lappe Properties is now organized around a useful research-to-decision corpus: the 7-effort market analysis, partner opportunity package, pitch/source materials, and passoff trail are present in `docs/`. The strongest immediate path is not more broad research. The project needs to convert the existing corpus into operating proof: licensing clarity, first owner conversations, pricing decision, one systems proof artifact, and a first 2-5 door cohort.
+Green Property Management is now organized around a useful research-to-decision corpus: the 7-effort market analysis, partner opportunity package, pitch/source materials, and passoff trail are present in `docs/`. The strongest immediate path is not more broad research. The project needs to convert the existing corpus into operating proof: licensing clarity, first owner conversations, pricing decision, one systems proof artifact, and a first 2-5 door cohort.
 
 ## Git and branch state
 

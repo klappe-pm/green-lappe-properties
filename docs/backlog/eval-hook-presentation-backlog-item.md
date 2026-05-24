@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: backlog
 sub-category: presentation-eval
 date-created: 2026-05-19
@@ -19,7 +19,7 @@ Create an eval hook that scores whether repo-native research docs are ready to b
 
 ## Why This Exists
 
-The Green Lappe docs turned around quickly because they already have useful structure: frontmatter, TL;DRs, headings, tables, explicit caveats, modeled labels, and source inventories. The main friction was not lack of content. It was synthesis friction:
+The Green Property Management docs turned around quickly because they already have useful structure: frontmatter, TL;DRs, headings, tables, explicit caveats, modeled labels, and source inventories. The main friction was not lack of content. It was synthesis friction:
 
 - multiple overlapping TAM/SAM/SOM lenses;
 - some facts mixed with assumptions;

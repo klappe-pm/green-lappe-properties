@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: configuration
 sub-category: readme
 date-created: 2026-05-18
@@ -11,9 +11,9 @@ aliases: []
 tags: []
 ---
 
-# green-lappe-properties
+# Green Property Management
 
-Working repository for Green Lappe Properties — a King + Snohomish County, Washington property management and acquisition entity built around a dual-use thesis (long-term rental and licensed daycare conversion). This repo holds the research, strategy, GTM, and operating artifacts that drive sub-market sequencing, acquisition shortlists, and service-design priorities.
+Working repository for Green Property Management — a King + Snohomish County, Washington property management and acquisition entity built around a dual-use thesis (long-term rental and licensed daycare conversion). This repo holds the research, strategy, GTM, and operating artifacts that drive sub-market sequencing, acquisition shortlists, and service-design priorities.
 
 ## Thesis in one paragraph
 

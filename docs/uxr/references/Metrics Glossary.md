@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: references
 sub-category: metrics
 doc-type: glossary
@@ -19,9 +19,9 @@ tags: []
 
 ## Purpose
 
-A single canonical reference for every metric, term, and ratio used in the Green Lappe operating framework. Three categories:
+A single canonical reference for every metric, term, and ratio used in the Green Property Management operating framework. Three categories:
 
-1. **Green Lappe defined.** Metrics specific to this framework, defined here.
+1. **Green Property Management defined.** Metrics specific to this framework, defined here.
 2. **Industry standard.** Metrics with consistent meaning across property management; definitions match common usage.
 3. **Composite or derived.** Metrics built from other metrics in this glossary.
 
@@ -31,7 +31,7 @@ Entries are alphabetical within each category.
 
 ---
 
-## Category 1: Green Lappe Defined Metrics
+## Category 1: Green Property Management Defined Metrics
 
 ### CAC per Leased Month
 
@@ -238,9 +238,9 @@ Revenue per Leased Month = Gross rent collected (TTM) / Leased Months delivered 
 
 **Connections.**
 
-- Not used as an operating metric for Green Lappe itself
+- Not used as an operating metric for Green Property Management itself
 - Relevant in owner conversations and management reporting
-- Distinct from Green Lappe's revenue, which is the management fee on collected rent
+- Distinct from Green Property Management's revenue, which is the management fee on collected rent
 
 ### Occupancy Rate
 

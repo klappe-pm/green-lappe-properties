@@ -1,14 +1,14 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: launch
 sub-category: task-repository-gaps
 date-created: 2026-05-23
-date-revised: 2026-05-23
+date-revised: 2026-05-24
 doc-type: open-questions
 version: 0.1
 doc-status: draft
 aliases: [Task Repository Open Questions And Gaps]
-tags: [launch, taskforge, gaps, open-questions]
+tags: [launch, tasknotes, gaps, open-questions]
 ---
 
 # Open Questions And Gaps
@@ -31,7 +31,7 @@ This file separates what is already known from what still needs user input.
 - Exact Obsidian vault root or roots.
 - Whether this repo is the vault, a folder inside the vault, or a source folder
   that will be copied into another vault.
-- Whether TaskForge is configured for Obsidian Tasks emoji format, Dataview
+- Whether TaskNotes is configured for Obsidian Tasks emoji format, Dataview
   bracket format, TaskNotes, or mixed parsing.
 - Whether your existing automations expect a specific folder such as
   `Projects/`, `Tasks/`, `Areas/`, or daily notes.
@@ -48,9 +48,9 @@ This file separates what is already known from what still needs user input.
 ## Answers needed from Kevin
 
 1. What is the exact Obsidian vault path where this task repository should live?
-2. Should the folder be named exactly `Projects/Green Lappe Launch/`, or should
+2. Should the folder be named exactly `Projects/Green Property Management Delivery/`, or should
    it stay at the repo-valid path currently drafted here?
-3. Which TaskForge task format do you use today: emoji, Dataview, TaskNotes, or
+3. Which TaskNotes task format do you use today: emoji, Dataview, TaskNotes, or
    mixed?
 4. Which plugins or automations need to read these tasks?
 5. Do your automations require tasks to live in one file, one file per project,
@@ -66,17 +66,17 @@ This file separates what is already known from what still needs user input.
 10. Who is allowed to change P0 launch dates?
 11. Who is allowed to mark externally blocked tasks done?
 12. What daily review time should automations or reminders use?
-13. What timezone should TaskForge and automations use? Current repo convention
+13. What timezone should TaskNotes and automations use? Current repo convention
     is America/Los_Angeles.
 14. Should recurring process tasks exist in the same task file as launch tasks,
     or in the process file only?
-15. Should task IDs use `GLP-T###`, or do you already have an ID convention?
+15. Should task IDs use `GPM-T###`, or do you already have an ID convention?
 
 ## Draft assumptions to critique
 
 - The package path is the source of truth:
-  `docs/launch/projects/2026-05-23-green-lappe-taskforge-repository/`.
-- The project is `Green Lappe Launch`.
+  `docs/launch/projects/2026-05-24-green-property-management-tasknotes-repository/`.
+- The project is `Green Property Management Delivery`.
 - Epics are governance, legal/licensing, owner discovery, operations, systems,
   website/public boundary, and task operations process.
 - P0 means launch/hold decision blocker.

@@ -302,7 +302,7 @@ The exhaustive list of forbidden combinations across every system axis.
 | Wordmark on Sky or Clay background | Approved surfaces only: Cream, Paper, Cedar, Ink |
 | Wordmark with separate logo mark | Wordmark IS the mark until separate mark commissioned |
 | "GPM" acronym in customer-facing copy | Internal use only |
-| Legacy name forms (Green Lappe, Green Lappe Properties) | Superseded |
+| Legacy name forms (Green Property Management, Green Property Management) | Superseded |
 | Megan's full name in Fraunces | First-name italic only |
 | Megan's signature without credential line | Always paired |
 | Marketing copy referring to "the company" or "Green Property Management" as a subject | Use "I" (Megan) or rewrite |

@@ -1,4 +1,4 @@
-# Green Lappe Properties Agent Instructions
+# Green Property Management Agent Instructions
 
 These project-local instructions augment the user's global Codex, Claude, Warp, and Gemini rules. They do not override the global passoff location, naming, or safety rules.
 

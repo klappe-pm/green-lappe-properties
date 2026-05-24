@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: research
 sub-category: effort-4
 date-created: 2026-05-18
@@ -18,7 +18,7 @@ Triangulating CoStar, Apartment List, and Zillow ZORI series with WARN filings i
 
 1. The Q4-2022 through Q1-2023 wave (Meta Nov-2022, Amazon Jan-2023, Microsoft Jan-2023, Salesforce Jan-2023, Google Jan-2023) lifted Bellevue Class A vacancy from ~5.0% to ~9.3% by Q3-2023 and SLU/Downtown Class A from ~5.5% to ~10.1% over the same window.
 2. The same sub-markets ran concessions of 4-8 weeks free on 12-month leases by Q2-2023 that persisted through Q4-2024.
-3. Small-portfolio Class B/C (the Green Lappe target inventory) absorbed a meaningful share of the Cohort E downshift; ZORI for Class B/C Bellevue moved up ~1.8% in 2023 while Class A moved down ~3.4%, a 520bps spread.
+3. Small-portfolio Class B/C (the Green Property Management target inventory) absorbed a meaningful share of the Cohort E downshift; ZORI for Class B/C Bellevue moved up ~1.8% in 2023 while Class A moved down ~3.4%, a 520bps spread.
 
 ## The natural experiment design
 
@@ -128,7 +128,7 @@ Triangulating WARN filing dates with weekly CoStar vacancy / concession data:
 - **Class B/C demand uplift:** ~90-180 days; Cohort E downshift requires lease cycle + decision to take Class B/C.
 - **Class B/C rent uplift:** ~120-210 days.
 
-**Operational implication.** Green Lappe can use Class A concession-growth data (Apartment List concession index, freely available) as a 60-90 day leading indicator for Class B/C demand uplift in adjacent sub-markets. A Class A concession index move from <4 weeks/12 to >6 weeks/12 in Bellevue or SLU is a signal to push small-portfolio Bellevue Class B/C asking rents 1-2% higher within 60 days.
+**Operational implication.** Green Property Management can use Class A concession-growth data (Apartment List concession index, freely available) as a 60-90 day leading indicator for Class B/C demand uplift in adjacent sub-markets. A Class A concession index move from <4 weeks/12 to >6 weeks/12 in Bellevue or SLU is a signal to push small-portfolio Bellevue Class B/C asking rents 1-2% higher within 60 days.
 
 ## Difference-in-differences flagged with confounders
 
@@ -181,7 +181,7 @@ This is the key conclusion: **the Class A response to the 2022-2023 layoff cycle
 
 The Class B/C insulation thesis holds more cleanly because Class B/C supply additions were minimal during the same window and the confounding factors moved smaller for the Class B/C cohort.
 
-## What Green Lappe should monitor going forward
+## What Green Property Management should monitor going forward
 
 The 2022-2023 cycle was a layoff-heavy cycle. The 2025-2026 cycle (~16k WA WARN filings 2024-2025 YTD) is roughly half the scale but more concentrated at Microsoft + Amazon + Boeing + Starbucks. The same dose-response should reproduce, but the Class B/C insulation should be even cleaner because:
 

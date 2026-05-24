@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: research
 sub-category: effort-4
 date-created: 2026-05-18
@@ -92,7 +92,7 @@ Snohomish total renter households ~210,000 (King+Sno total 770k; Snohomish share
 
 Snohomish small-portfolio acquisition pricing should incorporate a **15-20% Boeing-volatility discount** relative to comparable King County Class B/C inventory. The discount is partially offset by lower acquisition prices and lower regulatory friction in unincorporated Snohomish + Everett + Mukilteo + Lynnwood.
 
-**The Snohomish small-portfolio thesis is aerospace-anchored, not tech-anchored, and Green Lappe should plan its monitoring layer around Boeing program-rate disclosures + IAM 751 + SPEEA contract cycles.** The Boeing 10-K, the FAA monthly delivery reports, and the IAM/SPEEA contract status pages should be quarterly review items.
+**The Snohomish small-portfolio thesis is aerospace-anchored, not tech-anchored, and Green Property Management should plan its monitoring layer around Boeing program-rate disclosures + IAM 751 + SPEEA contract cycles.** The Boeing 10-K, the FAA monthly delivery reports, and the IAM/SPEEA contract status pages should be quarterly review items.
 
 ## Amazon Bellevue tower expansion exposure analysis
 
@@ -110,7 +110,7 @@ Amazon's Bellevue physical-presence trajectory is the single largest concentrate
 
 Bellevue 98004 and 98007 Class A inventory is **most exposed** to any subsequent Amazon WA cut. A second Amazon WA cut of similar scale (~2,800+ WA WARN) in 2026 or 2027 would drive Bellevue Class A vacancy materially. Bellevue Class B/C is partly insulated by the Class A → Class B/C downshift pattern documented in the 2022-2023 cycle, but only partly: the downshift's tailwind for Class B/C is smaller than the headwind for Class A.
 
-**Green Lappe should treat Bellevue 98004 + 98007 small-portfolio Class B/C as moderate risk during 2026-2027**, with the operational plan being to retain Cohort A + D tenants through lease renewal incentives + accept slightly higher screening accommodations for laid-off Amazon employees on severance.
+**Green Property Management should treat Bellevue 98004 + 98007 small-portfolio Class B/C as moderate risk during 2026-2027**, with the operational plan being to retain Cohort A + D tenants through lease renewal incentives + accept slightly higher screening accommodations for laid-off Amazon employees on severance.
 
 ## Sub-markets most insulated from tech layoffs
 
@@ -144,7 +144,7 @@ Sub-markets at the *low* end of insulation (most tech-exposed):
 | 9 | Capitol Hill (98122) | 50 |
 | 10 | Fremont (98103) | 54 |
 
-The operationally important conclusion: **a small-portfolio acquisition strategy concentrated in ranks 1-8 insulation tier (Federal Way, Auburn, Renton, Edmonds, Everett, Lynnwood, Mountlake Terrace, Kent) is the most defensible diversification position for Green Lappe given the layoff-cycle pattern of 2022-2025**. Mukilteo + Marysville carry Boeing concentration risk that should be partially hedged.
+The operationally important conclusion: **a small-portfolio acquisition strategy concentrated in ranks 1-8 insulation tier (Federal Way, Auburn, Renton, Edmonds, Everett, Lynnwood, Mountlake Terrace, Kent) is the most defensible diversification position for Green Property Management given the layoff-cycle pattern of 2022-2025**. Mukilteo + Marysville carry Boeing concentration risk that should be partially hedged.
 
 ## Boeing 2024 IAM 751 strike and production outlook
 
@@ -160,7 +160,7 @@ The Nov-2024 10% global cut (Boeing announcement Oct-2024) was the post-strike r
 
 ## Sub-markets to monitor for next-cycle dynamics
 
-The Class A vs Class B/C insulation thesis is the core finding. The four next-cycle dynamics Green Lappe should monitor:
+The Class A vs Class B/C insulation thesis is the core finding. The four next-cycle dynamics Green Property Management should monitor:
 
 1. **5-day RTO enforcement.** Microsoft (effective Feb-2025), Amazon (effective Jan-2025), Starbucks (effective Jan-2025), T-Mobile (effective hybrid-3 holding), and how strict actual enforcement becomes by mid-2026. Strong enforcement reverses the 2021-2023 sub-urban migration; weak enforcement preserves it.
 2. **AI hiring composition shift.** Microsoft, Amazon, Google, Anthropic, OpenAI are shifting hiring composition toward applied scientists + ML engineers (higher comp, smaller cohort) and away from junior SDEs (Cohort A inflow shrinks). This compresses Cohort A density in Bellevue/SLU.
@@ -180,7 +180,7 @@ The Class A vs Class B/C insulation thesis is the core finding. The four next-cy
 
 ## Conclusion
 
-The five operational outputs of Effort 4 for Green Lappe:
+The five operational outputs of Effort 4 for Green Property Management:
 
 1. **Diversify away from Bellevue 98004 + 98007 + SLU 98109 + Downtown 98101 + Redmond 98052** concentration in the first 100-500 doors. These sub-markets are tech-cycle-exposed and recently lower-yielding due to Class A supply.
 2. **Concentrate in Federal Way, Auburn, Renton, Edmonds, Everett, Lynnwood, Mountlake Terrace, Kent small-portfolio Class B/C inventory** for the most cycle-insulated TAM.

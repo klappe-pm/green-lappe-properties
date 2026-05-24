@@ -1,4 +1,4 @@
-# Green Lappe Properties Claude Instructions
+# Green Property Management Claude Instructions
 
 Read and follow `AGENTS.md` in this repository before making changes.
 

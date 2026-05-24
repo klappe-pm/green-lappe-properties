@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: competitors
 date-created: 2026-05-17

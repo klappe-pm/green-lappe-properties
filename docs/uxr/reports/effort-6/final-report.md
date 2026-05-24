@@ -1,6 +1,6 @@
 # final-report
 
-Green Lappe Properties — King + Snohomish County market analysis. Generated 2026-05-18.
+Green Property Management — King + Snohomish County market analysis. Generated 2026-05-18.
 
 ## 1. Executive summary
 

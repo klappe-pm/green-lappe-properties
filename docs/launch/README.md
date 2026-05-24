@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: launch
 sub-category: index
 date-created: 2026-05-21
@@ -13,7 +13,7 @@ tags: [launch, index, project-plan]
 
 # Launch Documents
 
-This folder is the canonical home for Green Lappe launch execution artifacts: business launch plans, legal gates, discovery guides, and launch reference notes.
+This folder is the canonical home for Green Property Management launch execution artifacts: business launch plans, legal gates, discovery guides, and launch reference notes.
 
 ## Pointer Table
 
@@ -24,7 +24,7 @@ This folder is the canonical home for Green Lappe launch execution artifacts: bu
 | [`discovery/`](discovery/) | Owner discovery guides, scripts, scorecards, and prospecting notes. |
 | [`references/`](references/) | Launch-specific reference notes, source-link summaries, and agency/counsel notes. |
 | [`runbooks/`](runbooks/) | Operator checklists for approved launch actions, account-owner steps, and evidence capture. |
-| [`projects/`](projects/) | Obsidian-loadable launch task repositories, project structures, and TaskForge-compatible task plans. |
+| [`projects/`](projects/) | Obsidian-loadable launch task repositories, project structures, TaskNotes task notes, and Tasks plugin views. |
 
 ## Current Launch Files
 
@@ -33,11 +33,11 @@ This folder is the canonical home for Green Lappe launch execution artifacts: bu
 | [`plans/2026-05-20-business-launch-project-plan.md`](plans/2026-05-20-business-launch-project-plan.md) | Researched, task-by-task launch plan with dependencies, lead times, and official links. |
 | [`plans/2026-05-20-website-domain-internal-launch-plan.md`](plans/2026-05-20-website-domain-internal-launch-plan.md) | Domain, DNS, hosting, protected preview, and internal testing plan for website launch infrastructure. |
 | [`plans/2026-05-21-website-phase-completion-register.md`](plans/2026-05-21-website-phase-completion-register.md) | Phase completion register separating in-repo completion from external account-owner execution. |
-| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-task-repository-index.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-task-repository-index.md) | Single Obsidian-loadable TaskForge task repository for the conditional 2026-06-15 launch-readiness target. |
-| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-green-lappe-launch-project.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-green-lappe-launch-project.md) | Project, epic, feature, milestone, priority, and status definitions for the launch task repository. |
-| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-draft-launch-tasks.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-draft-launch-tasks.md) | Draft TaskForge-compatible launch task list for critique and future management. |
-| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-draft-task-management-process.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-draft-task-management-process.md) | Draft process for reviewing, updating, revising, managing, deleting, and adding launch tasks. |
-| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-open-questions-and-gaps.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-open-questions-and-gaps.md) | Known assumptions, gaps, and questions needed to align the task repository with existing vaults and automations. |
+| [`projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-tasknotes-repository-index.md`](projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-tasknotes-repository-index.md) | Single Obsidian-loadable TaskNotes repository for the conditional 2026-06-15 launch-readiness target. |
+| [`projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-green-property-management-project-note.md`](projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-green-property-management-project-note.md) | Project note with delivery hierarchy, task note links, milestone definitions, status tags, and Tasks plugin views. |
+| [`projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-draft-launch-task-list.md`](projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-draft-launch-task-list.md) | Legacy inline launch task list retained as a TaskNotes migration source. |
+| [`projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-tasknotes-delivery-workflow.md`](projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-tasknotes-delivery-workflow.md) | Global TaskNotes plus Tasks plugin workflow pattern scoped to this project. |
+| [`projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-open-questions-and-gaps.md`](projects/2026-05-24-green-property-management-tasknotes-repository/2026-05-24-open-questions-and-gaps.md) | Known assumptions, gaps, and questions needed to align the task repository with existing vaults and automations. |
 | [`legal/2026-05-20-launch-readiness-gates.md`](legal/2026-05-20-launch-readiness-gates.md) | Gate checklist for designated broker, firm licensing, trust accounting, contracts, insurance, and role boundaries. |
 | [`discovery/2026-05-20-owner-discovery-guide.md`](discovery/2026-05-20-owner-discovery-guide.md) | Warm-owner discovery guide for the 20-conversation proof sprint. |
 | [`references/2026-05-20-domain-clearance-check.md`](references/2026-05-20-domain-clearance-check.md) | Domain, USPTO, and web-collision evidence for the website domain decision. |

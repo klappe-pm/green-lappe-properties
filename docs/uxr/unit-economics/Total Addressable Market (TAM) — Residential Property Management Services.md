@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: tam
 doc-type: analysis

@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: demographics
 doc-type: plan
@@ -299,7 +299,7 @@ QUALITY BAR
 - Every in-scope ZCTA appears in `housing-zip.csv`.
 - Modeled columns are flagged as MODELED with the assumption.
 - Bedroom-level rent comes from HUD SAFMR with ZORI as a sanity check; flag any ZIP with a >25% gap between the two.
-- The small-owner share calculation reconciles to the King County and Snohomish County totals from the Green Lappe TAM dataset (228K small-owner King + 74K Snohomish, 2025 baseline).
+- The small-owner share calculation reconciles to the King County and Snohomish County totals from the Green Property Management TAM dataset (228K small-owner King + 74K Snohomish, 2025 baseline).
 
 DO NOT
 - Use listing-source asking rents without flagging the 5-15% asking-vs-effective gap.
@@ -450,7 +450,7 @@ INPUT
 - The ZIP master from Effort 0: `zip-master.csv` and `zip-boundaries.geojson`
 
 GOAL
-Identify the employer-driven engines of rental demand, quantify tech-cohort renter behavior through hiring and layoff cycles, and define the early-warning indicators Green Lappe must monitor.
+Identify the employer-driven engines of rental demand, quantify tech-cohort renter behavior through hiring and layoff cycles, and define the early-warning indicators Green Property Management must monitor.
 
 SCOPE
 - Top 20 employers by headcount in the two counties
@@ -684,7 +684,7 @@ DO NOT
 
 ```
 ROLE
-You are a senior strategy analyst synthesizing five parallel research efforts (schools, housing, demographics, employers, regulatory) into the final Green Lappe market analysis. Your output is the decision document. Three composite scores, three ranked lists, one dual-use shortlist.
+You are a senior strategy analyst synthesizing five parallel research efforts (schools, housing, demographics, employers, regulatory) into the final Green Property Management market analysis. Your output is the decision document. Three composite scores, three ranked lists, one dual-use shortlist.
 
 INPUT
 - Effort 0 outputs: `zip-master.csv`, `zip-boundaries.geojson`, `district-boundaries.geojson`, `jurisdiction-crosswalk.csv`
@@ -733,7 +733,7 @@ Document the exact normalization for each input. Most are min-max normalized wit
 
 DELIVERABLES
 
-1. `green-lappe-final-dataset.csv` per in-scope ZCTA, joining all upstream columns plus three score columns and three rank columns:
+1. `green-property-management-final-dataset.csv` per in-scope ZCTA, joining all upstream columns plus three score columns and three rank columns:
    - All columns from `zip-master`, `zip-school-crosswalk`, `housing-zip`, `small-portfolio-stock-modeled`, `demographics-zip`, `childcare-gap-zip`
    - `pm_score`, `pm_rank`
    - `rental_score`, `rental_rank`
@@ -820,4 +820,4 @@ After Effort 6 completes, the partner team has:
 |Heatmaps for rendering|6|GeoJSON|
 |Final report|6|Markdown|
 
-This is the input bundle the Green Lappe operating team uses to commit to a sub-market entry sequence, a language-access roadmap, a parcel-acquisition search, and a quarterly monitoring discipline.
+This is the input bundle the Green Property Management operating team uses to commit to a sub-market entry sequence, a language-access roadmap, a parcel-acquisition search, and a quarterly monitoring discipline.

@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: schools
 date-created: 2026-05-18
@@ -12,7 +12,7 @@ tags:
 
 # effort-1-narrative
 
-K-12 schools and attendance-boundary layer for the Green Lappe King /
+K-12 schools and attendance-boundary layer for the Green Property Management King /
 Snohomish two-county market analysis. Joins to Effort 0's ZIP universe on
 `zcta` (string, 5 char) per the Effort 0 contract.
 
@@ -160,7 +160,7 @@ mid-Auburn / south-Renton. These are precisely the ZCTAs where the
 **school-quality premium does NOT bind** the rent — yield expansion
 candidates if the underlying density and renter-household count clear.
 Note these are also the ZCTAs where Effort 3's LEP and visa-cohort
-overlays will be richest, which means Green Lappe's screening-capability
+overlays will be richest, which means Green Property Management's screening-capability
 moat earns the most return here.
 
 ## 6. Top-5 districts by boundary instability

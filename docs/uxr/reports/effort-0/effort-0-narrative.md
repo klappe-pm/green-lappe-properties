@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: demographics
 date-created: 2026-05-18
@@ -12,7 +12,7 @@ tags:
 
 # effort-0-narrative
 
-Geographic foundation for the Green Lappe King/Snohomish two-county market
+Geographic foundation for the Green Property Management King/Snohomish two-county market
 analysis. This narrative documents how the ZIP universe in `zip-master.csv`,
 `zip-boundaries.geojson`, `district-boundaries.geojson`, and
 `jurisdiction-crosswalk.csv` was assembled, what every flag means, what is

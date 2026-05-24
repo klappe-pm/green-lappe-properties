@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: launch
 sub-category: domain-clearance
 date-created: 2026-05-20
@@ -13,7 +13,7 @@ tags: [domain, trademark, clearance, website, launch]
 
 # Domain Clearance Check
 
-Purpose: record the current domain, USPTO, and web-collision evidence for the Green Lappe website domain decision. This is a launch reference note only, not legal advice, trademark clearance, or authorization to publish service language.
+Purpose: record the current domain, USPTO, and web-collision evidence for the Green Property Management website domain decision. This is a launch reference note only, not legal advice, trademark clearance, or authorization to publish service language.
 
 Checked: 2026-05-20 19:25-19:37 PDT / 2026-05-21T02:25-02:37Z.
 
@@ -73,8 +73,8 @@ Source method: web searches for exact and close phrases.
 
 | Search | Readout |
 |---|---|
-| `"Green Lappe"` | No exact Green Lappe business collision surfaced in the top scan; unrelated Green/Lappe name combinations and personal/business references surfaced. |
-| `"Green Lappe Properties"` | No exact company/brand collision surfaced in the top scan. |
+| `"Green Property Management"` | No exact Green Property Management business collision surfaced in the top scan; unrelated Green/Lappe name combinations and personal/business references surfaced. |
+| `"Green Property Management"` | No exact company/brand collision surfaced in the top scan. |
 | `"GreenLappe"` | No exact brand collision surfaced in the top scan. |
 | `"greenlappe.com"` | No live-site collision surfaced in the top scan. |
 | `"greenlappeproperties.com"` | No live-site collision surfaced in the top scan. |

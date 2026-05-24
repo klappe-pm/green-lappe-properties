@@ -87,7 +87,7 @@ The named-operator signature line at the close of documents uses Fraunces italic
 - The wordmark on a Sky or Clay background (only Cream, Paper, Cedar, or Ink)
 - An icon or logo mark alongside the wordmark (the wordmark IS the mark until a separate mark is commissioned)
 - "GPM" as a visible abbreviation
-- Legacy name forms: Green Lappe, Green Lappe Properties, Green PM Properties
+- Legacy name forms: Green Property Management, Green Property Management, Green PM Properties
 
 ## Acceptance
 

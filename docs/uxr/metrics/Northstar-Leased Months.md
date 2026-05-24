@@ -146,7 +146,7 @@ When an owner pulls a property from management, the doors on that property stop 
 
 ### Sale of a Managed Property
 
-If an owner sells and the new owner retains Green Lappe, treat as continuous (no break in accrual). If the new owner terminates, apply the owner termination rule.
+If an owner sells and the new owner retains Green Property Management, treat as continuous (no break in accrual). If the new owner terminates, apply the owner termination rule.
 
 ## Reporting Cadence
 
@@ -156,6 +156,6 @@ If an owner sells and the new owner retains Green Lappe, treat as continuous (no
 
 ## The Pitch
 
-Green Lappe's north star is Leased Months: the total months of signed tenancy across the portfolio. It compounds when doors are added, filled faster, renters retained longer, and owners retained longer. One operating metric every team contributes to.
+Green Property Management's north star is Leased Months: the total months of signed tenancy across the portfolio. It compounds when doors are added, filled faster, renters retained longer, and owners retained longer. One operating metric every team contributes to.
 
 A full financial picture still requires revenue per door, gross margin, CAC on owner acquisition, and churn assumptions. Leased Months is the operating north star, not a substitute for the financial model.

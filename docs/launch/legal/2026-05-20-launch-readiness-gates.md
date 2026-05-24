@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: planning
 sub-category: launch-readiness
 date-created: 2026-05-20
@@ -51,7 +51,7 @@ Required proof:
 - Firm name pre-approval path.
 - Entity formation decision: single LLC at launch unless counsel recommends otherwise.
 - UBI, business license, EIN, and real estate firm license sequence.
-- Assumed-name/DBA decision if Green Lappe Properties differs from the legal entity name.
+- Assumed-name/DBA decision if Green Property Management differs from the legal entity name.
 - Ownership/control structure aligned with designated broker requirements.
 
 Current official reference:

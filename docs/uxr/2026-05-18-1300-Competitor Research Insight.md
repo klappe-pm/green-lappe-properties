@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category:
 sub-category:
 date-created: 2026-05-18

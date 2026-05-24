@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: demographics
 date-created: 2026-05-18
@@ -184,7 +184,7 @@ exists for a "rumored" change, the source row is marked `# TODO: source`.
 - **Pending**: CCDBG reauthorization in 124th Congress. Outcome would
   affect federal subsidy reimbursement rates and waitlist depth for
   low-income childcare slots.
-- **Effect on Green Lappe daycare thesis**: minor — tuition
+- **Effect on Green Property Management daycare thesis**: minor — tuition
   ceilings are not state/federal binding in WA; subsidy demand is
   primarily a margin question for the lower-tuition end.
 

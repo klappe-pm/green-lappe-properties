@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: strategy
 sub-category: DHM
 date-created: 2026-05-18
@@ -116,4 +116,4 @@ A bet should score at least `2` on all three letters and at least one `3` to be 
 
 |Version|Date|Author|Notes|
 |---|---|---|---|
-|`1.0`|2026-05-17|Kevin|Standalone reference for Green Lappe Properties strategy work.|
+|`1.0`|2026-05-17|Kevin|Standalone reference for Green Property Management strategy work.|
