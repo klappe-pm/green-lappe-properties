@@ -29,6 +29,7 @@ The repo is in documentation, launch-prep, and decision-support mode. The GitHub
 | --- | --- |
 | [`AGENTS.md`](AGENTS.md) | Canonical project-local instructions for Claude, Codex, Warp, and Gemini. |
 | [`CLAUDE.md`](CLAUDE.md), [`WARP.md`](WARP.md), [`GEMINI.md`](GEMINI.md) | Cross-agent entrypoint files that route agents to `AGENTS.md`. |
+| [`LLM-BREADCRUMBS.md`](LLM-BREADCRUMBS.md) | Low-token navigation pointer back to this project root, local passoff history, and the canonical session-data breadcrumb implementation. |
 | [`.claude/`](.claude/) | Project-local IA policy, validation logic, and deterministic workflow guidance. |
 | [`docs/`](docs/) | Main working corpus for research, strategy, planning, status, and partner materials. |
 | [`docs/backlog/`](docs/backlog/) | Append-only backlog and backlink companion notes for project work and repo hygiene. |
