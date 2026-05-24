@@ -65,6 +65,7 @@ const allowedRootEntries = new Set([
   "CLAUDE.md",
   "WARP.md",
   "GEMINI.md",
+  "LLM-BREADCRUMBS.md",
   ".claude",
   ".githooks",
   ".gitignore",
@@ -142,6 +143,10 @@ function isNonLivePath(normalized) {
 
 function hasNonLiveReference(content) {
   return /(?:\]\(|`)(?:\.\/)?docs\/_[^`)]+/.test(content);
+}
+
+function isBreadcrumbPassoffPointer(normalized) {
+  return normalized === "docs/passoffs/0000-00-00-0000-llm-breadcrumbs.md";
 }
 
 function readChangedFile(filePath) {
@@ -272,6 +277,10 @@ for (const entry of entries) {
   }
 
   if (normalized.startsWith("docs/passoffs/")) {
+    if (isBreadcrumbPassoffPointer(normalized)) {
+      continue;
+    }
+
     if (!/^\d{4}-\d{2}-\d{2}-\d{4}-passoff-file\.md$/.test(basename)) {
       fail(normalized, "passoff filename must be yyyy-MM-dd-HHmm-passoff-file.md.");
     }
