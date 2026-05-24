@@ -24,6 +24,7 @@ This folder is the canonical home for Green Lappe launch execution artifacts: bu
 | [`discovery/`](discovery/) | Owner discovery guides, scripts, scorecards, and prospecting notes. |
 | [`references/`](references/) | Launch-specific reference notes, source-link summaries, and agency/counsel notes. |
 | [`runbooks/`](runbooks/) | Operator checklists for approved launch actions, account-owner steps, and evidence capture. |
+| [`projects/`](projects/) | Obsidian-loadable launch task repositories, project structures, and TaskForge-compatible task plans. |
 
 ## Current Launch Files
 
@@ -32,6 +33,11 @@ This folder is the canonical home for Green Lappe launch execution artifacts: bu
 | [`plans/2026-05-20-business-launch-project-plan.md`](plans/2026-05-20-business-launch-project-plan.md) | Researched, task-by-task launch plan with dependencies, lead times, and official links. |
 | [`plans/2026-05-20-website-domain-internal-launch-plan.md`](plans/2026-05-20-website-domain-internal-launch-plan.md) | Domain, DNS, hosting, protected preview, and internal testing plan for website launch infrastructure. |
 | [`plans/2026-05-21-website-phase-completion-register.md`](plans/2026-05-21-website-phase-completion-register.md) | Phase completion register separating in-repo completion from external account-owner execution. |
+| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-task-repository-index.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-task-repository-index.md) | Single Obsidian-loadable TaskForge task repository for the conditional 2026-06-15 launch-readiness target. |
+| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-green-lappe-launch-project.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-green-lappe-launch-project.md) | Project, epic, feature, milestone, priority, and status definitions for the launch task repository. |
+| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-draft-launch-tasks.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-draft-launch-tasks.md) | Draft TaskForge-compatible launch task list for critique and future management. |
+| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-draft-task-management-process.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-draft-task-management-process.md) | Draft process for reviewing, updating, revising, managing, deleting, and adding launch tasks. |
+| [`projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-open-questions-and-gaps.md`](projects/2026-05-23-green-lappe-taskforge-repository/2026-05-23-open-questions-and-gaps.md) | Known assumptions, gaps, and questions needed to align the task repository with existing vaults and automations. |
 | [`legal/2026-05-20-launch-readiness-gates.md`](legal/2026-05-20-launch-readiness-gates.md) | Gate checklist for designated broker, firm licensing, trust accounting, contracts, insurance, and role boundaries. |
 | [`discovery/2026-05-20-owner-discovery-guide.md`](discovery/2026-05-20-owner-discovery-guide.md) | Warm-owner discovery guide for the 20-conversation proof sprint. |
 | [`references/2026-05-20-domain-clearance-check.md`](references/2026-05-20-domain-clearance-check.md) | Domain, USPTO, and web-collision evidence for the website domain decision. |
