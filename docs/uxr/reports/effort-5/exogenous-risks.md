@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: demographics
 date-created: 2026-05-18
@@ -12,8 +12,8 @@ tags:
 
 # exogenous-risks
 
-Seven sections covering exogenous forces that move the Green Lappe two-county
-TAM independent of any operational decision Green Lappe makes. Each section
+Seven sections covering exogenous forces that move the Green Property Management two-county
+TAM independent of any operational decision Green Property Management makes. Each section
 states the mechanism, three or more realistic outcome paths where applicable,
 and an estimated impact on either small-portfolio renter demand or small-
 portfolio owner supply. All estimates are MODELED or TRIANGULATED; no
@@ -130,7 +130,7 @@ The SFR exemption creates a sharp binary at the parcel level:
 - **Non-exempt parcel** = single-family structure owned by a
   corporation, REIT, or LLC with at least one corporate member.
 
-For Green Lappe's acquisition pipeline this exemption is a usable
+For Green Property Management's acquisition pipeline this exemption is a usable
 classifier because:
 
 1. Ownership type is observable in King County and Snohomish County
@@ -152,12 +152,12 @@ classifier because:
   members are all natural persons preserves exemption.
 - An acquisition strategy that uses a corporate parent or REIT structure
   loses exemption immediately.
-- This is the **strongest single decision factor** for Green Lappe's
+- This is the **strongest single decision factor** for Green Property Management's
   acquisition entity structuring decision.
 
 ### TAM impact
 
-- ~228k small-owner SFR rental units in King County (per Green Lappe
+- ~228k small-owner SFR rental units in King County (per Green Property Management
   baseline) and ~74k in Snohomish: a majority of these are exempt under
   HB 1217.
 - For PM (third-party management of owner-held units): clients are
@@ -174,7 +174,7 @@ amenity credits) on initial leases at a high asking rent, allowing the
 nominal rent to anchor close to the cap and renewal-period concessions
 to be unwound. This is widely documented in Class A multifamily but
 also visible in some larger small-portfolio markets (Bellevue 98004,
-SLU 98109, Lynnwood 98036/98037). For Green Lappe small-portfolio PM,
+SLU 98109, Lynnwood 98036/98037). For Green Property Management small-portfolio PM,
 the concession-disguise pattern is a screening signal for
 listing-source rent data — asking rent in Q4 2025 is biased upward
 relative to effective rent by 5-12% in submarkets where the
@@ -253,7 +253,7 @@ to preserve sub-4% mortgages.
 - Boom market for PM-of-existing-portfolio; tougher for direct
   acquisition (compressed yields).
 
-### Implication for Green Lappe sequencing
+### Implication for Green Property Management sequencing
 
 Under all scenarios, the **next 18 months** are the highest-probability
 window to onboard PM clients who are accidental landlords now and will
@@ -347,7 +347,7 @@ Cohort B (mid-tenure), and supplier-park headcount.
 - 777X certification milestones
 - Renton vs. Everett headcount via WA ESD ES-202 quarterly
 
-### Implication for Green Lappe
+### Implication for Green Property Management
 
 Snohomish renter demand carries non-trivial Boeing exposure (~25% of
 Snohomish renter HH income directly or indirectly Boeing-tied).
@@ -359,7 +359,7 @@ mild-headcount-decline scenarios.
 
 ## Risk magnitude ranking
 
-Ranked by estimated probability-weighted impact on Green Lappe two-county
+Ranked by estimated probability-weighted impact on Green Property Management two-county
 TAM over 5 years:
 
 | Rank | Risk | Direction | Magnitude estimate |

@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: launch
 sub-category: registrar-price-snapshot
 date-created: 2026-05-21
@@ -13,7 +13,7 @@ tags: [domain, registrar, pricing, website, launch]
 
 # Registrar Price Snapshot
 
-Purpose: record the current registry/DNS availability snapshot and public registrar price evidence for the Green Lappe website domain decision. This note is not legal, trademark, licensing, tax, insurance, or domain-purchase advice, and it is not authorization to buy domains or publish public service language.
+Purpose: record the current registry/DNS availability snapshot and public registrar price evidence for the Green Property Management website domain decision. This note is not legal, trademark, licensing, tax, insurance, or domain-purchase advice, and it is not authorization to buy domains or publish public service language.
 
 Checked: 2026-05-21 09:56-10:12 PDT / 2026-05-21T16:56-17:12Z.
 

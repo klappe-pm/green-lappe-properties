@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: backlog
 sub-category: project-backlog
 date-created: 2026-05-18
@@ -15,7 +15,7 @@ tags: [backlog, project-management]
 
 > See [[backlinks-backlog]]
 
-This document tracks open work, completed items, and ghost links for Green Lappe Properties.
+This document tracks open work, completed items, and ghost links for Green Property Management.
 
 ## Active
 

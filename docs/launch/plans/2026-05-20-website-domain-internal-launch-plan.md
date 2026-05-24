@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: launch
 sub-category: website-domain-internal-launch
 date-created: 2026-05-20
@@ -13,7 +13,7 @@ tags: [website, domain, dns, internal-testing, launch-plan]
 
 # Website Domain and Internal Launch Plan
 
-Purpose: plan the domain, DNS, deployment, and internal testing path for a Green Lappe Properties website. This deliberately does not define visual style, imagery, copy, page sections, messaging hierarchy, or final public content. It is a launch-infrastructure plan only.
+Purpose: plan the domain, DNS, deployment, and internal testing path for a Green Property Management website. This deliberately does not define visual style, imagery, copy, page sections, messaging hierarchy, or final public content. It is a launch-infrastructure plan only.
 
 Planning boundary: do not publish a public sales site until the licensing/counsel gate in the business launch plan is satisfied. Internal deployment and testing may proceed behind access control with placeholder or non-public test content.
 
@@ -36,7 +36,7 @@ Launch internal testing before public launch:
 | Criterion | Decision rule |
 |---|---|
 | Memorability | Prefer short, spoken-word-simple domains. |
-| Brand fit | Prefer the exact Green Lappe name over descriptive but long terms. |
+| Brand fit | Prefer the exact Green Property Management name over descriptive but long terms. |
 | TLD | Prefer `.com` for the public face unless unavailable or legally blocked. |
 | Hyphens | Avoid hyphenated names unless used only defensively. |
 | Scope creep | Do not buy many speculative names; buy the minimum set needed to prevent confusion. |

@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: launch
 sub-category: evidence-storage
 date-created: 2026-05-21
@@ -50,7 +50,7 @@ Do not use personal downloads folders, email attachments as the only copy, local
 Create this structure in the selected evidence container:
 
 ```text
-Green Lappe Properties/
+Green Property Management/
   Launch Evidence/
     00-index/
     01-domain-and-dns/

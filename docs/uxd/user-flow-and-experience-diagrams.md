@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: design
 sub-category: user-flow-diagrams
 date-created: 2026-05-21
@@ -9,7 +9,7 @@ version: 0.1
 doc-status: draft
 aliases: []
 tags:
-  - green-lappe
+  - green-property-management
   - mermaid
   - service-blueprint
   - user-flow
@@ -22,7 +22,7 @@ personas:
 
 # User Flow And Experience Diagrams
 
-This standalone Mermaid.js diagram set translates the existing persona, pain-point, and journey research into service-design flows for Green Lappe Properties. It is a design artifact, not legal, licensing, insurance, tax, privacy, cybersecurity, records-retention, or trust-accounting advice.
+This standalone Mermaid.js diagram set translates the existing persona, pain-point, and journey research into service-design flows for Green Property Management. It is a design artifact, not legal, licensing, insurance, tax, privacy, cybersecurity, records-retention, or trust-accounting advice.
 
 Use these diagrams to align discovery calls, prototype scope, operating runbooks, and UX requirements without closing launch gates or inventing outside approvals.
 
@@ -47,7 +47,7 @@ Use these diagrams to align discovery calls, prototype scope, operating runbooks
 
 ```mermaid
 flowchart LR
-    R[Renter household] -->|Inquiry, application, rent, requests| PX[Green Lappe service layer]
+    R[Renter household] -->|Inquiry, application, rent, requests| PX[Green Property Management service layer]
     O[Small landlord owner] -->|Property goals, approvals, documents| PX
     S[PM staff] -->|Triage, coordination, communication| PX
     PX -->|Status, receipts, decisions| R

@@ -20,7 +20,7 @@ REPORTS = "/Users/kevinlappe/Projects/green-lappe-properties/docs/research/repor
 OUT = os.path.join(REPORTS, "effort-6")
 
 # Load joined dataset
-with open(os.path.join(OUT, "green-lappe-final-dataset.csv")) as f:
+with open(os.path.join(OUT, "green-property-management-final-dataset.csv")) as f:
     DATA = list(csv.DictReader(f))
 
 with open(os.path.join(OUT, "_scripts", "norm_state.json")) as f:
@@ -67,7 +67,7 @@ def top_n(score_col, n=10):
 def write_pm_top10():
     top = top_n("pm_score", 10)
     lines = ["# top-10-pm-sub-markets", "",
-             "Top 10 PM sub-markets for Green Lappe Properties' two-county sequencing, ranked by composite PM business sequencing score (weights documented in `final-report.md` Section 9).",
+             "Top 10 PM sub-markets for Green Property Management' two-county sequencing, ranked by composite PM business sequencing score (weights documented in `final-report.md` Section 9).",
              "",
              "Score decomposition columns are the *weighted contribution* (weight × min-max-normalized input) on a 0-100 scale; they sum to `pm_score`.",
              ""]
@@ -1047,7 +1047,7 @@ attribute payload with their preferred polygon source.
 # Schema for joined dataset
 # ============================================================
 def write_schema():
-    schema = """# green-lappe-final-dataset schema
+    schema = """# green-property-management-final-dataset schema
 version: 1.0
 generated_by: effort-6/_scripts/build_scores.py
 rows: 107
@@ -1232,7 +1232,7 @@ def write_final_report(pm_c, rl_c, dc_c, tally):
     lines = [
         "# final-report",
         "",
-        f"Green Lappe Properties — King + Snohomish County market analysis. Generated {today}.",
+        f"Green Property Management — King + Snohomish County market analysis. Generated {today}.",
         "",
         "## 1. Executive summary",
         "",

@@ -1,4 +1,4 @@
-# Green Lappe Properties Warp Instructions
+# Green Property Management Warp Instructions
 
 Read and follow `AGENTS.md` in this repository before making changes.
 

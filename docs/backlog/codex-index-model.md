@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: opportunity-materials
 sub-category: codex-index
 date-created: 2026-05-19
@@ -25,7 +25,7 @@ For current orientation, read:
 
 1. `README.md`
 2. `docs/uxr/reports/effort-6/final-report.md`
-3. `docs/uxr/green-lappe-market-deep-dive.md`
+3. `docs/uxr/green-property-management-market-deep-dive.md`
 4. `docs/gtm/Launch Prioritization.md`
 5. `docs/marketing/founder-bios/Kevin-Lappe-Resume.txt`
 

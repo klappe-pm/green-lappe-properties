@@ -1,6 +1,6 @@
 # top-10-pm-sub-markets
 
-Top 10 PM sub-markets for Green Lappe Properties' two-county sequencing, ranked by composite PM business sequencing score (weights documented in `final-report.md` Section 9).
+Top 10 PM sub-markets for Green Property Management' two-county sequencing, ranked by composite PM business sequencing score (weights documented in `final-report.md` Section 9).
 
 Score decomposition columns are the *weighted contribution* (weight × min-max-normalized input) on a 0-100 scale; they sum to `pm_score`.
 

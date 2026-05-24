@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: demographics
 date-created: 2026-05-18
@@ -12,7 +12,7 @@ tags:
 
 # effort-2-narrative
 
-Housing and rental layer for the Green Lappe King/Snohomish two-county
+Housing and rental layer for the Green Property Management King/Snohomish two-county
 analysis. This narrative documents the methodology behind `housing-zip.csv`,
 `permits-adu-dadu.csv`, and `small-portfolio-stock-modeled.csv`, surfaces the
 top-10 lists required by Prompt 2, and inventories every MODELED column with
@@ -52,7 +52,7 @@ The top RTP list is a mix of two patterns. First, low-priced Seattle ZIPs
 where the ZHVI is depressed by the high condo share (98134, 98121, 98104,
 98101) — these ZCTAs require nuance because the "median home value"
 includes small condos and lofts that do not represent the SFR/small-
-multifamily Green Lappe target asset. Second, **South King suburban
+multifamily Green Property Management target asset. Second, **South King suburban
 ZCTAs (98032 Kent, 98168 Tukwila, 98188 SeaTac, 98108 South Seattle/
 Georgetown)** — these are the actionable acquisition targets. Both
 patterns are also flagged on `safmr_zori_gap_flag` (urban-core because
@@ -88,7 +88,7 @@ employer expansion signals before locking deals.
 
 ## 3. Top-10 ZIPs by small-portfolio unit count
 
-This is the PM-side TAM denominator. Calibrated to the Green Lappe baseline:
+This is the PM-side TAM denominator. Calibrated to the Green Property Management baseline:
 **King 228K small-owner units / Snohomish 74K** (2025). The two-county
 calibrated total reconciles to within 1% of TAM. Calibration factor: King
 ×1.287, Snohomish ×1.254 (documented in `small-portfolio-stock-modeled.csv`
@@ -158,7 +158,7 @@ above 10% means rent growth probably stalls.
 | 98224 | Baring | 4 | 12 | 33.3 | rural |
 
 Predictably, the urban-core Seattle CBD/SLU/Belltown ZCTAs (98101, 98121,
-98109, 98104) dominate — high-rise institutional product, not Green Lappe's
+98109, 98104) dominate — high-rise institutional product, not Green Property Management's
 target asset class but a rent ceiling for the 1-4 unit small-portfolio
 product in the same submarket. Bellevue 98004 also flags. Outside the
 urban-core set, watch 98032 Kent and 98037/98036 Lynnwood: substantial
@@ -219,7 +219,7 @@ HUD Small Area FMR FY2025 at 40th-percentile, by ZIP and bedroom count.
 Sanity-checked against Zillow ZORI (2025 re-anchored series) at the bedroom
 level where ZORI is published. SAFMR is the primary because (a) it covers
 every ZIP, (b) it has explicit bedroom granularity, and (c) it is the rent
-ceiling for Section 8 vouchers (a structural Green Lappe screening
+ceiling for Section 8 vouchers (a structural Green Property Management screening
 consideration). Where ZORI is materially below SAFMR (rare), SAFMR is still
 authoritative for the Section-8-ceiling use case. Where ZORI is above SAFMR
 by more than 25%, the gap is flagged in `safmr_zori_gap_flag` (rare in this
@@ -283,7 +283,7 @@ adjusted down by 3pp to 68% to reflect institutional concentration in
 greater Seattle: Invitation Homes, Tricon, AMH, Pretium have material
 presence). The 5-19 unit share at 18% is the small-LLC slice of mid-size
 properties per RHFS. **Calibration** adjusts each county's per-ZIP figure
-proportionally so the two-county aggregate reconciles to the Green Lappe
+proportionally so the two-county aggregate reconciles to the Green Property Management
 TAM baseline of King 228K / Snohomish 74K (factor: King ×1.287, Snohomish
 ×1.254). The calibration is concentrated, not per-ZIP, so ZIPs with high
 small-portfolio shares pre-calibration retain that ranking after.
@@ -323,7 +323,7 @@ sensitivity work.
 
 ---
 
-## 8. Reconciliation to Green Lappe TAM baseline
+## 8. Reconciliation to Green Property Management TAM baseline
 
 | County | Raw (uncalibrated) | Calibrated to TAM | Target | Variance |
 |---|---|---|---|---|

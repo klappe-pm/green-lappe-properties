@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: launch
 sub-category: website-qa-release-boundary
 date-created: 2026-05-21

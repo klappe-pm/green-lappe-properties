@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: strategy
 sub-category: marketplace-design
 doc-type:
@@ -23,10 +23,10 @@ status: prototype
 
 # Two Sided Marketplace
 
-> Prototype v0.1 is a companion document to [[Brand Style Guide|Green Lappe Brand Style Guide]].
+> Prototype v0.1 is a companion document to [[Brand Style Guide|Green Property Management Brand Style Guide]].
 
 ## Assumption
-Green Lappe Properties is not a pure property management firm and not a pure rental listing site. It is a two-sided marketplace in which the company owns the relationship on both sides, sets the rules, and earns on the transaction. Owners list supply, residents (or licensed operators) consume it, and the company is the operating layer in between. The marketplace covers both standard residential rentals and licensed family child care conversions, with the latter as a higher-margin specialty wedge.
+Green Property Management is not a pure property management firm and not a pure rental listing site. It is a two-sided marketplace in which the company owns the relationship on both sides, sets the rules, and earns on the transaction. Owners list supply, residents (or licensed operators) consume it, and the company is the operating layer in between. The marketplace covers both standard residential rentals and licensed family child care conversions, with the latter as a higher-margin specialty wedge.
 
 ## 1. Why a Marketplace, Not a Service Company
 
@@ -184,7 +184,7 @@ flowchart TB
         O4[Out-of-state owner]
     end
 
-    subgraph platform[Green Lappe operating layer]
+    subgraph platform[Green Property Management operating layer]
         R[Rulebook]
         M[Matching]
         OPS[Operations]
@@ -272,7 +272,7 @@ Concrete experiments, each with a measurable outcome.
 
 1. Onboard the founding property (Bothell) under the new brand and the new contract terms. Measure time-to-tenant, repair SLA adherence, owner satisfaction (self).
 2. Sign two additional residential properties from referral. Measure time-to-list and time-to-tenant.
-3. Build a pre-qualified list of three licensed FCC providers willing to consider a Green Lappe property. Measure time-to-list and conversion to lease.
+3. Build a pre-qualified list of three licensed FCC providers willing to consider a Green Property Management property. Measure time-to-list and conversion to lease.
 4. Publish the fee schedule on the public site. Measure inbound owner inquiries citing the fee transparency as a reason for contact.
 5. Run one full year-end owner packet for the founding property. Capture the cost in hours, refine the template, measure how long it takes to produce the second one.
 6. Handle one move-out cycle end-to-end. Measure deposit-return timing, resident satisfaction at move-out, condition delta from move-in photos.
@@ -284,8 +284,8 @@ Each experiment has a binary success criterion. Failures are interesting; they i
 ## 12. Open Questions (not decided)
 
 1. Whether to surface listings publicly on the brand site or keep them gated to the company's owner relationships.
-2. Whether the FCC wedge gets its own sub-brand or stays under Green Lappe Properties.
-3. Whether to accept third-party-managed owners (owners using another PM who want to switch to Green Lappe) at a discount during year one to build supply faster.
+2. Whether the FCC wedge gets its own sub-brand or stays under Green Property Management.
+3. Whether to accept third-party-managed owners (owners using another PM who want to switch to Green Property Management) at a discount during year one to build supply faster.
 4. Whether to publish anonymized marketplace metrics (vacancy time, SLA adherence, dispute counts) as a trust signal.
 5. Whether to offer a tier for DIY owners who want screening, lease docs, and a help line but not full management.
 6. How to handle owners who want to remain on their existing PM software (Buildium account, etc.) rather than migrate.

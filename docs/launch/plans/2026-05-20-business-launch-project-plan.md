@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: planning
 sub-category: business-launch
 date-created: 2026-05-20
@@ -13,7 +13,7 @@ tags: [launch-plan, business-formation, licensing, property-management, washingt
 
 # Business Launch Project Plan
 
-Purpose: dependency-ordered project plan for launching Green Lappe Properties as a Washington residential property management business serving Snohomish and north King owners. This is a research-backed operating plan, not legal, tax, insurance, or licensing advice. Confirm each regulatory interpretation with Washington counsel, the Washington Department of Licensing, a CPA, and the applicable local jurisdiction before acting.
+Purpose: dependency-ordered project plan for launching Green Property Management as a Washington residential property management business serving Snohomish and north King owners. This is a research-backed operating plan, not legal, tax, insurance, or licensing advice. Confirm each regulatory interpretation with Washington counsel, the Washington Department of Licensing, a CPA, and the applicable local jurisdiction before acting.
 
 ## Critical path
 

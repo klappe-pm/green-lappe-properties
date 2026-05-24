@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: demographics
 date-created: 2026-05-18
@@ -13,7 +13,7 @@ tags:
 # effort-5-narrative
 
 Childcare supply gap, daycare zoning matrix, rental regulatory matrix, and
-exogenous-risk synthesis for the Green Lappe two-county analysis. This
+exogenous-risk synthesis for the Green Property Management two-county analysis. This
 narrative documents methodology for the four deliverable CSVs and the two
 deliverable markdown files (`pending-ordinances.md` and `exogenous-risks.md`),
 ranks the highest-priority ZIPs and jurisdictions on three dimensions, and
@@ -44,7 +44,7 @@ PO-box and unique ZIPs, low-pop fringe).
 | 9 | 98011 | King-side Bothell | 178 | high | Northshore school district family draw |
 | 10 | 98006 | S Bellevue Newcastle | 155 | very high | Same |
 
-These ten are the Green Lappe daycare conversion shortlist. The Eastside
+These ten are the Green Property Management daycare conversion shortlist. The Eastside
 high-income concentration is the dominant signal — high tuition capacity
 combined with non-trivial slot gap makes the unit economics workable.
 
@@ -86,7 +86,7 @@ viable in those jurisdictions.
 
 Lowest rental friendliness (= highest operating friction) jurisdictions
 ranked by stacked tenant-protection regulation. These are the jurisdictions
-where Green Lappe PM tooling must be most-thoroughly built and where small-
+where Green Property Management PM tooling must be most-thoroughly built and where small-
 portfolio owner clients carry the highest non-rent administrative burden:
 
 | Rank | Jurisdiction | Friction stack |
@@ -122,7 +122,7 @@ candidate acquisition parcel:
      - LLC with any corporate, REIT, or LLC-with-corporate-member member? →
        **NOT EXEMPT**
      - Corporation or REIT? → **NOT EXEMPT**
-3. Tag parcel in Green Lappe's acquisition CRM with `hb1217_exempt = true |
+3. Tag parcel in Green Property Management's acquisition CRM with `hb1217_exempt = true |
    false | requires_member_lookup`.
 
 This classifier is automation-feasible:
@@ -138,7 +138,7 @@ The classifier feeds into:
 - Underwriting: an exempt SFR can be re-priced to market on each lease
   cycle without 9.683% cap; the rent ceiling is whatever the market
   bears under RCW 59.18.140 (60-day notice).
-- Entity structuring: Green Lappe acquisition vehicles should be
+- Entity structuring: Green Property Management acquisition vehicles should be
   natural-person-member LLCs to preserve exemption status on acquired SFR.
   Any corporate-parent structure forfeits the exemption on the day of
   acquisition.

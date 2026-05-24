@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: go-to-market
 sub-category: operations-plan
 date-created: 2026-05-17
@@ -60,7 +60,7 @@ These are property-side obligations the PM administers on behalf of the owner. K
 - **Tacoma, Burien, Federal Way, Issaquah, Shoreline**: tenant protection ordinances with city-specific notice periods.
 - **Everett, Lynnwood, Marysville, other Snohomish cities**: generally less prescriptive than Seattle; verify at the city clerk.
 
-Build a city-by-city compliance matrix on day one. Maintaining it is part of the service offering and a documented Green Lappe brand asset already.
+Build a city-by-city compliance matrix on day one. Maintaining it is part of the service offering and a documented Green Property Management brand asset already.
 
 ## 2. Banking (the Trust Account is non-negotiable)
 
@@ -147,7 +147,7 @@ The market is concentrated. Five honest options for a launch-stage firm. AppFoli
 | Inspection / move-in reports | zInspector, Happy Inspector, RentCheck | Photo-stamped, GPS-stamped, deposit-defensible. The single biggest gap incumbent PMs are publicly attacked on (no photos, no proof). |
 | Document storage | Google Workspace or Microsoft 365 plus the PMS document module | DOL records retention is 3 years for transaction files. Keep longer. |
 | CRM for owner prospecting | HubSpot Starter or Pipedrive | Lead capture from the website. Owners shop for a PM the way they shop for a contractor: slowly, then suddenly. |
-| Phone with named routing | Dialpad, OpenPhone, RingCentral | The brand promise (named accountability per Green Lappe brand system) requires real numbers ringing to real people, not queues. |
+| Phone with named routing | Dialpad, OpenPhone, RingCentral | The brand promise (named accountability per Green Property Management brand system) requires real numbers ringing to real people, not queues. |
 | Maintenance triage | Latchel, Property Meld, or PMS-native | After-hours triage, vendor dispatch, owner approval workflow. The on-call rotation is the single largest staff burnout vector. |
 | Owner statements | PMS-native plus a custom monthly packet | The differentiator. AppFolio statements alone are insufficient per stated brand strategy. |
 | HOA documents (if any condo work) | HomeWiseDocs | Document delivery for resale and lender requests. |
@@ -217,7 +217,7 @@ Off-the-shelf templates are a documented risk. Each Washington and Seattle ordin
 | **Tenant welcome packet** | Firm-drafted | Reduces support volume. |
 | **Vendor agreement (independent contractor)** | Firm-drafted, attorney-reviewed | W-9, COI requirements, indemnification, scope of work. |
 | **Employment agreements and broker affiliation agreement** | Attorney-drafted | Designated broker delegation per `WAC 308-124C-130`. |
-| **Owner offboarding / handoff agreement** | Firm-drafted | The brand promises 14-day clean handoff per Green Lappe. |
+| **Owner offboarding / handoff agreement** | Firm-drafted | The brand promises 14-day clean handoff per Green Property Management. |
 
 ### 5.2 Documents with the Highest Litigation Exposure
 
@@ -308,7 +308,7 @@ Every vendor on the panel must produce:
 
 ### 7.3 Markup Policy
 
-Public-record incumbent practice ranges from zero markup pass-through (Haven Property Management) to roughly 10% (industry typical) to higher. The brand strategy already documented says pass-through pricing with no markup. That is enforceable through the management agreement; charging a coordination fee instead is cleaner than hiding markup. The Green Lappe brand work already commits to this.
+Public-record incumbent practice ranges from zero markup pass-through (Haven Property Management) to roughly 10% (industry typical) to higher. The brand strategy already documented says pass-through pricing with no markup. That is enforceable through the management agreement; charging a coordination fee instead is cleaner than hiding markup. The Green Property Management brand work already commits to this.
 
 ## 8. Compliance Calendar and Recurring Obligations
 
@@ -520,7 +520,7 @@ Items the founder must personally confirm, not delegate:
 
 ## 15. Sources
 
-Project knowledge files: `compass_artifact_wf-4a355d66-05ba-4806-b49f-d4e0d3036467` (King County PM landscape, vendor index, tech stack), `PNW_Property_Management_Pain_Points` (operational pain points and burnout patterns), `The_Rate-Locked_Seattle_Landlord_Opportunity` (insurance market data, owner-side context), `green-lappe-brand-system` and `green-lappe-two-sided-marketplace` (existing brand strategy, fee posture, offboarding promise).
+Project knowledge files: `compass_artifact_wf-4a355d66-05ba-4806-b49f-d4e0d3036467` (King County PM landscape, vendor index, tech stack), `PNW_Property_Management_Pain_Points` (operational pain points and burnout patterns), `The_Rate-Locked_Seattle_Landlord_Opportunity` (insurance market data, owner-side context), `green-property-management-brand-system` and `green-property-management-two-sided-marketplace` (existing brand strategy, fee posture, offboarding promise).
 
 External: Washington DOL real estate licensing pages, `WAC 308-124E-105`, `WAC 308-124E-110`, `WAC 308-124E-115`, `WAC 308-124C-130`, `RCW 18.85`, `RCW 59.18`, `RCW 59.18.270`, `RCW 59.18.280`, Mosaic IA Washington property manager insurance guide, King County contract insurance requirements, CRES Insurance state requirements summary, Washington landlord-side attorney directory (Avvo, Williams Kastner, Peterson Law, Puckett & Redford).
 

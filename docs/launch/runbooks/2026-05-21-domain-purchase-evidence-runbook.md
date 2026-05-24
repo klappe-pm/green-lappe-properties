@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: launch
 sub-category: domain-purchase-evidence
 date-created: 2026-05-21

@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: design
 sub-category: user-journey-maps
 date-created: 2026-05-17

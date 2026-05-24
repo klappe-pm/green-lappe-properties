@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: opportunity-materials
 sub-category: research-goals
 date-created: 2026-05-19
@@ -13,7 +13,7 @@ tags: [research-goals, corpus, no-web]
 
 # Research Goals
 
-Scope: understand and reuse the existing Green Lappe Properties corpus. No web search. Treat the repo as the source of truth unless a future task explicitly authorizes external verification.
+Scope: understand and reuse the existing Green Property Management corpus. No web search. Treat the repo as the source of truth unless a future task explicitly authorizes external verification.
 
 ## Primary Goal
 

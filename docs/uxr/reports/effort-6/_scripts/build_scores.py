@@ -5,7 +5,7 @@ Build joined dataset + three composite scores per ZCTA.
 
 Weights and inputs are documented in the prompt (Demographic Research Prompts.md
 section "Prompt 6"). This script is the canonical computation. Re-running
-produces an identical green-lappe-final-dataset.csv.
+produces an identical green-property-management-final-dataset.csv.
 """
 
 import csv
@@ -571,7 +571,7 @@ for i, r in enumerate(records):
 
 # ---------- Write joined dataset ----------
 fieldnames = list(records[0].keys())
-out_csv = os.path.join(OUT, "green-lappe-final-dataset.csv")
+out_csv = os.path.join(OUT, "green-property-management-final-dataset.csv")
 write_csv(out_csv, records, fieldnames)
 print(f"[write] {out_csv}  rows={len(records)} cols={len(fieldnames)}")
 

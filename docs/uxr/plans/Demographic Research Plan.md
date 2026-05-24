@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: demographics
 date-created: 2026-05-18
@@ -19,7 +19,7 @@ tags: []
 
 ## Overall Goal
 
-Produce a ZIP-level decision dataset and accompanying narrative for King County and Snohomish County, Washington that simultaneously supports (a) Green Lappe's property management sub-market sequencing, language-access investments, and tenant-screening service design, and (b) Green Lappe's parcel-level acquisition decisions across the dual-use thesis of long-term rental or licensed daycare conversion. Every downstream decision (where to enter first, which languages to support, which screening flows to build, which properties to underwrite, which use case to lead with per ZIP) must be answerable from this single dataset.
+Produce a ZIP-level decision dataset and accompanying narrative for King County and Snohomish County, Washington that simultaneously supports (a) Green Property Management's property management sub-market sequencing, language-access investments, and tenant-screening service design, and (b) Green Property Management's parcel-level acquisition decisions across the dual-use thesis of long-term rental or licensed daycare conversion. Every downstream decision (where to enter first, which languages to support, which screening flows to build, which properties to underwrite, which use case to lead with per ZIP) must be answerable from this single dataset.
 
 ## Overall Scope
 
@@ -27,16 +27,16 @@ Produce a ZIP-level decision dataset and accompanying narrative for King County 
 - **Asset focus**: small-portfolio residential properties (1 to 4 units automatic, 5 to 49 units individually-owned) suitable for property management, long-term rental acquisition, or licensed daycare conversion.
 - **Time horizon**: current snapshot with 3 to 5 year primary trends; 10-year secondary projection horizon via OFM and PSRC forecasts.
 - **Sources**: public and triangulated public-proxy only. No paywalled employer or compensation datasets where a free proxy exists.
-- **Out of scope**: Pierce, Kitsap, and Eastern Washington counties. Commercial real estate. Large institutional multifamily (50+ units without small-owner LLC structure). Post-secondary education. Preschool data not tied to licensed childcare. Primary interviews (covered by existing Green Lappe persona research).
+- **Out of scope**: Pierce, Kitsap, and Eastern Washington counties. Commercial real estate. Large institutional multifamily (50+ units without small-owner LLC structure). Post-secondary education. Preschool data not tied to licensed childcare. Primary interviews (covered by existing Green Property Management persona research).
 
 ## Top-Level Decisions This Research Must Support
 
-1. **PM sub-market sequencing**: which city/ZIP combinations does Green Lappe enter first as a property manager, and in what order through the first 100, 500, and 2,000 doors?
+1. **PM sub-market sequencing**: which city/ZIP combinations does Green Property Management enter first as a property manager, and in what order through the first 100, 500, and 2,000 doors?
 2. **Service-design priorities**: which language-access, screening-accommodation, and compliance capabilities does each priority sub-market reward, and which build first?
-3. **Rental acquisition shortlist**: which ZIPs should Green Lappe's own acquisition entity focus on for direct property purchase under a single-family or small-multifamily rental thesis?
+3. **Rental acquisition shortlist**: which ZIPs should Green Property Management's own acquisition entity focus on for direct property purchase under a single-family or small-multifamily rental thesis?
 4. **Daycare conversion shortlist**: which ZIPs are viable for licensed family childcare or center daycare conversion, and what is the zoning friction by jurisdiction?
 5. **Dual-use shortlist**: which ZIPs score in the top tier on both rental and daycare scores, and which use case should lead per shortlisted parcel?
-6. **Monitoring layer**: which employer events, regulatory changes, and demographic trend lines must Green Lappe track quarterly to anticipate sub-market shifts?
+6. **Monitoring layer**: which employer events, regulatory changes, and demographic trend lines must Green Property Management track quarterly to anticipate sub-market shifts?
 
 The math must be granular enough to defend statements like "Lynnwood `98036` before Bellevue `98007`," "Russian-Ukrainian language capability before Telugu," and "lead with daycare conversion in `98052`, lead with rental in `98003`."
 
@@ -156,7 +156,7 @@ Single-family detached and small multifamily (2 to 4 units) emphasized. ADU and 
 
 ### Why The Answers Are Needed
 
-Rental yield drives whether a property cash-flows. School quality is irrelevant if the price-to-rent math fails. Velocity and vacancy signal whether a submarket is liquid enough to underwrite. Construction pipeline flags supply risk: a ZIP with 500 units delivering in 18 months will compress rents. The small-portfolio building stock count is the denominator for PM-side TAM. ADU/DADU permits and rate-locked owners are the structural supply of accidental landlords (Green Lappe's primary owner persona).
+Rental yield drives whether a property cash-flows. School quality is irrelevant if the price-to-rent math fails. Velocity and vacancy signal whether a submarket is liquid enough to underwrite. Construction pipeline flags supply risk: a ZIP with 500 units delivering in 18 months will compress rents. The small-portfolio building stock count is the denominator for PM-side TAM. ADU/DADU permits and rate-locked owners are the structural supply of accidental landlords (Green Property Management's primary owner persona).
 
 ### Decisions This Informs
 
@@ -206,7 +206,7 @@ Renter-household counts are the denominator for every downstream TAM number. LEP
 
 - Which sub-markets pass a minimum renter-household threshold for PM entry.
 - Per-door PM-revenue forecasting and marketing-reach calculations.
-- Which language(s) Green Lappe builds capability in first (likely two, not ten).
+- Which language(s) Green Property Management builds capability in first (likely two, not ten).
 - Where to deploy multilingual leasing agents and maintenance dispatchers.
 - Which sub-markets get translated lease packets, deposit-return documentation, and maintenance request flows.
 - Whether to build alternative-screening capability (international credit history, employer verification, asset-based screening, refugee-agency co-sign protocols) as a core feature or niche add-on.
@@ -220,7 +220,7 @@ Renter-household counts are the denominator for every downstream TAM number. LEP
 
 ### Goal
 
-Identify the employer-driven engines of rental demand, quantify tech-cohort renter behavior through hiring and layoff cycles, and define the early-warning indicators Green Lappe must monitor as a business.
+Identify the employer-driven engines of rental demand, quantify tech-cohort renter behavior through hiring and layoff cycles, and define the early-warning indicators Green Property Management must monitor as a business.
 
 ### Scope
 
@@ -261,11 +261,11 @@ Top 20 employers by headcount with deep focus on named tech firms (Microsoft, Am
 
 ### Why The Answers Are Needed
 
-Rental demand is downstream of employer headcount and hiring posture. Layoff events and RTO mandates move sub-market vacancy by hundreds of basis points within a quarter. The 2022 to 2023 tech layoffs moved Bellevue and SLU Class A vacancy materially within 60 to 120 days; if small-portfolio Class B/C in South King and Snohomish moved less, that is a real positioning advantage. Without a cohort-level model and employer-monitoring layer, Green Lappe cannot tell owners (or itself) how exposed each sub-market is. Compensation-to-rent translation calibrates screening tolerance and deposit-prepayment policy for asset-rich, credit-thin tenants.
+Rental demand is downstream of employer headcount and hiring posture. Layoff events and RTO mandates move sub-market vacancy by hundreds of basis points within a quarter. The 2022 to 2023 tech layoffs moved Bellevue and SLU Class A vacancy materially within 60 to 120 days; if small-portfolio Class B/C in South King and Snohomish moved less, that is a real positioning advantage. Without a cohort-level model and employer-monitoring layer, Green Property Management cannot tell owners (or itself) how exposed each sub-market is. Compensation-to-rent translation calibrates screening tolerance and deposit-prepayment policy for asset-rich, credit-thin tenants.
 
 ### Decisions This Informs
 
-- Which employers' WARN filings, hiring announcements, and RTO postures Green Lappe tracks as leading indicators.
+- Which employers' WARN filings, hiring announcements, and RTO postures Green Property Management tracks as leading indicators.
 - Sub-market diversification strategy (avoid concentrating doors in a single-employer sub-market without non-tech diversification).
 - Whether to build employer-direct partnerships (relocation packages, preferred-PM lists).
 - Boeing-specific exposure planning for Snohomish (production rate, strike risk).
@@ -352,7 +352,7 @@ Raw data does not drive decisions; ranked recommendations with stated rationale 
 
 ### Decisions This Informs
 
-- The actual entry sequence for Green Lappe PM sub-market launches (first 100, 500, 2,000 doors).
+- The actual entry sequence for Green Property Management PM sub-market launches (first 100, 500, 2,000 doors).
 - The service-design priority list (which capabilities to build first, given the sub-markets being entered first).
 - The shortlist of ZIPs for active rental acquisition search.
 - The shortlist of ZIPs for daycare conversion thesis.
@@ -490,7 +490,7 @@ No public dataset reports "tech workers by years of tenure at Puget Sound employ
 
 - **Inflow estimates (Cohort A)**: new-grad and lateral counts from H-1B LCA new approvals, LinkedIn workforce signals, levels.fyi self-reported start dates, company workforce announcements.
 - **Tenure mix**: BLS QCEW total tech employment by NAICS × tenure distribution data × known company headcount.
-- **Cohort behavior**: Zillow/Redfin first-time buyer reports, Apartment List renter reports, PSRC survey data, Green Lappe's existing landlord interview base.
+- **Cohort behavior**: Zillow/Redfin first-time buyer reports, Apartment List renter reports, PSRC survey data, Green Property Management's existing landlord interview base.
 - **Layoff-cycle response**: WARN timing × levels.fyi layoff threads × Apartment List vacancy and concession data × Zillow ZORI, with 2022 to 2023 as the natural experiment.
 
 Outputs per cohort: estimated count, median compensation, primary sub-markets, rent capacity range, renter share, layoff-cycle elasticity, owner-conversion rate, screening-friction exposure.

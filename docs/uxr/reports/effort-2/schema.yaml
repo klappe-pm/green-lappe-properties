@@ -1,4 +1,4 @@
-domain: green-lappe-properties
+domain: green-property-management
 category: market-research
 sub-category: demographics
 effort: 2
@@ -86,7 +86,7 @@ caveats:
   - Cross-county ZIPs (98001, 98022, 98047, 98092) carry Zillow ZIP series values that include the Pierce portion; ADU permits are King-DLS-only.
   - Bothell is bi-county; 98011 King, 98012/98021 Snohomish. ADU permits split city portal (in-city) + county portal (unincorporated).
   - 26 LARGE_UNINC ZCTAs route to King DLS or Snohomish PDS for permit data, not city portals.
-  - Calibration scalars (King 1.287, Snohomish 1.254) reconcile the small-portfolio aggregate to the Green Lappe TAM baseline (228K / 74K). The calibration is uniform within each county; ZIP-level distribution is preserved.
+  - Calibration scalars (King 1.287, Snohomish 1.254) reconcile the small-portfolio aggregate to the Green Property Management TAM baseline (228K / 74K). The calibration is uniform within each county; ZIP-level distribution is preserved.
 
 reconciliation:
   green_lappe_tam_baseline:

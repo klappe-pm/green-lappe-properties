@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: strategy
 sub-category: validation
 date-created: 2026-05-18
@@ -17,7 +17,7 @@ tags: []
 
 # Validation Strategies
 
-> Ten testable strategies to validate the Green Lappe Properties business hypothesis. Companion to [[green-lappe-launch-priority-memo|Launch Priority Memo]], [[green-lappe-two-sided-marketplace|Two-Sided Marketplace]], and [[dhm-framework|DHM Framework]].
+> Ten testable strategies to validate the Green Property Management business hypothesis. Companion to [[green-property-management-launch-priority-memo|Launch Priority Memo]], [[green-property-management-two-sided-marketplace|Two-Sided Marketplace]], and [[dhm-framework|DHM Framework]].
 
 ## The Hypothesis Being Tested
 
@@ -197,7 +197,7 @@ The strategies are ordered roughly by sequence, not by importance.
 
 **Cost**: `~80 partner-hours` over 12 months, capex separately funded by owner.
 
-**DHM read**: tests `H` and `M` for the strategic wedge. See [[green-lappe-fcc-strategy|FCC Strategy]] for full DHM read on the wedge.
+**DHM read**: tests `H` and `M` for the strategic wedge. See [[green-property-management-fcc-strategy|FCC Strategy]] for full DHM read on the wedge.
 
 **Priority**: `soon` (provider pipeline starts at month 3; first match opportunistic).
 
@@ -232,9 +232,9 @@ The strategies are ordered roughly by sequence, not by importance.
 
 ## Strategy 8: The Cross-county Owner Referral Test
 
-**The bet**: an owner who is happy with Green Lappe's Snohomish service will refer or transfer their King County property, validating the soft-barrier hypothesis from the launch priority memo.
+**The bet**: an owner who is happy with Green Property Management's Snohomish service will refer or transfer their King County property, validating the soft-barrier hypothesis from the launch priority memo.
 
-**The mechanism**: track every signed phase-1 owner for whether they hold property in King County. Ask explicitly at intake whether they would consider Green Lappe for King County properties when ready. At month 9, formally ask each phase-1 owner for King County referrals.
+**The mechanism**: track every signed phase-1 owner for whether they hold property in King County. Ask explicitly at intake whether they would consider Green Property Management for King County properties when ready. At month 9, formally ask each phase-1 owner for King County referrals.
 
 **Success criteria**:
 
@@ -245,7 +245,7 @@ The strategies are ordered roughly by sequence, not by importance.
 **Failure mode**:
 
 - Phase-1 owners do not hold King County property (the soft-barrier hypothesis is wrong about owner overlap).
-- Owners hold King County property but already have established managers there with switching costs Green Lappe cannot overcome.
+- Owners hold King County property but already have established managers there with switching costs Green Property Management cannot overcome.
 
 **Cost**: `~5 partner-hours` for intake question redesign and tracking; minimal direct cost.
 

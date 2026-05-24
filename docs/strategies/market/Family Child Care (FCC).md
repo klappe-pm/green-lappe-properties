@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: strategy
 sub-category: differentiators
 doc-type: hypothesis
@@ -17,7 +17,7 @@ tags: []
 
 # Family Child Care (FCC)
 
-> Standalone strategy document for the licensed Family Child Care wedge. Companion to [[green-lappe-brand-style-guide|Brand Style Guide]] and [[green-lappe-two-sided-marketplace|Two-Sided Marketplace]].
+> Standalone strategy document for the licensed Family Child Care wedge. Companion to [[green-property-management-brand-style-guide|Brand Style Guide]] and [[green-property-management-two-sided-marketplace|Two-Sided Marketplace]].
 
 The FCC wedge is a strategic differentiator, not the launch product. Standard single-family residential management in Snohomish County is the launch product; FCC is the margin-expansion play that closes the second meeting with sophisticated owners.
 
@@ -28,7 +28,7 @@ FCC stands for Family Child Care, the Washington DCYF licensure category for chi
 - **Licensed Family Home (LFH)**: up to 12 children, depending on provider qualifications and ratios. Provider must reside in the home. Residential zoning is preserved.
 - **In-home / In-family**: smaller scale, license-exempt in some configurations. Not the target for this wedge.
 
-The wedge targets LFH conversions of standard single-family homes in Snohomish County (initially) and King County (expansion), with the provider as the resident-operator and Green Lappe Properties as the landlord and operating partner.
+The wedge targets LFH conversions of standard single-family homes in Snohomish County (initially) and King County (expansion), with the provider as the resident-operator and Green Property Management as the landlord and operating partner.
 
 ## 2. Why This is a Real Opportunity
 
@@ -38,16 +38,16 @@ Snohomish and King County child care supply has not kept pace with demand. Waitl
 
 Specifically: a licensed FCC provider needs a home that meets DCYF facility standards (square footage, egress, outdoor play space, fire safety) and is located in a zone where FCC is a permitted use. Many providers rent or own homes that do not meet these requirements and cannot afford the homes that do. The constraint is housing access, not provider capacity.
 
-### 2.2 The Green Lappe Position
+### 2.2 The Green Property Management Position
 
-Green Lappe Properties is positioned to solve the housing-access constraint:
+Green Property Management is positioned to solve the housing-access constraint:
 
 - The company can identify properties suitable for FCC use (zoning, layout, outdoor space).
 - The company can fund capex to upgrade properties to facility standards.
 - The company can lease to a licensed provider on terms that survive mortgage covenants, insurance carriers, and zoning rules.
 - The company can pre-clear the regulatory friction so the provider arrives at a property that is already ready to license.
 
-No competitor in Snohomish or King County does this in an organized way. The closest analog is Wonderschool, which helps an existing resident open a daycare in their own home. Wonderschool does not source properties for providers. That is the gap Green Lappe fills.
+No competitor in Snohomish or King County does this in an organized way. The closest analog is Wonderschool, which helps an existing resident open a daycare in their own home. Wonderschool does not source properties for providers. That is the gap Green Property Management fills.
 
 ## 3. Economics
 
@@ -77,11 +77,11 @@ These costs are concentrated at conversion and at provider transitions, not in s
 
 ## 4. Structural Options
 
-Three viable structures for a Green Lappe FCC property. Same options that appear in prior strategic work, with current preference noted.
+Three viable structures for a Green Property Management FCC property. Same options that appear in prior strategic work, with current preference noted.
 
 ### 4.1 Structure A: Direct Lease with Premium Rent
 
-Provider leases the property at FCC-premium rent, runs their own licensed business as a sole proprietor or LLC, pays Green Lappe rent only. Green Lappe is purely a landlord.
+Provider leases the property at FCC-premium rent, runs their own licensed business as a sole proprietor or LLC, pays Green Property Management rent only. Green Property Management is purely a landlord.
 
 - Simplest.
 - Lowest revenue capture.
@@ -90,7 +90,7 @@ Provider leases the property at FCC-premium rent, runs their own licensed busine
 
 ### 4.2 Structure B: Lease plus Services Agreement
 
-Provider leases the property and separately contracts with Green Lappe for services (brand, marketing, billing support, training, parent acquisition, insurance group rate, ongoing coaching). Services fee is either a percent of gross tuition (10–15%, Wonderschool-equivalent) or a flat monthly amount.
+Provider leases the property and separately contracts with Green Property Management for services (brand, marketing, billing support, training, parent acquisition, insurance group rate, ongoing coaching). Services fee is either a percent of gross tuition (10–15%, Wonderschool-equivalent) or a flat monthly amount.
 
 - Higher revenue capture than Structure A.
 - Moderate operational burden.
@@ -99,7 +99,7 @@ Provider leases the property and separately contracts with Green Lappe for servi
 
 ### 4.3 Structure C: PropCo / OpCo Split
 
-Green Lappe Properties (real estate entity) leases to Green Lappe Childcare LLC (operating entity). OpCo employs the licensed providers and runs the daycare programs. The two entities transact at arm's length.
+Green Property Management (real estate entity) leases to Green Property Management Childcare LLC (operating entity). OpCo employs the licensed providers and runs the daycare programs. The two entities transact at arm's length.
 
 - Highest revenue capture.
 - Highest operational burden.
@@ -174,14 +174,14 @@ Score: `3-3-3`. Concentrate resources accordingly. This is the strategic differe
 |Insurance carrier non-renewal|Carrier-shop at policy level before signing; maintain alternate quotes annually.|
 |Mortgage covenant breach|Verify covenants before each FCC lease; refinance to investment loan if needed.|
 |Regulatory shift (DCYF rule changes)|Maintain counsel and DCYF Welcome Team relationships; monitor rulemaking.|
-|Child injury liability spills to landlord|Provider's insurance with named-additional-insured status; Green Lappe carries umbrella; PropCo / OpCo split for material scale.|
+|Child injury liability spills to landlord|Provider's insurance with named-additional-insured status; Green Property Management carries umbrella; PropCo / OpCo split for material scale.|
 |Property tax reclassification to mixed-use|Confirm with County Assessor before signing; FCC generally preserves residential classification but verify.|
 |HOA challenge|WA law protects FCC as residential use; HOA can regulate signage and parking only. Documented review at acquisition.|
 |Reputational damage from a bad operator|Provider screening minimum standards; ongoing oversight; immediate termination protocol for safety violations.|
 
 ## 9. The Wedge in the Marketplace Framing
 
-In the two-sided marketplace from [[green-lappe-two-sided-marketplace|Two-Sided Marketplace]], FCC introduces three additional participant types:
+In the two-sided marketplace from [[green-property-management-two-sided-marketplace|Two-Sided Marketplace]], FCC introduces three additional participant types:
 
 - `licensed-fcc-provider` on the demand side (already documented).
 - `daycare-parent` as a third-order demand signal (already documented).
@@ -191,9 +191,9 @@ The wedge does not require its own marketplace. It is a higher-value match withi
 
 ## 10. Open Questions for FCC Strategy
 
-1. Sub-brand decision: Green Lappe Childcare as a sister brand, or single brand for both lines.
+1. Sub-brand decision: Green Property Management Childcare as a sister brand, or single brand for both lines.
 2. Whether to take an equity position in operator businesses or stay purely contractual.
-3. Whether to operate any property as a Green Lappe-employed model (Structure C from day one) versus all-Structure-B at launch.
+3. Whether to operate any property as a Green Property Management-employed model (Structure C from day one) versus all-Structure-B at launch.
 4. Number of FCC properties to target in year one. Recommendation: `1`, with a target of `3` by end of year two.
 5. Whether to actively acquire properties for FCC conversion or limit to owner-supplied inventory.
 6. Pricing of services fee: percent of gross tuition versus flat. Tradeoffs for both parties.

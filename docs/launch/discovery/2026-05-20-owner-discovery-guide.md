@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-management
 category: go-to-market
 sub-category: owner-discovery
 date-created: 2026-05-20
@@ -13,7 +13,7 @@ tags: [owner-discovery, megan-network, proof-sprint, gtm]
 
 # Owner Discovery Guide
 
-Purpose: prepare the 20 warm owner conversations needed before Green Lappe accepts a first cohort. These conversations test demand, pricing, trust transfer, and operating expectations. They are not sales calls unless legal launch gates allow sales activity.
+Purpose: prepare the 20 warm owner conversations needed before Green Property Management accepts a first cohort. These conversations test demand, pricing, trust transfer, and operating expectations. They are not sales calls unless legal launch gates allow sales activity.
 
 ## Target list
 
@@ -95,7 +95,7 @@ Each conversation should produce:
 
 Reject or defer owners when any of these are true:
 
-- Owner wants Green Lappe to solve an active legal dispute before launch readiness is complete.
+- Owner wants Green Property Management to solve an active legal dispute before launch readiness is complete.
 - Owner expects undisclosed fee games or below-market pricing.
 - Property has unresolved safety, habitability, title, HOA, or insurance issues.
 - Owner will not respect written maintenance approval thresholds.
