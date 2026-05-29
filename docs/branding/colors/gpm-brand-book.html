@@ -28,23 +28,18 @@
     --error:   #9C2D1F;
     --info:    #3A6480;
 
-    --serif: "Fraunces", "Iowan Old Style", Georgia, serif;
-    --sans:  "Inter", system-ui, -apple-system, sans-serif;
-    --mono:  "JetBrains Mono", "SF Mono", ui-monospace, monospace;
-
-    /* Typography v2 — Geist (UI/display), Newsreader (prose), Fraunces (signature accent only) */
+    /* Typography — Geist (display/UI), Newsreader (prose), Fraunces (signature accent only) */
     --font-display: "Geist", system-ui, -apple-system, sans-serif;
     --font-ui:      "Geist", system-ui, -apple-system, sans-serif;
     --font-prose:   "Newsreader", Georgia, "Times New Roman", serif;
     --font-accent:  "Fraunces", Georgia, serif;
     --font-mono-v2: "Geist Mono", "JetBrains Mono", ui-monospace, monospace;
-  }
-  :root {
-    /* Override the original variable aliases */
-    --serif: var(--font-display);
-    --sans:  var(--font-ui);
-    --mono:  var(--font-mono-v2);
-    --prose: var(--font-prose);
+
+    /* Role aliases used throughout the document */
+    --serif:  var(--font-display);
+    --sans:   var(--font-ui);
+    --mono:   var(--font-mono-v2);
+    --prose:  var(--font-prose);
     --accent: var(--font-accent);
   }
   * { box-sizing: border-box; }
@@ -1830,7 +1825,7 @@
         <li class="toc__item"><span class="toc__num">§ 03</span><span class="toc__title">Color · primitives<small>Seven primitives. No additions without governance.</small></span><span class="toc__folio">p. 12</span></li>
         <li class="toc__item"><span class="toc__num">§ 04</span><span class="toc__title">Color · derived &amp; system<small>Ramps from Ink, system colors for state.</small></span><span class="toc__folio">p. 13</span></li>
         <li class="toc__item"><span class="toc__num">§ 05</span><span class="toc__title">Contrast &amp; usage ratios<small>WCAG matrix and mode-by-mode budgets.</small></span><span class="toc__folio">p. 14</span></li>
-        <li class="toc__item"><span class="toc__num">§ 06</span><span class="toc__title">Typography<small>Fraunces over Inter. Tracked-out labels. Signed.</small></span><span class="toc__folio">p. 16</span></li>
+        <li class="toc__item"><span class="toc__num">§ 06</span><span class="toc__title">Typography<small>Geist for the work, Newsreader for the words. Signed.</small></span><span class="toc__folio">p. 16</span></li>
         <li class="toc__item"><span class="toc__num">§ 07</span><span class="toc__title">Spacing, radius, elevation<small>4-px scale. Soft, cool-tinted shadows.</small></span><span class="toc__folio">p. 17</span></li>
         <li class="toc__item"><span class="toc__num">§ 08</span><span class="toc__title">Audience modes<small>Five modes on two axes.</small></span><span class="toc__folio">p. 18</span></li>
         <li class="toc__item"><span class="toc__num">§ 09</span><span class="toc__title">Component grammar<small>Buttons, statements, listings, callouts, signatures.</small></span><span class="toc__folio">p. 19</span></li>
