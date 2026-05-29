@@ -3,7 +3,7 @@ domain: brand
 category: design-system
 sub-category: green-pm-style-guide
 date-created: 2026-05-21
-date-revised: 2026-05-21
+date-revised: 2026-05-29
 status: spec-v2-comprehensive
 aliases:
 tags:
@@ -109,7 +109,7 @@ Domain: `greenpmpnw.com`. The `pnw` qualifier reinforces regional identity and p
 
 ### 2.2 Wordmark
 
-Set in Fraunces until a commissioned mark exists:
+Set in Geist until a commissioned mark exists:
 
 - **Full lockup:** `Green` in semibold (600), `Property Management` at 70% size in medium (500). Two-tier hierarchy.
 - **Short lockup:** `Green PM`, both words at semibold (600), single tier.
@@ -463,8 +463,9 @@ export default {
         action:       '#A95C42',
       },
       fontFamily: {
-        display: ['Fraunces', 'Georgia', 'serif'],
-        body:    ['Inter', 'system-ui', 'sans-serif'],
+        display: ['Geist', 'system-ui', '-apple-system', 'sans-serif'],
+        body:    ['Newsreader', 'Georgia', 'Times New Roman', 'serif'],
+        accent:  ['Fraunces', 'Georgia', 'serif'],
       },
       fontSize: {
         xs:      ['0.75rem',  { lineHeight: '1.5' }],
@@ -1086,38 +1087,39 @@ flowchart TD
 
 ### 12.1 Type families
 
+Three families, three jobs. Geist does the work, Newsreader does the words, Fraunces signs the name.
+
 | Role | Typeface | Fallback |
 |---|---|---|
-| Display (headlines, wordmark) | Fraunces | Georgia, "Times New Roman", serif |
-| Body, UI, financial figures | Inter (tabular figures enabled) | system-ui, sans-serif |
+| Display, headlines, wordmark, UI, buttons, financial figures | Geist | system-ui, -apple-system, sans-serif |
+| Body prose, long-form, owner letters | Newsreader | Georgia, "Times New Roman", serif |
+| Signature line only (`Megan`, italic) | Fraunces | Georgia, serif |
 
-Both are open-source (Fraunces SIL OFL, Inter SIL OFL). Load via `fonts.bunny.net` (privacy-friendly Google Fonts proxy) or self-host via Astro's `astro-font` integration.
+All three are open-source (Geist SIL OFL, Newsreader SIL OFL, Fraunces SIL OFL). Load via `fonts.bunny.net` (privacy-friendly Google Fonts proxy) or self-host via Astro's `astro-font` integration. The mono family was removed in v3 — the brand does not display code.
 
 ### 12.2 When each runs
 
 | Use | Family | Why |
 |---|---|---|
-| Headlines, hero text, wordmark, signature line | Fraunces | Editorial warmth, optical sizing, identifies the brand |
-| Body prose, paragraph text | Inter | Workhorse legibility at small sizes |
-| Buttons, navigation, form labels | Inter | Functional clarity |
-| Financial tables, statements, data cells | Inter with `font-feature-settings: "tnum"` | Tabular figures align in columns |
-| Portal headings, dashboard titles | Fraunces (display) or Inter semibold (data-dense) | Display when context allows, Inter when density required |
-| Eyebrow labels (small caps) | Inter, uppercase, tracked | Categorizes the heading below |
-| Code, monospace | JetBrains Mono | Statements line-items, technical references |
+| Headlines, hero text, wordmark | Geist | Contemporary grotesque; serious, regional, current |
+| Body prose, paragraph text, owner letters | Newsreader | Editorial warmth and legibility in long-form |
+| Buttons, navigation, form labels | Geist | Functional clarity |
+| Financial tables, statements, data cells | Geist with `font-feature-settings: "tnum"` | Tabular figures align in columns |
+| Portal headings, dashboard titles | Geist | One display face across editorial and dense surfaces |
+| Eyebrow labels (small caps) | Geist, uppercase, tracked | Categorizes the heading below |
+| Signature line (`Megan`) | Fraunces italic | Named-operator accent; the only place Fraunces appears |
 
-### 12.3 Optical sizing (Fraunces)
+### 12.3 Optical sizing (Newsreader and Fraunces)
 
-Fraunces is a variable font with an `opsz` axis. Use it.
+Geist has no optical-size axis; nothing to set on headlines or UI. Optical sizing applies only to the two serif faces, both variable fonts with an `opsz` axis:
 
-| Context | `font-optical-sizing` | Manual override |
+| Context | Family | `font-optical-sizing` |
 |---|---|---|
-| Display 5rem hero | auto | `font-variation-settings: "opsz" 144` |
-| H1 3.5rem | auto | `font-variation-settings: "opsz" 72` |
-| H2 2.5rem | auto | `font-variation-settings: "opsz" 48` |
-| H3-H4 1.5-1.875rem | auto | `font-variation-settings: "opsz" 24` |
-| Body Fraunces (rare, italic accents) | auto | `font-variation-settings: "opsz" 14` |
+| Body prose, long-form | Newsreader (opsz 6–72) | auto |
+| Lead paragraphs | Newsreader | auto |
+| Signature line `Megan` | Fraunces (opsz 9–144) | auto |
 
-Default to `font-optical-sizing: auto` and let the browser handle it. Manual overrides only when the visual judgment demands it.
+Default to `font-optical-sizing: auto` on Newsreader and Fraunces and let the browser handle it. Geist needs no optical setting.
 
 ### 12.4 Mobile-first type scale
 
@@ -1175,43 +1177,45 @@ CSS:
 Tailwind utility (custom plugin or arbitrary value):
 
 ```html
-<span class="font-body tabular-nums">$2,400</span>
+<span class="font-display tabular-nums">$2,400</span>
 ```
 
 ### 12.7 Italic usage
 
-Fraunces italic appears sparingly:
+Fraunces italic appears once per document, and only at the signature:
 
 - **Signature lines**: `Megan` in italic Fraunces at the close of letters, proposals, notices
-- **Accent emphasis in headlines**: one word per headline italicized for emphasis ("Property management for *small landlords*")
+
+Newsreader italic is allowed sparingly inside prose:
+
 - **Editorial pull quotes**: rare, only on blog posts
 - **Citations and titles of works**: standard usage
 
 Never:
 - Italic body prose paragraphs
 - Italic for navigation or buttons
-- Italic Inter (it exists but doesn't fit the brand)
+- Italic Geist (headlines and UI stay upright)
 
-### 12.8 Display-face exceptions
+### 12.8 Heading face in dense contexts
 
-The portal contexts use Inter even for headings when data density requires it:
+There is one display face. Geist runs both editorial and functional headings; the difference is weight, size, and casing, not a switch of face. The editorial warmth a serif display once carried now comes from the Newsreader prose around the heading and from the Fraunces signature.
 
-| Context | Heading face | Why |
+| Context | Treatment | Why |
 |---|---|---|
-| Owner portal dashboard "March 2026 summary" | Fraunces | Editorial moment, sets the tone |
-| Owner portal table headers "Property · Rent · Status" | Inter semibold uppercase tracked | Functional column header, not decorative |
-| Resident portal "Your home" | Fraunces | Personal, warm |
-| Resident portal "Rent due in 4 days" | Inter, weight 500 | Functional urgency |
+| Owner portal dashboard "March 2026 summary" | Geist medium | Editorial-leaning heading |
+| Owner portal table headers "Property · Rent · Status" | Geist semibold, uppercase, tracked | Functional column header, not decorative |
+| Resident portal "Your home" | Geist medium | Warmth carried by copy, not face |
+| Resident portal "Rent due in 4 days" | Geist, weight 500 | Functional urgency |
 
-Default: Fraunces for editorial headings, Inter for functional headings inside dense data surfaces.
+Default: Geist for all headings; express editorial vs functional through weight, size, and casing.
 
 ### 12.9 Weight, tracking, leading
 
 | Token | Value | Use |
 |---|---|---|
-| weight-regular | 400 | Body, default Inter |
-| weight-medium | 500 | Inter for slight emphasis, Fraunces display |
-| weight-semibold | 600 | Headings, buttons, wordmark |
+| weight-regular | 400 | Body and UI default (Newsreader prose, Geist UI) |
+| weight-medium | 500 | Form labels, nav links, light emphasis (Geist) |
+| weight-semibold | 600 | Headings, buttons, wordmark, signature |
 | weight-bold | 700 | Rare, used only for very high emphasis |
 | tracking-tight | -0.02em | Display, large headings |
 | tracking-normal | 0 | Body |
@@ -1295,7 +1299,7 @@ These mark a Green PM artifact at a glance:
 
 ```html
 <div class="mt-8">
-  <p class="font-display italic text-lg text-cedar">Megan</p>
+  <p class="font-accent italic text-lg text-cedar">Megan</p>
   <p class="text-xs font-semibold tracking-wide uppercase text-ink-60 mt-1">
     Megan Green, Designated Broker
   </p>
@@ -2149,7 +2153,7 @@ Carries Megan's name across all surfaces.
 
 ```html
 <div class="mt-8 pt-6 border-t border-ink-20">
-  <p class="font-display italic text-2xl text-cedar leading-tight">Megan</p>
+  <p class="font-accent italic text-2xl text-cedar leading-tight">Megan</p>
   <p class="text-xs font-semibold tracking-wide uppercase text-ink-60 mt-1">
     Megan Green, Designated Broker
   </p>
@@ -2172,7 +2176,7 @@ Used in resident portal messaging.
   <p class="text-base text-ink leading-relaxed">
     Hi Jamie. Thanks for sending the photo of the sink. Cascade Plumbing is booked for Thursday morning, 9-11 AM.
   </p>
-  <p class="font-display italic text-lg text-cedar mt-4">Megan</p>
+  <p class="font-accent italic text-lg text-cedar mt-4">Megan</p>
 </article>
 ```
 
@@ -3253,8 +3257,8 @@ All HTML emails follow the same skeleton:
 ```
 [Logo wordmark, Cedar, centered or left]
 [3-5 character line of whitespace]
-[Subject as H1, Fraunces, 24px, Ink]
-[Body, Inter, 16px, Ink-80, max 65ch]
+[Subject as H1, Geist, 24px, Ink]
+[Body, Newsreader, 16px, Ink-80, max 65ch]
 [Inline action CTA if applicable, Clay button, full width on mobile]
 [Signature block: italic Megan + role line]
 [Hairline divider, Ink-20]
@@ -3549,7 +3553,7 @@ Don't: "🔥🔥 Tag a landlord who needs to see this! 🔥🔥"
 - Lowercase kebab-case throughout
 - Dashes, not underscores
 - No spaces, no special characters
-- Proper nouns preserved (`Fraunces`, `Inter`, `Cedar`)
+- Proper nouns preserved (`Geist`, `Newsreader`, `Cedar`)
 - Established project conventions trump these (Tailwind class names, npm package names, etc.)
 
 ### 30.2 File naming
@@ -3921,8 +3925,8 @@ Usage: `class="z-sticky"`, `class="z-modal"`. Never use arbitrary numbers like `
 - Drop shadows beyond defined `--shadow-*` tokens
 - Border radius above 16px on UI elements
 - All-caps body or headlines
-- Italic Inter body
-- Fraunces for dense data tables
+- Italic body prose (Newsreader)
+- Fraunces anywhere but the signature line
 
 ---
 
@@ -3963,7 +3967,7 @@ Neither allows full CSS theming. The portal will not match the marketing site pi
 
 Rentvine allows custom CSS injection. Use it to:
 
-- Override default font to Inter
+- Override default font to Geist
 - Set primary buttons to Clay
 - Adjust the wordmark display
 
