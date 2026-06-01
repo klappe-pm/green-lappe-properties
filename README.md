@@ -3,7 +3,7 @@ domain: green-property-management
 category: configuration
 sub-category: readme
 date-created: 2026-05-18
-date-revised: 2026-05-22
+date-revised: 2026-06-01
 doc-type: readme
 version: 0.1
 doc-status: draft
@@ -27,8 +27,7 @@ The repo is in documentation, launch-prep, and decision-support mode. The GitHub
 
 | Folder | Summary |
 | --- | --- |
-| [`AGENTS.md`](AGENTS.md) | Canonical project-local instructions for Claude, Codex, Warp, and Gemini. |
-| [`CLAUDE.md`](CLAUDE.md), [`WARP.md`](WARP.md), [`GEMINI.md`](GEMINI.md) | Cross-agent entrypoint files that route agents to `AGENTS.md`. |
+| [`CLAUDE.md`](CLAUDE.md) | Canonical project-local instruction file (Claude Code only). |
 | [`LLM-BREADCRUMBS.md`](LLM-BREADCRUMBS.md) | Low-token navigation pointer back to this project root, local passoff history, and the canonical session-data breadcrumb implementation. |
 | [`.claude/`](.claude/) | Project-local IA policy, validation logic, and deterministic workflow guidance. |
 | [`docs/`](docs/) | Main working corpus for research, strategy, planning, status, and partner materials. |
@@ -87,7 +86,7 @@ The driving plan is [`docs/uxr/plans/Demographic Research Plan.md`](docs/uxr/pla
 ## Workflow
 
 - Session handoff is governed by `~/.claude/PASSOFF.md`. Passoffs land in [`docs/passoffs/`](docs/passoffs/). Resume the next session with `/resume`; close it with `/pass`.
-- Project-local agent instructions live in [`AGENTS.md`](AGENTS.md). Keep `CLAUDE.md`, `WARP.md`, and `GEMINI.md` as entrypoint files that point back to the canonical instruction file.
+- Project-local instructions live in [`CLAUDE.md`](CLAUDE.md), the single canonical instruction file (Claude Code only).
 - Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
 - Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` or `YYYY-MM-DD-HHMM-status-update.md` convention. Historical status updates have been migrated there from `project-management/status-updates/`.
 - Launch execution documents land in [`docs/launch/`](docs/launch/) under `plans/`, `legal/`, `discovery/`, or `references/`.
