@@ -27,8 +27,8 @@ The repo is in documentation, launch-prep, and decision-support mode. The GitHub
 
 | Folder | Summary |
 | --- | --- |
-| [`CLAUDE.md`](CLAUDE.md) | Canonical project-local instruction file (Claude Code only). |
-| [`LLM-BREADCRUMBS.md`](LLM-BREADCRUMBS.md) | Low-token navigation pointer back to this project root, local passoff history, and the canonical session-data breadcrumb implementation. |
+| [`CLAUDE.md`](green-lappe-properties/CLAUDE.md) | Canonical project-local instruction file (Claude Code only). |
+| [`LLM-BREADCRUMBS.md`](green-lappe-properties/LLM-BREADCRUMBS.md) | Low-token navigation pointer back to this project root, local passoff history, and the canonical session-data breadcrumb implementation. |
 | [`.claude/`](.claude/) | Project-local IA policy, validation logic, and deterministic workflow guidance. |
 | [`docs/`](docs/) | Main working corpus for research, strategy, planning, status, and partner materials. |
 | [`docs/backlog/`](docs/backlog/) | Append-only backlog and backlink companion notes for project work and repo hygiene. |
@@ -86,7 +86,7 @@ The driving plan is [`docs/uxr/plans/Demographic Research Plan.md`](docs/uxr/pla
 ## Workflow
 
 - Session handoff is governed by `~/.claude/PASSOFF.md`. Passoffs land in [`docs/passoffs/`](docs/passoffs/). Resume the next session with `/resume`; close it with `/pass`.
-- Project-local instructions live in [`CLAUDE.md`](CLAUDE.md), the single canonical instruction file (Claude Code only).
+- Project-local instructions live in [`CLAUDE.md`](green-lappe-properties/CLAUDE.md), the single canonical instruction file (Claude Code only).
 - Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
 - Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` or `YYYY-MM-DD-HHMM-status-update.md` convention. Historical status updates have been migrated there from `project-management/status-updates/`.
 - Launch execution documents land in [`docs/launch/`](docs/launch/) under `plans/`, `legal/`, `discovery/`, or `references/`.
