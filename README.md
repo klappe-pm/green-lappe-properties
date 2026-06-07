@@ -3,7 +3,7 @@ domain: green-property-management
 category: configuration
 sub-category: readme
 date-created: 2026-05-18
-date-revised: 2026-06-01
+date-revised: 2026-06-07
 doc-type: readme
 version: 0.1
 doc-status: draft
@@ -43,6 +43,7 @@ The repo is in documentation, launch-prep, and decision-support mode. The GitHub
 | [`docs/marketing/founder-bios/`](docs/marketing/founder-bios/) | Founder biography and resume source material. |
 | [`docs/financial/`](docs/financial/) | Financial-model workbook artifacts. |
 | [`docs/passoffs/`](docs/passoffs/) | Session handoff files governed by `~/.claude/PASSOFF.md`. |
+| [`docs/prompts/`](docs/prompts/) | Reusable project, repo, and agent scaffolding prompts. |
 | [`docs/roadmap/`](docs/roadmap/) | Product and business roadmap area. |
 | [`docs/status/`](docs/status/) | Dated project and repo status reports. |
 | [`docs/strategies/`](docs/strategies/) | Strategic frameworks and wedges; active market frameworks live under `docs/strategies/market/`. |
@@ -90,6 +91,7 @@ The driving plan is [`docs/uxr/plans/Demographic Research Plan.md`](docs/uxr/pla
 - Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
 - Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` or `YYYY-MM-DD-HHMM-status-update.md` convention. Historical status updates have been migrated there from `project-management/status-updates/`.
 - Launch execution documents land in [`docs/launch/`](docs/launch/) under `plans/`, `legal/`, `discovery/`, or `references/`.
+- Project, repo, and agent scaffolding prompts land in [`docs/prompts/`](docs/prompts/); research prompts remain in [`docs/uxr/prompts/`](docs/uxr/prompts/).
 - Research prompts land in [`docs/uxr/prompts/`](docs/uxr/prompts/) using descriptive slug names.
 - UX and service-experience diagrams land in [`docs/uxd/`](docs/uxd/) using lowercase kebab-case filenames and Mermaid blocks where diagrams are useful.
 - Branch hygiene: keep `main` synced after PR merge, and delete merged feature/passoff branches once their work is present on `main`.
