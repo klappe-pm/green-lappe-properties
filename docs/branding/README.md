@@ -1,9 +1,9 @@
 ---
 domain: brand
 category: design-system
-sub-category: green-pm-style-guide
+sub-category: green-pm-design-system
 date-created: 2026-05-21
-date-revised: 2026-05-21
+date-revised: 2026-06-12
 status: spec-v2-comprehensive
 aliases:
 tags:
@@ -17,7 +17,7 @@ Production-ready brand and design system for Green Property Management. This fol
 
 | File | Purpose |
 |---|---|
-| `green-pm-style-guide.md` | Comprehensive style guide. 38 sections. Read this first. |
+| `green-pm-design-system.md` | Comprehensive design system and style guide. 38 sections. Read this first. |
 | `green-pm-tokens.css` | Machine-readable design tokens. Imported at document root. |
 | `modes.css` | Audience-mode surface overrides via `data-audience` attribute. |
 | `base.css` | Element resets, mobile-first type scale, focus styles, prose. |
@@ -61,4 +61,4 @@ In Astro layouts, import CSS in this order:
 
 ## Versioning
 
-This is v2.0. See style guide §37 for governance and evolution policy.
+This is v2.0. See `green-pm-design-system.md` §37 for governance and evolution policy.

@@ -3,7 +3,7 @@ domain: green-property-management
 category: configuration
 sub-category: readme
 date-created: 2026-05-18
-date-revised: 2026-06-07
+date-revised: 2026-06-12
 doc-type: readme
 version: 0.1
 doc-status: draft
@@ -31,7 +31,6 @@ The repo is in documentation, launch-prep, and decision-support mode. The GitHub
 | [`LLM-BREADCRUMBS.md`](green-lappe-properties/LLM-BREADCRUMBS.md) | Low-token navigation pointer back to this project root, local passoff history, and the canonical session-data breadcrumb implementation. |
 | [`.claude/`](.claude/) | Project-local IA policy, validation logic, and deterministic workflow guidance. |
 | [`docs/`](docs/) | Main working corpus for research, strategy, planning, status, and partner materials. |
-| [`scaffolding/`](scaffolding/) | Reusable LLM instructions and templates for bootstrapping related project repositories. |
 | [`docs/backlog/`](docs/backlog/) | Append-only backlog and backlink companion notes for project work and repo hygiene. |
 | [`docs/branding/`](docs/branding/) | Brand-system source files, style guide material, tokens, schemas, and implementation references. |
 | [`docs/gtm/`](docs/gtm/) | Go-to-market plans, launch sequencing, and prioritization logic. |
@@ -89,11 +88,10 @@ The driving plan is [`docs/uxr/plans/Demographic Research Plan.md`](docs/uxr/pla
 
 - Session handoff is governed by `~/.claude/PASSOFF.md`. Passoffs land in [`docs/passoffs/`](docs/passoffs/). Resume the next session with `/resume`; close it with `/pass`.
 - Project-local instructions live in [`CLAUDE.md`](green-lappe-properties/CLAUDE.md), the single canonical instruction file (Claude Code only).
-- Reusable cross-project scaffolding instructions live in [`scaffolding/docs/`](scaffolding/docs/).
 - Backlog items go in [`docs/backlog/backlog.md`](docs/backlog/backlog.md) via the `/backlog` command (tags: `type:`, `priority:`, `area:`).
 - Status reports land in [`docs/status/`](docs/status/) using the dated `YYYY-MM-DD-status-report.md` or `YYYY-MM-DD-HHMM-status-update.md` convention. Historical status updates have been migrated there from `project-management/status-updates/`.
 - Launch execution documents land in [`docs/launch/`](docs/launch/) under `plans/`, `legal/`, `discovery/`, or `references/`.
-- Project, repo, and agent scaffolding prompts land in [`docs/prompts/`](docs/prompts/); research prompts remain in [`docs/uxr/prompts/`](docs/uxr/prompts/).
+- Project, repo, and agent scaffolding prompts land in [`docs/prompts/`](docs/prompts/); the global Claude `/new-project-scaffolding` command and `new-project-scaffolding` skill are the executable workflow. Research prompts remain in [`docs/uxr/prompts/`](docs/uxr/prompts/).
 - Research prompts land in [`docs/uxr/prompts/`](docs/uxr/prompts/) using descriptive slug names.
 - UX and service-experience diagrams land in [`docs/uxd/`](docs/uxd/) using lowercase kebab-case filenames and Mermaid blocks where diagrams are useful.
 - Branch hygiene: keep `main` synced after PR merge, and delete merged feature/passoff branches once their work is present on `main`.

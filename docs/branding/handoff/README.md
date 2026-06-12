@@ -12,7 +12,7 @@ system, built from a Claude Design handoff.
 | [`../colors/gpm-brand-book.html`](../colors/gpm-brand-book.html) | The full editorial brand book (22 spreads). Self-contained; open in any browser. Canonical copy lives in `docs/branding/colors/`. | Humans, vendors, and as the rendered reference. |
 
 This is the **distilled** implementation kit. The comprehensive canonical
-reference is [`../green-pm-style-guide.md`](../green-pm-style-guide.md); the
+reference is [`../green-pm-design-system.md`](../green-pm-design-system.md); the
 full token set is [`../css/green-pm-tokens.css`](../css/green-pm-tokens.css).
 Use this bundle for fast surface builds and that pair as the source of truth.
 

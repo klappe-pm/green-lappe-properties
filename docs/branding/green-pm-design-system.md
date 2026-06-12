@@ -1,19 +1,19 @@
 ---
 domain: brand
 category: design-system
-sub-category: green-pm-style-guide
+sub-category: green-pm-design-system
 date-created: 2026-05-21
-date-revised: 2026-05-29
+date-revised: 2026-06-12
 status: spec-v2-comprehensive
 aliases:
 tags:
 ---
 
-# green-pm-style-guide
+# green-pm-design-system
 
 Comprehensive brand and design system documentation for Green Property Management. Production-ready reference for designers, engineers, vendors, and content authors. Mobile-first throughout. Supersedes the v1 style guide.
 
-**Locked technical stack:**
+**Technical stack**
 
 - **Marketing site:** Astro with Tailwind CSS, deployed to Cloudflare Pages or Netlify
 - **Content layer:** Sanity (headless CMS) with Sanity Studio for Megan, write API for automation
@@ -3565,7 +3565,7 @@ Don't: "🔥🔥 Tag a landlord who needs to see this! 🔥🔥"
 | Astro layouts | PascalCase + Layout suffix | `OwnerAcquisitionLayout.astro` |
 | CSS files | kebab-case | `tokens.css`, `modes.css` |
 | Image assets | kebab-case-descriptive | `megan-bothell-duplex.jpg`, `1823-nw-65th-front.jpg` |
-| Brand documents (Markdown) | kebab-case | `green-pm-style-guide.md` |
+| Brand documents (Markdown) | kebab-case | `green-pm-design-system.md` |
 | Sanity schemas | kebab-case | `blog-post.ts`, `listing.ts`, `lead.ts` |
 
 ### 30.3 Repository structure

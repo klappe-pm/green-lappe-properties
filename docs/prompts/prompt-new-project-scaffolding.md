@@ -1,14 +1,14 @@
 ---
 domain: green-property-management
-category: scaffolding
-sub-category: new-project-prompt
+category: prompts
+sub-category: new-project-scaffolding
 date-created: 2026-06-07
-date-revised: 2026-06-07
+date-revised: 2026-06-12
 doc-type: llm-prompt-instructions
 version: 0.1
 doc-status: draft
 aliases: [New project scaffolding prompt]
-tags: [scaffolding, prompt, llm]
+tags: [scaffolding, prompt, llm, new-project-scaffolding]
 ---
 
 # prompt-new-project-scaffolding
@@ -16,6 +16,16 @@ tags: [scaffolding, prompt, llm]
 Use this file as the instruction payload for an LLM that needs to scaffold a
 new related project repository from an existing reference project. Replace the
 bracketed values before sending it.
+
+## Global Claude Workflow
+
+The reusable executable workflow is installed in the global Claude config:
+
+- Command: `/Users/kevinlappe/.claude/commands/new-project-scaffolding.md`
+- Skill: `/Users/kevinlappe/.claude/skills/new-project-scaffolding/SKILL.md`
+
+Use this file when a copyable prompt artifact is needed inside the project
+corpus. Use the global command when asking Claude to perform the workflow.
 
 ## LLM instructions
 
