@@ -51,4 +51,3 @@ These items remain active, but most launch readiness and operations items are bl
 - [x] Create researched, dependency-ordered business launch project plan with official links.
 - [x] Consolidate launch documents, generated outputs, and meta-analysis artifacts under `docs/`.
 
-## Ghost Links
