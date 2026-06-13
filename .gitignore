@@ -10,3 +10,4 @@
 .claude/*
 !.claude/evaluate-ia-change.mjs
 !.claude/information-architecture.md
+!.claude/reconcile-tracking.sh

@@ -69,6 +69,7 @@ These requirements are enforceable at change time. They intentionally avoid subj
 11. Any folder whose name starts with `_` is non-live. The IA evaluator logs changed non-live paths and ignores them for live IA requirements; active Markdown must not link to non-live `docs/_*` material as a dependency.
 12. Sensitive launch or legal-adjacent evidence must not be committed. Paths containing credentials, secrets, recovery codes, payment details, receipts, counsel memos, license documents, or sensitive screenshots fail IA evaluation.
 13. The IA evaluator is scoped to changed files. It does not attempt to clean up legacy filenames unless those files are newly added, copied, or renamed in the current change.
+14. Every durable file must be git-tracked. A manual folder move (e.g. in Finder) leaves files untracked and silently drifts the IA from disk, so `.claude/reconcile-tracking.sh --check` runs in `pre-commit` and fails the commit when any durable file is untracked. Resolve drift with `.claude/reconcile-tracking.sh --fix` (stages each path individually) or route scratch into a `_`-prefixed non-live folder. The check honors `.gitignore`, skips `_`-prefixed directory segments, and ignores OS metadata.
 
 ## Placement Decision Tree
 

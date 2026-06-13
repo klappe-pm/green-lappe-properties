@@ -2,4 +2,10 @@
 set -eu
 
 repo_root="$(git rev-parse --show-toplevel)"
+
+# 1) Placement: every staged file must live in a canonical IA zone.
 node "$repo_root/.claude/evaluate-ia-change.mjs" --staged
+
+# 2) Tracking: no durable file may be left untracked. Catches manual folder
+#    moves (Finder drags) that leave files unstaged and drift the IA from disk.
+"$repo_root/.claude/reconcile-tracking.sh" --check
