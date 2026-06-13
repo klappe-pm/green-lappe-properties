@@ -1,14 +1,15 @@
 # green-pm-site (work in progress)
 
 Feature-organized Astro + Tailwind scaffold for the Green Property Management
-marketing site and portals. Canonical brand/domain/stack come from the locked
-design system in `../docs/uxd/design-system/`.
+marketing site and portals. Lives under `src/` (the IA's zone for executable
+project code). Canonical brand/domain/stack come from the locked design system
+(`product/design/uxd/design-system/` on current `main`).
 
 **Status: partial scaffold, not yet buildable.** Build config, the canonical
 design tokens, and the Tailwind config are in place, but no `src/pages/` routes,
 layouts, or feature slices exist yet, so `astro build` will not succeed until a
 homepage and base layout are added. See the newest passoff in
-`../docs/passoffs/` for the planned next actions.
+`docs/passoffs/` for the planned next actions.
 
 ## Canonical decisions baked in here
 
@@ -16,7 +17,7 @@ homepage and base layout are added. See the newest passoff in
   (design system v3 is canonical; the older `greenlappe.com` launch note is
   superseded).
 - **Stack:** Astro 4.x + Tailwind 3.x + Sanity v3 + Cloudflare Pages, per
-  `../docs/uxd/design-system/docs/80-system-architecture.md`.
+  the design system's `80-system-architecture.md`.
 - **Design tokens:** `src/styles/{green-pm-tokens.css,modes.css,base.css}` are
   copied from the design system, which remains the single source of truth.
   Tailwind preflight is disabled so `base.css` is the only reset.
@@ -24,7 +25,7 @@ homepage and base layout are added. See the newest passoff in
 ## Intended layout
 
 ```
-site/
+src/green-pm-site/
   astro.config.mjs
   tailwind.config.js          # mirrors green-pm-tokens.css
   src/
@@ -35,6 +36,10 @@ site/
     config/                   # site.ts, brand.ts
   tests/                      # vitest unit/component tests
 ```
+
+Feature planning artifacts (specs, epics, roadmaps) belong in the IA's
+`product/features/`, `product/epics/`, and `product/roadmaps/` zones — not in
+this code tree.
 
 ## Scripts (once dependencies are installed)
 
