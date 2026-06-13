@@ -1,0 +1,1824 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98001",
+        "city_primary": "Auburn",
+        "county_primary": "King",
+        "pm_score": 29.16,
+        "pm_rank": 66,
+        "rental_score": 53.59,
+        "rental_rank": 65,
+        "daycare_score": 40.91,
+        "daycare_rank": 89,
+        "dual_use_score": 46.82,
+        "dual_use_rank": 82
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98002",
+        "city_primary": "Auburn",
+        "county_primary": "King",
+        "pm_score": 30.91,
+        "pm_rank": 63,
+        "rental_score": 51.12,
+        "rental_rank": 75,
+        "daycare_score": 50.7,
+        "daycare_rank": 34,
+        "dual_use_score": 50.91,
+        "dual_use_rank": 60
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98003",
+        "city_primary": "Federal Way",
+        "county_primary": "King",
+        "pm_score": 37.94,
+        "pm_rank": 36,
+        "rental_score": 52.31,
+        "rental_rank": 74,
+        "daycare_score": 45.13,
+        "daycare_rank": 73,
+        "dual_use_score": 48.59,
+        "dual_use_rank": 74
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98004",
+        "city_primary": "Bellevue",
+        "county_primary": "King",
+        "pm_score": 67.24,
+        "pm_rank": 4,
+        "rental_score": 59.61,
+        "rental_rank": 35,
+        "daycare_score": 49.29,
+        "daycare_rank": 44,
+        "dual_use_score": 54.2,
+        "dual_use_rank": 33
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98005",
+        "city_primary": "Bellevue",
+        "county_primary": "King",
+        "pm_score": 48.27,
+        "pm_rank": 23,
+        "rental_score": 63.03,
+        "rental_rank": 20,
+        "daycare_score": 49.32,
+        "daycare_rank": 43,
+        "dual_use_score": 55.76,
+        "dual_use_rank": 21
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98006",
+        "city_primary": "Bellevue",
+        "county_primary": "King",
+        "pm_score": 47.82,
+        "pm_rank": 24,
+        "rental_score": 66.94,
+        "rental_rank": 9,
+        "daycare_score": 50.86,
+        "daycare_rank": 31,
+        "dual_use_score": 58.35,
+        "dual_use_rank": 9
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98007",
+        "city_primary": "Bellevue",
+        "county_primary": "King",
+        "pm_score": 64.15,
+        "pm_rank": 7,
+        "rental_score": 56.59,
+        "rental_rank": 52,
+        "daycare_score": 53.19,
+        "daycare_rank": 20,
+        "dual_use_score": 54.86,
+        "dual_use_rank": 26
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98008",
+        "city_primary": "Bellevue",
+        "county_primary": "King",
+        "pm_score": 46.91,
+        "pm_rank": 28,
+        "rental_score": 59.21,
+        "rental_rank": 37,
+        "daycare_score": 51.72,
+        "daycare_rank": 27,
+        "dual_use_score": 55.34,
+        "dual_use_rank": 23
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98010",
+        "city_primary": "Black Diamond",
+        "county_primary": "King",
+        "pm_score": 18.4,
+        "pm_rank": 94,
+        "rental_score": 57.1,
+        "rental_rank": 50,
+        "daycare_score": 43.08,
+        "daycare_rank": 81,
+        "dual_use_score": 49.6,
+        "dual_use_rank": 69
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98011",
+        "city_primary": "Bothell",
+        "county_primary": "King",
+        "pm_score": 36.46,
+        "pm_rank": 39,
+        "rental_score": 63.16,
+        "rental_rank": 19,
+        "daycare_score": 45.8,
+        "daycare_rank": 68,
+        "dual_use_score": 53.78,
+        "dual_use_rank": 37
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98012",
+        "city_primary": "Bothell",
+        "county_primary": "Snohomish",
+        "pm_score": 43.66,
+        "pm_rank": 32,
+        "rental_score": 66.75,
+        "rental_rank": 10,
+        "daycare_score": 58.72,
+        "daycare_rank": 4,
+        "dual_use_score": 62.61,
+        "dual_use_rank": 3
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98014",
+        "city_primary": "Carnation",
+        "county_primary": "King",
+        "pm_score": 20.41,
+        "pm_rank": 89,
+        "rental_score": 58.45,
+        "rental_rank": 40,
+        "daycare_score": 48.76,
+        "daycare_rank": 48,
+        "dual_use_score": 53.39,
+        "dual_use_rank": 39
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98019",
+        "city_primary": "Duvall",
+        "county_primary": "King",
+        "pm_score": 20.02,
+        "pm_rank": 91,
+        "rental_score": 60.05,
+        "rental_rank": 33,
+        "daycare_score": 49.01,
+        "daycare_rank": 45,
+        "dual_use_score": 54.25,
+        "dual_use_rank": 32
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98020",
+        "city_primary": "Edmonds",
+        "county_primary": "Snohomish",
+        "pm_score": 24.77,
+        "pm_rank": 78,
+        "rental_score": 59.27,
+        "rental_rank": 36,
+        "daycare_score": 41.35,
+        "daycare_rank": 86,
+        "dual_use_score": 49.51,
+        "dual_use_rank": 71
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98021",
+        "city_primary": "Bothell",
+        "county_primary": "Snohomish",
+        "pm_score": 30.0,
+        "pm_rank": 64,
+        "rental_score": 63.9,
+        "rental_rank": 17,
+        "daycare_score": 55.41,
+        "daycare_rank": 14,
+        "dual_use_score": 59.5,
+        "dual_use_rank": 5
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98022",
+        "city_primary": "Enumclaw",
+        "county_primary": "King",
+        "pm_score": 15.49,
+        "pm_rank": 97,
+        "rental_score": 55.46,
+        "rental_rank": 58,
+        "daycare_score": 39.86,
+        "daycare_rank": 92,
+        "dual_use_score": 47.02,
+        "dual_use_rank": 80
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98023",
+        "city_primary": "Federal Way",
+        "county_primary": "King",
+        "pm_score": 34.76,
+        "pm_rank": 42,
+        "rental_score": 55.91,
+        "rental_rank": 55,
+        "daycare_score": 46.58,
+        "daycare_rank": 63,
+        "dual_use_score": 51.03,
+        "dual_use_rank": 58
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98024",
+        "city_primary": "Fall City",
+        "county_primary": "King",
+        "pm_score": 19.71,
+        "pm_rank": 92,
+        "rental_score": 57.71,
+        "rental_rank": 43,
+        "daycare_score": 54.65,
+        "daycare_rank": 16,
+        "dual_use_score": 56.16,
+        "dual_use_rank": 17
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98025",
+        "city_primary": "Hobart",
+        "county_primary": "King",
+        "pm_score": 10.29,
+        "pm_rank": 104,
+        "rental_score": 57.59,
+        "rental_rank": 46,
+        "daycare_score": 22.41,
+        "daycare_rank": 104,
+        "dual_use_score": 35.92,
+        "dual_use_rank": 104
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98026",
+        "city_primary": "Edmonds",
+        "county_primary": "Snohomish",
+        "pm_score": 29.09,
+        "pm_rank": 67,
+        "rental_score": 64.63,
+        "rental_rank": 14,
+        "daycare_score": 45.32,
+        "daycare_rank": 71,
+        "dual_use_score": 54.12,
+        "dual_use_rank": 34
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98027",
+        "city_primary": "Issaquah",
+        "county_primary": "King",
+        "pm_score": 38.85,
+        "pm_rank": 35,
+        "rental_score": 66.59,
+        "rental_rank": 11,
+        "daycare_score": 41.97,
+        "daycare_rank": 85,
+        "dual_use_score": 52.87,
+        "dual_use_rank": 42
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98028",
+        "city_primary": "Kenmore",
+        "county_primary": "King",
+        "pm_score": 31.45,
+        "pm_rank": 59,
+        "rental_score": 62.26,
+        "rental_rank": 22,
+        "daycare_score": 47.04,
+        "daycare_rank": 59,
+        "dual_use_score": 54.12,
+        "dual_use_rank": 35
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98029",
+        "city_primary": "Issaquah",
+        "county_primary": "King",
+        "pm_score": 40.42,
+        "pm_rank": 34,
+        "rental_score": 68.49,
+        "rental_rank": 4,
+        "daycare_score": 54.95,
+        "daycare_rank": 15,
+        "dual_use_score": 61.35,
+        "dual_use_rank": 4
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98030",
+        "city_primary": "Kent",
+        "county_primary": "King",
+        "pm_score": 32.39,
+        "pm_rank": 52,
+        "rental_score": 53.17,
+        "rental_rank": 67,
+        "daycare_score": 46.69,
+        "daycare_rank": 62,
+        "dual_use_score": 49.82,
+        "dual_use_rank": 68
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98031",
+        "city_primary": "Kent",
+        "county_primary": "King",
+        "pm_score": 32.68,
+        "pm_rank": 50,
+        "rental_score": 60.22,
+        "rental_rank": 31,
+        "daycare_score": 51.74,
+        "daycare_rank": 26,
+        "dual_use_score": 55.82,
+        "dual_use_rank": 20
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98032",
+        "city_primary": "Kent",
+        "county_primary": "King",
+        "pm_score": 34.4,
+        "pm_rank": 43,
+        "rental_score": 52.64,
+        "rental_rank": 71,
+        "daycare_score": 41.29,
+        "daycare_rank": 87,
+        "dual_use_score": 46.62,
+        "dual_use_rank": 84
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98033",
+        "city_primary": "Kirkland",
+        "county_primary": "King",
+        "pm_score": 51.45,
+        "pm_rank": 20,
+        "rental_score": 58.2,
+        "rental_rank": 41,
+        "daycare_score": 52.48,
+        "daycare_rank": 22,
+        "dual_use_score": 55.27,
+        "dual_use_rank": 24
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98034",
+        "city_primary": "Kirkland",
+        "county_primary": "King",
+        "pm_score": 47.55,
+        "pm_rank": 25,
+        "rental_score": 60.12,
+        "rental_rank": 32,
+        "daycare_score": 49.57,
+        "daycare_rank": 41,
+        "dual_use_score": 54.59,
+        "dual_use_rank": 29
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98038",
+        "city_primary": "Maple Valley",
+        "county_primary": "King",
+        "pm_score": 24.26,
+        "pm_rank": 80,
+        "rental_score": 67.77,
+        "rental_rank": 7,
+        "daycare_score": 46.13,
+        "daycare_rank": 66,
+        "dual_use_score": 55.91,
+        "dual_use_rank": 19
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98039",
+        "city_primary": "Medina",
+        "county_primary": "King",
+        "pm_score": 32.28,
+        "pm_rank": 54,
+        "rental_score": 61.4,
+        "rental_rank": 26,
+        "daycare_score": 54.48,
+        "daycare_rank": 18,
+        "dual_use_score": 57.84,
+        "dual_use_rank": 11
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98040",
+        "city_primary": "Mercer Island",
+        "county_primary": "King",
+        "pm_score": 37.22,
+        "pm_rank": 37,
+        "rental_score": 65.38,
+        "rental_rank": 13,
+        "daycare_score": 50.73,
+        "daycare_rank": 33,
+        "dual_use_score": 57.59,
+        "dual_use_rank": 12
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98042",
+        "city_primary": "Kent",
+        "county_primary": "King",
+        "pm_score": 30.92,
+        "pm_rank": 62,
+        "rental_score": 61.5,
+        "rental_rank": 25,
+        "daycare_score": 46.93,
+        "daycare_rank": 61,
+        "dual_use_score": 53.72,
+        "dual_use_rank": 38
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98045",
+        "city_primary": "North Bend",
+        "county_primary": "King",
+        "pm_score": 20.53,
+        "pm_rank": 88,
+        "rental_score": 57.63,
+        "rental_rank": 45,
+        "daycare_score": 48.49,
+        "daycare_rank": 51,
+        "dual_use_score": 52.86,
+        "dual_use_rank": 43
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98047",
+        "city_primary": "Pacific",
+        "county_primary": "King",
+        "pm_score": 11.71,
+        "pm_rank": 101,
+        "rental_score": 57.57,
+        "rental_rank": 47,
+        "daycare_score": 44.41,
+        "daycare_rank": 75,
+        "dual_use_score": 50.56,
+        "dual_use_rank": 64
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98050",
+        "city_primary": "Preston",
+        "county_primary": "King",
+        "pm_score": 11.25,
+        "pm_rank": 103,
+        "rental_score": 57.27,
+        "rental_rank": 48,
+        "daycare_score": 23.13,
+        "daycare_rank": 103,
+        "dual_use_score": 36.4,
+        "dual_use_rank": 103
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98051",
+        "city_primary": "Ravensdale",
+        "county_primary": "King",
+        "pm_score": 12.87,
+        "pm_rank": 100,
+        "rental_score": 56.04,
+        "rental_rank": 54,
+        "daycare_score": 47.5,
+        "daycare_rank": 56,
+        "dual_use_score": 51.59,
+        "dual_use_rank": 54
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98052",
+        "city_primary": "Redmond",
+        "county_primary": "King",
+        "pm_score": 78.28,
+        "pm_rank": 1,
+        "rental_score": 63.29,
+        "rental_rank": 18,
+        "daycare_score": 54.52,
+        "daycare_rank": 17,
+        "dual_use_score": 58.74,
+        "dual_use_rank": 8
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98053",
+        "city_primary": "Redmond",
+        "county_primary": "King",
+        "pm_score": 31.95,
+        "pm_rank": 56,
+        "rental_score": 67.48,
+        "rental_rank": 8,
+        "daycare_score": 50.03,
+        "daycare_rank": 37,
+        "dual_use_score": 58.1,
+        "dual_use_rank": 10
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98055",
+        "city_primary": "Renton",
+        "county_primary": "King",
+        "pm_score": 28.8,
+        "pm_rank": 69,
+        "rental_score": 55.52,
+        "rental_rank": 56,
+        "daycare_score": 51.16,
+        "daycare_rank": 29,
+        "dual_use_score": 53.3,
+        "dual_use_rank": 40
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98056",
+        "city_primary": "Renton",
+        "county_primary": "King",
+        "pm_score": 35.33,
+        "pm_rank": 41,
+        "rental_score": 61.15,
+        "rental_rank": 27,
+        "daycare_score": 48.68,
+        "daycare_rank": 49,
+        "dual_use_score": 54.56,
+        "dual_use_rank": 30
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98057",
+        "city_primary": "Renton",
+        "county_primary": "King",
+        "pm_score": 27.31,
+        "pm_rank": 73,
+        "rental_score": 54.35,
+        "rental_rank": 62,
+        "daycare_score": 34.86,
+        "daycare_rank": 100,
+        "dual_use_score": 43.53,
+        "dual_use_rank": 94
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98058",
+        "city_primary": "Renton",
+        "county_primary": "King",
+        "pm_score": 32.12,
+        "pm_rank": 55,
+        "rental_score": 59.82,
+        "rental_rank": 34,
+        "daycare_score": 45.27,
+        "daycare_rank": 72,
+        "dual_use_score": 52.04,
+        "dual_use_rank": 48
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98059",
+        "city_primary": "Renton",
+        "county_primary": "King",
+        "pm_score": 33.25,
+        "pm_rank": 46,
+        "rental_score": 68.15,
+        "rental_rank": 6,
+        "daycare_score": 51.29,
+        "daycare_rank": 28,
+        "dual_use_score": 59.12,
+        "dual_use_rank": 7
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98065",
+        "city_primary": "Snoqualmie",
+        "county_primary": "King",
+        "pm_score": 21.07,
+        "pm_rank": 86,
+        "rental_score": 63.94,
+        "rental_rank": 16,
+        "daycare_score": 48.29,
+        "daycare_rank": 53,
+        "dual_use_score": 55.57,
+        "dual_use_rank": 22
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98070",
+        "city_primary": "Vashon",
+        "county_primary": "King",
+        "pm_score": 19.57,
+        "pm_rank": 93,
+        "rental_score": 52.88,
+        "rental_rank": 70,
+        "daycare_score": 33.49,
+        "daycare_rank": 102,
+        "dual_use_score": 42.08,
+        "dual_use_rank": 96
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98072",
+        "city_primary": "Woodinville",
+        "county_primary": "King",
+        "pm_score": 31.73,
+        "pm_rank": 57,
+        "rental_score": 66.51,
+        "rental_rank": 12,
+        "daycare_score": 48.93,
+        "daycare_rank": 46,
+        "dual_use_score": 57.05,
+        "dual_use_rank": 13
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98074",
+        "city_primary": "Sammamish",
+        "county_primary": "King",
+        "pm_score": 36.64,
+        "pm_rank": 38,
+        "rental_score": 72.8,
+        "rental_rank": 1,
+        "daycare_score": 60.64,
+        "daycare_rank": 2,
+        "dual_use_score": 66.44,
+        "dual_use_rank": 1
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98075",
+        "city_primary": "Sammamish",
+        "county_primary": "King",
+        "pm_score": 33.31,
+        "pm_rank": 45,
+        "rental_score": 72.1,
+        "rental_rank": 2,
+        "daycare_score": 57.64,
+        "daycare_rank": 6,
+        "dual_use_score": 64.47,
+        "dual_use_rank": 2
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98077",
+        "city_primary": "Woodinville",
+        "county_primary": "King",
+        "pm_score": 24.62,
+        "pm_rank": 79,
+        "rental_score": 62.49,
+        "rental_rank": 21,
+        "daycare_score": 51.76,
+        "daycare_rank": 25,
+        "dual_use_score": 56.87,
+        "dual_use_rank": 14
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98092",
+        "city_primary": "Auburn",
+        "county_primary": "King",
+        "pm_score": 29.81,
+        "pm_rank": 65,
+        "rental_score": 60.26,
+        "rental_rank": 30,
+        "daycare_score": 44.86,
+        "daycare_rank": 74,
+        "dual_use_score": 51.99,
+        "dual_use_rank": 49
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98101",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 65.23,
+        "pm_rank": 5,
+        "rental_score": 46.53,
+        "rental_rank": 89,
+        "daycare_score": 49.63,
+        "daycare_rank": 40,
+        "dual_use_score": 48.06,
+        "dual_use_rank": 78
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98102",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 52.87,
+        "pm_rank": 18,
+        "rental_score": 47.32,
+        "rental_rank": 85,
+        "daycare_score": 50.47,
+        "daycare_rank": 35,
+        "dual_use_score": 48.87,
+        "dual_use_rank": 73
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98103",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 64.39,
+        "pm_rank": 6,
+        "rental_score": 47.52,
+        "rental_rank": 84,
+        "daycare_score": 56.85,
+        "daycare_rank": 8,
+        "dual_use_score": 51.98,
+        "dual_use_rank": 50
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98104",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 44.61,
+        "pm_rank": 30,
+        "rental_score": 41.34,
+        "rental_rank": 99,
+        "daycare_score": 35.14,
+        "daycare_rank": 99,
+        "dual_use_score": 38.11,
+        "dual_use_rank": 100
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98105",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 61.34,
+        "pm_rank": 9,
+        "rental_score": 46.66,
+        "rental_rank": 88,
+        "daycare_score": 50.21,
+        "daycare_rank": 36,
+        "dual_use_score": 48.4,
+        "dual_use_rank": 76
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98106",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 46.94,
+        "pm_rank": 27,
+        "rental_score": 45.19,
+        "rental_rank": 94,
+        "daycare_score": 48.61,
+        "daycare_rank": 50,
+        "dual_use_score": 46.87,
+        "dual_use_rank": 81
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98107",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 54.57,
+        "pm_rank": 14,
+        "rental_score": 48.24,
+        "rental_rank": 81,
+        "daycare_score": 57.59,
+        "daycare_rank": 7,
+        "dual_use_score": 52.71,
+        "dual_use_rank": 45
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98108",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 44.26,
+        "pm_rank": 31,
+        "rental_score": 48.07,
+        "rental_rank": 82,
+        "daycare_score": 42.78,
+        "daycare_rank": 82,
+        "dual_use_score": 45.35,
+        "dual_use_rank": 88
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98109",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 71.1,
+        "pm_rank": 2,
+        "rental_score": 46.17,
+        "rental_rank": 90,
+        "daycare_score": 47.38,
+        "daycare_rank": 57,
+        "dual_use_score": 46.77,
+        "dual_use_rank": 83
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98112",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 51.2,
+        "pm_rank": 21,
+        "rental_score": 41.18,
+        "rental_rank": 100,
+        "daycare_score": 50.84,
+        "daycare_rank": 32,
+        "dual_use_score": 45.76,
+        "dual_use_rank": 87
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98115",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 62.26,
+        "pm_rank": 8,
+        "rental_score": 53.43,
+        "rental_rank": 66,
+        "daycare_score": 56.8,
+        "daycare_rank": 9,
+        "dual_use_score": 55.09,
+        "dual_use_rank": 25
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98116",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 53.35,
+        "pm_rank": 15,
+        "rental_score": 43.29,
+        "rental_rank": 97,
+        "daycare_score": 59.09,
+        "daycare_rank": 3,
+        "dual_use_score": 50.58,
+        "dual_use_rank": 63
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98117",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 51.56,
+        "pm_rank": 19,
+        "rental_score": 50.51,
+        "rental_rank": 77,
+        "daycare_score": 63.26,
+        "daycare_rank": 1,
+        "dual_use_score": 56.53,
+        "dual_use_rank": 16
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98118",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 57.42,
+        "pm_rank": 13,
+        "rental_score": 34.53,
+        "rental_rank": 107,
+        "daycare_score": 56.42,
+        "daycare_rank": 10,
+        "dual_use_score": 44.14,
+        "dual_use_rank": 91
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98119",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 53.17,
+        "pm_rank": 17,
+        "rental_score": 45.2,
+        "rental_rank": 93,
+        "daycare_score": 54.24,
+        "daycare_rank": 19,
+        "dual_use_score": 49.51,
+        "dual_use_rank": 72
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98121",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 67.5,
+        "pm_rank": 3,
+        "rental_score": 53.0,
+        "rental_rank": 68,
+        "daycare_score": 47.16,
+        "daycare_rank": 58,
+        "dual_use_score": 49.99,
+        "dual_use_rank": 67
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98122",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 59.24,
+        "pm_rank": 10,
+        "rental_score": 44.15,
+        "rental_rank": 96,
+        "daycare_score": 48.8,
+        "daycare_rank": 47,
+        "dual_use_score": 46.42,
+        "dual_use_rank": 85
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98125",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 57.84,
+        "pm_rank": 12,
+        "rental_score": 50.9,
+        "rental_rank": 76,
+        "daycare_score": 52.95,
+        "daycare_rank": 21,
+        "dual_use_score": 51.91,
+        "dual_use_rank": 51
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98126",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 47.06,
+        "pm_rank": 26,
+        "rental_score": 46.73,
+        "rental_rank": 87,
+        "daycare_score": 58.03,
+        "daycare_rank": 5,
+        "dual_use_score": 52.07,
+        "dual_use_rank": 47
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98133",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 57.94,
+        "pm_rank": 11,
+        "rental_score": 52.39,
+        "rental_rank": 73,
+        "daycare_score": 49.69,
+        "daycare_rank": 39,
+        "dual_use_score": 51.02,
+        "dual_use_rank": 59
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98134",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 32.52,
+        "pm_rank": 51,
+        "rental_score": 37.95,
+        "rental_rank": 104,
+        "daycare_score": 40.21,
+        "daycare_rank": 90,
+        "dual_use_score": 39.06,
+        "dual_use_rank": 98
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98136",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 46.38,
+        "pm_rank": 29,
+        "rental_score": 45.59,
+        "rental_rank": 91,
+        "daycare_score": 56.19,
+        "daycare_rank": 12,
+        "dual_use_score": 50.61,
+        "dual_use_rank": 62
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98144",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 53.22,
+        "pm_rank": 16,
+        "rental_score": 44.61,
+        "rental_rank": 95,
+        "daycare_score": 49.94,
+        "daycare_rank": 38,
+        "dual_use_score": 47.2,
+        "dual_use_rank": 79
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98146",
+        "city_primary": "Burien",
+        "county_primary": "King",
+        "pm_score": 28.53,
+        "pm_rank": 70,
+        "rental_score": 52.9,
+        "rental_rank": 69,
+        "daycare_score": 46.4,
+        "daycare_rank": 65,
+        "dual_use_score": 49.54,
+        "dual_use_rank": 70
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98148",
+        "city_primary": "SeaTac",
+        "county_primary": "King",
+        "pm_score": 22.51,
+        "pm_rank": 83,
+        "rental_score": 47.73,
+        "rental_rank": 83,
+        "daycare_score": 41.16,
+        "daycare_rank": 88,
+        "dual_use_score": 44.32,
+        "dual_use_rank": 90
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98155",
+        "city_primary": "Shoreline",
+        "county_primary": "King",
+        "pm_score": 33.44,
+        "pm_rank": 44,
+        "rental_score": 68.96,
+        "rental_rank": 3,
+        "daycare_score": 51.16,
+        "daycare_rank": 30,
+        "dual_use_score": 59.4,
+        "dual_use_rank": 6
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98166",
+        "city_primary": "Burien",
+        "county_primary": "King",
+        "pm_score": 33.21,
+        "pm_rank": 48,
+        "rental_score": 46.91,
+        "rental_rank": 86,
+        "daycare_score": 42.7,
+        "daycare_rank": 83,
+        "dual_use_score": 44.76,
+        "dual_use_rank": 89
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98168",
+        "city_primary": "Tukwila",
+        "county_primary": "King",
+        "pm_score": 32.36,
+        "pm_rank": 53,
+        "rental_score": 54.84,
+        "rental_rank": 60,
+        "daycare_score": 42.63,
+        "daycare_rank": 84,
+        "dual_use_score": 48.35,
+        "dual_use_rank": 77
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98177",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 41.15,
+        "pm_rank": 33,
+        "rental_score": 55.5,
+        "rental_rank": 57,
+        "daycare_score": 47.68,
+        "daycare_rank": 54,
+        "dual_use_score": 51.44,
+        "dual_use_rank": 55
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98178",
+        "city_primary": "Renton",
+        "county_primary": "King",
+        "pm_score": 28.94,
+        "pm_rank": 68,
+        "rental_score": 56.2,
+        "rental_rank": 53,
+        "daycare_score": 46.52,
+        "daycare_rank": 64,
+        "dual_use_score": 51.13,
+        "dual_use_rank": 56
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98188",
+        "city_primary": "SeaTac",
+        "county_primary": "King",
+        "pm_score": 31.47,
+        "pm_rank": 58,
+        "rental_score": 49.94,
+        "rental_rank": 79,
+        "daycare_score": 38.16,
+        "daycare_rank": 96,
+        "dual_use_score": 43.65,
+        "dual_use_rank": 93
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98198",
+        "city_primary": "Des Moines",
+        "county_primary": "King",
+        "pm_score": 31.21,
+        "pm_rank": 61,
+        "rental_score": 56.76,
+        "rental_rank": 51,
+        "daycare_score": 46.04,
+        "daycare_rank": 67,
+        "dual_use_score": 51.12,
+        "dual_use_rank": 57
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98199",
+        "city_primary": "Seattle",
+        "county_primary": "King",
+        "pm_score": 50.49,
+        "pm_rank": 22,
+        "rental_score": 48.32,
+        "rental_rank": 80,
+        "daycare_score": 56.25,
+        "daycare_rank": 11,
+        "dual_use_score": 52.13,
+        "dual_use_rank": 46
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98224",
+        "city_primary": "Baring",
+        "county_primary": "King",
+        "pm_score": 6.21,
+        "pm_rank": 107,
+        "rental_score": 42.39,
+        "rental_rank": 98,
+        "daycare_score": 19.16,
+        "daycare_rank": 105,
+        "dual_use_score": 28.5,
+        "dual_use_rank": 105
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98288",
+        "city_primary": "Skykomish",
+        "county_primary": "King",
+        "pm_score": 13.27,
+        "pm_rank": 99,
+        "rental_score": 38.7,
+        "rental_rank": 102,
+        "daycare_score": 15.52,
+        "daycare_rank": 107,
+        "dual_use_score": 24.51,
+        "dual_use_rank": 107
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98201",
+        "city_primary": "Everett",
+        "county_primary": "Snohomish",
+        "pm_score": 25.94,
+        "pm_rank": 75,
+        "rental_score": 54.97,
+        "rental_rank": 59,
+        "daycare_score": 33.87,
+        "daycare_rank": 101,
+        "dual_use_score": 43.15,
+        "dual_use_rank": 95
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98203",
+        "city_primary": "Everett",
+        "county_primary": "Snohomish",
+        "pm_score": 27.04,
+        "pm_rank": 74,
+        "rental_score": 57.78,
+        "rental_rank": 42,
+        "daycare_score": 44.37,
+        "daycare_rank": 76,
+        "dual_use_score": 50.63,
+        "dual_use_rank": 61
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98204",
+        "city_primary": "Everett",
+        "county_primary": "Snohomish",
+        "pm_score": 33.23,
+        "pm_rank": 47,
+        "rental_score": 57.26,
+        "rental_rank": 49,
+        "daycare_score": 51.92,
+        "daycare_rank": 23,
+        "dual_use_score": 54.52,
+        "dual_use_rank": 31
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98208",
+        "city_primary": "Everett",
+        "county_primary": "Snohomish",
+        "pm_score": 36.4,
+        "pm_rank": 40,
+        "rental_score": 64.54,
+        "rental_rank": 15,
+        "daycare_score": 49.53,
+        "daycare_rank": 42,
+        "dual_use_score": 56.54,
+        "dual_use_rank": 15
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98223",
+        "city_primary": "Arlington",
+        "county_primary": "Snohomish",
+        "pm_score": 20.89,
+        "pm_rank": 87,
+        "rental_score": 50.08,
+        "rental_rank": 78,
+        "daycare_score": 38.6,
+        "daycare_rank": 95,
+        "dual_use_score": 43.97,
+        "dual_use_rank": 92
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98241",
+        "city_primary": "Darrington",
+        "county_primary": "Snohomish",
+        "pm_score": 9.27,
+        "pm_rank": 105,
+        "rental_score": 38.72,
+        "rental_rank": 101,
+        "daycare_score": 37.8,
+        "daycare_rank": 97,
+        "dual_use_score": 38.26,
+        "dual_use_rank": 99
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98251",
+        "city_primary": "Gold Bar",
+        "county_primary": "Snohomish",
+        "pm_score": 11.38,
+        "pm_rank": 102,
+        "rental_score": 36.87,
+        "rental_rank": 106,
+        "daycare_score": 39.11,
+        "daycare_rank": 93,
+        "dual_use_score": 37.97,
+        "dual_use_rank": 101
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98252",
+        "city_primary": "Granite Falls",
+        "county_primary": "Snohomish",
+        "pm_score": 15.65,
+        "pm_rank": 96,
+        "rental_score": 45.51,
+        "rental_rank": 92,
+        "daycare_score": 38.85,
+        "daycare_rank": 94,
+        "dual_use_score": 42.05,
+        "dual_use_rank": 97
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98256",
+        "city_primary": "Index",
+        "county_primary": "Snohomish",
+        "pm_score": 7.57,
+        "pm_rank": 106,
+        "rental_score": 37.83,
+        "rental_rank": 105,
+        "daycare_score": 18.52,
+        "daycare_rank": 106,
+        "dual_use_score": 26.47,
+        "dual_use_rank": 106
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98258",
+        "city_primary": "Lake Stevens",
+        "county_primary": "Snohomish",
+        "pm_score": 27.37,
+        "pm_rank": 72,
+        "rental_score": 60.46,
+        "rental_rank": 29,
+        "daycare_score": 48.4,
+        "daycare_rank": 52,
+        "dual_use_score": 54.09,
+        "dual_use_rank": 36
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98270",
+        "city_primary": "Marysville",
+        "county_primary": "Snohomish",
+        "pm_score": 28.01,
+        "pm_rank": 71,
+        "rental_score": 54.24,
+        "rental_rank": 63,
+        "daycare_score": 47.0,
+        "daycare_rank": 60,
+        "dual_use_score": 50.49,
+        "dual_use_rank": 65
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98271",
+        "city_primary": "Marysville",
+        "county_primary": "Snohomish",
+        "pm_score": 20.25,
+        "pm_rank": 90,
+        "rental_score": 52.63,
+        "rental_rank": 72,
+        "daycare_score": 39.91,
+        "daycare_rank": 91,
+        "dual_use_score": 45.83,
+        "dual_use_rank": 86
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98272",
+        "city_primary": "Monroe",
+        "county_primary": "Snohomish",
+        "pm_score": 21.62,
+        "pm_rank": 84,
+        "rental_score": 54.66,
+        "rental_rank": 61,
+        "daycare_score": 43.15,
+        "daycare_rank": 80,
+        "dual_use_score": 48.57,
+        "dual_use_rank": 75
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98275",
+        "city_primary": "Mukilteo",
+        "county_primary": "Snohomish",
+        "pm_score": 25.19,
+        "pm_rank": 77,
+        "rental_score": 68.26,
+        "rental_rank": 5,
+        "daycare_score": 43.89,
+        "daycare_rank": 77,
+        "dual_use_score": 54.74,
+        "dual_use_rank": 28
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98290",
+        "city_primary": "Snohomish",
+        "county_primary": "Snohomish",
+        "pm_score": 22.79,
+        "pm_rank": 82,
+        "rental_score": 59.0,
+        "rental_rank": 38,
+        "daycare_score": 45.38,
+        "daycare_rank": 70,
+        "dual_use_score": 51.74,
+        "dual_use_rank": 52
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98292",
+        "city_primary": "Stanwood",
+        "county_primary": "Snohomish",
+        "pm_score": 16.27,
+        "pm_rank": 95,
+        "rental_score": 57.64,
+        "rental_rank": 44,
+        "daycare_score": 43.46,
+        "daycare_rank": 78,
+        "dual_use_score": 50.05,
+        "dual_use_rank": 66
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98294",
+        "city_primary": "Sultan",
+        "county_primary": "Snohomish",
+        "pm_score": 15.13,
+        "pm_rank": 98,
+        "rental_score": 38.08,
+        "rental_rank": 103,
+        "daycare_score": 37.61,
+        "daycare_rank": 98,
+        "dual_use_score": 37.84,
+        "dual_use_rank": 102
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98296",
+        "city_primary": "Snohomish",
+        "county_primary": "Snohomish",
+        "pm_score": 21.47,
+        "pm_rank": 85,
+        "rental_score": 60.65,
+        "rental_rank": 28,
+        "daycare_score": 51.91,
+        "daycare_rank": 24,
+        "dual_use_score": 56.11,
+        "dual_use_rank": 18
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98036",
+        "city_primary": "Lynnwood",
+        "county_primary": "Snohomish",
+        "pm_score": 31.35,
+        "pm_rank": 60,
+        "rental_score": 62.11,
+        "rental_rank": 23,
+        "daycare_score": 45.71,
+        "daycare_rank": 69,
+        "dual_use_score": 53.28,
+        "dual_use_rank": 41
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98037",
+        "city_primary": "Lynnwood",
+        "county_primary": "Snohomish",
+        "pm_score": 25.48,
+        "pm_rank": 76,
+        "rental_score": 58.54,
+        "rental_rank": 39,
+        "daycare_score": 47.63,
+        "daycare_rank": 55,
+        "dual_use_score": 52.8,
+        "dual_use_rank": 44
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98043",
+        "city_primary": "Mountlake Terrace",
+        "county_primary": "Snohomish",
+        "pm_score": 23.5,
+        "pm_rank": 81,
+        "rental_score": 61.52,
+        "rental_rank": 24,
+        "daycare_score": 43.39,
+        "daycare_rank": 79,
+        "dual_use_score": 51.67,
+        "dual_use_rank": 53
+      },
+      "geometry": null
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "zcta": "98087",
+        "city_primary": "Lynnwood",
+        "county_primary": "Snohomish",
+        "pm_score": 33.15,
+        "pm_rank": 49,
+        "rental_score": 53.96,
+        "rental_rank": 64,
+        "daycare_score": 55.73,
+        "daycare_rank": 13,
+        "dual_use_score": 54.84,
+        "dual_use_rank": 27
+      },
+      "geometry": null
+    }
+  ]
+}

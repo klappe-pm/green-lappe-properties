@@ -1,0 +1,164 @@
+# green-property-management-final-dataset schema
+version: 1.0
+generated_by: effort-6/_scripts/build_scores.py
+rows: 107
+columns:
+  - name: zcta
+    type: string
+    desc: ZIP Code Tabulation Area (5-digit)
+  - name: city_primary
+    type: string
+    desc: Primary incorporated city (from zip-master)
+  - name: county_primary
+    type: enum[King,Snohomish]
+  - name: county_secondary
+    type: string
+    desc: Cross-county allocation (e.g., Pierce for 98001/22/47/92)
+  - name: classification
+    type: enum[urban,suburban,exurban,rural]
+  - name: jurisdiction_for_regs
+    type: string
+    desc: Resolved jurisdiction key for rental/daycare regulatory join. LARGE_UNINC or unincorp>0.5 -> "Unincorporated <county>".
+  - name: population_2024
+    type: int
+  - name: population_cagr_10yr_pct
+    type: float
+  - name: renter_households_est
+    type: int
+  - name: renter_hh_in_small_portfolio_est
+    type: int
+    desc: From Effort 2 housing-zip; small-portfolio share applied to renter_hh.
+  - name: renter_hh_share_pct
+    type: float
+  - name: owner_occupied_pct
+    type: float
+  - name: median_hh_income
+    type: int
+  - name: median_home_value_2025
+    type: int
+  - name: median_rent_2br
+    type: int
+  - name: rent_to_price_ratio_monthly_pct
+    type: float
+  - name: rent_growth_36mo_pct
+    type: float
+  - name: days_on_market_rental
+    type: int
+  - name: vacancy_rate
+    type: float
+  - name: rate_locked_owner_pct_est
+    type: float
+  - name: adu_permits_2024_jurisdiction
+    type: int
+  - name: adu_permits_5yr_jurisdiction
+    type: int
+  - name: tech_relocation_proxy
+    type: float
+    desc: pct_bachelors × foreign_born (used as accidental-landlord supply component)
+  - name: lep_pct
+    type: float
+  - name: foreign_born_pct
+    type: float
+  - name: pct_bachelors_or_higher
+    type: float
+  - name: lca_total_fy2024
+    type: int
+    desc: From Effort 4 lca-by-zip; 0 for ZCTAs not in lca-by-zip universe.
+  - name: lep_renter_tech_raw
+    type: float
+    desc: lep_pct × renter_hh_share × lca_total_fy2024 (raw; min-max normalized for PM score)
+  - name: total_visa_renter_est
+    type: int
+  - name: visa_renter_density
+    type: float
+    desc: total_visa_renter / renter_hh
+  - name: tech_cohort_share_proxy
+    type: float
+    desc: LCA FY24 / renter_hh; cap 0.35 with diversification penalty for PM tech component
+  - name: avg_commute_min
+    type: float
+  - name: min_commute_min
+    type: float
+  - name: reg_complexity_score
+    type: float
+    desc: Sum of rental-regulatory yes-flags (0-8 scale, +0.5 for STR)
+  - name: zip_school_quality_composite
+    type: float
+    desc: Effort 1 multi-zone-aware composite (50.0 default if missing)
+  - name: multi_zone_zip_flag
+    type: bool
+  - name: pct_under_5
+    type: float
+  - name: under_5_density_per_sqmi
+    type: float
+  - name: children_per_100_slots
+    type: float
+    desc: From Effort 5 childcare-gap-zip; higher = greater gap
+  - name: zoning_permissiveness
+    type: float
+    desc: 0-1 scale derived from in_home_residential_status + commercial zones count
+  - name: facility_net_3yr
+    type: float
+    desc: opens - closes (3yr); 0 when TODO in upstream
+  - name: avg_tuition_infant
+    type: int
+  - name: tuition_to_median_income_ratio
+    type: float
+  - name: top_language_1_name
+    type: string
+  - name: top_language_2_name
+    type: string
+  - name: moe_flags
+    type: string
+    desc: ACS MOE flags from demographics (surfaced when >20% of estimate)
+  - name: anomaly_flags
+    type: string
+    desc: CROSS_COUNTY | LARGE_UNINC | MULTI_DISTRICT | TRIBAL_LAND (from zip-master)
+  - name: pm_score
+    type: float
+    desc: PM business sequencing composite 0-100
+  - name: pm_rank
+    type: int
+  - name: rental_score
+    type: float
+  - name: rental_rank
+    type: int
+  - name: daycare_score
+    type: float
+  - name: daycare_rank
+    type: int
+  - name: dual_use_score
+    type: float
+    desc: Geometric mean of rental_score and daycare_score
+  - name: dual_use_rank
+    type: int
+  # _n_* columns: min-max normalized component values, preserved for transparency
+weights:
+  pm:
+    renter_sp: 0.22
+    accidental: 0.16
+    lep_renter_tech: 0.14
+    visa: 0.12
+    reg_complex: 0.10
+    tech: 0.10
+    commute: 0.10
+    pop_growth: 0.06
+  rental:
+    school: 0.28
+    rtp: 0.20
+    rent_growth: 0.12
+    dom_vac: 0.10
+    stability: 0.12
+    reg_friendly: 0.10
+    commute: 0.08
+  daycare:
+    under5: 0.20
+    gap: 0.22
+    zoning: 0.20
+    income: 0.12
+    hi_emp: 0.10
+    fac_trend: 0.08
+    school: 0.08
+normalization:
+  method: min-max within 107-ZCTA in-scope universe; winsorized at 2nd/98th percentile to stabilize against single-ZCTA outliers
+  inverse_columns: [days_on_market_rental, vacancy_rate, avg_commute_min, min_commute_min, reg_complexity_score (rental only)]

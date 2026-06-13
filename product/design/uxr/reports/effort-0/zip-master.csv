@@ -1,0 +1,114 @@
+zcta,postal_zips,county_primary,county_secondary,pct_land_king,pct_land_snohomish,cities,city_primary,school_districts,unincorporated_share,classification,population_2014,population_2024,population_cagr_10yr,anomaly_flags,in_scope_primary,notes
+98001,98001,King,Pierce,0.85,0.00,Auburn;Pacific;Algona;Federal Way,Auburn,Auburn;Federal Way,0.10,suburban,# TODO: source needed - ACS5 2010-2014 B01003,37460,# TODO: derive after 2014,CROSS_COUNTY,true,Auburn south of city; spans King-Pierce line. Pop from WorldPopReview 2024 ACS-derived.
+98002,98002,King,,1.00,0.00,Auburn,Auburn,Auburn,0.05,suburban,# TODO: source needed - ACS5 2010-2014 B01003,37509,# TODO,,true,Central Auburn.
+98003,98003,King,,1.00,0.00,Federal Way,Federal Way,Federal Way,0.05,suburban,# TODO: source needed,51619,# TODO,,true,Central Federal Way.
+98004,98004,King,,1.00,0.00,Bellevue;Clyde Hill;Hunts Point;Yarrow Point;Medina (small),Bellevue,Bellevue,0.00,urban,# TODO: source needed,39897,# TODO,,true,West Bellevue incl Downtown Bellevue urban-core CBD; classified urban given mix.
+98005,98005,King,,1.00,0.00,Bellevue,Bellevue,Bellevue,0.00,suburban,# TODO: source needed,21846,# TODO,,true,Crossroads/NE Bellevue.
+98006,98006,King,,1.00,0.00,Bellevue;Newcastle;Unincorporated King,Bellevue,Bellevue;Issaquah;Renton,0.10,suburban,# TODO: source needed,40009,# TODO,,true,Bellevue south incl Cougar/Squak/Newcastle areas.
+98007,98007,King,,1.00,0.00,Bellevue,Bellevue,Bellevue,0.00,suburban,# TODO: source needed,27692,# TODO,,true,Crossroads Bellevue. High H-1B/visa renter density per plan H3.
+98008,98008,King,,1.00,0.00,Bellevue,Bellevue,Bellevue;Lake Washington,0.00,suburban,# TODO: source needed,27242,# TODO,MULTI_DISTRICT,true,Lake Hills / E Bellevue; spans BSD and LWSD.
+98010,98010,King,,1.00,0.00,Black Diamond;Unincorporated King,Black Diamond,Enumclaw;Tahoma,0.60,exurban,# TODO: source needed,6857,# TODO,LARGE_UNINC,true,Black Diamond + surrounding rural unincorporated.
+98011,98011,King,,1.00,0.00,Bothell;Kenmore (small);Unincorporated King,Bothell,Northshore,0.15,suburban,# TODO: source needed,28963,# TODO,,true,King-side Bothell. Bothell is bicounty city; 98011 is the King ZCTA.
+98012,98012,Snohomish,,0.00,1.00,Bothell;Mill Creek;Unincorporated Snohomish,Bothell,Northshore;Everett,0.45,suburban,# TODO: source needed,77041,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,Snohomish-side Bothell + much unincorporated south Sno; largest ZCTA in Snohomish by pop.
+98014,98014,King,,1.00,0.00,Carnation;Unincorporated King,Carnation,Riverview,0.70,rural,# TODO: source needed,8264,# TODO,LARGE_UNINC;RURAL_FRINGE,true,Snoqualmie Valley rural.
+98019,98019,King,,1.00,0.00,Duvall;Unincorporated King,Duvall,Riverview,0.55,exurban,# TODO: source needed,12242,# TODO,LARGE_UNINC,true,Duvall / Snoqualmie Valley.
+98020,98020,Snohomish,,0.00,1.00,Edmonds;Woodway,Edmonds,Edmonds,0.00,suburban,# TODO: source needed,19551,# TODO,,true,Downtown Edmonds + Woodway.
+98021,98021,Snohomish,,0.00,1.00,Bothell;Unincorporated Snohomish,Bothell,Northshore,0.30,suburban,# TODO: source needed,35631,# TODO,,true,N Bothell (Sno) + Canyon Park.
+98022,98022,King,Pierce,0.80,0.00,Enumclaw;Unincorporated King;Greenwater (Pierce),Enumclaw,Enumclaw;White River (Pierce),0.60,exurban,# TODO: source needed,22418,# TODO,CROSS_COUNTY;LARGE_UNINC,true,Enumclaw + Cascade foothills; small Pierce share at Greenwater.
+98023,98023,King,,1.00,0.00,Federal Way,Federal Way,Federal Way,0.05,suburban,# TODO: source needed,50448,# TODO,,true,W Federal Way / Twin Lakes.
+98024,98024,King,,1.00,0.00,Fall City;Unincorporated King,Fall City,Snoqualmie Valley;Riverview,0.95,rural,# TODO: source needed,3908,# TODO,LARGE_UNINC;LOW_POP;RURAL_FRINGE,true,Fall City CDP rural.
+98025,98025,King,,1.00,0.00,Hobart;Unincorporated King,Hobart,Tahoma,1.00,rural,# TODO: source needed,52,# TODO,LARGE_UNINC;LOW_POP;PO_BOX_ZIP,true,Hobart PO-Box ZIP. Treat as edge.
+98026,98026,Snohomish,,0.00,1.00,Edmonds;Unincorporated Snohomish,Edmonds,Edmonds,0.20,suburban,# TODO: source needed,38976,# TODO,,true,NE Edmonds / Esperance unincorporated.
+98027,98027,King,,1.00,0.00,Issaquah;Bellevue (small);Newcastle (small);Unincorporated King,Issaquah,Issaquah,0.25,suburban,# TODO: source needed,28955,# TODO,,true,Issaquah W / Cougar Mtn / Lakemont.
+98028,98028,King,,1.00,0.00,Kenmore;Lake Forest Park (small);Bothell (small),Kenmore,Northshore,0.05,suburban,# TODO: source needed,23741,# TODO,,true,Kenmore.
+98029,98029,King,,1.00,0.00,Issaquah;Sammamish (small),Issaquah,Issaquah;Lake Washington,0.05,suburban,# TODO: source needed,30586,# TODO,MULTI_DISTRICT,true,Issaquah Highlands / Klahanie.
+98030,98030,King,,1.00,0.00,Kent,Kent,Kent,0.05,suburban,# TODO: source needed,38523,# TODO,,true,SE Kent.
+98031,98031,King,,1.00,0.00,Kent,Kent,Kent,0.05,suburban,# TODO: source needed,40094,# TODO,,true,NE Kent.
+98032,98032,King,,1.00,0.00,Kent;SeaTac (small),Kent,Kent;Highline,0.05,suburban,# TODO: source needed,40862,# TODO,MULTI_DISTRICT,true,W Kent / Kent Valley.
+98033,98033,King,,1.00,0.00,Kirkland,Kirkland,Lake Washington,0.00,urban,# TODO: source needed,40982,# TODO,,true,Downtown Kirkland / Houghton.
+98034,98034,King,,1.00,0.00,Kirkland;Unincorporated King (Finn Hill),Kirkland,Lake Washington,0.05,suburban,# TODO: source needed,52531,# TODO,,true,N Kirkland / Juanita / Finn Hill.
+98038,98038,King,,1.00,0.00,Maple Valley;Unincorporated King,Maple Valley,Tahoma;Kent,0.40,suburban,# TODO: source needed,37324,# TODO,MULTI_DISTRICT,true,Maple Valley + Four Corners.
+98039,98039,King,,1.00,0.00,Medina,Medina,Bellevue,0.00,suburban,# TODO: source needed,2928,# TODO,LOW_POP,true,Medina (Eastside elite SFR).
+98040,98040,King,,1.00,0.00,Mercer Island,Mercer Island,Mercer Island,0.00,suburban,# TODO: source needed,25307,# TODO,,true,Mercer Island.
+98042,98042,King,,1.00,0.00,Kent;Covington;Unincorporated King,Kent,Kent;Tahoma,0.45,suburban,# TODO: source needed,50216,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,Lake Meridian / E Kent / Covington portions.
+98045,98045,King,,1.00,0.00,North Bend;Unincorporated King,North Bend,Snoqualmie Valley,0.55,exurban,# TODO: source needed,15289,# TODO,LARGE_UNINC,true,North Bend / I-90 east.
+98047,98047,King,Pierce,0.70,0.00,Pacific;Algona,Pacific,Auburn,0.10,suburban,# TODO: source needed,6817,# TODO,CROSS_COUNTY;LOW_POP,true,Pacific + Algona; small Pierce share.
+98050,98050,King,,1.00,0.00,Preston;Unincorporated King,Preston,Snoqualmie Valley,1.00,rural,# TODO: source needed,108,# TODO,LARGE_UNINC;LOW_POP;PO_BOX_ZIP,true,Preston PO-Box.
+98051,98051,King,,1.00,0.00,Ravensdale;Unincorporated King,Ravensdale,Tahoma,1.00,rural,# TODO: source needed,3442,# TODO,LARGE_UNINC;LOW_POP;RURAL_FRINGE,true,Ravensdale rural unincorporated.
+98052,98052,King,,1.00,0.00,Redmond;Unincorporated King;Kirkland (small),Redmond,Lake Washington,0.05,urban,# TODO: source needed,80717,# TODO,,true,Redmond incl Microsoft main campus; densest ZCTA by pop in King.
+98053,98053,King,,1.00,0.00,Redmond;Unincorporated King,Redmond,Lake Washington,0.30,suburban,# TODO: source needed,22765,# TODO,,true,E Redmond / Union Hill.
+98055,98055,King,,1.00,0.00,Renton,Renton,Renton,0.05,suburban,# TODO: source needed,24660,# TODO,,true,W Renton / S Renton.
+98056,98056,King,,1.00,0.00,Renton;Newcastle (small);Unincorporated King,Renton,Renton,0.10,suburban,# TODO: source needed,35849,# TODO,,true,Renton Highlands / Kennydale.
+98057,98057,King,,1.00,0.00,Renton,Renton,Renton,0.00,suburban,# TODO: source needed,12705,# TODO,,true,Renton (small ZCTA).
+98058,98058,King,,1.00,0.00,Renton;Unincorporated King,Renton,Renton;Tahoma,0.30,suburban,# TODO: source needed,42980,# TODO,MULTI_DISTRICT,true,SE Renton incl Fairwood unincorporated.
+98059,98059,King,,1.00,0.00,Renton;Unincorporated King;Newcastle (small),Renton,Renton;Issaquah,0.25,suburban,# TODO: source needed,42406,# TODO,MULTI_DISTRICT,true,E Renton Highlands.
+98065,98065,King,,1.00,0.00,Snoqualmie;Unincorporated King;North Bend (small),Snoqualmie,Snoqualmie Valley,0.30,exurban,# TODO: source needed,15944,# TODO,,true,Snoqualmie Ridge.
+98070,98070,King,,1.00,0.00,Vashon (CDP);Unincorporated King,Vashon,Vashon Island,1.00,rural,# TODO: source needed,9934,# TODO,LARGE_UNINC;RURAL_FRINGE,true,Vashon Island.
+98072,98072,King,,1.00,0.00,Woodinville;Unincorporated King,Woodinville,Northshore,0.30,suburban,# TODO: source needed,24446,# TODO,,true,Woodinville urban + valley.
+98074,98074,King,,1.00,0.00,Sammamish;Unincorporated King (small),Sammamish,Lake Washington;Issaquah,0.05,suburban,# TODO: source needed,30761,# TODO,MULTI_DISTRICT,true,W/N Sammamish.
+98075,98075,King,,1.00,0.00,Sammamish;Unincorporated King (small),Sammamish,Issaquah,0.05,suburban,# TODO: source needed,25498,# TODO,,true,S Sammamish.
+98077,98077,King,,1.00,0.00,Woodinville;Unincorporated King,Woodinville,Northshore;Riverview,0.60,exurban,# TODO: source needed,14109,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,Hollywood Hill / unincorporated Woodinville.
+98092,98092,King,Pierce,0.75,0.00,Auburn;Unincorporated King;Unincorporated Pierce,Auburn,Auburn;Dieringer (Pierce),0.30,suburban,# TODO: source needed,50224,# TODO,CROSS_COUNTY;LARGE_UNINC,true,E Auburn incl Lakeland Hills which straddles county line.
+98101,98101,King,,1.00,0.00,Seattle (Downtown/CBD),Seattle,Seattle,0.00,urban-core,# TODO: source needed,17153,# TODO,,true,Downtown Seattle CBD.
+98102,98102,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban-core,# TODO: source needed,27333,# TODO,,true,Eastlake / Portage Bay.
+98103,98103,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,52671,# TODO,,true,Fremont / Wallingford / Greenwood.
+98104,98104,King,,1.00,0.00,Seattle (Downtown/Pioneer Sq/Intl Dist),Seattle,Seattle,0.00,urban-core,# TODO: source needed,16542,# TODO,,true,Pioneer Square / Chinatown-ID.
+98105,98105,King,,1.00,0.00,Seattle (University District),Seattle,Seattle,0.00,urban,# TODO: source needed,49767,# TODO,,true,U District / Ravenna.
+98106,98106,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,28690,# TODO,,true,High Point / Delridge.
+98107,98107,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,28776,# TODO,,true,Ballard.
+98108,98108,King,,1.00,0.00,Seattle;Tukwila (small),Seattle,Seattle;Highline,0.00,urban,# TODO: source needed,25529,# TODO,MULTI_DISTRICT,true,Beacon Hill / Georgetown / SODO.
+98109,98109,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban-core,# TODO: source needed,34328,# TODO,,true,South Lake Union / Queen Anne S.
+98112,98112,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,23921,# TODO,,true,Capitol Hill / Madrona.
+98115,98115,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,54349,# TODO,,true,Wedgwood / Bryant / View Ridge.
+98116,98116,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,28711,# TODO,,true,West Seattle (Admiral / Alki).
+98117,98117,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,35711,# TODO,,true,Crown Hill / Loyal Heights.
+98118,98118,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,50500,# TODO,,true,Columbia City / Rainier Valley / Seward Park.
+98119,98119,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,26879,# TODO,,true,Queen Anne N.
+98121,98121,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban-core,# TODO: source needed,21166,# TODO,,true,Belltown.
+98122,98122,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,43234,# TODO,,true,Central District / Capitol Hill E.
+98125,98125,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,44520,# TODO,,true,Lake City.
+98126,98126,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,22975,# TODO,,true,West Seattle (High Point / S Delridge).
+98133,98133,King,,1.00,0.00,Seattle;Shoreline,Seattle,Seattle;Shoreline,0.00,suburban,# TODO: source needed,53249,# TODO,MULTI_DISTRICT,true,N Seattle / S Shoreline.
+98134,98134,King,,1.00,0.00,Seattle (SODO industrial),Seattle,Seattle,0.00,urban,# TODO: source needed,645,# TODO,LOW_POP,true,SODO industrial. Negligible residential.
+98136,98136,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,17252,# TODO,,true,Fauntleroy / Morgan Junction.
+98144,98144,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,33787,# TODO,,true,Mt Baker / North Beacon / Judkins Park.
+98146,98146,King,,1.00,0.00,Burien;Seattle (small);Unincorporated King;White Center (CDP),Burien,Highline,0.30,suburban,# TODO: source needed,28573,# TODO,LARGE_UNINC,true,Burien / White Center / Boulevard Park.
+98148,98148,King,,1.00,0.00,SeaTac;Burien (small);Normandy Park;Unincorporated King,SeaTac,Highline,0.20,suburban,# TODO: source needed,9715,# TODO,,true,N SeaTac / S Burien.
+98154,98154,King,,1.00,0.00,Seattle (CBD unique),Seattle,Seattle,0.00,urban-core,# TODO: source needed,0,# TODO,LOW_POP;UNIQUE_ZIP,false,Single-building unique ZIP in CBD; no ZCTA geometry; excluded from primary.
+98155,98155,King,,1.00,0.00,Shoreline;Lake Forest Park;Kenmore (small),Shoreline,Shoreline;Northshore,0.05,suburban,# TODO: source needed,36511,# TODO,MULTI_DISTRICT,true,E Shoreline / Lake Forest Park.
+98158,98158,King,,1.00,0.00,SeaTac (SeaTac Airport unique),SeaTac,Highline,0.00,urban,# TODO: source needed,0,# TODO,LOW_POP;UNIQUE_ZIP,false,SeaTac Airport unique ZIP; excluded from primary.
+98164,98164,King,,1.00,0.00,Seattle (CBD unique),Seattle,Seattle,0.00,urban-core,# TODO: source needed,292,# TODO,LOW_POP;UNIQUE_ZIP,false,CBD single-building unique ZIP; excluded.
+98166,98166,King,,1.00,0.00,Burien;Normandy Park;Unincorporated King,Burien,Highline,0.15,suburban,# TODO: source needed,22082,# TODO,,true,N Normandy Park / S Burien.
+98168,98168,King,,1.00,0.00,Burien (small);Tukwila;Unincorporated King;SeaTac (small),Tukwila,Highline,0.40,suburban,# TODO: source needed,35528,# TODO,LARGE_UNINC,true,Boulevard Park / Riverton / NE Tukwila.
+98174,98174,King,,1.00,0.00,Seattle (CBD unique),Seattle,Seattle,0.00,urban-core,# TODO: source needed,0,# TODO,LOW_POP;UNIQUE_ZIP,false,Single-building CBD unique ZIP; excluded.
+98177,98177,King,,1.00,0.00,Seattle;Shoreline (small),Seattle,Seattle;Shoreline,0.00,suburban,# TODO: source needed,21090,# TODO,MULTI_DISTRICT,true,Broadview / Blue Ridge / N Shoreline edge.
+98178,98178,King,,1.00,0.00,Renton;Tukwila;Seattle (Skyway);Unincorporated King,Renton,Renton;Tukwila,0.40,suburban,# TODO: source needed,26748,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,Skyway / Bryn Mawr / N Renton.
+98188,98188,King,,1.00,0.00,SeaTac;Tukwila,SeaTac,Highline;Tukwila,0.05,suburban,# TODO: source needed,27311,# TODO,MULTI_DISTRICT,true,SeaTac / S Tukwila.
+98195,98195,King,,1.00,0.00,Seattle (UW campus unique),Seattle,Seattle,0.00,urban,# TODO: source needed,2757,# TODO,LOW_POP;UNIQUE_ZIP,false,UW Seattle campus unique ZIP; excluded.
+98198,98198,King,,1.00,0.00,Des Moines;Federal Way (small),Des Moines,Highline;Federal Way,0.05,suburban,# TODO: source needed,40463,# TODO,MULTI_DISTRICT,true,Des Moines / Redondo / N Federal Way.
+98199,98199,King,,1.00,0.00,Seattle,Seattle,Seattle,0.00,urban,# TODO: source needed,22468,# TODO,,true,Magnolia.
+98224,98224,King,,1.00,0.00,Baring (CDP);Unincorporated King,Baring,Skykomish,1.00,rural,# TODO: source needed,190,# TODO,LARGE_UNINC;LOW_POP;RURAL_FRINGE,true,Baring rural fringe along US-2. Edge case.
+98288,98288,King,,1.00,0.00,Skykomish;Unincorporated King,Skykomish,Skykomish,0.95,rural,# TODO: source needed,169,# TODO,LARGE_UNINC;LOW_POP;RURAL_FRINGE,true,Skykomish town and surrounds. Edge case.
+98201,98201,Snohomish,,0.00,1.00,Everett,Everett,Everett,0.00,urban,# TODO: source needed,31895,# TODO,,true,Downtown Everett / Port Gardner / Bayside.
+98203,98203,Snohomish,,0.00,1.00,Everett;Mukilteo (small),Everett,Everett;Mukilteo,0.00,suburban,# TODO: source needed,35517,# TODO,MULTI_DISTRICT,true,S Everett.
+98204,98204,Snohomish,,0.00,1.00,Everett;Unincorporated Snohomish;Lynnwood (small),Everett,Mukilteo;Everett,0.25,suburban,# TODO: source needed,45130,# TODO,MULTI_DISTRICT,true,SW Everett / Casino Road / N Lynnwood unincorporated.
+98207,98207,Snohomish,,0.00,1.00,Everett (PO Box),Everett,Everett,0.00,urban,# TODO: source needed,843,# TODO,LOW_POP;PO_BOX_ZIP,false,Everett PO-Box-only ZIP; excluded from primary.
+98208,98208,Snohomish,,0.00,1.00,Everett;Unincorporated Snohomish (Silver Lake);Mill Creek (small),Everett,Everett;Mukilteo,0.30,suburban,# TODO: source needed,60915,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,SE Everett / Silver Lake / N Mill Creek.
+98223,98223,Snohomish,,0.00,1.00,Arlington;Unincorporated Snohomish,Arlington,Arlington;Lakewood,0.60,exurban,# TODO: source needed,46497,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,Arlington + Bryant + rural N Sno.
+98241,98241,Snohomish,,0.00,1.00,Darrington;Unincorporated Snohomish,Darrington,Darrington,0.90,rural,# TODO: source needed,2339,# TODO,LARGE_UNINC;LOW_POP;RURAL_FRINGE,true,Darrington and Cascade foothills.
+98251,98251,Snohomish,,0.00,1.00,Gold Bar;Unincorporated Snohomish,Gold Bar,Sultan;Index,0.80,rural,# TODO: source needed,4907,# TODO,LARGE_UNINC;LOW_POP;RURAL_FRINGE,true,Gold Bar along US-2.
+98252,98252,Snohomish,,0.00,1.00,Granite Falls;Unincorporated Snohomish,Granite Falls,Granite Falls,0.65,exurban,# TODO: source needed,10361,# TODO,LARGE_UNINC,true,Granite Falls + rural.
+98256,98256,Snohomish,,0.00,1.00,Index;Unincorporated Snohomish,Index,Index,1.00,rural,# TODO: source needed,368,# TODO,LARGE_UNINC;LOW_POP;RURAL_FRINGE,true,Index small mountain town.
+98258,98258,Snohomish,,0.00,1.00,Lake Stevens;Unincorporated Snohomish,Lake Stevens,Lake Stevens;Snohomish,0.45,suburban,# TODO: source needed,52752,# TODO,MULTI_DISTRICT,true,Lake Stevens / Frontier Heights.
+98270,98270,Snohomish,,0.00,1.00,Marysville;Unincorporated Snohomish,Marysville,Marysville,0.25,suburban,# TODO: source needed,55049,# TODO,,true,SE Marysville.
+98271,98271,Snohomish,,0.00,1.00,Marysville;Unincorporated Snohomish;Arlington (small);Tulalip Tribes reservation,Marysville,Marysville;Lakewood,0.50,suburban,# TODO: source needed,30838,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,N Marysville incl Tulalip Indian Reservation portion.
+98272,98272,Snohomish,,0.00,1.00,Monroe;Unincorporated Snohomish,Monroe,Monroe;Sultan,0.45,exurban,# TODO: source needed,31436,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,Monroe.
+98275,98275,Snohomish,,0.00,1.00,Mukilteo;Unincorporated Snohomish (small),Mukilteo,Mukilteo,0.05,suburban,# TODO: source needed,21323,# TODO,,true,Mukilteo + Paine Field area.
+98290,98290,Snohomish,,0.00,1.00,Snohomish (city);Unincorporated Snohomish,Snohomish,Snohomish,0.55,exurban,# TODO: source needed,39826,# TODO,LARGE_UNINC,true,Snohomish city + surrounds.
+98292,98292,Snohomish,,0.00,1.00,Stanwood;Unincorporated Snohomish;Camano (Island Co small),Stanwood,Stanwood-Camano,0.55,exurban,# TODO: source needed,27389,# TODO,LARGE_UNINC,true,Stanwood + Camano edge (small Island County share documented in narrative).
+98294,98294,Snohomish,,0.00,1.00,Sultan;Unincorporated Snohomish;Startup (CDP),Sultan,Sultan,0.65,rural,# TODO: source needed,7963,# TODO,LARGE_UNINC;RURAL_FRINGE,true,Sultan + Startup along US-2.
+98296,98296,Snohomish,,0.00,1.00,Snohomish (city);Mill Creek (small);Unincorporated Snohomish,Snohomish,Snohomish;Everett (small);Northshore (small),0.65,exurban,# TODO: source needed,27896,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,SW Snohomish / Clearview / Maltby; spans Snohomish/Northshore SD line.
+98036,98036,Snohomish,,0.00,1.00,Lynnwood;Unincorporated Snohomish,Lynnwood,Edmonds,0.20,suburban,# TODO: source needed,42370,# TODO,,true,S Lynnwood / Alderwood.
+98037,98037,Snohomish,,0.00,1.00,Lynnwood;Unincorporated Snohomish,Lynnwood,Edmonds,0.10,suburban,# TODO: source needed,29723,# TODO,,true,Central Lynnwood.
+98043,98043,Snohomish,,0.00,1.00,Mountlake Terrace,Mountlake Terrace,Edmonds,0.00,suburban,# TODO: source needed,23101,# TODO,,true,Mountlake Terrace.
+98087,98087,Snohomish,,0.00,1.00,Lynnwood;Unincorporated Snohomish;Mill Creek (small),Lynnwood,Mukilteo;Edmonds,0.40,suburban,# TODO: source needed,41796,# TODO,LARGE_UNINC;MULTI_DISTRICT,true,N Lynnwood / Lynnwood Hwy 99 / unincorporated south Sno.

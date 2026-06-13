@@ -1,0 +1,194 @@
+/* ============================================================================
+   green-pm-tokens.css
+   Green Property Management · Brand & Design System v1.0
+   ----------------------------------------------------------------------------
+   Machine-readable token export. This is the only place the brand's colors,
+   type, spacing, and elevation are written down. Production code, email
+   templates, and print files reach through token NAMES — never raw hex.
+
+   Layering (see green-pm-style-guide.md §3):
+     1. primitives        raw, named hex values (7 colors)
+     2. semantic tokens   intent-mapped (brand, action, surface, text…)
+     3. component tokens   consumed by buttons, cards, surfaces
+
+   Audience modes are applied with the [data-audience] attribute on a container;
+   they only remap SURFACE tokens, never the palette.
+   ============================================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500;1,9..144,600&display=swap");
+
+:root {
+  /* ---------- 1. primitives — 7 colors, no additions without governance ---- */
+  --color-cedar: #2D6A4F; /* primary brand   · PNW evergreen, painted shutter   */
+  --color-ink:   #1F2A2E; /* text, deep contrast · slate, cool near-black       */
+  --color-cream: #FBF6EC; /* marketing surface · warm off-white                 */
+  --color-paper: #F7F5F0; /* product surface   · cooler off-white               */
+  --color-stone: #D4D1CA; /* neutral mid-tone  · dividers, borders (non-text)   */
+  --color-clay:  #A95C42; /* action accent     · oxidized terracotta. Clay=click */
+  --color-sky:   #7BA7B8; /* secondary accent  · calm, informational            */
+
+  /* ---------- derived neutrals (ramps from Ink, foreground only) ----------- */
+  --color-ink-80: #3D4A4E; /* 9.6:1 on Paper · body emphasis, secondary heads   */
+  --color-ink-60: #5C6A6E; /* 5.7:1 on Paper · metadata, captions (passes AA)   */
+  --color-ink-40: #8A9498; /* 3.0:1 on Paper · disabled (large only), decorative */
+  --color-ink-20: #C2C8CA; /* 1.4:1 on Paper · dividers, borders — never text   */
+
+  /* ---------- system colors (state only; scoped OUTSIDE the brand) --------- */
+  --color-success: #3E7A55; /* "It worked."        · paid, approved, completed  */
+  --color-warning: #A8741A; /* "Heads up."         · pending, due soon, expiring */
+  --color-error:   #9C2D1F; /* "Act now."          · failed, overdue, requires action */
+  --color-info:    #3A6480; /* "For your reference."· note, hint, context        */
+
+  /* ---------- 2. semantic tokens (mode-agnostic) --------------------------- */
+  --color-brand:       var(--color-cedar);
+  --color-brand-deep:  var(--color-ink);
+  --color-action:      var(--color-clay);
+  --color-accent-cool: var(--color-sky);
+  --color-neutral:     var(--color-stone);
+  --color-text:        var(--color-ink);
+  --color-text-muted:  var(--color-ink-60);
+  --color-divider:     var(--color-ink-20);
+
+  /* on-color foregrounds (text that sits on a brand/action fill) */
+  --on-brand:   var(--color-cream);
+  --on-action:  var(--color-cream);
+
+  /* focus ring — Cedar, 5.4:1 on Cream, clears the 3:1 non-text floor */
+  --focus-ring-color:  var(--color-cedar);
+  --focus-ring-width:  2px;
+  --focus-ring-offset: 2px;
+
+  /* ---------- 3. typography ------------------------------------------------ */
+  /* Geist for the work · Newsreader for the words · Fraunces for the name.
+     (Supersedes the original Fraunces/Inter pairing — see style guide §7.) */
+  --font-display: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif; /* headings, UI, buttons, tabular figures */
+  --font-prose:   "Newsreader", Georgia, "Times New Roman", serif;            /* paragraphs, ledes, owner letters, long-form */
+  --font-accent:  "Fraunces", Georgia, serif;                                 /* signature only — italic "Megan", once per document */
+  --font-mono:    "Geist Mono", "JetBrains Mono", "SF Mono", ui-monospace, monospace; /* eyebrows, labels, code */
+
+  /* type scale — base 16px, ratio 1.250 */
+  --text-xs:      0.75rem;  /* 12px · captions, legal       */
+  --text-sm:      0.875rem; /* 14px · metadata, table cells */
+  --text-base:    1rem;     /* 16px · body                  */
+  --text-md:      1.25rem;  /* 20px · lead paragraphs       */
+  --text-lg:      1.5rem;   /* 24px · H4, card titles       */
+  --text-xl:      1.875rem; /* 30px · H3                    */
+  --text-2xl:     2.5rem;   /* 40px · H2                    */
+  --text-3xl:     3.5rem;   /* 56px · H1                    */
+  --text-display: 5rem;     /* 80px · hero, wordmark        */
+
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  --tracking-tight:  -0.02em; /* display */
+  --tracking-normal: 0;       /* body    */
+  --tracking-wide:   0.08em;  /* small-caps labels */
+
+  --leading-tight:  1.15; /* display  */
+  --leading-snug:   1.35; /* headings */
+  --leading-normal: 1.55; /* body     */
+
+  /* ---------- 4. spacing, radius, elevation -------------------------------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+
+  --radius-sm:   4px;   /* inputs, tags          */
+  --radius-md:   8px;   /* buttons, cards        */
+  --radius-lg:   16px;  /* hero panels, modals   */
+  --radius-pill: 999px; /* status chips only     */
+
+  /* shadows are soft, cool-tinted, low opacity — nothing beyond these three */
+  --shadow-1: 0 1px 2px  rgba(31, 42, 46, 0.06);
+  --shadow-2: 0 4px 12px rgba(31, 42, 46, 0.08);
+  --shadow-3: 0 12px 32px rgba(31, 42, 46, 0.12);
+}
+
+/* ---------- audience-mode surface overrides ----------------------------------
+   Set data-audience on a page/container. Modes remap SURFACE tokens only.
+   Surface budgets per mode live in green-pm-style-guide.md §6.
+----------------------------------------------------------------------------- */
+[data-audience="neutral-acquisition"] { /* landing — serves both audiences */
+  --surface-primary:   var(--color-cream);
+  --surface-secondary: var(--color-paper);
+}
+[data-audience="owner-acquisition"] {   /* pricing, sample statements, proposal */
+  --surface-primary:   var(--color-paper);
+  --surface-secondary: var(--color-cream);
+}
+[data-audience="owner-product"] {        /* authenticated owner portal */
+  --surface-primary:   var(--color-paper);
+  --surface-secondary: var(--color-paper);
+}
+[data-audience="renter-acquisition"] {   /* listings, tours — warmest mood */
+  --surface-primary:   var(--color-cream);
+  --surface-secondary: var(--color-paper);
+}
+[data-audience="renter-product"] {       /* resident portal */
+  --surface-primary:   var(--color-paper);
+  --surface-secondary: var(--color-cream);
+}
+
+/* sensible default if no mode is declared */
+:root {
+  --surface-primary:   var(--color-cream);
+  --surface-secondary: var(--color-paper);
+}
+
+/* ---------- base elements ---------------------------------------------------
+   UI chrome defaults to Geist; long-form prose opts into Newsreader via the
+   .prose utility (or a prose container in your framework).
+----------------------------------------------------------------------------- */
+body {
+  background: var(--surface-primary);
+  color: var(--color-text);
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-brand-deep);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-semibold);
+}
+
+/* long-form reading copy: owner letters, ledes, blog, lease summaries */
+.prose,
+.prose p {
+  font-family: var(--font-prose);
+  line-height: var(--leading-normal);
+}
+
+/* financial figures and any tabular column */
+.tnum { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+
+/* the named-operator signature — the ONLY place Fraunces appears */
+.signature__name {
+  font-family: var(--font-accent);
+  font-style: italic;
+  color: var(--color-brand);
+}
+
+a {
+  color: var(--color-brand);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+:focus-visible {
+  outline: var(--focus-ring-width) solid var(--focus-ring-color);
+  outline-offset: var(--focus-ring-offset);
+}

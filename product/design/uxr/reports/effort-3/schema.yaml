@@ -1,0 +1,351 @@
+# schema.yaml
+# Effort 3 - Demographics, Language, Immigration
+# Author: Demographic analyst (Claude Opus 4.7, 2026-05-18)
+# Every column documented: type, unit, vintage, source.
+
+demographics-zip.csv:
+  primary_key: zcta
+  description: >
+    Per-ZCTA demographic profile for the 107 in-scope ZCTAs joining on
+    `zcta` (string).  Filter on Effort 0's `in_scope_primary = true` for
+    primary analysis.  Cross-county Pierce ZCTAs (98001, 98022, 98047,
+    98092) are scoped to King via ACS ZCTA bounding (B01003 reports for
+    the entire ZCTA, not the King portion).  No further allocation
+    applied here; downstream efforts may apply pct_land_king from
+    zip-master if a King-only number is required.
+  vintage_primary: ACS 5-year 2019-2023 (B-tables and C-tables)
+  source_primary: >
+    Census Bureau Table-based Summary File 5YRData
+    (https://www2.census.gov/programs-surveys/acs/summary_file/2023/table-based-SF/data/5YRData/)
+  columns:
+    zcta:
+      type: string
+      length: 5
+      description: 5-digit ZCTA primary key.
+    population_2024:
+      type: int
+      description: B01003_001 total population.
+      vintage: ACS5 2019-2023 mid-point ≈ 2021
+      moe_published: B01003_001M (MOE flag computed when MOE/E > 20%)
+    population_2024_moe:
+      type: int
+      description: Margin of error on population_2024 at 90% confidence.
+    households_total:
+      type: int
+      description: B25003_001 occupied housing units (= total households).
+    renter_households:
+      type: int
+      description: B25003_003 renter-occupied households.
+    renter_hh_share_pct:
+      type: float
+      unit: percent
+      description: renter_households / households_total × 100.
+    population_cagr_10yr_pct:
+      type: float
+      unit: percent
+      description: 10-year compound annual growth rate, 2014 to 2024.
+      method: MODELED-TRIANGULATED via population_2014_proxy.
+    population_2014_proxy:
+      type: int
+      description: >
+        MODELED estimate of 2014 ZCTA population.  Method: OFM city
+        intercensal 2014/2020 ratio applied to ACS5 2019-2023 B01003.
+      source: WA OFM April 1 Intercensal Estimates 2010-2020 (city level)
+      vintage: 2014 anchor
+    population_projection_2035:
+      type: int
+      description: OFM growth-management projection allocated to ZCTA.
+      status: TODO — OFM city-level projections published; ZCTA allocation pending.
+    median_hh_income:
+      type: int
+      unit: 2023 inflation-adjusted dollars
+      description: B19013_001.
+      moe_check: flag when MOE/E > 20% in moe_flags.
+    median_renter_hh_income:
+      type: int
+      unit: 2023 dollars
+      description: B25119_003 (renter occupier median).
+      status: TODO — B25119 not pulled in this draft; placeholder kept.
+    pct_cost_burdened_30plus:
+      type: float
+      unit: percent
+      description: B25070 categories 007-010 summed and divided by B25070_001.
+    pct_severely_cost_burdened_50plus:
+      type: float
+      unit: percent
+      description: B25070_010 divided by B25070_001.
+    pct_under_5:
+      type: float
+      unit: percent
+      description: (B01001_003 + B01001_027) / B01003_001 × 100.
+    under_5_count:
+      type: int
+      description: B01001_003 male + B01001_027 female under 5.
+    under_5_density_per_sqmi:
+      type: float
+      unit: children per square mile of land area
+      description: under_5_count / ALAND_SQMI from Census 2024 Gazetteer.
+    pct_dual_income_mc_hh:
+      type: float
+      unit: percent
+      description: >
+        B23010_004 (married-couple, both spouses worked FT past 12 months)
+        / households_total × 100.  PROXY — captures only married-couple
+        dual-income, understates unmarried cohabiting dual-tech households.
+    pct_bachelors_or_higher:
+      type: float
+      unit: percent
+      description: sum(B15003_022 to B15003_025) / B15003_001 × 100.
+    foreign_born_pct:
+      type: float
+      unit: percent
+      description: B05002_013 / B05002_001 × 100.
+    lep_pct:
+      type: float
+      unit: percent
+      description: >
+        Sum of "speak English less than very well" across all 12 C16001
+        language groups divided by C16001_001 (population 5 years and over).
+    lep_speakers_5plus:
+      type: int
+      description: Raw count of LEP speakers (population 5+).
+    top_language_1_name:
+      type: string
+      description: ACS-collapsed C16001 language group with highest non-English speaker count.
+      enum_source: see code_lists.language_groups below.
+    top_language_1_speakers:
+      type: int
+      description: Speaker count of the top non-English language group.
+    top_language_2_name: { type: string }
+    top_language_2_speakers: { type: int }
+    top_language_3_name: { type: string }
+    top_language_3_speakers: { type: int }
+    top_language_4_name: { type: string }
+    top_language_4_speakers: { type: int }
+    top_language_5_name: { type: string }
+    top_language_5_speakers: { type: int }
+    pct_asian:
+      type: float
+      unit: percent
+      description: B03002_006 / B03002_001 × 100 (Asian alone, not Hispanic).
+    pct_black:
+      type: float
+      unit: percent
+      description: B03002_004 / B03002_001 × 100 (Black alone, not Hispanic).
+    pct_hispanic:
+      type: float
+      unit: percent
+      description: B03002_012 / B03002_001 × 100 (Hispanic or Latino, any race).
+    pct_white_nh:
+      type: float
+      unit: percent
+      description: B03002_003 / B03002_001 × 100 (White alone, not Hispanic).
+    pct_other:
+      type: float
+      unit: percent
+      description: >
+        Sum of AIAN + NHPI + Some other race alone + Two-or-more (B03002_005,
+        007, 008, 009) divided by B03002_001 × 100.
+    pct_asian_2014:
+      type: float
+      status: TODO — 2014 5yr ACS B03002 not pulled (would require national tarball).
+    pct_black_2014:
+      type: float
+      status: TODO
+    pct_hispanic_2014:
+      type: float
+      status: TODO
+    pct_white_nh_2014:
+      type: float
+      status: TODO
+    commute_min_seattle_cbd:
+      type: float
+      unit: minutes
+      description: MODELED two-segment piecewise commute from ZCTA centroid to Seattle CBD (47.6101, -122.3344).  See narrative section 10.
+    commute_min_slu:
+      type: float
+      unit: minutes
+      description: MODELED commute to SLU / Amazon Doppler (47.6228, -122.3382).
+    commute_min_bellevue_cbd:
+      type: float
+      unit: minutes
+      description: MODELED commute to Bellevue CBD (47.6147, -122.1923).
+    commute_min_redmond_msft:
+      type: float
+      unit: minutes
+      description: MODELED commute to Microsoft Building 92, Redmond (47.6440, -122.1296).
+    commute_min_everett_boeing:
+      type: float
+      unit: minutes
+      description: MODELED commute to Boeing Plant 2, Everett (47.9229, -122.2766).
+    commute_min_renton_boeing:
+      type: float
+      unit: minutes
+      description: MODELED commute to Boeing Renton 737 final assembly (47.5006, -122.2153).
+    moe_flags:
+      type: string
+      format: semicolon-separated column names
+      description: >
+        Columns with ACS MOE / estimate > 20%.  Populated columns: any of
+        population_2024, renter_households, median_hh_income.
+    acs_vintage:
+      type: string
+      description: Vintage label for the underlying ACS pull.
+
+language-clusters.csv:
+  primary_key: language_group
+  description: >
+    Per-language two-county aggregation. Uses ACS C16001 collapsed
+    10-group taxonomy (the ZCTA-published level).  Detailed language
+    breakdowns (Telugu vs Tamil, Russian vs Ukrainian) are NOT available
+    at ZCTA — B16001 publishes only at nation and state.
+  columns:
+    language_group:
+      type: enum
+      values: [
+        Spanish, French/Haitian/Cajun, German/W.Germanic, Russian/Polish/Slavic,
+        Other Indo-European, Korean, Chinese (Mandarin/Cantonese), Vietnamese,
+        Tagalog/Filipino, Other Asian/Pacific Island, Arabic, Other/unspecified
+      ]
+    top_5_zctas:
+      type: string
+      format: semicolon-separated
+      description: Top 5 in-scope ZCTAs by speaker count.
+    total_speakers_two_county:
+      type: int
+      description: Sum of speakers across 107 in-scope ZCTAs.
+    lep_speakers_two_county:
+      type: int
+      description: Sum of "speak English less than very well" across the same ZCTAs.
+    lep_share_pct:
+      type: float
+      description: lep_speakers / total_speakers × 100.
+    growth_2014_2024_pct:
+      type: float
+      status: TODO — requires 2014 ACS5 C16001 (not pulled).
+    dominant_resettlement_agency:
+      type: string
+      description: For refugee-arriving language communities, the WA primary R&P contract holder.
+    notes:
+      type: string
+
+visa-cohorts.csv:
+  primary_key: zcta
+  description: >
+    TRIANGULATED-MODELED visa-tied cohort estimates per ZCTA.  Statewide
+    stock anchors are FY2024 vintage.  Allocation method documented in
+    narrative section 8.  Every cell is MODELED; the data_method column
+    flags it.
+  columns:
+    zcta: { type: string, length: 5 }
+    county: { type: string, values: [King, Snohomish] }
+    h1b_workers_est:
+      type: int
+      description: TRIANGULATED stock estimate of H-1B workers residing in this ZCTA.
+    l1_workers_est: { type: int }
+    opt_students_est:
+      type: int
+      description: Post-completion OPT plus STEM-extension OPT participants.
+    f1_students_est:
+      type: int
+      description: F-1 students enrolled in a King/Snohomish institution, allocated to residence ZCTA.
+    total_visa_est: { type: int }
+    total_visa_renter_est:
+      type: int
+      description: total_visa_est × 0.95 renter assumption.
+    data_method: { type: string }
+
+refugee-placements.csv:
+  primary_key: [county, origin_country]
+  description: >
+    Refugee arrivals by fiscal year, county, and origin country.  FY2020,
+    FY2021, FY2023 sourced directly from PRM/WRAPS state-by-nationality
+    publications.  FY2022 and FY2024 are MODELED (FY22 from mean of
+    FY21+FY23 scaled to RTC-reported WA total; FY24 from FY23 mix scaled
+    to estimated WA total 4,876).
+  columns:
+    county: { type: enum, values: [King, Snohomish] }
+    origin_country: { type: string }
+    fy2020: { type: int }
+    fy2021: { type: int }
+    fy2022: { type: int, status: MODELED }
+    fy2023: { type: int }
+    fy2024: { type: int, status: MODELED }
+    primary_resettlement_agency: { type: string }
+    language_primary: { type: string }
+    allocation_method: { type: string }
+
+zip-master-population-fill.csv:
+  primary_key: zcta
+  description: >
+    Effort-6 merge-back file for `population_2014` and the 10-year CAGR.
+    Also reports B01003 vs Effort-0 proxy reconciliation.
+  columns:
+    zcta: { type: string }
+    population_2014_modeled:
+      type: int
+      description: Same method as demographics-zip.population_2014_proxy.
+    population_2024_b01003_check:
+      type: int
+      description: B01003_001 directly from ACS5 2019-2023.
+    population_2024_e0_proxy:
+      type: int
+      description: Effort 0's worldpopulationreview-derived 2024 proxy.
+    population_cagr_10yr_pct: { type: float, unit: percent }
+    method: { type: string }
+    ofm_factor_2014_to_2020: { type: float }
+    reconciliation_flag:
+      type: string
+      description: "E0_PROXY_DIFF_<n>pct" if B01003 differs from E0 proxy by >5%; blank otherwise.
+    notes: { type: string }
+
+code_lists:
+  language_groups:
+    description: ACS C16001 10-group taxonomy at ZCTA.
+    values:
+      - Spanish
+      - French/Haitian/Cajun
+      - German/W.Germanic
+      - Russian/Polish/Slavic
+      - Other Indo-European
+      - Korean
+      - Chinese (Mandarin/Cantonese)
+      - Vietnamese
+      - Tagalog/Filipino
+      - Other Asian/Pacific Island
+      - Arabic
+      - Other/unspecified
+  moe_flag_columns:
+    description: Columns checked for >20% MOE on the ZCTA estimate.
+    values:
+      - population_2024
+      - renter_households
+      - median_hh_income
+
+methods:
+  population_2014_proxy:
+    method_id: pop2014-ofm-triangulation-v1
+    description: >
+      For each in-scope ZCTA, multiply ACS5 2019-2023 B01003 by the OFM
+      intercensal city ratio (2014 / 2020 base) using the ZCTA's
+      `city_primary` from Effort 0's zip-master.csv.  When the city
+      mapping is "Unincorporated <County>", use the county-level OFM ratio
+      instead.  Cross-county Pierce ZCTAs (98001, 98022, 98047, 98092)
+      use the Pierce ratio for the Auburn / Black Diamond / Algona /
+      Federal Way pieces inside Pierce; their King portion uses the King
+      city ratio.  In the current draft, the city ratio drives all 107
+      ZCTAs; no county_fallback rows.
+  commute_minutes_modeled:
+    method_id: commute-two-segment-v1
+    description: >
+      minutes = min(d, 8 mi)/12 × 60 + max(d - 8, 0)/25 × 60 + 4
+      where d is the great-circle distance in miles from the ZCTA
+      centroid (Census 2024 Gazetteer INTPTLAT/INTPTLONG) to the hub
+      coordinate.
+  visa_cohort_allocation:
+    method_id: visa-triangulation-v1
+    description: >
+      Per-county statewide totals: H-1B 74,879 (King + Snohomish), L-1
+      5,759, OPT 12,000, F-1 32,000.  Per-ZCTA weight is
+      (% bachelor's-or-higher × renter HH) for tech visas and (renter HH)
+      alone for F-1, normalized within county.  Renter assumption 95%.
