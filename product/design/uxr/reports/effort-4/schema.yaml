@@ -1,0 +1,340 @@
+# schema.yaml
+# Effort 4 - Employers, Workforce, and Tech Cohorts
+# Author: Workforce analyst (Claude Opus 4.7, 2026-05-18)
+# All CSVs documented here. Column type, unit, vintage, source per column.
+# Per Effort 0 contract: LCA worksite postal ZIPs are joined via HUD USPS
+# postal-to-ZCTA crosswalk before joining to Effort 0 zip-master.zcta.
+# In-scope filter: zip-master.in_scope_primary = true (107 ZCTAs).
+# Cross-county Pierce ZCTAs (98001, 98022, 98047, 98092) have pct_land_king
+# weighting noted where employer headcount or WARN counts cross the boundary;
+# none of the named employers have material Pierce-side worksites.
+
+employers-top20.csv:
+  primary_key: employer_name
+  description: >
+    The 20 largest employers in King and Snohomish Counties combined as of
+    2025, by regional headcount. Includes tech, aerospace, healthcare,
+    retail HQ, public sector, and other private sector. PSBJ Largest
+    Employers list cross-referenced with 10-K filings and PSBJ historical
+    archives.
+  columns:
+    employer_name:
+      type: string
+      description: Legal entity name as filed in WA Secretary of State + DOL.
+      source: PSBJ + WA SoS + 10-K
+    sector:
+      type: enum
+      values: [tech, aerospace, healthcare, retail-hq, public, other]
+      description: Sector classification for renter-demand attribution.
+    headcount_2025:
+      type: int
+      unit: employees
+      description: Regional (King + Snohomish) headcount as of late 2025.
+      source: PSBJ 2025 Largest Employers + 10-K + Boeing employment statistics
+      vintage: 2025
+    headcount_2022:
+      type: int
+      unit: employees
+      description: Regional headcount as of 2022, for YoY comparison.
+      source: PSBJ 2022 Largest Employers + 10-K
+      vintage: 2022
+    headcount_yoy_change_pct:
+      type: float
+      unit: percentage
+      description: Annualized change from 2022 to 2025 (compound annual).
+      formula: ((h2025/h2022)^(1/3) - 1) * 100
+    primary_worksite_zips:
+      type: string
+      format: semicolon-separated 5-digit ZIPs
+      description: Postal ZIPs where employer has primary worksite. Map to zcta via HUD USPS crosswalk.
+    primary_worksite_cities:
+      type: string
+      format: semicolon-separated
+      description: City names for primary worksites.
+    notes:
+      type: string
+      description: Employer-specific notes including layoff dates, RTO posture, and any caveats.
+
+tech-employers-detailed.csv:
+  primary_key: employer_name
+  description: >
+    Detailed headcount trajectory and hiring/layoff history for each of the
+    named tech employers in the project SCOPE.
+  columns:
+    employer_name:
+      type: string
+    headcount_2019:
+      type: int
+      unit: employees
+      description: Regional headcount end of 2019 (pre-pandemic baseline).
+      source: PSBJ historical + 10-K
+    headcount_2021:
+      type: int
+      description: Regional headcount end of 2021 (peak hiring year for most tech firms).
+      source: PSBJ historical + 10-K
+    headcount_2023:
+      type: int
+      description: Regional headcount end of 2023 (post-layoff cycle).
+      source: PSBJ + 10-K + WARN-adjusted estimates
+    headcount_2025:
+      type: int
+      description: Regional headcount end of 2025.
+      source: PSBJ + 10-K + recent WARN
+    cumulative_layoffs_2022_2025:
+      type: int
+      description: Sum of WARN-affected counts and announced regional layoffs 2022-2025.
+      source: WA ESD WARN + layoffs.fyi + company announcements
+    largest_layoff_event_date:
+      type: date
+      format: yyyy-MM-dd
+      description: Date of the largest single WARN/layoff event in the period.
+    largest_layoff_event_count:
+      type: int
+      description: WA-affected count for the largest single event.
+    rto_posture_2026:
+      type: enum
+      values: [fully-remote, hybrid-2, hybrid-3, hybrid-4, full-rto]
+      description: Days-in-office mandate as of late 2025 / early 2026.
+      source: Flex Index + company announcements
+    primary_worksite_zips:
+      type: string
+      format: semicolon-separated
+    h1b_approvals_fy2022:
+      type: int
+      description: USCIS H-1B Employer Data Hub initial + continuing approvals FY2022 (Oct 2021 - Sep 2022).
+      source: USCIS H-1B Employer Data Hub
+    h1b_approvals_fy2023:
+      type: int
+      description: FY2023 approvals.
+      source: USCIS
+    h1b_approvals_fy2024:
+      type: int
+      description: FY2024 approvals.
+      source: USCIS
+    lca_median_wage_fy2024:
+      type: int
+      unit: USD/yr
+      description: Median wage on LCA Form 9035 filings FY2024, for the employer's primary occupation at the primary worksite.
+      source: DOL OFLC Disclosure Data FY2024
+    notes:
+      type: string
+
+lca-by-zip.csv:
+  primary_key: zcta
+  description: >
+    LCA volume and median wage by Effort-0 ZCTA. Postal worksite ZIPs from
+    DOL OFLC Form 9035 mapped to ZCTAs via HUD USPS crosswalk. Only ZCTAs
+    with non-trivial LCA volume (>=15 filings/yr) are included.
+  columns:
+    zcta:
+      type: string
+      length: 5
+    lca_total_fy2023:
+      type: int
+      description: Total LCA Form 9035 filings (new + continuing + transfer) with primary worksite mapping to this ZCTA, FY2023.
+      source: DOL OFLC Disclosure Data
+    lca_total_fy2024:
+      type: int
+      description: Same, FY2024.
+    top_3_employers:
+      type: string
+      format: semicolon-separated employer names ranked by FY2024 filings
+    median_wage_fy2024:
+      type: int
+      unit: USD/yr
+      description: Median wage across all LCA filings in this ZCTA, FY2024.
+    notes:
+      type: string
+
+warn-notices.csv:
+  primary_key: composite (employer + notice_date + worksite)
+  description: >
+    WARN notices filed with WA ESD 2022-2025 in King or Snohomish counties.
+    Includes the most prominent tech, aerospace, retail-HQ, and gaming filings.
+  columns:
+    employer:
+      type: string
+      description: Employer name as filed with WA ESD.
+    notice_date:
+      type: date
+      format: yyyy-MM-dd
+      description: Date WARN notice was filed with WA ESD.
+    effective_date:
+      type: date
+      format: yyyy-MM-dd
+      description: Date layoff becomes effective (typically 60 days after notice).
+    affected_count:
+      type: int
+      description: Number of WA workers affected per the WARN filing.
+    county:
+      type: string
+      description: King or Snohomish (or comma-separated for multi-county filings).
+    worksite:
+      type: string
+      description: Specific worksite address or building names.
+    wa_esd_filing_reference:
+      type: string
+      description: Internal cross-reference. Replace with WA ESD actual case number in production. WA ESD uses YYYY-MM filing numbers.
+    notes:
+      type: string
+
+compensation-by-level.csv:
+  primary_key: composite (employer + role_family + level)
+  description: >
+    Triangulated total compensation by employer + role family + level.
+    Sources: levels.fyi (Bay Area + Seattle filters applied), Blind (Seattle
+    filters), DOL OFLC LCA prevailing wage FY2024, BLS OEWS Seattle MSA
+    Occupational Employment Wage Statistics, public company 10-K equity grant
+    disclosures.
+  columns:
+    employer:
+      type: string
+    role_family:
+      type: enum
+      values: [SDE, PM, Applied Scientist, Data Engineer, Sales, Engineer, Manufacturing]
+    level:
+      type: string
+      description: Employer-specific level (e.g. L4 at Amazon, L59 at Microsoft, E4 at Meta, ICT4 at Apple).
+    base_median:
+      type: int
+      unit: USD/yr
+      description: Median base salary across sources for the level, Seattle metro.
+    bonus_target_pct:
+      type: float
+      unit: percentage
+      description: Target bonus as percentage of base. 0 for employers without bonus (Amazon, OpenAI, Anthropic).
+    rsu_4yr_value:
+      type: int
+      unit: USD total over 4yr vest
+      description: Median RSU grant value over 4-year vest at grant date for the level.
+    total_comp_year1:
+      type: int
+      unit: USD/yr
+      description: Year-1 total compensation = base + bonus + Year-1 RSU vest + sign-on bonus.
+    total_comp_year4:
+      type: int
+      unit: USD/yr
+      description: Year-4 total compensation = base + bonus + Year-4 RSU vest (no sign-on).
+    monthly_rent_capacity_30pct:
+      type: int
+      unit: USD/mo
+      description: 30% of total_comp_year1 / 12.
+    monthly_rent_capacity_40pct:
+      type: int
+      unit: USD/mo
+      description: 40% of total_comp_year1 / 12. Used for high-comp / dual-income screening accommodations.
+    sources:
+      type: string
+      format: semicolon-separated
+    notes:
+      type: string
+
+cohort-analysis.csv:
+  primary_key: cohort_id
+  description: >
+    Six modeled tenant cohorts. Counts are MODELED with assumptions documented
+    inline in `data_method`. Sources include USCIS H-1B Employer Data Hub,
+    LinkedIn workforce signals, layoffs.fyi, WARN, BLS QCEW NAICS 5415/5417,
+    and ACS PUMS.
+  columns:
+    cohort_id:
+      type: enum
+      values: [A, B, C, D, E, F]
+    cohort_name:
+      type: string
+    estimated_count_two_county:
+      type: int
+      description: Estimated cohort population in King + Snohomish combined.
+    median_compensation:
+      type: int
+      unit: USD/yr
+      description: Median total compensation. 0 for Cohort E during layoff window.
+    primary_zctas_top5:
+      type: string
+      format: semicolon-separated ZCTAs
+    rent_capacity_range:
+      type: string
+      format: USD/mo range
+      description: 25th to 75th percentile rent capacity at 30% of comp.
+    renter_share_pct:
+      type: float
+      description: Share of cohort that rents (vs owns).
+    layoff_elasticity:
+      type: float
+      description: Estimated cohort vacancy-rate-change per 10% layoff event. Higher = more elastic.
+    owner_conversion_annual_pct:
+      type: float
+      description: Annual share of cohort transitioning from renter to owner (home purchase).
+    screening_friction_score:
+      type: int
+      range: 0-100
+      description: Composite score of screening difficulty (thin credit + visa risk + employment-status uncertainty). 100 = highest friction.
+    data_method:
+      type: string
+      description: Methodology for the cohort count and elasticity estimates.
+    notes:
+      type: string
+
+layoff-cycle-response.md:
+  type: markdown
+  description: >
+    Narrative analysis of the 2022-2023 tech layoff cycle as a natural
+    experiment for cohort elasticity. Includes Class A vacancy response by
+    sub-market, Class B/C insulation thesis, time-lag from WARN to observable
+    rental response, and difference-in-differences with confounders (rate
+    hikes, post-pandemic re-urbanization, new supply, hybrid normalization)
+    flagged.
+  contains:
+    - sub-market vacancy/concession/rent-growth tables
+    - DiD confounder analysis (rate, supply, re-urbanization, hybrid)
+    - monitoring indicators for next cycle
+
+effort-4-narrative.md:
+  type: markdown
+  description: >
+    Synthesis narrative covering:
+    - sector renter-demand attribution (tech, healthcare, aerospace, retail-hq, public, other)
+    - top-3 monitoring indicators per employer
+    - cohort sub-market clustering
+    - Boeing Snohomish exposure (direct + supplier + induced channels)
+    - Amazon Bellevue tower expansion exposure
+    - sub-markets most insulated from tech layoffs (top 10 + bottom 10)
+    - IAM 751 strike outcome and 737 MAX / 777X / 787 production outlook
+  intended_consumers:
+    - Effort 5 (uses Boeing scenarios + AI hiring shift for exogenous risks)
+    - Effort 6 (uses cohort + insulation scores for composite scoring)
+
+cross_references:
+  effort_0:
+    file: ../effort-0/zip-master.csv
+    join_key: zcta
+    filter: in_scope_primary = true
+  effort_0_crosswalk:
+    description: HUD USPS postal-to-ZCTA crosswalk Q4 2024 used to map LCA worksite postal ZIPs to ZCTAs.
+    source: HUD USPS ZIP-to-ZCTA crosswalk
+  cross_county_pierce_zctas:
+    list: [98001, 98022, 98047, 98092]
+    treatment: pct_land_king-weighted for any allocation that crosses the boundary; no named employer has material Pierce-side worksite in this data set.
+
+data_quality_notes:
+  triangulation_sources_for_tech_comp:
+    - levels.fyi (biased upward; smaller sample)
+    - Blind (Seattle-filtered)
+    - DOL OFLC LCA prevailing wage FY2024 (lower bound; statutory floor)
+    - BLS OEWS Seattle MSA Occupational Employment Wage Statistics (broader sample)
+  warn_caveats:
+    - WARN exempts cuts under 50 at single worksite
+    - WARN exempts most contractor terminations
+    - Cumulative WARN-affected is a minimum-count signal, not full layoff count
+  cohort_modeling_caveats:
+    - Cohort A and D overlap ~40% (H-1B/OPT workers are also frequently new-hire 0-2yr)
+    - Cohort C and F partial overlap (senior tech accidental-landlord owners may also do consulting/gig work)
+    - All cohort counts have +/-20% uncertainty
+  rto_posture_caveats:
+    - Posture in this data is the formal mandate as of late 2025 / early 2026
+    - Actual enforcement varies; Microsoft + Amazon enforcing strictly; others less so
+    - Posture can change quarterly; Flex Index is the operational tracking source
+
+changelog:
+  '1.0.0 (2026-05-18)':
+    - Initial Effort 4 deliverables: employers-top20, tech-employers-detailed, lca-by-zip, warn-notices, compensation-by-level, cohort-analysis, layoff-cycle-response, effort-4-narrative.

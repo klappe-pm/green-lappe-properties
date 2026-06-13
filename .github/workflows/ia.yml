@@ -1,0 +1,38 @@
+name: ia
+
+# Information-architecture enforcement. The local pre-commit hook
+# (.githooks/pre-commit -> .claude/evaluate-ia-change.mjs) is fast feedback but
+# machine-local; this job is the durable, cross-machine guarantee that runs on
+# every push and PR regardless of which clone or OS produced the commit.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  evaluate-ia:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Evaluate IA over the change range
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_REF: ${{ github.base_ref }}
+          EVENT_BEFORE: ${{ github.event.before }}
+        run: |
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            git fetch origin "$BASE_REF" --depth=1 || true
+            node .claude/evaluate-ia-change.mjs --range "origin/${BASE_REF}..HEAD"
+          else
+            before="$EVENT_BEFORE"
+            if [ -z "$before" ] || ! git cat-file -e "${before}^{commit}" 2>/dev/null; then
+              before="$(git rev-parse HEAD~1 2>/dev/null || git rev-parse HEAD)"
+            fi
+            node .claude/evaluate-ia-change.mjs --range "${before}..HEAD"
+          fi

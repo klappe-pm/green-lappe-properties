@@ -24,7 +24,7 @@ location, naming, or safety rules.
 - Preserve the information architecture in `.claude/information-architecture.md`.
 - Update `README.md` when a top-level zone changes meaning or a new durable zone is added.
 - Update local indexes when adding durable launch, opportunities, or design-system files.
-- Put durable user-flow, user-journey, service-blueprint, and Mermaid UX diagram artifacts in `docs/uxd/`.
+- Put durable user-flow, user-journey, service-blueprint, and Mermaid UX diagram artifacts in `product/design/uxd/`.
 - Use the repo's YAML frontmatter conventions for durable Markdown documents.
 - Run `node "$(git rev-parse --show-toplevel)/.claude/evaluate-ia-change.mjs" --staged` before claiming a change is ready.
 

@@ -1,0 +1,108 @@
+zcta,population_2014_modeled,population_2024_b01003_check,population_2024_e0_proxy,population_cagr_10yr_pct,method,ofm_factor_2014_to_2020,reconciliation_flag,notes
+98001,31456,36041,37460,1.37,city_ratio:auburn city (part),0.8728,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98002,32541,37284,37509,1.37,city_ratio:auburn city (part),0.8728,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98003,47433,52210,51619,0.96,city_ratio:federal way city,0.9085,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98004,35443,39435,39897,1.07,city_ratio:bellevue city,0.8988,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98005,19709,21929,21846,1.07,city_ratio:bellevue city,0.8988,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98006,36643,40770,40009,1.07,city_ratio:bellevue city,0.8988,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98007,24121,26838,27692,1.07,city_ratio:bellevue city,0.8988,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98008,24391,27138,27242,1.07,city_ratio:bellevue city,0.8988,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98010,5430,6351,6857,1.58,city_ratio:black diamond city,0.855,E0_PROXY_DIFF_7.4pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98011,23412,28250,28963,1.9,city_ratio:bothell city (part),0.8287,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98012,68271,76123,77041,1.09,city_ratio:bothell city (part),0.8968,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98014,6254,7681,8264,2.08,city_ratio:carnation city,0.8142,E0_PROXY_DIFF_7.1pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98019,10700,11712,12242,0.91,city_ratio:duvall city,0.9136,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98020,17891,19064,19551,0.64,city_ratio:edmonds city,0.9385,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98021,31789,35445,35631,1.09,city_ratio:bothell city (part),0.8968,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98022,19580,22135,22418,1.23,city_ratio:enumclaw city (part),0.8846,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98023,45055,49593,50448,0.96,city_ratio:federal way city,0.9085,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98024,4646,4632,3908,-0.03,city_ratio:unincorporated king county,1.003,E0_PROXY_DIFF_18.5pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98025,51,51,52,0.0,city_ratio:unincorporated king county,1.003,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98026,36587,38985,38976,0.64,city_ratio:edmonds city,0.9385,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98027,23573,28335,28955,1.86,city_ratio:issaquah city,0.8319,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98028,21179,23594,23741,1.09,city_ratio:kenmore city,0.8976,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98029,25732,30930,30586,1.86,city_ratio:issaquah city,0.8319,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98030,34573,38492,38523,1.08,city_ratio:kent city,0.8982,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98031,36734,40898,40094,1.08,city_ratio:kent city,0.8982,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98032,36062,40150,40862,1.08,city_ratio:kent city,0.8982,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98033,35324,40662,40982,1.42,city_ratio:kirkland city,0.8687,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98034,45031,51836,52531,1.42,city_ratio:kirkland city,0.8687,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98036,38173,42016,42370,0.96,city_ratio:lynnwood city,0.9085,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98037,27777,30574,29723,0.96,city_ratio:lynnwood city,0.9085,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98038,33287,37868,37324,1.3,city_ratio:maple valley city,0.879,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98039,2887,2889,2928,0.01,city_ratio:medina city,0.9993,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98040,24118,25282,25307,0.47,city_ratio:mercer island city,0.954,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98042,43646,48594,50216,1.08,city_ratio:kent city,0.8982,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98043,20515,21417,23101,0.43,city_ratio:mountlake terrace city,0.9579,E0_PROXY_DIFF_7.3pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98045,13249,15705,15289,1.72,city_ratio:north bend city,0.8436,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98047,6580,6900,6817,0.48,city_ratio:pacific city (part),0.9536,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98050,87,87,108,0.0,city_ratio:unincorporated king county,1.003,E0_PROXY_DIFF_19.4pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98051,3566,3555,3442,-0.03,city_ratio:unincorporated king county,1.003,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98052,63595,79074,80717,2.2,city_ratio:redmond city,0.8042,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98053,18367,22838,22765,2.2,city_ratio:redmond city,0.8042,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98055,22885,24851,24660,0.83,city_ratio:renton city,0.9209,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98056,33955,36872,35849,0.83,city_ratio:renton city,0.9209,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98057,11190,12151,12705,0.83,city_ratio:renton city,0.9209,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98058,38658,41980,42980,0.83,city_ratio:renton city,0.9209,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98059,38344,41639,42406,0.83,city_ratio:renton city,0.9209,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98065,13919,16061,15944,1.44,city_ratio:snoqualmie city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98070,10455,10424,9934,-0.03,city_ratio:unincorporated king county,1.003,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98072,21503,24922,24446,1.49,city_ratio:woodinville city,0.8628,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98074,22697,30850,30761,3.12,city_ratio:sammamish city,0.7357,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98075,18563,25231,25498,3.12,city_ratio:sammamish city,0.7357,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98077,12430,14407,14109,1.49,city_ratio:woodinville city,0.8628,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98087,36892,40607,41796,0.96,city_ratio:lynnwood city,0.9085,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98092,44084,50510,50224,1.37,city_ratio:auburn city (part),0.8728,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98101,14211,16396,17153,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98102,23040,26583,27333,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98103,45059,51988,52671,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98104,13755,15870,16542,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98105,42668,49229,49767,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98106,25039,28889,28690,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98107,24606,28390,28776,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98108,21174,24430,25529,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98109,28213,32552,34328,1.44,city_ratio:seattle city,0.8667,E0_PROXY_DIFF_5.2pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98112,20767,23961,23921,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98115,47018,54248,54349,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98116,24347,28091,28711,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98117,30463,35147,35711,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98118,42955,49560,50500,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98119,22873,26390,26879,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98121,18118,20904,21166,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98122,36403,42001,43234,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98125,37968,43807,44520,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98126,19443,22433,22975,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98133,45607,52620,53249,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98134,675,779,645,1.44,city_ratio:seattle city,0.8667,E0_PROXY_DIFF_20.8pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98136,14993,17299,17252,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98144,28643,33048,33787,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98146,25719,28182,28573,0.92,city_ratio:burien city,0.9126,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98148,9465,10399,9715,0.95,city_ratio:seatac city,0.9102,E0_PROXY_DIFF_7.0pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98155,33529,35906,36511,0.69,city_ratio:shoreline city,0.9338,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98166,20078,22001,22082,0.92,city_ratio:burien city,0.9126,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98168,30959,34814,35528,1.18,city_ratio:tukwila city,0.8893,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98177,17773,20506,21090,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98178,23877,25929,26748,0.83,city_ratio:renton city,0.9209,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98188,24366,26769,27311,0.94,city_ratio:seatac city,0.9102,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98198,36825,39815,40463,0.78,city_ratio:des moines city,0.9249,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98199,19719,22751,22468,1.44,city_ratio:seattle city,0.8667,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98201,29243,31212,31895,0.65,city_ratio:everett city,0.9369,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98203,33126,35356,35517,0.65,city_ratio:everett city,0.9369,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98204,41188,43961,45130,0.65,city_ratio:everett city,0.9369,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98208,56792,60616,60915,0.65,city_ratio:everett city,0.9369,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98223,41756,46225,46497,1.02,city_ratio:arlington city,0.9033,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98224,193,192,190,-0.05,city_ratio:unincorporated king county,1.003,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98241,2255,2412,2339,0.68,city_ratio:darrington town,0.935,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98251,4308,4782,4907,1.05,city_ratio:gold bar city,0.901,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98252,8053,10487,10361,2.68,city_ratio:granite falls city,0.7679,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98256,430,409,368,-0.5,city_ratio:index town,1.0516,E0_PROXY_DIFF_11.1pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98258,43431,52005,52752,1.82,city_ratio:lake stevens city,0.8351,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98270,47744,53744,55049,1.19,city_ratio:marysville city,0.8884,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98271,27149,30561,30838,1.19,city_ratio:marysville city,0.8884,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98272,28683,32055,31436,1.12,city_ratio:monroe city,0.8948,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98275,20331,21312,21323,0.47,city_ratio:mukilteo city,0.954,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98288,226,201,169,-1.17,city_ratio:skykomish town,1.1242,E0_PROXY_DIFF_18.9pct,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98290,36303,39732,39826,0.91,city_ratio:snohomish city,0.9137,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98292,23357,26713,27389,1.35,city_ratio:stanwood city,0.8744,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98294,6955,7838,7963,1.2,city_ratio:sultan city,0.8873,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md
+98296,24853,27201,27896,0.91,city_ratio:snohomish city,0.9137,,MODELED-TRIANGULATED: OFM intercensal city ratio applied to ACS5 2019-2023 B01003; documented in effort-3-narrative.md

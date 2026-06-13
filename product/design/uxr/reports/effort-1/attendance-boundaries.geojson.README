@@ -1,0 +1,70 @@
+# attendance-boundaries.geojson — README
+
+## Convention
+
+Every feature carries `geometry: null`. This follows the same convention
+established by Effort 0's `zip-boundaries.geojson` and
+`district-boundaries.geojson` deliverables: ship a valid FeatureCollection
+with all properties populated and a clear post-processing merge step, rather
+than block the downstream efforts on a GIS pull that cannot be completed in
+this session.
+
+## What is in the file
+
+Each feature corresponds to one (school_id, grade_levels) attendance zone.
+Property keys: `school_id`, `school_name`, `grade_levels`, `rating_blended`,
+`district_id`, `attendance_zone_type`.
+
+`attendance_zone_type`:
+- `neighborhood` — assigned by residential address; the polygon defines the
+  zone.
+- `option` — district-wide draw (Tesla STEM, Center School, Gibson Ek,
+  Maplewood K-8, IB magnets). These are listed for completeness but **must
+  be excluded** from the majority-area assignment that produces
+  `zip-school-crosswalk.csv`.
+
+## Why only high-school zones for most non-Seattle/Bellevue districts
+
+For the majority-area assignment at ZCTA scale, elem and middle zones in
+suburban/exurban districts are typically nested inside a single high-school
+zone and rarely cross ZCTA boundaries. The high-school zone is therefore the
+binding constraint for ZCTA dominant-zone assignment. We include all SPS and
+Bellevue elem/middle features because those districts have dense
+within-ZCTA elementary splitting that materially changes the dominant-zone
+result.
+
+For full elem/middle/high coverage per the spec, the post-processing step
+must enumerate every elem and middle attendance polygon from each district's
+GIS portal and add features here. The current set is the **minimum
+sufficient set** to produce a usable `zip-school-crosswalk.csv`.
+
+## Post-processing merge
+
+1. For each `district_id` in the `geometry_source_pending` array in
+   `metadata`, pull the district's published attendance-area shapefile
+   (KMZ/SHP/REST/GeoJSON) into a working GeoPackage.
+2. Re-key each polygon to match `school_id` in `schools.csv`. The naming
+   conventions used here follow the school's published English name; some
+   districts publish under abbreviated names (e.g., "MS" vs "Middle"). A
+   crosswalk by district may be required.
+3. Replace `geometry: null` with the polygon. Reproject to EPSG:4326.
+4. Re-run the majority-area assignment in `zip-school-crosswalk.csv`. The
+   current crosswalk uses a rule-based assignment (predominant school per
+   ZCTA based on city/neighborhood overlap) which is approximate, not a
+   true polygon-intersect result.
+
+## Critical sources
+
+- NCES EDGE School Locations SY2023-24 (lat/long for every NCES school).
+- WA OSPI ESD Boundaries 2024-25 (district polygons; supersede the draft
+  NCES GEOIDs in Effort 0).
+- Per-district attendance polygons listed in `metadata.geometry_source_pending`.
+
+## Multi-zone ZIPs
+
+Per Effort 0 spec, ZCTAs intersected by three or more school districts get
+`multi_zone_zip_flag = true` in the crosswalk, indicating that no single
+school covers more than 60% of ZCTA area at any tier. The dominant-school
+fields are still populated as the majority assignment, but downstream
+consumers MUST report school quality by attendance ZONE (geometry once
+merged), not by ZCTA average, for these rows.

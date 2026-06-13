@@ -1,0 +1,237 @@
+# schema.yaml
+# Effort 1 - Schools and Attendance Boundaries
+# Author: Education-data analyst (Claude Opus 4.7, 2026-05-18)
+# All CSVs and the GeoJSON documented here. Column type, unit, source per column.
+
+schools.csv:
+  primary_key: school_id
+  description: >
+    Curated K-12 universe for all districts that intersect the Effort 0 ZIP
+    universe. Includes public, charter, magnet (option), private secular,
+    and private religious schools. Not exhaustive — anchor schools per
+    district are present; the full district roster requires an OSPI bulk
+    ingest, TODO'd per row in the enrollment and locational columns.
+  join: >
+    Joins to zip-school-crosswalk.csv on school_id at the elem/middle/high
+    tier columns. Joins to attendance-boundaries.geojson on school_id.
+  columns:
+    school_id:
+      type: string
+      description: >
+        NCES-style 12-char ID for public/charter schools when known; OSPI
+        ID or PRIVATE-<slug> for private schools. Provisional in this
+        draft pending NCES CCD bulk pull.
+      source: NCES CCD SY2023-24 (pending) and analyst assignment.
+    school_name:
+      type: string
+      source: District directories.
+    school_type:
+      type: enum
+      values: [public, charter, magnet, private_secular, private_religious]
+      description: >
+        magnet covers option schools with district-wide draw (Tesla STEM,
+        Gibson Ek, Center School, Maplewood K-8, ACES, etc.).
+    grade_levels:
+      type: enum
+      values: [elem, middle, high, k8, k12, other]
+    district_id:
+      type: string
+      description: NCES-style ID. WA-CSC for charter schools authorized by the WA Charter Schools Commission. PRIVATE for private schools.
+    district_name:
+      type: string
+    address:
+      type: string
+      note: TODO across all rows pending NCES EDGE locations pull.
+    city:
+      type: string
+    state:
+      type: enum
+      values: [WA]
+    zip:
+      type: string
+      length: 5
+      description: Postal ZIP of the school's physical address; not the ZCTA. May not equal the attendance-zone ZCTA.
+    latitude:
+      type: float
+      note: TODO across all rows pending NCES EDGE locations.
+    longitude:
+      type: float
+      note: TODO across all rows pending NCES EDGE locations.
+    enrollment_current:
+      type: int
+      note: TODO across all rows pending OSPI Washington State Report Card.
+    enrollment_3yr_change_pct:
+      type: float
+      unit: percent
+      note: TODO pending OSPI.
+    enrollment_5yr_change_pct:
+      type: float
+      unit: percent
+      note: TODO pending OSPI.
+    rating_greatschools:
+      type: int
+      range: 1-10
+      source: GreatSchools 2024-25 public ratings.
+      note: TODO on private schools without published GS rating.
+    rating_niche:
+      type: string
+      values: [A+, A, A-, B+, B, B-, C+, C, C-, D, F]
+      source: Niche.com 2024 school grades.
+      note: TODO on schools without published Niche grade.
+    rating_blended:
+      type: float
+      range: 0-100
+      description: >
+        0.6 * (greatschools * 10) + 0.4 * niche_mapped. Where only one
+        source is present, that source carries the full 0-100 weight.
+        Niche map: A+=98, A=92, A-=88, B+=85, B=82, B-=78, C+=75, C=72,
+        C-=68, D=60, F=50.
+    student_teacher_ratio:
+      type: float
+      note: TODO pending OSPI.
+    pct_free_reduced_lunch:
+      type: float
+      unit: percent
+      note: TODO pending OSPI.
+    last_boundary_change_year:
+      type: int
+      description: Year of most recent attendance-boundary change. Blank for option/magnet/private schools.
+    boundary_change_pending:
+      type: boolean
+      description: true if district has announced or signalled a boundary review affecting this school in the next 24 months. Source documented in boundary-change-watchlist.md.
+    notes:
+      type: string
+  code_lists:
+    todo_codes:
+      - "# TODO: source needed - GreatSchools"
+      - "# TODO: source needed - Niche"
+      - "# TODO: source needed - OSPI Washington State Report Card"
+      - "# TODO: source needed - OSPI"
+      - "# TODO: source needed - NCES EDGE locations"
+      - "# TODO: source needed - NCES CCD school file"
+
+attendance-boundaries.geojson:
+  format: GeoJSON FeatureCollection
+  description: >
+    One feature per (school_id, grade_levels) public/charter attendance zone.
+    All features ship with geometry: null. Sibling README documents the
+    post-processing merge step. attendance_zone_type='option' features are
+    listed but must be excluded from the majority-area dominant-zone
+    assignment in zip-school-crosswalk.csv.
+  properties:
+    school_id:
+      type: string
+      description: Foreign key to schools.csv.
+    school_name:
+      type: string
+    grade_levels:
+      type: enum
+      values: [elem, middle, high, k8, k12]
+    rating_blended:
+      type: float
+      range: 0-100
+    district_id:
+      type: string
+    attendance_zone_type:
+      type: enum
+      values: [neighborhood, option]
+
+zip-school-crosswalk.csv:
+  primary_key: zcta
+  description: >
+    One row per in-scope ZCTA from Effort 0 (in_scope_primary=true; 107
+    rows). Joins to zip-master.csv on zcta. Reports the dominant
+    elem/middle/high attendance zone by majority-area assignment plus a
+    composite quality score.
+  join:
+    - zip-master.csv on zcta
+    - schools.csv on elem_school_id / middle_school_id / high_school_id
+  columns:
+    zcta:
+      type: string
+      length: 5
+    elem_school_id:
+      type: string
+    elem_school_name:
+      type: string
+    elem_rating_blended:
+      type: float
+      range: 0-100
+    elem_pct_zip_area:
+      type: float
+      range: 0-1
+      description: >
+        Estimated fraction of ZCTA land area inside the elem zone. Currently
+        rule-based pending attendance-boundaries.geojson polygon merge.
+    middle_school_id:
+      type: string
+    middle_school_name:
+      type: string
+    middle_rating_blended:
+      type: float
+      range: 0-100
+    middle_pct_zip_area:
+      type: float
+      range: 0-1
+    high_school_id:
+      type: string
+    high_school_name:
+      type: string
+    high_rating_blended:
+      type: float
+      range: 0-100
+    high_pct_zip_area:
+      type: float
+      range: 0-1
+    zip_school_quality_composite:
+      type: float
+      range: 0-100
+      description: >
+        0.25 * elem_rating_blended
+        + 0.30 * middle_rating_blended
+        + 0.45 * high_rating_blended.
+        High-school tier weighted most heavily because family rental tenure
+        is longest at the high-school stage.
+    multi_zone_zip_flag:
+      type: boolean
+      description: >
+        true if the ZCTA carries MULTI_DISTRICT in zip-master.csv OR no
+        single school covers more than 60% of ZCTA area at any tier. For
+        these rows, downstream consumers MUST join at the parcel level
+        (once polygons are populated) and not use the dominant-zone
+        average.
+    notes:
+      type: string
+
+boundary-change-watchlist.md:
+  format: Markdown
+  description: >
+    10 districts with announced or rumored attendance-boundary changes in
+    the next 24 months. 5 announced (Bellevue, SPS, Kent, Marysville,
+    Edmonds) and 5 rumor-watch (Northshore, Federal Way, Highline,
+    Issaquah, Lake Washington). Each entry cites the originating district
+    document or news source; URLs that could not be verified in this
+    session carry # TODO: source needed.
+
+effort-1-narrative.md:
+  format: Markdown
+  description: >
+    Methodology notes: blended-rating formula, majority-area assignment
+    method, ZIP-school composite formula, top-10 and bottom-10 ZIPs by
+    composite, top-5 districts by boundary instability, Tulalip overlay,
+    cross-county allocation, consumption guide for Effort 2+.
+
+# Vintage and refresh cadence
+vintage:
+  schools_universe: 2024-25 (current district directories)
+  ratings_greatschools: 2024 public release
+  ratings_niche: 2024 grade refresh
+  enrollment: TODO pending OSPI 2024-25 Washington State Report Card
+  attendance_polygons: TODO pending per-district GIS pull (see GeoJSON README)
+  boundary_change_signals: through October 2024 (board agendas verified through that date)
+refresh:
+  recommended_cadence: annual at end of WA school year (June)
+  triggers:
+    - WA OSPI Report Card release (~September each year)
+    - Any flagged district publishes a final boundary-redraw board action
+    - New school opens (e.g., Northshore or Issaquah bond-funded schools)
