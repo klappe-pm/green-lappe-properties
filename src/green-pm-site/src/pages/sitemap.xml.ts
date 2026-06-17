@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
-import { getAllTags, getPosts } from '../features/blog/posts';
-import { getListings } from '../features/rentals/listings';
+import { fetchAllTags, fetchPosts } from '../features/blog/posts';
+import { fetchListings } from '../features/rentals/listings';
 
 /**
  * Build-time sitemap of public, indexable routes. Portal paths and error pages
@@ -8,7 +8,7 @@ import { getListings } from '../features/rentals/listings';
  * noindex until the public-launch gate clears; this exists so the route is in
  * place and correct when indexing is enabled.
  */
-export const GET: APIRoute = ({ site }) => {
+export const GET: APIRoute = async ({ site }) => {
   const origin = (site ?? new URL('https://greenpmpnw.com')).origin;
 
   const staticPaths = [
@@ -29,10 +29,15 @@ export const GET: APIRoute = ({ site }) => {
     '/accessibility',
   ];
 
+  const [listings, posts, tags] = await Promise.all([
+    fetchListings(),
+    fetchPosts(),
+    fetchAllTags(),
+  ]);
   const dynamicPaths = [
-    ...getListings().map((l) => `/rentals/${l.slug}`),
-    ...getPosts().map((p) => `/blog/${p.slug}`),
-    ...getAllTags().map((t) => `/blog/tag/${t}`),
+    ...listings.map((l) => `/rentals/${l.slug}`),
+    ...posts.map((p) => `/blog/${p.slug}`),
+    ...tags.map((t) => `/blog/tag/${t}`),
   ];
 
   const urls = [...staticPaths, ...dynamicPaths]

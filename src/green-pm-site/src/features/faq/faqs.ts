@@ -2,6 +2,8 @@
  * FAQ data mirrors the Sanity `faq` schema (question, answer, audience,
  * category, displayOrder). Sample data until the content layer is wired.
  */
+import { isSanityConfigured, sanityFetch } from '../../lib/sanity';
+
 export type FaqAudience = 'owner' | 'renter' | 'both';
 
 export interface Faq {
@@ -53,4 +55,18 @@ export function getFaqs(audience: Exclude<FaqAudience, 'both'>): Faq[] {
   return FAQS.filter((f) => f.audience === audience || f.audience === 'both').sort(
     (a, b) => a.displayOrder - b.displayOrder,
   );
+}
+
+// --- Sanity-backed source (build-time), with sample fallback ---------------
+
+const FAQS_QUERY = `*[_type == "faq" && (audience == $audience || audience == "both")] | order(displayOrder asc){
+  question,
+  "answer": pt::text(answer),
+  audience,
+  displayOrder
+}`;
+
+export async function fetchFaqs(audience: Exclude<FaqAudience, 'both'>): Promise<Faq[]> {
+  if (!isSanityConfigured()) return getFaqs(audience);
+  return sanityFetch<Faq[]>(FAQS_QUERY, [], { audience });
 }

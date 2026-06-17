@@ -2,8 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Container from '../../components/Container.astro';
 import FaqList from '../../features/faq/FaqList.astro';
-import { getFaqs } from '../../features/faq/faqs';
-const faqs = getFaqs('renter');
+import { fetchFaqs } from '../../features/faq/faqs';
+const faqs = await fetchFaqs('renter');
 ---
 <BaseLayout title="Renter FAQ" audience="renter-acquisition" description="Common questions from renters and residents.">
   <section class="py-16">

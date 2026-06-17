@@ -2,10 +2,11 @@
 import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Container from '../../components/Container.astro';
-import { getPosts } from '../../features/blog/posts';
+import { fetchPosts } from '../../features/blog/posts';
 
-export const getStaticPaths = (() => {
-  return getPosts().map((post) => ({ params: { slug: post.slug }, props: { post } }));
+export const getStaticPaths = (async () => {
+  const posts = await fetchPosts();
+  return posts.map((post) => ({ params: { slug: post.slug }, props: { post } }));
 }) satisfies GetStaticPaths;
 
 const { post } = Astro.props;
