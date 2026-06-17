@@ -1,6 +1,6 @@
 ---
 /**
- * Owner proposal request form.
+ * Owner proposal request form (owner acquisition flow).
  *
  * NOT YET WIRED: per the system architecture, this submits to HubSpot Forms.
  * Until the HubSpot portal/form IDs and Cloudflare Turnstile are configured,
@@ -8,70 +8,43 @@
  * lead is silently dropped. See docs/81-user-flows.md (Owner Acquisition Flow).
  */
 import { site } from '../../config/site';
+import Field from '../../components/forms/Field.astro';
+import PendingSubmit from '../../components/forms/PendingSubmit.astro';
 
 type FieldType = 'text' | 'email' | 'tel' | 'number';
-interface Field {
+interface FieldDef {
   id: string;
   label: string;
   type: FieldType;
   required: boolean;
-  half: boolean;
+  colSpan2?: boolean;
 }
-const fields: Field[] = [
-  { id: 'first_name', label: 'First name', type: 'text', required: true, half: true },
-  { id: 'last_name', label: 'Last name', type: 'text', required: true, half: true },
-  { id: 'email', label: 'Email', type: 'email', required: true, half: true },
-  { id: 'phone', label: 'Phone', type: 'tel', required: false, half: true },
-  { id: 'property_address', label: 'Property address', type: 'text', required: true, half: false },
-  { id: 'number_of_doors', label: 'Number of doors', type: 'number', required: true, half: true },
-  { id: 'current_pm', label: 'Current property manager', type: 'text', required: false, half: true },
+const fields: FieldDef[] = [
+  { id: 'first_name', label: 'First name', type: 'text', required: true },
+  { id: 'last_name', label: 'Last name', type: 'text', required: true },
+  { id: 'email', label: 'Email', type: 'email', required: true },
+  { id: 'phone', label: 'Phone', type: 'tel', required: false },
+  { id: 'property_address', label: 'Property address', type: 'text', required: true, colSpan2: true },
+  { id: 'number_of_doors', label: 'Number of doors', type: 'number', required: true },
+  { id: 'current_pm', label: 'Current property manager', type: 'text', required: false },
 ];
 ---
-<form class="max-w-form-none grid max-w-[640px] grid-cols-1 gap-5 sm:grid-cols-2" aria-describedby="proposal-status">
+<form class="grid max-w-[640px] grid-cols-1 gap-5 sm:grid-cols-2" aria-describedby="proposal-status">
   {
     fields.map((f) => (
-      <div class={f.half ? '' : 'sm:col-span-2'}>
-        <label for={f.id} class="block font-display text-sm font-medium text-ink-80">
-          {f.label}
-          {f.required && <span aria-hidden="true" class="text-clay"> *</span>}
-        </label>
-        <input
-          id={f.id}
-          name={f.id}
-          type={f.type}
-          required={f.required}
-          class="mt-1 min-h-touch w-full rounded-sm border border-[color:var(--color-divider)] bg-[color:var(--surface)] px-3 py-2 text-base"
-        />
-      </div>
+      <Field id={f.id} label={f.label} type={f.type} required={f.required} colSpan2={f.colSpan2} />
     ))
   }
-  <div class="sm:col-span-2">
-    <label for="message" class="block font-display text-sm font-medium text-ink-80">Anything else?</label>
-    <textarea
-      id="message"
-      name="message"
-      rows="4"
-      class="mt-1 w-full rounded-sm border border-[color:var(--color-divider)] bg-[color:var(--surface)] px-3 py-2 text-base"
-    ></textarea>
-  </div>
+  <Field id="message" label="Anything else?" as="textarea" colSpan2 />
 
   {/* Honeypot — bots fill this; humans never see it. */}
   <div class="hidden" aria-hidden="true">
     <label>Leave this empty<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
   </div>
 
-  <div class="sm:col-span-2">
-    <button
-      type="submit"
-      disabled
-      class="inline-flex min-h-touch cursor-not-allowed items-center rounded-md bg-ink-40 px-6 py-3 font-display font-semibold text-cream"
-    >
-      Request a proposal
-    </button>
-    <p id="proposal-status" class="mt-3 text-sm text-ink-60">
-      Online submission is being connected. For now, email
-      <a href={`mailto:${site.email}`} class="text-cedar underline">{site.email}</a>
-      and Megan will reply within one business day.
-    </p>
-  </div>
+  <PendingSubmit label="Request a proposal" statusId="proposal-status">
+    Online submission is being connected. For now, email
+    <a href={`mailto:${site.email}`} class="text-cedar underline">{site.email}</a>
+    and Megan will reply within one business day.
+  </PendingSubmit>
 </form>

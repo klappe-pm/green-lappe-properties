@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import PortalShell from '../../../../features/portal/PortalShell.astro';
+import Field from '../../../../components/forms/Field.astro';
+import PendingSubmit from '../../../../components/forms/PendingSubmit.astro';
 import { residentPortalNav } from '../../../../lib/nav';
 
 const categories = ['Plumbing', 'Electrical', 'Heating', 'Appliance', 'Structural', 'Pest', 'Other'];
@@ -8,30 +10,14 @@ const urgencies = ['Routine', 'Urgent', 'Emergency'];
 ---
 <BaseLayout title="Report a repair" audience="renter-product">
   <PortalShell heading="Report a repair" nav={residentPortalNav}>
-    <form class="max-w-[560px] space-y-5" aria-describedby="repair-status">
-      <div>
-        <label for="category" class="block font-display text-sm font-medium text-ink-80">Category</label>
-        <select id="category" name="category" class="mt-1 min-h-touch w-full rounded-sm border border-[color:var(--color-divider)] bg-[color:var(--surface)] px-3 py-2 text-base">
-          {categories.map((c) => <option>{c}</option>)}
-        </select>
-      </div>
-      <div>
-        <label for="urgency" class="block font-display text-sm font-medium text-ink-80">Urgency</label>
-        <select id="urgency" name="urgency" class="mt-1 min-h-touch w-full rounded-sm border border-[color:var(--color-divider)] bg-[color:var(--surface)] px-3 py-2 text-base">
-          {urgencies.map((u) => <option>{u}</option>)}
-        </select>
-      </div>
-      <div>
-        <label for="description" class="block font-display text-sm font-medium text-ink-80">What’s going on?</label>
-        <textarea id="description" name="description" rows="5" class="mt-1 w-full rounded-sm border border-[color:var(--color-divider)] bg-[color:var(--surface)] px-3 py-2 text-base"></textarea>
-      </div>
-      <button type="submit" disabled class="inline-flex min-h-touch cursor-not-allowed items-center rounded-md bg-ink-40 px-6 py-3 font-display font-semibold text-cream">
-        Submit repair
-      </button>
-      <p id="repair-status" class="text-sm text-ink-60">
+    <form class="grid max-w-[560px] grid-cols-1 gap-5" aria-describedby="repair-status">
+      <Field id="category" label="Category" as="select" options={categories} />
+      <Field id="urgency" label="Urgency" as="select" options={urgencies} />
+      <Field id="description" label="What’s going on?" as="textarea" rows={5} />
+      <PendingSubmit label="Submit repair" statusId="repair-status">
         Repair submissions route into the property-management system (Rentvine)
         once your account is connected. For anything urgent now, call or text Megan.
-      </p>
+      </PendingSubmit>
     </form>
   </PortalShell>
 </BaseLayout>
