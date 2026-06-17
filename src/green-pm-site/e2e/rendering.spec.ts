@@ -11,9 +11,10 @@ test.describe('rendering', () => {
       await expect(h1).toHaveCount(1);
       await expect(h1).toBeVisible();
 
-      // No horizontal scroll at this viewport (1px tolerance for sub-pixel).
+      // No horizontal scroll at this viewport. Compare against clientWidth
+      // (excludes the scrollbar) so a vertical scrollbar isn't a false positive.
       const overflow = await page.evaluate(
-        () => document.documentElement.scrollWidth - window.innerWidth,
+        () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
       );
       expect(overflow, `horizontal overflow on ${route}`).toBeLessThanOrEqual(1);
     });

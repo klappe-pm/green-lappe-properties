@@ -22,6 +22,6 @@
         "meta-viewport": ["error", { "minScore": 1 }]
       }
     },
-    "upload": { "target": "temporary-public-storage" }
+    "upload": { "target": "filesystem", "outputDir": "./.lighthouseci" }
   }
 }

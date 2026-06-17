@@ -1,0 +1,12 @@
+# Cloudflare Pages server-side 301 redirects (production-native).
+# Mirrors astro.config.mjs redirects; Cloudflare honors this file at the edge,
+# which is faster and more correct than the meta-refresh fallback Astro emits.
+/home              /                    301
+/services          /owners/services     301
+/pricing           /owners/pricing      301
+/contact-us        /contact             301
+/rental            /rentals             301
+/listings          /rentals             301
+/properties        /rentals             301
+/login             /portal              301
+/signin            /portal              301
