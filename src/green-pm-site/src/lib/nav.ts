@@ -12,6 +12,7 @@ export interface NavItem {
 export const primaryNav: NavItem[] = [
   { label: 'Owners', href: '/owners' },
   { label: 'Rentals', href: '/rentals' },
+  { label: 'Field notes', href: '/blog' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
@@ -30,6 +31,13 @@ export const footerNav: NavItem[] = [
   { label: 'Renter FAQ', href: '/rentals/faq' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
+];
+
+/** Legal / policy links, grouped separately in the footer. */
+export const legalNav: NavItem[] = [
+  { label: 'Privacy', href: '/privacy' },
+  { label: 'Terms', href: '/terms' },
+  { label: 'Accessibility', href: '/accessibility' },
 ];
 
 /** True for internal absolute paths we own (used for active-state + testing). */

@@ -2,6 +2,7 @@ import { describe, it, expect } from 'vitest';
 import { primaryNav, primaryCta, footerNav, isInternal } from '../src/lib/nav';
 import { getListings, getBookableListings, findListingBySlug } from '../src/features/rentals/listings';
 import { getFaqs } from '../src/features/faq/faqs';
+import { getPosts, findPostBySlug, getAllTags, getPostsByTag } from '../src/features/blog/posts';
 import { AUDIENCE_MODES, isAudienceMode } from '../src/config/audience';
 
 describe('navigation', () => {
@@ -53,5 +54,25 @@ describe('faqs', () => {
   it('is sorted by displayOrder', () => {
     const orders = getFaqs('renter').map((f) => f.displayOrder);
     expect(orders).toEqual([...orders].sort((a, b) => a - b));
+  });
+});
+
+describe('blog', () => {
+  it('returns posts newest-first', () => {
+    const dates = getPosts().map((p) => p.publishedAt);
+    expect(dates).toEqual([...dates].sort().reverse());
+  });
+  it('finds a post by slug', () => {
+    const first = getPosts()[0]!;
+    expect(findPostBySlug(first.slug)?.title).toBe(first.title);
+    expect(findPostBySlug('missing')).toBeUndefined();
+  });
+  it('tag index only returns posts carrying that tag', () => {
+    for (const tag of getAllTags()) {
+      expect(getPostsByTag(tag).length).toBeGreaterThan(0);
+      for (const post of getPostsByTag(tag)) {
+        expect(post.tags).toContain(tag);
+      }
+    }
   });
 });

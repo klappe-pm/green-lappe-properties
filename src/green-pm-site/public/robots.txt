@@ -3,3 +3,5 @@
 User-agent: *
 Disallow: /portal/
 Disallow: /
+
+Sitemap: https://greenpmpnw.com/sitemap.xml
