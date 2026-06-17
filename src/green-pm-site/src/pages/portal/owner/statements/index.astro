@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import PortalShell from '../../../../features/portal/PortalShell.astro';
+import { ownerPortalNav } from '../../../../lib/nav';
+import { getOwnerStatements } from '../../../../features/portal/data';
+import { formatRent } from '../../../../lib/format';
+
+const statements = getOwnerStatements();
+---
+<BaseLayout title="Statements" audience="owner-product">
+  <PortalShell heading="Statements" nav={ownerPortalNav}>
+    <ul class="divide-y divide-[color:var(--color-divider)] border-y border-[color:var(--color-divider)]">
+      {
+        statements.map((s) => (
+          <li class="flex items-center justify-between gap-4 py-4">
+            <span>
+              <span class="font-display font-medium text-ink">{s.period}</span>
+              <span class="ml-2 rounded-pill bg-[color:var(--surface-alt)] px-2 py-0.5 text-xs text-ink-80">{s.status}</span>
+            </span>
+            <span class="tabular font-display font-semibold text-ink">{formatRent(s.net).replace('/mo', '')}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-4 text-sm text-ink-60">Statement PDFs open in the live portal once your account is connected.</p>
+  </PortalShell>
+</BaseLayout>

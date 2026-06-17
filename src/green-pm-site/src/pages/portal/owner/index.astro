@@ -1,0 +1,49 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PortalShell from '../../../features/portal/PortalShell.astro';
+import { ownerPortalNav } from '../../../lib/nav';
+import { getOwnerProperties, getOwnerStatements } from '../../../features/portal/data';
+import { formatRent } from '../../../lib/format';
+
+const properties = getOwnerProperties();
+const statements = getOwnerStatements();
+const latest = statements[0];
+const occupied = properties.filter((p) => p.status === 'occupied').length;
+---
+<BaseLayout title="Owner dashboard" audience="owner-product">
+  <PortalShell heading="Owner dashboard" nav={ownerPortalNav}>
+    <div class="grid gap-4 sm:grid-cols-3">
+      <div class="rounded-lg border border-[color:var(--color-divider)] p-5">
+        <p class="text-sm text-ink-60">Properties</p>
+        <p class="tabular mt-1 font-display text-2xl font-semibold text-ink">{properties.length}</p>
+      </div>
+      <div class="rounded-lg border border-[color:var(--color-divider)] p-5">
+        <p class="text-sm text-ink-60">Occupied</p>
+        <p class="tabular mt-1 font-display text-2xl font-semibold text-ink">{occupied}</p>
+      </div>
+      <div class="rounded-lg border border-[color:var(--color-divider)] p-5">
+        <p class="text-sm text-ink-60">Latest statement</p>
+        <p class="tabular mt-1 font-display text-2xl font-semibold text-ink">
+          {latest ? formatRent(latest.net).replace('/mo', '') : '—'}
+        </p>
+        {latest && <p class="mt-1 text-sm text-ink-60">{latest.period}</p>}
+      </div>
+    </div>
+
+    <h2 class="text-lg">Your properties</h2>
+    <ul class="mt-3 divide-y divide-[color:var(--color-divider)] border-y border-[color:var(--color-divider)]">
+      {
+        properties.map((p) => (
+          <li class="flex items-center justify-between gap-4 py-4">
+            <span>
+              <span class="font-display font-medium text-ink">{p.address}</span>
+              <span class="ml-2 rounded-pill bg-[color:var(--surface-alt)] px-2 py-0.5 text-xs text-ink-80">{p.status}</span>
+            </span>
+            <span class="tabular text-sm text-ink-60">{formatRent(p.monthlyRent)}</span>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="mt-4"><a href="/portal/owner/statements" class="text-cedar underline">View statements →</a></p>
+  </PortalShell>
+</BaseLayout>

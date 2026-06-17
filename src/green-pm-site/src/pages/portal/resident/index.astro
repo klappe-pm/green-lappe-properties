@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import PortalShell from '../../../features/portal/PortalShell.astro';
+import { residentPortalNav } from '../../../lib/nav';
+import { getResidentLease, getResidentRepairs } from '../../../features/portal/data';
+import { formatRent } from '../../../lib/format';
+
+const lease = getResidentLease();
+const repairs = getResidentRepairs();
+const openRepairs = repairs.filter((r) => r.status !== 'complete');
+const due = new Date(`${lease.nextDueDate}T00:00:00`).toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+});
+---
+<BaseLayout title="Resident dashboard" audience="renter-product">
+  <PortalShell heading="Welcome home" nav={residentPortalNav}>
+    <div class="grid gap-4 sm:grid-cols-3">
+      <div class="rounded-lg border border-[color:var(--color-divider)] p-5">
+        <p class="text-sm text-ink-60">Next rent due</p>
+        <p class="tabular mt-1 font-display text-2xl font-semibold text-ink">{formatRent(lease.rent).replace('/mo', '')}</p>
+        <p class="mt-1 text-sm text-ink-60">by {due}</p>
+      </div>
+      <div class="rounded-lg border border-[color:var(--color-divider)] p-5">
+        <p class="text-sm text-ink-60">Balance</p>
+        <p class="tabular mt-1 font-display text-2xl font-semibold text-success">{formatRent(lease.balance).replace('/mo', '')}</p>
+      </div>
+      <div class="rounded-lg border border-[color:var(--color-divider)] p-5">
+        <p class="text-sm text-ink-60">Open repairs</p>
+        <p class="tabular mt-1 font-display text-2xl font-semibold text-ink">{openRepairs.length}</p>
+      </div>
+    </div>
+
+    <p class="prose mt-6">Your home: <strong>{lease.property}</strong></p>
+    <div class="mt-4 flex flex-wrap gap-4">
+      <a href="/portal/resident/rent" class="text-cedar underline">Pay rent →</a>
+      <a href="/portal/resident/repairs" class="text-cedar underline">Repairs →</a>
+    </div>
+  </PortalShell>
+</BaseLayout>

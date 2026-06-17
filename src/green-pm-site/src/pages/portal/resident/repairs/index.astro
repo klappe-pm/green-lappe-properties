@@ -1,0 +1,38 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import PortalShell from '../../../../features/portal/PortalShell.astro';
+import Button from '../../../../components/Button.astro';
+import { residentPortalNav } from '../../../../lib/nav';
+import { getResidentRepairs } from '../../../../features/portal/data';
+
+const repairs = getResidentRepairs();
+const statusClass: Record<string, string> = {
+  open: 'text-warning',
+  scheduled: 'text-info',
+  complete: 'text-success',
+};
+---
+<BaseLayout title="Repairs" audience="renter-product">
+  <PortalShell heading="Repairs" nav={residentPortalNav}>
+    <div class="mb-6">
+      <Button href="/portal/resident/repairs/new" variant="primary">Report a repair</Button>
+    </div>
+    {
+      repairs.length === 0 ? (
+        <p class="prose">No open repairs. Nice.</p>
+      ) : (
+        <ul class="divide-y divide-[color:var(--color-divider)] border-y border-[color:var(--color-divider)]">
+          {repairs.map((r) => (
+            <li class="flex items-center justify-between gap-4 py-4">
+              <span>
+                <span class="font-display font-medium text-ink">{r.summary}</span>
+                <span class="ml-2 text-sm text-ink-60">{r.category}</span>
+              </span>
+              <span class={`text-sm font-medium ${statusClass[r.status]}`}>{r.status}</span>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </PortalShell>
+</BaseLayout>

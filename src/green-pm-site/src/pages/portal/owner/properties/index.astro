@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import PortalShell from '../../../../features/portal/PortalShell.astro';
+import { ownerPortalNav } from '../../../../lib/nav';
+import { getOwnerProperties } from '../../../../features/portal/data';
+import { formatRent } from '../../../../lib/format';
+
+const properties = getOwnerProperties();
+---
+<BaseLayout title="Properties" audience="owner-product">
+  <PortalShell heading="Properties" nav={ownerPortalNav}>
+    <div class="overflow-hidden rounded-lg border border-[color:var(--color-divider)]">
+      <table class="tabular w-full border-collapse text-left">
+        <thead>
+          <tr class="bg-[color:var(--surface-alt)] text-sm text-ink-60">
+            <th scope="col" class="px-5 py-3 font-medium">Address</th>
+            <th scope="col" class="px-5 py-3 font-medium">Status</th>
+            <th scope="col" class="px-5 py-3 font-medium">Resident</th>
+            <th scope="col" class="px-5 py-3 font-medium">Rent</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            properties.map((p) => (
+              <tr class="border-t border-[color:var(--color-divider)]">
+                <td class="px-5 py-4 font-display font-medium text-ink">{p.address}</td>
+                <td class="px-5 py-4 text-ink-80">{p.status}</td>
+                <td class="px-5 py-4 text-ink-80">{p.resident ?? '—'}</td>
+                <td class="px-5 py-4 text-ink">{formatRent(p.monthlyRent)}</td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </div>
+  </PortalShell>
+</BaseLayout>

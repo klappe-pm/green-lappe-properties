@@ -31,5 +31,7 @@ export default defineConfig({
     '/rental': '/rentals',
     '/listings': '/rentals',
     '/properties': '/rentals',
+    '/login': '/portal',
+    '/signin': '/portal',
   },
 });

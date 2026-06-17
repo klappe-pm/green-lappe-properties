@@ -40,6 +40,20 @@ export const legalNav: NavItem[] = [
   { label: 'Accessibility', href: '/accessibility' },
 ];
 
+/** Owner portal sub-navigation (owner-product surface). */
+export const ownerPortalNav: NavItem[] = [
+  { label: 'Dashboard', href: '/portal/owner' },
+  { label: 'Properties', href: '/portal/owner/properties' },
+  { label: 'Statements', href: '/portal/owner/statements' },
+];
+
+/** Resident portal sub-navigation (renter-product surface). */
+export const residentPortalNav: NavItem[] = [
+  { label: 'Dashboard', href: '/portal/resident' },
+  { label: 'Pay rent', href: '/portal/resident/rent' },
+  { label: 'Repairs', href: '/portal/resident/repairs' },
+];
+
 /** True for internal absolute paths we own (used for active-state + testing). */
 export function isInternal(href: string): boolean {
   return href.startsWith('/');
