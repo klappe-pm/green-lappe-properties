@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/Container.astro';
+import Button from '../components/Button.astro';
+---
+<BaseLayout title="Page not found" audience="neutral-acquisition">
+  <section class="py-24">
+    <Container width="prose">
+      <p class="eyebrow">404</p>
+      <h1 class="mt-4">We couldn’t find that page</h1>
+      <p class="prose mt-6 mb-8">
+        The link may be old or the home may have been leased. Try the rentals
+        list or head back home.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <Button href="/" variant="primary">Back home</Button>
+        <Button href="/rentals" variant="secondary">Browse rentals</Button>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>

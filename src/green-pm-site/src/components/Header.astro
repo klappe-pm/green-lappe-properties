@@ -1,0 +1,40 @@
+---
+import Container from './Container.astro';
+import { primaryNav, primaryCta } from '../lib/nav';
+import { site } from '../config/site';
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+---
+<header class="border-b border-[color:var(--color-divider)] bg-[color:var(--surface)]">
+  <Container class="flex items-center justify-between gap-6 py-4">
+    <a href="/" class="font-display text-lg font-semibold text-cedar no-underline">
+      {site.shortName}
+      <span class="sr-only">— {site.name}</span>
+    </a>
+    <nav aria-label="Primary" class="flex items-center gap-6">
+      <ul class="hidden items-center gap-6 sm:flex">
+        {
+          primaryNav.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                aria-current={isActive(item.href) ? 'page' : undefined}
+                class={`font-display text-base font-medium no-underline ${
+                  isActive(item.href) ? 'text-cedar' : 'text-ink-80 hover:text-cedar'
+                }`}
+              >
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+      <a
+        href={primaryCta.href}
+        class="inline-flex min-h-touch items-center rounded-md bg-clay px-4 py-2 font-display text-base font-semibold text-cream no-underline hover:bg-[#8f4d37]"
+      >
+        {primaryCta.label}
+      </a>
+    </nav>
+  </Container>
+</header>

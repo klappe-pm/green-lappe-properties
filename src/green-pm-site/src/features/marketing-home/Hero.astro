@@ -1,0 +1,24 @@
+---
+import Container from '../../components/Container.astro';
+import Button from '../../components/Button.astro';
+import { primaryCta } from '../../lib/nav';
+import { site } from '../../config/site';
+---
+<section class="bg-[color:var(--surface)] py-16 sm:py-24">
+  <Container>
+    <p class="eyebrow">{site.serviceArea}</p>
+    <h1 class="text-display mt-4 max-w-[18ch] text-cedar">
+      Property management that answers to owners.
+    </h1>
+    <p class="prose mt-6">
+      {site.name} runs a small, hands-on book of single-family rentals across
+      King and Snohomish counties — transparent pricing, no maintenance markup,
+      and multilingual screening that larger managers don’t offer.
+    </p>
+    <p class="signature mt-8">Owned and operated locally.</p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <Button href={primaryCta.href} variant="primary">{primaryCta.label}</Button>
+      <Button href="/rentals" variant="secondary">Browse rentals</Button>
+    </div>
+  </Container>
+</section>
