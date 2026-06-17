@@ -1,9 +1,13 @@
-import { describe, it, expect } from 'vitest';
-import { primaryNav, primaryCta, footerNav, isInternal } from '../src/lib/nav';
-import { getListings, getBookableListings, findListingBySlug } from '../src/features/rentals/listings';
-import { getFaqs } from '../src/features/faq/faqs';
-import { getPosts, findPostBySlug, getAllTags, getPostsByTag } from '../src/features/blog/posts';
+import { describe, expect, it } from 'vitest';
 import { AUDIENCE_MODES, isAudienceMode } from '../src/config/audience';
+import { findPostBySlug, getAllTags, getPosts, getPostsByTag } from '../src/features/blog/posts';
+import { getFaqs } from '../src/features/faq/faqs';
+import {
+  findListingBySlug,
+  getBookableListings,
+  getListings,
+} from '../src/features/rentals/listings';
+import { footerNav, isInternal, primaryCta, primaryNav } from '../src/lib/nav';
 
 describe('navigation', () => {
   it('only links to internal absolute paths', () => {

@@ -1,4 +1,4 @@
-import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
+import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import path from 'node:path';
 import * as cheerio from 'cheerio';
 
@@ -22,9 +22,9 @@ export function htmlFiles(): string[] {
 export function routeForFile(file: string): string {
   const rel = path.relative(DIST, file).split(path.sep).join('/');
   if (rel === 'index.html') return '/';
-  if (rel.endsWith('/index.html')) return '/' + rel.slice(0, -'/index.html'.length);
+  if (rel.endsWith('/index.html')) return `/${rel.slice(0, -'/index.html'.length)}`;
   // e.g. 404.html
-  return '/' + rel.replace(/\.html$/, '');
+  return `/${rel.replace(/\.html$/, '')}`;
 }
 
 /** Does a route resolve to a built file? Accepts '/x' -> dist/x/index.html. */

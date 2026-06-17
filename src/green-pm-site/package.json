@@ -15,8 +15,10 @@
     "test:watch": "vitest -c vitest.config.ts",
     "test:static": "vitest run -c vitest.static.config.ts",
     "test:e2e": "playwright test",
-    "format": "prettier --write \"src/**/*.{astro,ts,tsx,js,css,md}\"",
-    "format:check": "prettier --check \"src/**/*.{astro,ts,tsx,js,css,md}\""
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "prettier --write \"src/**/*.{astro,css,md}\"",
+    "format:check": "prettier --check \"src/**/*.{astro,css,md}\""
   },
   "dependencies": {
     "astro": "^4.16.18"
@@ -24,6 +26,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/tailwind": "^5.1.4",
+    "@biomejs/biome": "1.9.4",
     "@lhci/cli": "^0.14.0",
     "@playwright/test": "^1.61.0",
     "@types/node": "^22.19.21",
