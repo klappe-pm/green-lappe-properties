@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/Container.astro';
+import Button from '../../components/Button.astro';
+import { primaryCta } from '../../lib/nav';
+
+const services = [
+  ['Marketing & leasing', 'Professional photos, syndication to Zillow and Apartments.com, showings, and applicant pipeline management until the home is leased.'],
+  ['Screening', 'Income and employment verification, credit and background checks, and prior-landlord references — with multilingual support.'],
+  ['Rent collection', 'Online payments, autopay enrollment, clear late-fee handling, and timely owner payouts.'],
+  ['Maintenance', 'Vetted vendors, an owner-approval threshold for larger work, and no markup on invoices.'],
+  ['Owner statements', 'Monthly statements, year-end summaries, and 1099s through the property-management system.'],
+  ['Compliance', 'Lease, notice, and renewal handling consistent with Washington landlord-tenant law.'],
+];
+---
+<BaseLayout title="Services" audience="owner-acquisition" description="What Green PM handles for property owners.">
+  <section class="py-16">
+    <Container>
+      <p class="eyebrow">For owners</p>
+      <h1 class="mt-4 max-w-[22ch]">Everything between “for rent” and “rent deposited”</h1>
+      <p class="prose mt-6">A full-service scope, run by a small team that actually answers.</p>
+    </Container>
+  </section>
+  <section class="pb-12">
+    <Container class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        services.map(([title, body]) => (
+          <div class="rounded-lg border border-[color:var(--color-divider)] bg-[color:var(--surface-alt)] p-6">
+            <h2 class="mt-0 text-lg">{title}</h2>
+            <p class="prose mt-2">{body}</p>
+          </div>
+        ))
+      }
+    </Container>
+    <Container class="mt-10">
+      <Button href={primaryCta.href} variant="primary">{primaryCta.label}</Button>
+    </Container>
+  </section>
+</BaseLayout>

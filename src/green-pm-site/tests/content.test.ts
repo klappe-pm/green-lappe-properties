@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { primaryNav, primaryCta, footerNav, isInternal } from '../src/lib/nav';
-import { getListings, getBookableListings } from '../src/features/rentals/listings';
+import { getListings, getBookableListings, findListingBySlug } from '../src/features/rentals/listings';
+import { getFaqs } from '../src/features/faq/faqs';
 import { AUDIENCE_MODES, isAudienceMode } from '../src/config/audience';
 
 describe('navigation', () => {
@@ -35,5 +36,22 @@ describe('rentals sample data', () => {
     for (const l of getBookableListings()) {
       expect(['available', 'coming-soon']).toContain(l.status);
     }
+  });
+  it('finds a listing by slug and returns undefined for misses', () => {
+    const first = getListings()[0]!;
+    expect(findListingBySlug(first.slug)?.address).toBe(first.address);
+    expect(findListingBySlug('no-such-home')).toBeUndefined();
+  });
+});
+
+describe('faqs', () => {
+  it('owner view includes shared "both" entries but no renter-only ones', () => {
+    const owner = getFaqs('owner');
+    expect(owner.some((f) => f.audience === 'both')).toBe(true);
+    expect(owner.every((f) => f.audience !== 'renter')).toBe(true);
+  });
+  it('is sorted by displayOrder', () => {
+    const orders = getFaqs('renter').map((f) => f.displayOrder);
+    expect(orders).toEqual([...orders].sort((a, b) => a - b));
   });
 });

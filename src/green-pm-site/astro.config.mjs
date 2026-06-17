@@ -21,4 +21,15 @@ export default defineConfig({
     // in docs/uxd/design-system/docs/83-routing.md.
     format: 'directory',
   },
+  // 301 redirects from the routing spec (only those pointing at pages that
+  // exist today; portal/login redirects are added with the portal feature).
+  redirects: {
+    '/home': '/',
+    '/services': '/owners/services',
+    '/pricing': '/owners/pricing',
+    '/contact-us': '/contact',
+    '/rental': '/rentals',
+    '/listings': '/rentals',
+    '/properties': '/rentals',
+  },
 });

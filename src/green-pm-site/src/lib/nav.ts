@@ -23,7 +23,11 @@ export const primaryCta: NavItem = {
 
 export const footerNav: NavItem[] = [
   { label: 'Owners', href: '/owners' },
+  { label: 'Services', href: '/owners/services' },
+  { label: 'Pricing', href: '/owners/pricing' },
+  { label: 'Owner FAQ', href: '/owners/faq' },
   { label: 'Rentals', href: '/rentals' },
+  { label: 'Renter FAQ', href: '/rentals/faq' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
