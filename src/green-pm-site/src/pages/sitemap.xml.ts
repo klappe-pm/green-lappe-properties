@@ -1,6 +1,6 @@
 import type { APIRoute } from 'astro';
+import { getAllTags, getPosts } from '../features/blog/posts';
 import { getListings } from '../features/rentals/listings';
-import { getPosts, getAllTags } from '../features/blog/posts';
 
 /**
  * Build-time sitemap of public, indexable routes. Portal paths and error pages

@@ -1,15 +1,15 @@
-import { describe, it, expect } from 'vitest';
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import path from 'node:path';
+import { describe, expect, it } from 'vitest';
 import {
   DIST,
   htmlFiles,
-  routeForFile,
-  routeExists,
-  load,
   internalLinks,
   isRedirect,
+  load,
   redirectTarget,
+  routeExists,
+  routeForFile,
 } from './helpers';
 
 const AUDIENCE_MODES = [
@@ -62,7 +62,9 @@ describe('document structure (every content page)', () => {
     const $ = load(file);
     it(`${route} has lang, viewport, title, canonical, exactly one h1`, () => {
       expect($('html').attr('lang'), 'html lang').toBe('en');
-      expect($('meta[name="viewport"]').attr('content'), 'viewport').toContain('width=device-width');
+      expect($('meta[name="viewport"]').attr('content'), 'viewport').toContain(
+        'width=device-width',
+      );
       expect(($('title').text() || '').trim().length, 'title').toBeGreaterThan(0);
       expect($('link[rel="canonical"]').length, 'canonical').toBe(1);
       expect($('h1').length, 'h1 count').toBe(1);

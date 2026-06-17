@@ -1,4 +1,4 @@
-import { test, expect, devices } from '@playwright/test';
+import { devices, expect, test } from '@playwright/test';
 
 const isMobile = (name: string) => name === 'android' || name === 'ios';
 
@@ -31,7 +31,13 @@ test.describe('breakpoints have no overflow', () => {
   for (const width of widths) {
     test(`no horizontal overflow at ${width}px on key pages`, async ({ page }) => {
       await page.setViewportSize({ width, height: 900 });
-      for (const route of ['/', '/owners/pricing', '/rentals', '/portal/owner', '/portal/owner/properties']) {
+      for (const route of [
+        '/',
+        '/owners/pricing',
+        '/rentals',
+        '/portal/owner',
+        '/portal/owner/properties',
+      ]) {
         await page.goto(route);
         const { overflow, offenders } = await page.evaluate(() => {
           const cw = document.documentElement.clientWidth;
@@ -48,7 +54,10 @@ test.describe('breakpoints have no overflow', () => {
             offenders: bad.slice(0, 6),
           };
         });
-        expect(overflow, `overflow at ${width}px on ${route} — offenders: ${offenders.join(' | ')}`).toBeLessThanOrEqual(1);
+        expect(
+          overflow,
+          `overflow at ${width}px on ${route} — offenders: ${offenders.join(' | ')}`,
+        ).toBeLessThanOrEqual(1);
       }
     });
   }

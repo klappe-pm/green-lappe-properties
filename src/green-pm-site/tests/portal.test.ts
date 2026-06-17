@@ -1,11 +1,11 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
 import {
   getOwnerProperties,
   getOwnerStatements,
   getResidentLease,
   getResidentRepairs,
 } from '../src/features/portal/data';
-import { ownerPortalNav, residentPortalNav, isInternal } from '../src/lib/nav';
+import { isInternal, ownerPortalNav, residentPortalNav } from '../src/lib/nav';
 
 describe('portal sample data', () => {
   it('owner properties carry a valid status and positive rent', () => {

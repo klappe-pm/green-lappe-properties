@@ -37,7 +37,13 @@ export interface ResidentLease {
 }
 
 const OWNER_PROPERTIES: OwnerProperty[] = [
-  { id: 'p-101', address: '1823 NW 65th St, Seattle', status: 'occupied', monthlyRent: 3950, resident: 'A. Patel' },
+  {
+    id: 'p-101',
+    address: '1823 NW 65th St, Seattle',
+    status: 'occupied',
+    monthlyRent: 3950,
+    resident: 'A. Patel',
+  },
   { id: 'p-102', address: '905 5th Ave S, Edmonds', status: 'listed', monthlyRent: 2650 },
 ];
 
@@ -54,7 +60,13 @@ const RESIDENT_LEASE: ResidentLease = {
 };
 
 const RESIDENT_REPAIRS: Repair[] = [
-  { id: 'r-501', summary: 'Kitchen faucet drips', category: 'plumbing', status: 'scheduled', reportedAt: '2026-06-10' },
+  {
+    id: 'r-501',
+    summary: 'Kitchen faucet drips',
+    category: 'plumbing',
+    status: 'scheduled',
+    reportedAt: '2026-06-10',
+  },
 ];
 
 export const getOwnerProperties = (): OwnerProperty[] => [...OWNER_PROPERTIES];

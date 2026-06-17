@@ -1,9 +1,11 @@
-import { test, expect } from '@playwright/test';
+import { expect, test } from '@playwright/test';
 import { CONTENT_ROUTES, SURFACE_BY_ROUTE } from './routes';
 
 test.describe('rendering', () => {
   for (const route of CONTENT_ROUTES) {
-    test(`${route} renders with a single visible h1 and no horizontal overflow`, async ({ page }) => {
+    test(`${route} renders with a single visible h1 and no horizontal overflow`, async ({
+      page,
+    }) => {
       const response = await page.goto(route);
       expect(response?.status(), `status for ${route}`).toBeLessThan(400);
 
