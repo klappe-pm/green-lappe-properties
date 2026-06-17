@@ -33,12 +33,21 @@ jobs:
         run: npm run lint
       - name: Type check
         run: npm run check
-      - name: Unit tests
-        run: npm test
+      - name: Unit tests + coverage (thresholds enforced)
+        run: npm run test:coverage
+      - name: Component tests (Astro container)
+        run: npm run test:components
       - name: Static HTML tests
         run: npm run test:static
       - name: Build
         run: npm run build
+      - name: Upload coverage
+        uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: coverage
+          path: src/green-pm-site/coverage/
+          retention-days: 7
 
   e2e:
     runs-on: ubuntu-latest
