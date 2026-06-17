@@ -1,0 +1,53 @@
+---
+import Container from '../../components/Container.astro';
+import type { NavItem } from '../../lib/nav';
+
+interface Props {
+  heading: string;
+  nav: NavItem[];
+}
+const { heading, nav } = Astro.props as Props;
+const path = Astro.url.pathname;
+const isActive = (href: string) => path === href;
+---
+<section class="py-10">
+  <Container>
+    {/* Auth/PMS boundary: the live portal is gated by Clerk and reads Rentvine. */}
+    <aside role="note" class="mb-8 rounded-md border border-[color:var(--color-info)] bg-[color:var(--surface-alt)] p-4 text-sm text-ink-80">
+      <strong class="text-info">Preview.</strong>
+      This is a portal UI preview with sample data. The live portal requires
+      sign-in (Clerk) and shows your real account data from the property-management
+      system (Rentvine). Sign-in is not yet connected.
+    </aside>
+
+    <div class="grid gap-10 lg:grid-cols-[200px_1fr]">
+      <nav aria-label="Portal" class="lg:border-r lg:border-[color:var(--color-divider)] lg:pr-6">
+        <ul class="flex flex-wrap gap-2 lg:flex-col lg:gap-1">
+          {
+            nav.map((item) => (
+              <li>
+                <a
+                  href={item.href}
+                  aria-current={isActive(item.href) ? 'page' : undefined}
+                  class={`block rounded-md px-3 py-2 font-display text-base no-underline ${
+                    isActive(item.href)
+                      ? 'bg-[color:var(--surface-alt)] font-semibold text-cedar'
+                      : 'font-medium text-ink-80 hover:text-cedar'
+                  }`}
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
+      <div>
+        <h1 class="text-2xl">{heading}</h1>
+        <div class="mt-6">
+          <slot />
+        </div>
+      </div>
+    </div>
+  </Container>
+</section>
