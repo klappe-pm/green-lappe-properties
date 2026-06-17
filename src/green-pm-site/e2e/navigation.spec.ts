@@ -33,10 +33,22 @@ test.describe('breakpoints have no overflow', () => {
       await page.setViewportSize({ width, height: 900 });
       for (const route of ['/', '/owners/pricing', '/rentals', '/portal/owner', '/portal/owner/properties']) {
         await page.goto(route);
-        const overflow = await page.evaluate(
-          () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
-        );
-        expect(overflow, `overflow at ${width}px on ${route}`).toBeLessThanOrEqual(1);
+        const { overflow, offenders } = await page.evaluate(() => {
+          const cw = document.documentElement.clientWidth;
+          const bad: string[] = [];
+          for (const el of Array.from(document.body.querySelectorAll('*'))) {
+            const r = el.getBoundingClientRect();
+            if (r.width > 0 && r.right > cw + 1) {
+              const cls = (el.getAttribute('class') ?? '').split(/\s+/).slice(0, 3).join('.');
+              bad.push(`${el.tagName.toLowerCase()}.${cls} right=${Math.round(r.right)}`);
+            }
+          }
+          return {
+            overflow: document.documentElement.scrollWidth - cw,
+            offenders: bad.slice(0, 6),
+          };
+        });
+        expect(overflow, `overflow at ${width}px on ${route} — offenders: ${offenders.join(' | ')}`).toBeLessThanOrEqual(1);
       }
     });
   }
