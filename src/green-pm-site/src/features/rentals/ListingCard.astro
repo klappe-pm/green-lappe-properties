@@ -22,7 +22,7 @@ const statusLabel: Record<ListingWithSlug['status'], string> = {
         {statusLabel[listing.status]}
       </span>
     </div>
-    <h3 class="mt-2 text-lg">{listing.address}</h3>
+    <h2 class="mt-2 text-lg">{listing.address}</h2>
     <p class="tabular mt-1 text-sm text-ink-60">{formatSpecs(listing.bedrooms, listing.bathrooms, listing.sqft)}</p>
     <p class="tabular mt-4 font-display text-lg font-semibold text-ink">{formatRent(listing.rent)}</p>
   </div>

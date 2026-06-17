@@ -1,8 +1,8 @@
 name: site-ci
 
-# Build, type-check, and test the green-pm-site Astro app on changes under its
-# directory. The IA workflow (ia.yml) governs repo information architecture;
-# this one governs the site code.
+# Build, type-check, unit/static-test, E2E (desktop + Android + iOS), and run
+# Lighthouse budgets for the green-pm-site Astro app. The IA workflow (ia.yml)
+# governs repo information architecture; this one governs the site.
 on:
   push:
     branches: [main]
@@ -28,11 +28,48 @@ jobs:
           node-version: 22
           cache: npm
           cache-dependency-path: src/green-pm-site/package-lock.json
-      - name: Install
-        run: npm ci
+      - run: npm ci
       - name: Type check
         run: npm run check
       - name: Unit tests
         run: npm test
+      - name: Static HTML tests
+        run: npm run test:static
       - name: Build
         run: npm run build
+
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: src/green-pm-site/package-lock.json
+      - run: npm ci
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium webkit
+      - name: Run E2E (desktop + Android + iOS)
+        run: npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: src/green-pm-site/playwright-report/
+          retention-days: 7
+
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: src/green-pm-site/package-lock.json
+      - run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Lighthouse CI
+        run: npx lhci autorun

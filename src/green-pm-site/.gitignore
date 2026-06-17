@@ -8,6 +8,13 @@ node_modules/
 # astro
 .astro/
 
+# test artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+.lighthouseci/
+
 # env
 .env
 .env.local

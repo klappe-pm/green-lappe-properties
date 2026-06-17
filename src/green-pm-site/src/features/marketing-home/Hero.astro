@@ -7,7 +7,10 @@ import { site } from '../../config/site';
 <section class="bg-[color:var(--surface)] py-16 sm:py-24">
   <Container>
     <p class="eyebrow">{site.serviceArea}</p>
-    <h1 class="text-display mt-4 max-w-[18ch] text-cedar">
+    {/* Explicit responsive sizes: 36px on ultra-narrow (320px) so the longest
+        word fits, 44px on mobile+, 80px on desktop. (Avoids the .text-display
+        class/utility name collision and the 320px overflow it caused.) */}
+    <h1 class="mt-4 max-w-[18ch] text-cedar font-semibold text-[2.25rem] leading-tight tracking-tight sm:text-[2.75rem] md:text-[5rem]">
       Property management that answers to owners.
     </h1>
     <p class="prose mt-6">
