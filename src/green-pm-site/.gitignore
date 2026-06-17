@@ -24,3 +24,4 @@ screenshots/
 # logs / os
 *.log
 .DS_Store
+coverage/
