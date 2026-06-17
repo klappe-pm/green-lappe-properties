@@ -6,10 +6,12 @@ import { residentPortalNav } from '../../../../lib/nav';
 import { getResidentRepairs } from '../../../../features/portal/data';
 
 const repairs = getResidentRepairs();
-const statusClass: Record<string, string> = {
-  open: 'text-warning',
-  scheduled: 'text-info',
-  complete: 'text-success',
+// Status is conveyed by an accessible ink label plus a color dot (color is not
+// the only signal, and the label keeps AA contrast).
+const statusDot: Record<string, string> = {
+  open: 'bg-warning',
+  scheduled: 'bg-info',
+  complete: 'bg-success',
 };
 ---
 <BaseLayout title="Repairs" audience="renter-product">
@@ -28,7 +30,10 @@ const statusClass: Record<string, string> = {
                 <span class="font-display font-medium text-ink">{r.summary}</span>
                 <span class="ml-2 text-sm text-ink-60">{r.category}</span>
               </span>
-              <span class={`text-sm font-medium ${statusClass[r.status]}`}>{r.status}</span>
+              <span class="inline-flex items-center gap-2 text-sm font-medium text-ink-80">
+                <span aria-hidden="true" class={`inline-block h-2 w-2 rounded-pill ${statusDot[r.status]}`} />
+                {r.status}
+              </span>
             </li>
           ))}
         </ul>

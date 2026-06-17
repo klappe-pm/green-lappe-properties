@@ -153,6 +153,29 @@ describe('design-system color wiring', () => {
   });
 });
 
+describe('contrast guardrails (catch low-contrast regressions locally)', () => {
+  // ink-40 fails WCAG AA for normal-size text (see green-pm-tokens.css); it must
+  // not be used as a text color anywhere in the rendered HTML/CSS. Lighthouse
+  // enforces real contrast in CI; this is the fast local guard.
+  it('does not use text-ink-40 as body text', () => {
+    const offenders: string[] = [];
+    for (const file of contentFiles) {
+      const html = readFileSync(file, 'utf8');
+      if (/class="[^"]*\btext-ink-40\b/.test(html)) offenders.push(routeForFile(file));
+    }
+    expect(offenders, 'pages using text-ink-40').toEqual([]);
+  });
+
+  it('does not use warning color as small text (use a dot + ink label instead)', () => {
+    const offenders: string[] = [];
+    for (const file of contentFiles) {
+      const html = readFileSync(file, 'utf8');
+      if (/class="[^"]*\btext-warning\b/.test(html)) offenders.push(routeForFile(file));
+    }
+    expect(offenders, 'pages using text-warning as text').toEqual([]);
+  });
+});
+
 describe('sitemap', () => {
   it('lists only existing public routes and excludes portals', () => {
     const xml = readFileSync(path.join(DIST, 'sitemap.xml'), 'utf8');
