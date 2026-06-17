@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/Container.astro';
+import ProposalForm from '../../features/owner-proposal/ProposalForm.astro';
+---
+<BaseLayout
+  title="Request a proposal"
+  audience="owner-acquisition"
+  description="Tell us about your property and Green PM will send a management proposal."
+>
+  <section class="py-16">
+    <Container width="lg">
+      <p class="eyebrow">For owners</p>
+      <h1 class="mt-4 max-w-[22ch]">Request a management proposal</h1>
+      <p class="prose mt-6 mb-10">
+        Share a few details about your property. Megan reviews every request
+        personally and replies within one business day.
+      </p>
+      <ProposalForm />
+    </Container>
+  </section>
+</BaseLayout>

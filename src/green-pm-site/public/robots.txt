@@ -1,0 +1,5 @@
+# Pre-public boundary: do not index until the public-launch gate clears.
+# Portal paths are never indexable.
+User-agent: *
+Disallow: /portal/
+Disallow: /

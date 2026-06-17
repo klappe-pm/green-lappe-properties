@@ -1,0 +1,29 @@
+---
+import type { ListingWithSlug } from './listings';
+import { formatRent, formatSpecs } from '../../lib/format';
+
+interface Props {
+  listing: ListingWithSlug;
+}
+const { listing } = Astro.props;
+const statusLabel: Record<ListingWithSlug['status'], string> = {
+  available: 'Available',
+  'coming-soon': 'Coming soon',
+  pending: 'Pending',
+  leased: 'Leased',
+};
+---
+<article class="flex flex-col overflow-hidden rounded-lg border border-[color:var(--color-divider)] bg-[color:var(--surface-alt)] shadow-1">
+  <div class="aspect-[3/2] w-full bg-[image:var(--tw-cedar,linear-gradient(135deg,#3D7A52_0%,#2D6A4F_60%,#1F4A36_100%))] bg-cedar-gradient"></div>
+  <div class="flex flex-1 flex-col p-5">
+    <div class="flex items-center justify-between gap-2">
+      <p class="eyebrow">{listing.neighborhood}</p>
+      <span class="rounded-pill bg-[color:var(--surface)] px-3 py-1 text-xs font-medium text-ink-80">
+        {statusLabel[listing.status]}
+      </span>
+    </div>
+    <h3 class="mt-2 text-lg">{listing.address}</h3>
+    <p class="tabular mt-1 text-sm text-ink-60">{formatSpecs(listing.bedrooms, listing.bathrooms, listing.sqft)}</p>
+    <p class="tabular mt-4 font-display text-lg font-semibold text-ink">{formatRent(listing.rent)}</p>
+  </div>
+</article>

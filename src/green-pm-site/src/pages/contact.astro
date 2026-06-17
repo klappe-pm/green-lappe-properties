@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/Container.astro';
+import { site } from '../config/site';
+---
+<BaseLayout title="Contact" audience="neutral-acquisition" description={`Get in touch with ${site.name}.`}>
+  <section class="py-16">
+    <Container width="prose">
+      <p class="eyebrow">Contact</p>
+      <h1 class="mt-4">Get in touch</h1>
+      <div class="prose mt-6">
+        <p>
+          The fastest way to reach us is email. Owners considering management can
+          also <a href="/owners/proposal">request a proposal</a>.
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href={`mailto:${site.email}`}>{site.email}</a><br />
+          <strong>Service area:</strong> {site.serviceArea}<br />
+          <strong>Broker:</strong> {site.broker.name}, {site.broker.title}
+        </p>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>

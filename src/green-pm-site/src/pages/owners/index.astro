@@ -1,0 +1,54 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/Container.astro';
+import Button from '../../components/Button.astro';
+import PricingTable from '../../features/owners/PricingTable.astro';
+import { primaryCta } from '../../lib/nav';
+
+const services = [
+  ['Leasing & marketing', 'Photography, syndication to Zillow and Apartments.com, showings, and applicant screening.'],
+  ['Tenant screening', 'Income, credit, references, and background — with multilingual support most managers can’t offer.'],
+  ['Maintenance coordination', 'Vetted vendors, owner-approval thresholds, and no markup on the work.'],
+  ['Owner statements', 'Monthly statements and direct-deposit payouts you can actually read.'],
+];
+---
+<BaseLayout
+  title="For owners"
+  audience="owner-acquisition"
+  description="How Green PM manages single-family rentals for King and Snohomish County owners."
+>
+  <section class="py-16">
+    <Container>
+      <p class="eyebrow">For owners</p>
+      <h1 class="mt-4 max-w-[20ch]">Full-service management, priced on one line.</h1>
+      <p class="prose mt-6">
+        We keep a deliberately small book so every owner gets a direct line to
+        the person managing their property. Here’s what’s included and what it costs.
+      </p>
+    </Container>
+  </section>
+
+  <section class="pb-8">
+    <Container class="grid gap-6 sm:grid-cols-2">
+      {
+        services.map(([title, body]) => (
+          <div class="rounded-lg border border-[color:var(--color-divider)] bg-[color:var(--surface-alt)] p-6">
+            <h2 class="text-lg">{title}</h2>
+            <p class="prose mt-2">{body}</p>
+          </div>
+        ))
+      }
+    </Container>
+  </section>
+
+  <section class="py-12">
+    <Container width="lg">
+      <h2 class="text-xl">Pricing</h2>
+      <p class="prose mt-2 mb-6">No setup fees. No maintenance markup. No surprises.</p>
+      <PricingTable />
+      <div class="mt-10">
+        <Button href={primaryCta.href} variant="primary">{primaryCta.label}</Button>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>

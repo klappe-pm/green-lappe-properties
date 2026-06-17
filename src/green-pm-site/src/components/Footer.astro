@@ -1,0 +1,35 @@
+---
+import Container from './Container.astro';
+import { footerNav } from '../lib/nav';
+import { site } from '../config/site';
+const year = new Date().getFullYear();
+---
+<footer class="mt-24 border-t border-[color:var(--color-divider)] bg-[color:var(--surface-alt)]">
+  <Container class="flex flex-col gap-6 py-12 sm:flex-row sm:items-start sm:justify-between">
+    <div class="max-w-prose">
+      <p class="font-display text-lg font-semibold text-cedar">{site.name}</p>
+      <p class="mt-2 text-sm text-ink-60">
+        {site.broker.name}, {site.broker.title} · {site.serviceArea}
+      </p>
+      <p class="mt-1 text-sm text-ink-60">
+        <a href={`mailto:${site.email}`} class="text-cedar underline">{site.email}</a>
+      </p>
+    </div>
+    <nav aria-label="Footer">
+      <ul class="flex flex-wrap gap-x-6 gap-y-2">
+        {
+          footerNav.map((item) => (
+            <li>
+              <a href={item.href} class="text-sm text-ink-80 no-underline hover:text-cedar">
+                {item.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </Container>
+  <Container class="pb-8">
+    <p class="text-xs text-ink-40">© {year} {site.name}. All rights reserved.</p>
+  </Container>
+</footer>

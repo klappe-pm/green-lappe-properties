@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/Container.astro';
+import ListingCard from '../../features/rentals/ListingCard.astro';
+import { getListings } from '../../features/rentals/listings';
+
+const listings = getListings();
+---
+<BaseLayout
+  title="Rentals"
+  audience="renter-acquisition"
+  description="Available rental homes managed by Green PM across King and Snohomish counties."
+>
+  <section class="py-16">
+    <Container>
+      <p class="eyebrow">Available homes</p>
+      <h1 class="mt-4">Rentals across King &amp; Snohomish counties</h1>
+      <p class="prose mt-6">
+        Listings below are sample data while the content layer is connected.
+        Inquiries route to Megan for a one-business-day response.
+      </p>
+    </Container>
+  </section>
+
+  <section class="pb-16">
+    <Container class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {listings.map((listing) => <ListingCard listing={listing} />)}
+    </Container>
+  </section>
+</BaseLayout>

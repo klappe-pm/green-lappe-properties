@@ -1,0 +1,18 @@
+/* ================================================================
+   global.css
+   ----------------------------------------------------------------
+   The single global stylesheet imported once by BaseLayout.
+   Import order is load-bearing (see base.css header):
+     1. green-pm-tokens.css   design tokens (single source of truth)
+     2. modes.css             audience-mode surface overrides
+     3. base.css              element resets + typography defaults
+     4. Tailwind utilities    (preflight disabled in tailwind.config.js
+                               so base.css remains the only reset)
+   ================================================================ */
+
+@import './green-pm-tokens.css';
+@import './modes.css';
+@import './base.css';
+
+@tailwind components;
+@tailwind utilities;

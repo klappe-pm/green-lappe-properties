@@ -1,0 +1,10 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../features/marketing-home/Hero.astro';
+import DualPath from '../features/marketing-home/DualPath.astro';
+import { site } from '../config/site';
+---
+<BaseLayout title={site.name} audience="neutral-acquisition">
+  <Hero />
+  <DualPath />
+</BaseLayout>
