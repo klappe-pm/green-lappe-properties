@@ -1,0 +1,16 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/Container.astro';
+import FaqList from '../../features/faq/FaqList.astro';
+import { getFaqs } from '../../features/faq/faqs';
+const faqs = getFaqs('owner');
+---
+<BaseLayout title="Owner FAQ" audience="owner-acquisition" description="Common questions from property owners.">
+  <section class="py-16">
+    <Container width="prose">
+      <p class="eyebrow">For owners</p>
+      <h1 class="mt-4 mb-8">Owner FAQ</h1>
+      <FaqList faqs={faqs} />
+    </Container>
+  </section>
+</BaseLayout>
