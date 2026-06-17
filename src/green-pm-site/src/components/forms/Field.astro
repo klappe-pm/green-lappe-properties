@@ -1,0 +1,47 @@
+---
+/**
+ * Shared form field (label + control). Consolidates the input markup/styling
+ * that was duplicated across the proposal, inquiry, and repair forms.
+ */
+interface Props {
+  id: string;
+  label: string;
+  type?: 'text' | 'email' | 'tel' | 'number' | 'date';
+  required?: boolean;
+  as?: 'input' | 'textarea' | 'select';
+  options?: string[];
+  rows?: number;
+  colSpan2?: boolean;
+}
+const {
+  id,
+  label,
+  type = 'text',
+  required = false,
+  as = 'input',
+  options = [],
+  rows = 4,
+  colSpan2 = false,
+} = Astro.props as Props;
+
+const control =
+  'mt-1 w-full rounded-sm border border-[color:var(--color-divider)] bg-[color:var(--surface)] px-3 py-2 text-base';
+const inputControl = `min-h-touch ${control}`;
+---
+<div class={colSpan2 ? 'sm:col-span-2' : ''}>
+  <label for={id} class="block font-display text-sm font-medium text-ink-80">
+    {label}
+    {required && <span aria-hidden="true" class="text-clay"> *</span>}
+  </label>
+  {as === 'textarea' && <textarea id={id} name={id} rows={rows} class={control} />}
+  {
+    as === 'select' && (
+      <select id={id} name={id} class={inputControl}>
+        {options.map((o: string) => (
+          <option>{o}</option>
+        ))}
+      </select>
+    )
+  }
+  {as === 'input' && <input id={id} name={id} type={type} required={required} class={inputControl} />}
+</div>
