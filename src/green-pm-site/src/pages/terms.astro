@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/Container.astro';
+import DraftNotice from '../features/legal/DraftNotice.astro';
+---
+<BaseLayout title="Terms of service" audience="neutral-acquisition" description="Terms governing use of the Green PM website.">
+  <section class="py-16">
+    <Container width="prose">
+      <p class="eyebrow">Legal</p>
+      <h1 class="mt-4 mb-6">Terms of service</h1>
+      <DraftNotice />
+      <div class="prose mt-8">
+        <p>
+          These terms govern use of this website. Final terms are pending counsel
+          review and will be posted before public launch.
+        </p>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>
