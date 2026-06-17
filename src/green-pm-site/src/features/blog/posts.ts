@@ -1,8 +1,10 @@
 /**
  * Blog ("Field notes") data mirrors the Sanity `blogPost` + `tag` schemas
  * (product/design/uxd/design-system/docs/85-sanity-schemas.md). Sample data
- * until the content layer is wired; replace `getPosts()` with a Sanity query.
+ * until the content layer is wired; `fetchPosts()` uses Sanity when configured.
  */
+import { isSanityConfigured, sanityFetch } from '../../lib/sanity';
+
 export interface BlogPost {
   title: string;
   slug: string;
@@ -61,4 +63,35 @@ export function getAllTags(): string[] {
 
 export function getPostsByTag(tag: string): BlogPost[] {
   return getPosts().filter((p) => p.tags.includes(tag));
+}
+
+// --- Sanity-backed source (build-time), with sample fallback ---------------
+
+const POSTS_QUERY = `*[_type == "blogPost" && defined(publishedAt)] | order(publishedAt desc){
+  title,
+  "slug": slug.current,
+  eyebrow,
+  publishedAt,
+  "author": author->name,
+  excerpt,
+  "body": body[_type == "block"].children[].text,
+  "tags": tags[]->slug.current
+}`;
+
+export async function fetchPosts(): Promise<BlogPost[]> {
+  if (!isSanityConfigured()) return getPosts();
+  const data = await sanityFetch<BlogPost[]>(POSTS_QUERY, []);
+  return data.map((p) => ({ ...p, tags: p.tags ?? [], body: p.body ?? [] }));
+}
+
+export async function fetchPostBySlug(slug: string): Promise<BlogPost | undefined> {
+  return (await fetchPosts()).find((p) => p.slug === slug);
+}
+
+export async function fetchAllTags(): Promise<string[]> {
+  return [...new Set((await fetchPosts()).flatMap((p) => p.tags))].sort();
+}
+
+export async function fetchPostsByTag(tag: string): Promise<BlogPost[]> {
+  return (await fetchPosts()).filter((p) => p.tags.includes(tag));
 }

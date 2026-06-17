@@ -1,4 +1,5 @@
 import { slugifyAddress } from '../../lib/format';
+import { isSanityConfigured, sanityFetch } from '../../lib/sanity';
 
 /**
  * Listing shape mirrors the Sanity `listing` schema
@@ -89,4 +90,32 @@ export function getBookableListings(): ListingWithSlug[] {
 /** Find a single listing by its slug (for /rentals/[slug]). */
 export function findListingBySlug(slug: string): ListingWithSlug | undefined {
   return getListings().find((l) => l.slug === slug);
+}
+
+// --- Sanity-backed source (build-time), with sample fallback ---------------
+
+const LISTINGS_QUERY = `*[_type == "listing" && status != "off-market"] | order(availableDate asc){
+  address,
+  "slug": slug.current,
+  "neighborhood": neighborhood->name,
+  bedrooms,
+  bathrooms,
+  sqft,
+  rent,
+  status,
+  availableDate,
+  "description": pt::text(description),
+  amenities,
+  petPolicy
+}`;
+
+/** Listings from Sanity when configured; otherwise the sample set. */
+export async function fetchListings(): Promise<ListingWithSlug[]> {
+  if (!isSanityConfigured()) return getListings();
+  const data = await sanityFetch<Listing[]>(LISTINGS_QUERY, []);
+  return data.map((l) => ({ ...l, slug: slugifyAddress(l.address) }));
+}
+
+export async function fetchListingBySlug(slug: string): Promise<ListingWithSlug | undefined> {
+  return (await fetchListings()).find((l) => l.slug === slug);
 }

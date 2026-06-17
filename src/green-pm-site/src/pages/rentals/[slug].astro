@@ -3,11 +3,12 @@ import type { GetStaticPaths } from 'astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Container from '../../components/Container.astro';
 import InquiryForm from '../../features/renter-inquiry/InquiryForm.astro';
-import { getListings } from '../../features/rentals/listings';
+import { fetchListings } from '../../features/rentals/listings';
 import { formatRent, formatSpecs } from '../../lib/format';
 
-export const getStaticPaths = (() => {
-  return getListings().map((listing) => ({
+export const getStaticPaths = (async () => {
+  const listings = await fetchListings();
+  return listings.map((listing) => ({
     params: { slug: listing.slug },
     props: { listing },
   }));

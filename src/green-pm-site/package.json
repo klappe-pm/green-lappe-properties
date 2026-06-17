@@ -21,6 +21,7 @@
     "format:check": "prettier --check \"src/**/*.{astro,css,md}\""
   },
   "dependencies": {
+    "@sanity/client": "^6.29.1",
     "astro": "^4.16.18"
   },
   "devDependencies": {
