@@ -3,10 +3,13 @@ import { defineConfig } from 'astro/config';
 
 // Canonical production domain per the locked design system (docs/uxd/design-system).
 const SITE_URL = process.env.SITE_URL ?? 'https://greenpmpnw.com';
+// BASE_PATH is set when deploying to a subpath (e.g. GitHub Pages: /green-lappe-properties).
+const BASE_PATH = process.env.BASE_PATH ?? '';
 
 // https://astro.build/config
 export default defineConfig({
   site: SITE_URL,
+  base: BASE_PATH,
   output: 'static',
   integrations: [
     tailwind({
