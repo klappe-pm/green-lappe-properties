@@ -1,14 +1,9 @@
 name: deploy-pages
 
-# Deploy the green-pm-site Astro app and brand-book HTML to GitHub Pages.
-# Triggered on pushes to main that touch the site or brand-book sources.
+# Deploy the standalone Green Lappe Properties Astro app to GitHub Pages.
 on:
   push:
     branches: [main]
-    paths:
-      - 'src/green-pm-site/**'
-      - 'product/branding/brand-book/**'
-      - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
 permissions:
@@ -24,9 +19,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: src/green-pm-site
     steps:
       - uses: actions/checkout@v4
 
@@ -36,7 +28,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: src/green-pm-site/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - run: npm ci
 
@@ -49,11 +41,11 @@ jobs:
       - name: Copy brand-book into dist
         run: |
           mkdir -p dist/brand-book
-          cp ../../product/branding/brand-book/*.html dist/brand-book/
+          cp brand-book/*.html dist/brand-book/
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: src/green-pm-site/dist
+          path: dist
 
   deploy:
     needs: build

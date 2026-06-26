@@ -1,13 +1,27 @@
-.DS_Store
-.obsidian/
-*.gsheet
+# build output
+dist/
+.output/
 
-# The global ~/.gitignore ignores **/.claude/ to keep machine-local Claude
-# settings out of repos. This project's IA governance lives in .claude/ and
-# MUST be tracked so the pre-commit hook + CI can enforce it on every clone.
-# Re-include only the governance files; keep any future local settings ignored.
-!.claude/
-.claude/*
-!.claude/evaluate-ia-change.mjs
-!.claude/information-architecture.md
-!.claude/reconcile-tracking.sh
+# dependencies
+node_modules/
+
+# astro
+.astro/
+
+# test artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+.lighthouseci/
+screenshots/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# logs / os
+*.log
+.DS_Store
+coverage/
