@@ -5,7 +5,7 @@ sub-category: high-end-positioning
 date-created: 2026-05-21
 date-revised: 2026-05-21
 type: strategy
-status: OBSOLETE
+status: ARCHIVED
 aliases: []
 tags:
   - branding

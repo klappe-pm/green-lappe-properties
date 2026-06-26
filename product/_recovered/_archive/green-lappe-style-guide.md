@@ -4,7 +4,7 @@ category: design-system
 sub-category: green-lappe-style-guide
 date-created: 2026-05-21
 date-revised: 2026-05-21
-status: OBSOLETE
+status: ARCHIVED
 aliases: []
 tags: []
 ---

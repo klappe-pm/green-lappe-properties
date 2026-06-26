@@ -1,4 +1,5 @@
 ---
+status: ARCHIVED
 domain: green-lappe-properties
 category: opportunity-materials
 sub-category: deck-index

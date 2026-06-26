@@ -5,7 +5,7 @@ sub-category: brand-architecture
 date-created: 2026-05-21
 date-revised: 2026-05-21
 type: rationale
-status: OBSOLETE
+status: ARCHIVED
 aliases: []
 tags:
   - branding
