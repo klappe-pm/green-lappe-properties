@@ -1,0 +1,39 @@
+---
+/**
+ * Renter inquiry form (renter acquisition flow step 5-6).
+ *
+ * NOT YET WIRED: submits to HubSpot Forms per the system architecture. Until
+ * the portal/form IDs + Turnstile are configured it renders with a disabled
+ * submit and a mailto fallback so no inquiry is silently dropped.
+ * See docs/81-user-flows.md (Renter Acquisition Flow).
+ */
+import { site } from '../../config/site';
+import Field from '../../components/forms/Field.astro';
+import PendingSubmit from '../../components/forms/PendingSubmit.astro';
+
+interface Props {
+  /** Pre-fills the subject when inquiring about a specific home. */
+  listingAddress?: string;
+}
+const { listingAddress } = Astro.props as Props;
+const subject = listingAddress ? `Inquiry: ${listingAddress}` : 'Rental inquiry';
+---
+<form class="grid max-w-[640px] grid-cols-1 gap-5 sm:grid-cols-2" aria-describedby="inquiry-status">
+  {listingAddress && <input type="hidden" name="listing" value={listingAddress} />}
+  <Field id="name" label="Name" required />
+  <Field id="email" label="Email" type="email" required />
+  <Field id="phone" label="Phone" type="tel" required />
+  <Field id="move_in_date" label="Target move-in" type="date" required />
+  <Field id="message" label="Message" as="textarea" colSpan2 />
+
+  {/* Honeypot */}
+  <div class="hidden" aria-hidden="true">
+    <label>Leave this empty<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
+  </div>
+
+  <PendingSubmit label="Send inquiry" statusId="inquiry-status">
+    Online inquiries are being connected. For now, email
+    <a href={`mailto:${site.email}?subject=${encodeURIComponent(subject)}`} class="text-cedar underline">{site.email}</a>
+    and Megan will reply within one business day.
+  </PendingSubmit>
+</form>

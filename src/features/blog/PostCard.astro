@@ -1,0 +1,28 @@
+---
+import type { BlogPost } from './posts';
+interface Props {
+  post: BlogPost;
+}
+const { post } = Astro.props as Props;
+const date = new Date(`${post.publishedAt}T00:00:00`).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+<article class="border-b border-[color:var(--color-divider)] py-8 last:border-0">
+  <p class="eyebrow">{post.eyebrow} · <time datetime={post.publishedAt}>{date}</time></p>
+  <h2 class="mt-2 text-xl">
+    <a href={`/blog/${post.slug}`} class="text-ink no-underline hover:text-cedar">{post.title}</a>
+  </h2>
+  <p class="prose mt-3">{post.excerpt}</p>
+  <div class="mt-3 flex flex-wrap gap-2">
+    {
+      post.tags.map((tag) => (
+        <a href={`/blog/tag/${tag}`} class="rounded-pill bg-[color:var(--surface-alt)] px-3 py-1 text-xs font-medium text-ink-80 no-underline hover:text-cedar">
+          #{tag}
+        </a>
+      ))
+    }
+  </div>
+</article>

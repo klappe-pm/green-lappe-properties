@@ -1,0 +1,50 @@
+---
+/**
+ * Owner proposal request form (owner acquisition flow).
+ *
+ * NOT YET WIRED: per the system architecture, this submits to HubSpot Forms.
+ * Until the HubSpot portal/form IDs and Cloudflare Turnstile are configured,
+ * the form is rendered with a disabled submit and a mailto fallback so no real
+ * lead is silently dropped. See docs/81-user-flows.md (Owner Acquisition Flow).
+ */
+import { site } from '../../config/site';
+import Field from '../../components/forms/Field.astro';
+import PendingSubmit from '../../components/forms/PendingSubmit.astro';
+
+type FieldType = 'text' | 'email' | 'tel' | 'number';
+interface FieldDef {
+  id: string;
+  label: string;
+  type: FieldType;
+  required: boolean;
+  colSpan2?: boolean;
+}
+const fields: FieldDef[] = [
+  { id: 'first_name', label: 'First name', type: 'text', required: true },
+  { id: 'last_name', label: 'Last name', type: 'text', required: true },
+  { id: 'email', label: 'Email', type: 'email', required: true },
+  { id: 'phone', label: 'Phone', type: 'tel', required: false },
+  { id: 'property_address', label: 'Property address', type: 'text', required: true, colSpan2: true },
+  { id: 'number_of_doors', label: 'Number of doors', type: 'number', required: true },
+  { id: 'current_pm', label: 'Current property manager', type: 'text', required: false },
+];
+---
+<form class="grid max-w-[640px] grid-cols-1 gap-5 sm:grid-cols-2" aria-describedby="proposal-status">
+  {
+    fields.map((f) => (
+      <Field id={f.id} label={f.label} type={f.type} required={f.required} colSpan2={f.colSpan2} />
+    ))
+  }
+  <Field id="message" label="Anything else?" as="textarea" colSpan2 />
+
+  {/* Honeypot — bots fill this; humans never see it. */}
+  <div class="hidden" aria-hidden="true">
+    <label>Leave this empty<input type="text" name="company_website" tabindex="-1" autocomplete="off" /></label>
+  </div>
+
+  <PendingSubmit label="Request a proposal" statusId="proposal-status">
+    Online submission is being connected. For now, email
+    <a href={`mailto:${site.email}`} class="text-cedar underline">{site.email}</a>
+    and Megan will reply within one business day.
+  </PendingSubmit>
+</form>

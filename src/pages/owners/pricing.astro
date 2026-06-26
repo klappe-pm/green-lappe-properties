@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/Container.astro';
+import Button from '../../components/Button.astro';
+import PricingTable from '../../features/owners/PricingTable.astro';
+import { primaryCta } from '../../lib/nav';
+---
+<BaseLayout title="Pricing" audience="owner-acquisition" description="Green PM owner pricing — simple and transparent.">
+  <section class="py-16">
+    <Container width="lg">
+      <p class="eyebrow">For owners</p>
+      <h1 class="mt-4">Pricing</h1>
+      <p class="prose mt-6 mb-8">
+        One management rate, one placement fee, and no markup on maintenance.
+        That’s the whole structure.
+      </p>
+      <PricingTable />
+      <div class="prose mt-8">
+        <p>
+          The management fee is charged on rent actually collected. The placement
+          fee applies when we lease a home and is earned once, at placement.
+        </p>
+      </div>
+      <div class="mt-8">
+        <Button href={primaryCta.href} variant="primary">{primaryCta.label}</Button>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>

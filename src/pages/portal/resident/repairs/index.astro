@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import PortalShell from '../../../../features/portal/PortalShell.astro';
+import Button from '../../../../components/Button.astro';
+import { residentPortalNav } from '../../../../lib/nav';
+import { getResidentRepairs } from '../../../../features/portal/data';
+
+const repairs = getResidentRepairs();
+// Status is conveyed by an accessible ink label plus a color dot (color is not
+// the only signal, and the label keeps AA contrast).
+const statusDot: Record<string, string> = {
+  open: 'bg-warning',
+  scheduled: 'bg-info',
+  complete: 'bg-success',
+};
+---
+<BaseLayout title="Repairs" audience="renter-product">
+  <PortalShell heading="Repairs" nav={residentPortalNav}>
+    <div class="mb-6">
+      <Button href="/portal/resident/repairs/new" variant="primary">Report a repair</Button>
+    </div>
+    {
+      repairs.length === 0 ? (
+        <p class="prose">No open repairs. Nice.</p>
+      ) : (
+        <ul class="divide-y divide-[color:var(--color-divider)] border-y border-[color:var(--color-divider)]">
+          {repairs.map((r) => (
+            <li class="flex items-center justify-between gap-4 py-4">
+              <span>
+                <span class="font-display font-medium text-ink">{r.summary}</span>
+                <span class="ml-2 text-sm text-ink-60">{r.category}</span>
+              </span>
+              <span class="inline-flex items-center gap-2 text-sm font-medium text-ink-80">
+                <span aria-hidden="true" class={`inline-block h-2 w-2 rounded-pill ${statusDot[r.status]}`} />
+                {r.status}
+              </span>
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </PortalShell>
+</BaseLayout>

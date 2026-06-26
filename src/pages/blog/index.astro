@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/Container.astro';
+import PostCard from '../../features/blog/PostCard.astro';
+import { fetchPosts, fetchAllTags } from '../../features/blog/posts';
+const posts = await fetchPosts();
+const tags = await fetchAllTags();
+---
+<BaseLayout title="Field notes" audience="neutral-acquisition" description="Notes on operating rentals well in King and Snohomish counties.">
+  <section class="py-16">
+    <Container width="lg">
+      <p class="eyebrow">Field notes</p>
+      <h1 class="mt-4">Notes from the field</h1>
+      <p class="prose mt-6">Operating notes and Washington compliance, in plain language.</p>
+      {
+        tags.length > 0 && (
+          <div class="mt-6 flex flex-wrap gap-2">
+            {tags.map((tag) => (
+              <a href={`/blog/tag/${tag}`} class="rounded-pill border border-[color:var(--color-divider)] px-3 py-1 text-sm text-ink-80 no-underline hover:text-cedar">
+                #{tag}
+              </a>
+            ))}
+          </div>
+        )
+      }
+      <div class="mt-6">
+        {posts.map((post) => <PostCard post={post} />)}
+      </div>
+    </Container>
+  </section>
+</BaseLayout>

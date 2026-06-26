@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Container from '../components/Container.astro';
+import DraftNotice from '../features/legal/DraftNotice.astro';
+import { site } from '../config/site';
+---
+<BaseLayout title="Accessibility" audience="neutral-acquisition" description="Green PM's commitment to an accessible website.">
+  <section class="py-16">
+    <Container width="prose">
+      <p class="eyebrow">Legal</p>
+      <h1 class="mt-4 mb-6">Accessibility statement</h1>
+      <DraftNotice />
+      <div class="prose mt-8">
+        <p>
+          We aim to meet WCAG 2.1 AA. The design system enforces color contrast,
+          44px touch targets, visible focus, and keyboard navigation. If you hit
+          a barrier, email <a href={`mailto:${site.email}`}>{site.email}</a> and
+          we’ll help directly.
+        </p>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>

@@ -1,0 +1,27 @@
+# build output
+dist/
+.output/
+
+# dependencies
+node_modules/
+
+# astro
+.astro/
+
+# test artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+.lighthouseci/
+screenshots/
+
+# env
+.env
+.env.local
+.env.*.local
+
+# logs / os
+*.log
+.DS_Store
+coverage/

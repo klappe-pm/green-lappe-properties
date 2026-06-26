@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/Container.astro';
+import Button from '../../components/Button.astro';
+import { site } from '../../config/site';
+---
+<BaseLayout
+  title="Apply"
+  audience="renter-acquisition"
+  description="How to apply for a Green PM rental after your inquiry."
+>
+  <section class="py-16">
+    <Container width="prose">
+      <p class="eyebrow">Applications</p>
+      <h1 class="mt-4">Applying for a home</h1>
+      <div class="prose mt-6">
+        <p>
+          Applications are sent by Megan after an inquiry and showing, so each
+          applicant gets a fair, FCRA-compliant review. There is no open
+          public application form.
+        </p>
+        <p>
+          Already toured a home and ready to apply? Megan will email you a secure
+          application link. The application covers identity, employment, income,
+          references, and a credit/background authorization.
+        </p>
+      </div>
+      <div class="mt-8 flex flex-wrap gap-4">
+        <Button href="/rentals" variant="primary">Browse rentals</Button>
+        <Button href={`mailto:${site.email}`} variant="secondary">Email Megan</Button>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Container from '../../components/Container.astro';
+import Button from '../../components/Button.astro';
+---
+<BaseLayout title="Portal" audience="neutral-acquisition">
+  <section class="py-20">
+    <Container width="prose">
+      <p class="eyebrow">Sign in</p>
+      <h1 class="mt-4">Which portal?</h1>
+      <p class="prose mt-6 mb-8">
+        Choose the portal that matches your account. Owners use the owner portal
+        to view properties, monthly statements, and documents. Residents use the
+        resident portal to pay rent, report repairs, and read lease notices. If
+        you’re not sure which applies to you, email
+        <a href="mailto:megan@greenpmpnw.com">megan@greenpmpnw.com</a> and we’ll
+        point you to the right place.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <Button href="/portal/owner" variant="primary">Owner portal</Button>
+        <Button href="/portal/resident" variant="secondary">Resident portal</Button>
+      </div>
+    </Container>
+  </section>
+</BaseLayout>

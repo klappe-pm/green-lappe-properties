@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import PortalShell from '../../../../features/portal/PortalShell.astro';
+import Field from '../../../../components/forms/Field.astro';
+import PendingSubmit from '../../../../components/forms/PendingSubmit.astro';
+import { residentPortalNav } from '../../../../lib/nav';
+
+const categories = ['Plumbing', 'Electrical', 'Heating', 'Appliance', 'Structural', 'Pest', 'Other'];
+const urgencies = ['Routine', 'Urgent', 'Emergency'];
+---
+<BaseLayout title="Report a repair" audience="renter-product">
+  <PortalShell heading="Report a repair" nav={residentPortalNav}>
+    <form class="grid max-w-[560px] grid-cols-1 gap-5" aria-describedby="repair-status">
+      <Field id="category" label="Category" as="select" options={categories} />
+      <Field id="urgency" label="Urgency" as="select" options={urgencies} />
+      <Field id="description" label="What’s going on?" as="textarea" rows={5} />
+      <PendingSubmit label="Submit repair" statusId="repair-status">
+        Repair submissions route into the property-management system (Rentvine)
+        once your account is connected. For anything urgent now, call or text Megan.
+      </PendingSubmit>
+    </form>
+  </PortalShell>
+</BaseLayout>

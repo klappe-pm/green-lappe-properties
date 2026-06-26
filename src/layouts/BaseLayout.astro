@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { site } from '../config/site';
+import type { AudienceMode } from '../config/audience';
+
+interface Props {
+  title: string;
+  description?: string;
+  /** Drives data-audience -> modes.css surface overrides. */
+  audience?: AudienceMode;
+  /** Set true on non-production / not-yet-public pages. */
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = site.description,
+  audience = 'neutral-acquisition',
+  noindex = true,
+} = Astro.props;
+
+const fullTitle = title === site.name ? title : `${title} · ${site.shortName}`;
+const canonical = new URL(Astro.url.pathname, site.url).href;
+
+// Privacy-respecting analytics: only load Plausible when configured AND the page
+// is indexable (we don't measure the pre-public site). No cookie banner needed.
+const plausibleDomain = import.meta.env.PUBLIC_PLAUSIBLE_DOMAIN;
+const analyticsEnabled = Boolean(plausibleDomain) && !noindex;
+---
+
+<!doctype html>
+<html lang="en" data-audience={audience}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {/* Pre-public boundary: keep non-production pages out of the index. */}
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+
+    {/* v3 typefaces: Geist (display/UI), Newsreader (prose), Fraunces (accent). */}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Fraunces:ital,opsz,wght@1,9..144,600&display=swap"
+    />
+
+    {/* Cookieless analytics (Plausible) — only when configured + indexable. */}
+    {
+      analyticsEnabled && (
+        <>
+          <script
+            is:inline
+            defer
+            data-domain={plausibleDomain}
+            src="https://plausible.io/js/script.outbound-links.js"
+          />
+          <script is:inline>
+            {`window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}`}
+          </script>
+        </>
+      )
+    }
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>
