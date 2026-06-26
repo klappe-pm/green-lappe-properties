@@ -5,7 +5,7 @@ sub-category: domain-strategy
 date-created: 2026-05-21
 date-revised: 2026-05-21
 type: critique
-status: OBSOLETE
+status: ARCHIVED
 aliases: []
 tags:
   - branding

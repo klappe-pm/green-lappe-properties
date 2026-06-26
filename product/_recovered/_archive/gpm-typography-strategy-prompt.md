@@ -1,3 +1,7 @@
+---
+status: ARCHIVED
+---
+
 ```## gpm-typography-strategy-prompt
 
 markdown

@@ -1,4 +1,5 @@
 ---
+status: ARCHIVED
 domain: green-lappe-properties
 category: archive
 sub-category: index
