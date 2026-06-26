@@ -149,7 +149,7 @@ export default {
 
       backgroundImage: {
         // Cedar gradient used for image placeholders
-        'cedar-gradient': 'linear-gradient(135deg, #3D7A52 0%, #2D6A4F 60%, #1F4A36 100%)',
+        'cedar-gradient': 'linear-gradient(135deg, #1F2A2E 0%, #2D6A4F 60%, #1F2A2E 100%)',
       },
     },
   },
