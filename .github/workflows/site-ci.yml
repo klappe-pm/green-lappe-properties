@@ -1,22 +1,11 @@
 name: site-ci
 
 # Build, type-check, unit/static-test, E2E (desktop + Android + iOS), and run
-# Lighthouse budgets for the green-pm-site Astro app. The IA workflow (ia.yml)
-# governs repo information architecture; this one governs the site.
+# Lighthouse budgets for the standalone Green Lappe Properties Astro app.
 on:
   push:
     branches: [main]
-    paths:
-      - 'src/green-pm-site/**'
-      - '.github/workflows/site-ci.yml'
   pull_request:
-    paths:
-      - 'src/green-pm-site/**'
-      - '.github/workflows/site-ci.yml'
-
-defaults:
-  run:
-    working-directory: src/green-pm-site
 
 jobs:
   build-test:
@@ -27,8 +16,10 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: src/green-pm-site/package-lock.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
+      - name: Design system check
+        run: npm run design:check
       - name: Lint (Biome)
         run: npm run lint
       - name: Type check
@@ -46,7 +37,7 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           name: coverage
-          path: src/green-pm-site/coverage/
+          path: coverage/
           retention-days: 7
 
   e2e:
@@ -57,7 +48,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: src/green-pm-site/package-lock.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium webkit
@@ -67,14 +58,14 @@ jobs:
         if: ${{ !cancelled() }}
         with:
           name: playwright-report
-          path: src/green-pm-site/playwright-report/
+          path: playwright-report/
           retention-days: 7
       - name: Upload visual screenshots
         uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
           name: visual-screenshots
-          path: src/green-pm-site/screenshots/
+          path: screenshots/
           retention-days: 7
 
   lighthouse:
@@ -85,7 +76,7 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: src/green-pm-site/package-lock.json
+          cache-dependency-path: package-lock.json
       - run: npm ci
       - name: Build
         run: npm run build

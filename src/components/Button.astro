@@ -1,0 +1,31 @@
+---
+interface Props {
+  href?: string;
+  variant?: 'primary' | 'secondary';
+  class?: string;
+  type?: 'button' | 'submit';
+}
+const { href, variant = 'primary', class: className = '', type = 'button' } = Astro.props;
+
+// Primary = Clay action accent (CTAs only, per the design system). Secondary =
+// Cedar outline. Both meet the 44px touch target via base.css.
+const base =
+  'inline-flex items-center justify-center min-h-touch rounded-md px-6 py-3 ' +
+  'font-display font-semibold text-base no-underline transition-colors duration-default';
+const styles =
+  variant === 'primary'
+    ? 'bg-clay text-cream hover:opacity-90'
+    : 'border border-cedar text-cedar hover:bg-cedar hover:text-cream';
+const cls = `${base} ${styles} ${className}`;
+---
+{
+  href ? (
+    <a href={href} class={cls}>
+      <slot />
+    </a>
+  ) : (
+    <button type={type} class={cls}>
+      <slot />
+    </button>
+  )
+}
