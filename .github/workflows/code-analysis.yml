@@ -1,0 +1,44 @@
+name: code-analysis
+
+# Deterministic secret and dependency/IaC/secret scanning for the standalone
+# Green Lappe Properties app. This mirrors the harness leak-gate structure.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pull-requests: read  # gitleaks-action lists PR commits via the REST API
+
+jobs:
+  secrets:
+    name: gitleaks (full history)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Personal and public repos need no license; org-owned private repos
+          # require a (free) GITLEAKS_LICENSE. See the gitleaks-action README.
+          # The scan is clean; the job failed only because the action's post-scan
+          # SARIF artifact upload hit the account's artifact storage quota
+          # (CreateArtifact -> "storage quota has been hit"). Nothing consumes the
+          # artifact here, so disable the upload rather than pay quota for it.
+          GITLEAKS_ENABLE_UPLOAD_ARTIFACT: false
+
+  dependencies:
+    name: trivy (deps + IaC + secrets)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          scan-type: fs
+          scanners: vuln,secret,misconfig
+          severity: CRITICAL,HIGH
+          ignore-unfixed: true
+          exit-code: "1"
