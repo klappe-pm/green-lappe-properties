@@ -1,0 +1,42 @@
+{
+  "access-id": "local-dev",
+  "env-id": "local-dev",
+  "project": "green-lappe-properties",
+  "workspace": {
+    "path": "/workspace/green-lappe-properties",
+    "mode": "rw"
+  },
+  "shared-mounts": [
+    {
+      "store": "claude-config",
+      "path": "/mnt/claude-config",
+      "mode": "ro",
+      "why": "global rules, skills, and guard hooks load in every Claude session"
+    }
+  ],
+  "network": {
+    "mode": "allowlist",
+    "allow": [
+      "github.com",
+      "api.github.com",
+      "registry.npmjs.org",
+      "api.sanity.io",
+      "apicdn.sanity.io",
+      "playwright.azureedge.net"
+    ],
+    "enforcement": "declared-only"
+  },
+  "secrets-scope": [
+    "github",
+    "sanity"
+  ],
+  "capabilities": {
+    "docker-socket": false,
+    "privileged": false,
+    "host-git-config-rw": false
+  },
+  "review": {
+    "last-reviewed": "2026-07-09",
+    "widened-by": []
+  }
+}
