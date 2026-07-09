@@ -1,0 +1,4 @@
+title = "green-lappe-properties gitleaks configuration"
+
+[extend]
+useDefault = true
