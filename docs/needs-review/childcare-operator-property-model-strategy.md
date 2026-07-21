@@ -2,8 +2,11 @@
 
 - Date: 2026-07-20
 - Status: DRAFT
-- Source of truth (market): `docs/research/orange-county-childcare-tam.md`
+- Role: execution plan (before/after, outcomes, measures, and the plan docs in `childcare/`). For the market analysis and the geography verdict, see the canonical analysis below; do not read this as a competing market study.
+- Canonical analysis (numbers and verdict): `2026-07-20-use-of-asset-conversion-analysis.md` and the deck `green-lappe-combined-deck.html`.
 - Source of truth (current business): `src/config/site.ts`, `src/pages/owners/pricing.astro`, `src/features/faq/faqs.ts`
+
+> Scope note: this doc was drafted from the Orange County TAM alone, before the full six-county corpus was recovered. Its market-sizing and its open decision D1 (target geography) are superseded by the canonical analysis, which resolves geography: Washington launches first, California is conditional on a tuition survey. Keep this file for its execution structure (the table and the `childcare/` plan docs); take the market numbers and the verdict from the canonical analysis.
 
 ## Strategy recommendation
 
