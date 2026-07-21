@@ -1,0 +1,346 @@
+<title>Green-Lappe Properties: The Conversion Product, Two Pricing Lenses, Six Counties</title>
+<style>
+  /* Tokens. Brand primitives per green-pm-style-guide (DESIGN.md): seven primitives, Clay reserved for
+     action only (unused here, no CTAs). Surfaces/inks are documented derived tints of Ink/Cream/Paper.
+     Chart marks are validated data-step derivations of Cedar (--data-a) and Sky (--data-b), both surfaces. */
+  :root{
+    --cedar:#2D6A4F; --ink:#1F2A2E; --cream:#FBF6EC; --paper:#F7F5F0; --stone:#D4D1CA; --sky:#7BA7B8;
+    --bg:var(--cream); --surface:#FFFDF8; --card:var(--paper); --text:var(--ink); --text-2:#4A5A5E; --muted:#6E7A7D;
+    --divider:var(--stone); --brand:var(--cedar);
+    --data-a:#0E8552; --data-b:#2B7CAD;
+    --tint-pos:#E5F0E9; --tint-neu:#ECEAE3; --tint-warn:#F3EAD9;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#1A2428; --surface:#223035; --card:#26353B; --text:#EDEAE2; --text-2:#C2C9C6; --muted:#93A0A0;
+      --divider:#3B4A4F; --brand:#5FA083; --data-a:#15915C; --data-b:#3F82C9; --tint-pos:#24382E; --tint-neu:#2C3A40; --tint-warn:#3A3324; }
+  }
+  :root[data-theme="dark"]{ --bg:#1A2428; --surface:#223035; --card:#26353B; --text:#EDEAE2; --text-2:#C2C9C6; --muted:#93A0A0;
+    --divider:#3B4A4F; --brand:#5FA083; --data-a:#15915C; --data-b:#3F82C9; --tint-pos:#24382E; --tint-neu:#2C3A40; --tint-warn:#3A3324; }
+  :root[data-theme="light"]{ --bg:#FBF6EC; --surface:#FFFDF8; --card:#F7F5F0; --text:#1F2A2E; --text-2:#4A5A5E; --muted:#6E7A7D;
+    --divider:#D4D1CA; --brand:#2D6A4F; --data-a:#0E8552; --data-b:#2B7CAD; --tint-pos:#E5F0E9; --tint-neu:#ECEAE3; --tint-warn:#F3EAD9; }
+
+  *{ box-sizing:border-box; }
+  body{ background:var(--bg); color:var(--text); margin:0;
+    font-family:"Geist","Helvetica Neue",Helvetica,system-ui,sans-serif; font-size:16px; line-height:1.55; }
+  .deck{ max-width:1020px; margin:0 auto; padding:40px 24px 80px; display:flex; flex-direction:column; gap:40px; }
+  .slide{ background:var(--surface); border:1px solid var(--divider); border-radius:14px; padding:44px 52px 40px; }
+  .band{ font-size:11.5px; letter-spacing:0.16em; text-transform:uppercase; font-weight:700; color:var(--brand); margin:0 0 20px; }
+  .eyebrow{ font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); font-weight:600;
+    display:flex; justify-content:space-between; gap:16px; margin-bottom:18px; }
+  h1{ font-size:42px; line-height:1.12; margin:0 0 14px; font-weight:700; letter-spacing:-0.01em; text-wrap:balance; }
+  h2{ font-size:27px; line-height:1.2; margin:0 0 16px; font-weight:700; letter-spacing:-0.005em; text-wrap:balance; }
+  h3{ font-size:16px; margin:24px 0 8px; font-weight:600; color:var(--brand); }
+  p, li{ font-family:"Newsreader",Georgia,"Times New Roman",serif; font-size:17px; color:var(--text-2); max-width:66ch; }
+  p strong, li strong{ color:var(--text); }
+  ul{ padding-left:20px; margin:8px 0; } li{ margin:6px 0; }
+  .lede{ font-size:20px; line-height:1.5; color:var(--text); }
+  table{ border-collapse:collapse; width:100%; font-size:14.5px; font-variant-numeric:tabular-nums; }
+  thead th{ text-align:left; font-weight:600; color:var(--muted); font-size:12px; letter-spacing:0.06em; text-transform:uppercase;
+    padding:8px 12px; border-bottom:2px solid var(--divider); }
+  td{ padding:8px 12px; border-bottom:1px solid var(--divider); color:var(--text-2); vertical-align:top; }
+  td.num, th.num{ text-align:right; }
+  td:first-child{ color:var(--text); font-weight:600; }
+  tr.pos td{ background:var(--tint-pos); }
+  tr.warn td{ background:var(--tint-warn); }
+  .tablewrap{ overflow-x:auto; margin:14px 0 4px; }
+  .kpis{ display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:14px; margin:18px 0 6px; }
+  .kpi{ background:var(--card); border:1px solid var(--divider); border-radius:10px; padding:16px 18px; }
+  .kpi .v{ font-size:28px; font-weight:700; color:var(--text); font-variant-numeric:tabular-nums; letter-spacing:-0.01em; }
+  .kpi .l{ font-size:12.5px; color:var(--muted); margin-top:4px; line-height:1.35; }
+  .kpi.brand .v{ color:var(--brand); }
+  .flag{ display:inline-flex; align-items:center; gap:6px; border-radius:999px; padding:3px 12px; font-size:12.5px; font-weight:600; white-space:nowrap; }
+  .flag.no{ background:var(--tint-neu); color:var(--text); }
+  .flag.yes{ background:var(--tint-pos); color:var(--text); }
+  .flag.cond{ background:var(--tint-warn); color:var(--text); }
+  .chart{ margin:20px 0 6px; }
+  .bar-row{ display:grid; grid-template-columns:130px 1fr 82px; align-items:center; gap:10px; margin:7px 0; }
+  .bar-row .lab{ font-size:13.5px; font-weight:600; color:var(--text); }
+  .bar-row .val{ font-size:13.5px; font-variant-numeric:tabular-nums; color:var(--text-2); text-align:right; }
+  .track{ position:relative; height:22px; background:var(--card); border-radius:4px; }
+  .track .fill{ position:absolute; inset:0 auto 0 0; border-radius:4px; min-width:2px; }
+  .track .fill.a{ background:var(--data-a); } .track .fill.b{ background:var(--data-b); }
+  .legend{ display:flex; gap:18px; align-items:center; font-size:13px; color:var(--text-2); margin:6px 0 2px; flex-wrap:wrap; }
+  .legend .sw{ display:inline-block; width:12px; height:12px; border-radius:3px; margin-right:6px; vertical-align:-1px; }
+  .note{ font-size:13px; color:var(--muted); font-family:"Geist","Helvetica Neue",Helvetica,system-ui,sans-serif; max-width:none; }
+  .grid2{ display:grid; grid-template-columns:1fr 1fr; gap:28px; }
+  @media (max-width:760px){ .grid2{ grid-template-columns:1fr; } .slide{ padding:28px 22px; } h1{font-size:32px;} .bar-row{ grid-template-columns:96px 1fr 70px; } }
+  .verdictline{ border-left:3px solid var(--brand); padding:2px 0 2px 16px; margin:14px 0; }
+  .verdictline p{ margin:2px 0; }
+</style>
+
+<div class="deck">
+
+<section class="slide">
+  <div class="eyebrow"><span>Green-Lappe Properties</span><span>Use-of-asset analysis · 2026-07-20</span></div>
+  <h1>The Conversion Product, Under Two Pricing Lenses, Across Six Counties</h1>
+  <p class="lede">Green-Lappe converts other owners' single-family and small residential properties to licensed family child care use. The owner keeps the property and earns premium rent. A licensed resident provider operates the care business. Green-Lappe handles the conversion, provider placement, and ongoing services for fees. The owner is the customer; the decision metric is dollars of productive rent per square foot per year.</p>
+  <p>This single file combines the two pricing questions that decide the analysis, and the supporting work behind both. <strong>Lens A</strong> prices care at what providers actually charge in each county today. <strong>Lens B</strong> prices care at a fixed host card of $2,000 per month for a child who is not potty-trained and $1,500 for one who is, with a capacity ramp. The two lenses disagree about California, and that disagreement is the whole decision.</p>
+  <p class="note">Counties in decision order: Orange, San Diego, Riverside, Los Angeles, then Snohomish, King. Every figure recomputed from the Python reference models (v2 market-pricing, v3 host-card) before this file was written; time-sensitive inputs searched July 2026 and re-checked against primary sources (29 of 30 claims confirmed, 1 corrected).</p>
+</section>
+
+<section class="slide">
+  <div class="eyebrow"><span>The answer</span><span>Both lenses at once</span></div>
+  <h2>Washington Sells Under Any Pricing. California Is a Bet on One Number.</h2>
+  <div class="verdictline">
+    <p><strong>Washington is the launch market, and it is robust.</strong> Under market pricing (Lens A) a King or Snohomish provider can pay 2.4 to 2.5 times market rent; the owner's productivity roughly doubles and the conversion pays back inside 8 months. Under the lower host card (Lens B) Washington stays clearly positive. It wins whether care is priced high or low.</p>
+  </div>
+  <div class="verdictline">
+    <p><strong>California has no product at today's tuition (Lens A), and only a conditional one at the host card (Lens B).</strong> At prevailing rates a provider in San Diego, Riverside, or Los Angeles cannot outbid the family tenant already in the home. The $2,000 / $1,500 card reopens all four counties on paper, Riverside best of all, but only if that card actually collects, and it sits 25 to 60 percent above prevailing California family-child-care rates.</p>
+  </div>
+  <div class="verdictline">
+    <p><strong>So the California go or no-go reduces to one measurement:</strong> can a provider in the target ZIPs collect roughly $1,500 to $2,000 per child per month? Two weeks of primary tuition survey settles it. Nothing else in the California case moves the verdict as much.</p>
+  </div>
+  <div class="kpis">
+    <div class="kpi brand"><div class="v">$344K / $382K</div><div class="l">Owner 10-yr NPV per conversion, Snohomish / King · Lens A market pricing</div></div>
+    <div class="kpi"><div class="v">−$1,123 to −$1,373</div><div class="l">Monthly premium in SD, Riverside, LA · Lens A · negative, no product</div></div>
+    <div class="kpi brand"><div class="v">$147K</div><div class="l">Best California NPV (Riverside) · Lens B host card · conditional on tuition collecting</div></div>
+  </div>
+</section>
+
+<section class="slide">
+  <div class="eyebrow"><span>How to read this</span><span>The two lenses defined</span></div>
+  <h2>The Two Lenses, and Why They Disagree</h2>
+  <div class="grid2">
+    <div>
+      <h3>Lens A · Market pricing</h3>
+      <p>Care is priced at what family child care actually charges in each county now: California county medians (2019 to 2022 vintage) escalated 30 percent to a 2024 anchor; Washington at prior-research rates of $2,300 to $2,600 per infant. A full 12-child license at 85 percent fill. This is the conservative, evidence-anchored lens.</p>
+      <p class="note">Reference model: green_lappe_model_v2.py.</p>
+    </div>
+    <div>
+      <h3>Lens B · Host price card</h3>
+      <p>Care is priced at a fixed card you set: $2,000 per month for a child who is not potty-trained (capped at 4 such seats per the infant limit), $1,500 for a potty-trained child. Capacity ramps from X children with one provider, for Y months, to Z children once an assistant is added. Defaults X=6, Y=12, Z=12.</p>
+      <p class="note">Reference model: green_lappe_model_v3.py.</p>
+    </div>
+  </div>
+  <p>They disagree because the card is <strong>uniform across counties while market tuition is not</strong>. Under Lens A, California tuition is pinned near the state subsidy ceiling, so the provider's ceiling falls below market rent. Under Lens B, the same $1,667 blended price is charged everywhere, so the only thing that varies is the rent the provider must beat, which inverts the county ranking. The rest of this file works each lens, then reconciles them.</p>
+</section>
+
+<section class="slide">
+  <p class="band">Lens A · Care priced at market</p>
+  <div class="eyebrow"><span>Mechanism</span><span>The number that decides each county</span></div>
+  <h2>The Provider Affordability Ceiling vs Market Rent</h2>
+  <p>The rent a provider can pay is derived, not assumed: gross tuition for 10.2 children (12-child license at 85 percent fill), minus a market-wage assistant, supplies, insurance, a 10 percent Green-Lappe services fee, and a $55,000 living income for herself, with the result capped at 35 percent of gross revenue. Where that ceiling clears market rent, the owner has a reason to convert. Where it does not, a family tenant outbids the provider.</p>
+  <div class="chart" role="img" aria-label="Provider rent ceiling versus market rent per county under market pricing. Ceiling exceeds market rent only in Orange, Snohomish, and King. In San Diego, Riverside, and Los Angeles market rent is higher.">
+    <div class="legend"><span><span class="sw" style="background:var(--data-b)"></span>Provider rent ceiling / month</span><span><span class="sw" style="background:var(--data-a)"></span>Market SFR rent / month</span></div>
+    <div class="bar-row"><span class="lab">Orange</span><div class="track"><div class="fill b" style="width:57%"></div></div><span class="val">$5,297</span></div>
+    <div class="bar-row"><span class="lab"></span><div class="track"><div class="fill a" style="width:47%"></div></div><span class="val">$4,400</span></div>
+    <div class="bar-row"><span class="lab">San Diego</span><div class="track"><div class="fill b" style="width:32%"></div></div><span class="val">$2,977</span></div>
+    <div class="bar-row"><span class="lab"></span><div class="track"><div class="fill a" style="width:44%"></div></div><span class="val">$4,100</span></div>
+    <div class="bar-row"><span class="lab">Riverside</span><div class="track"><div class="fill b" style="width:20%"></div></div><span class="val">$1,827</span></div>
+    <div class="bar-row"><span class="lab"></span><div class="track"><div class="fill a" style="width:34%"></div></div><span class="val">$3,200</span></div>
+    <div class="bar-row"><span class="lab">Los Angeles</span><div class="track"><div class="fill b" style="width:32%"></div></div><span class="val">$2,985</span></div>
+    <div class="bar-row"><span class="lab"></span><div class="track"><div class="fill a" style="width:45%"></div></div><span class="val">$4,200</span></div>
+    <div class="bar-row"><span class="lab">Snohomish</span><div class="track"><div class="fill b" style="width:88%"></div></div><span class="val">$8,211</span></div>
+    <div class="bar-row"><span class="lab"></span><div class="track"><div class="fill a" style="width:36%"></div></div><span class="val">$3,300</span></div>
+    <div class="bar-row"><span class="lab">King</span><div class="track"><div class="fill b" style="width:100%"></div></div><span class="val">$9,282</span></div>
+    <div class="bar-row"><span class="lab"></span><div class="track"><div class="fill a" style="width:42%"></div></div><span class="val">$3,900</span></div>
+  </div>
+  <p class="note">Where the blue ceiling clears the green rent, a product exists. It clears in Orange (thinly), Snohomish, and King only.</p>
+</section>
+
+<section class="slide">
+  <p class="band">Lens A · Care priced at market</p>
+  <div class="eyebrow"><span>Owner economics</span><span>Productivity and per-conversion value</span></div>
+  <h2>What the Conversion Is Worth to the Owner, at Market Pricing</h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th scope="col">County</th><th class="num" scope="col">Rental $/sqft/yr</th><th class="num" scope="col">Converted $/sqft/yr</th><th class="num" scope="col">Premium / mo</th><th class="num" scope="col">Payback</th><th class="num" scope="col">10-yr NPV</th><th scope="col">Verdict</th></tr></thead>
+    <tbody>
+    <tr><td>Orange</td><td class="num">23.5</td><td class="num">28.2</td><td class="num">$825</td><td class="num">43 mo</td><td class="num">$32,026</td><td><span class="flag cond">thin</span></td></tr>
+    <tr><td>San Diego</td><td class="num">21.9</td><td class="num">15.9</td><td class="num">−$1,123</td><td class="num">n/a</td><td class="num">n/a</td><td><span class="flag no">no product</span></td></tr>
+    <tr><td>Riverside</td><td class="num">17.1</td><td class="num">9.7</td><td class="num">−$1,373</td><td class="num">n/a</td><td class="num">n/a</td><td><span class="flag no">no product</span></td></tr>
+    <tr><td>Los Angeles</td><td class="num">22.4</td><td class="num">15.9</td><td class="num">−$1,215</td><td class="num">n/a</td><td class="num">n/a</td><td><span class="flag no">no product</span></td></tr>
+    <tr class="pos"><td>Snohomish</td><td class="num">17.6</td><td class="num">43.8</td><td class="num">$4,518</td><td class="num">8 mo</td><td class="num">$344,902</td><td><span class="flag yes">sells</span></td></tr>
+    <tr class="pos"><td>King</td><td class="num">20.8</td><td class="num">49.5</td><td class="num">$4,951</td><td class="num">7 mo</td><td class="num">$381,612</td><td><span class="flag yes">sells</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>A negative premium means the converted use earns less than the property already earns from a family tenant, so the pitch fails on arithmetic before licensing or capex are discussed. Premiums are churn-adjusted (8 percent provider-continuity haircut); NPV nets a 9 percent management fee, capex plus a $10,000 coordination fee, and a $12,000 reconversion cost at exit. The crossover tuition that would flip each county sits between $1,394 and $1,515, and only Orange's actual tuition clears it, by 6 percent.</p>
+</section>
+
+<section class="slide">
+  <p class="band">Lens B · Care priced at your host card</p>
+  <div class="eyebrow"><span>The card and the ramp</span><span>What changes</span></div>
+  <h2>The $2,000 / $1,500 Card, on an X to Z Capacity Ramp</h2>
+  <div class="grid2">
+    <div>
+      <h3>The price card</h3>
+      <ul>
+        <li>$2,000 per month, child not potty-trained, capped at 4 such seats (infant limit).</li>
+        <li>$1,500 per month, child potty-trained.</li>
+        <li>Revenue-optimal fill takes the four $2,000 seats first, then $1,500 seats to capacity, blending to about $1,667 per child at a full 12-child home.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>The capacity ramp</h3>
+      <ul>
+        <li>X children with one provider (no assistant) for the first Y months, the single-provider license phase.</li>
+        <li>Z children once an assistant is added after Y. Defaults X=6, Y=12 months, Z=12.</li>
+        <li>Four licensing dead months precede revenue.</li>
+      </ul>
+    </div>
+  </div>
+  <p>Because the card is the same in every county, it lifts California off the subsidy-pinned floor that sank it under Lens A. The blended $1,667 clears the $1,394 to $1,515 crossover bar everywhere. That is why the next slide shows all six counties positive at full ramp, and why the story quietly moves from "which county has pricing power" to "which county has the lowest rent to beat."</p>
+</section>
+
+<section class="slide">
+  <p class="band">Lens B · Care priced at your host card</p>
+  <div class="eyebrow"><span>County results</span><span>At full 12-child ramp</span></div>
+  <h2>At the Host Card, Every County Is Positive. Lowest-Rent Wins.</h2>
+  <div class="chart" role="img" aria-label="Owner 10-year NPV per conversion by county under the host price card. Riverside highest at 147 thousand dollars, then Snohomish 125 thousand, San Diego 83 thousand, King 80 thousand, Los Angeles 75 thousand, Orange 63 thousand.">
+    <div class="legend"><span><span class="sw" style="background:var(--data-a)"></span>Owner 10-yr NPV per conversion, host card, full ramp</span></div>
+    <div class="bar-row"><span class="lab">Riverside</span><div class="track"><div class="fill a" style="width:100%"></div></div><span class="val">$147,379</span></div>
+    <div class="bar-row"><span class="lab">Snohomish</span><div class="track"><div class="fill a" style="width:85%"></div></div><span class="val">$124,682</span></div>
+    <div class="bar-row"><span class="lab">San Diego</span><div class="track"><div class="fill a" style="width:56%"></div></div><span class="val">$82,698</span></div>
+    <div class="bar-row"><span class="lab">King</span><div class="track"><div class="fill a" style="width:54%"></div></div><span class="val">$79,841</span></div>
+    <div class="bar-row"><span class="lab">Los Angeles</span><div class="track"><div class="fill a" style="width:51%"></div></div><span class="val">$74,579</span></div>
+    <div class="bar-row"><span class="lab">Orange</span><div class="track"><div class="fill a" style="width:43%"></div></div><span class="val">$62,831</span></div>
+  </div>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th scope="col">County</th><th class="num" scope="col">Market rent / mo</th><th class="num" scope="col">Full-ramp ceiling</th><th class="num" scope="col">Premium / mo</th><th class="num" scope="col">Payback</th><th class="num" scope="col">10-yr NPV</th></tr></thead>
+    <tbody>
+    <tr class="pos"><td>Riverside</td><td class="num">$3,200</td><td class="num">$5,977</td><td class="num">$2,555</td><td class="num">14 mo</td><td class="num">$147,379</td></tr>
+    <tr class="pos"><td>Snohomish</td><td class="num">$3,300</td><td class="num">$5,745</td><td class="num">$2,249</td><td class="num">16 mo</td><td class="num">$124,682</td></tr>
+    <tr><td>San Diego</td><td class="num">$4,100</td><td class="num">$6,016</td><td class="num">$1,763</td><td class="num">20 mo</td><td class="num">$82,698</td></tr>
+    <tr><td>King</td><td class="num">$3,900</td><td class="num">$5,745</td><td class="num">$1,697</td><td class="num">21 mo</td><td class="num">$79,841</td></tr>
+    <tr><td>Los Angeles</td><td class="num">$4,200</td><td class="num">$6,006</td><td class="num">$1,662</td><td class="num">21 mo</td><td class="num">$74,579</td></tr>
+    <tr><td>Orange</td><td class="num">$4,400</td><td class="num">$6,055</td><td class="num">$1,523</td><td class="num">23 mo</td><td class="num">$62,831</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">Ranking is a near-perfect inverse of market rent: the card fixes revenue, so the county where the provider has the least rent to beat wins. Riverside, last under Lens A, is first under Lens B.</p>
+</section>
+
+<section class="slide">
+  <p class="band">Lens B · Care priced at your host card</p>
+  <div class="eyebrow"><span>The catch</span><span>Read before trusting the ranking</span></div>
+  <h2>Two Things the Card Does That You Have to See</h2>
+  <ul>
+    <li><strong>It reopens California on a number that is 25 to 60 percent above prevailing rates.</strong> Riverside market family-child-care runs near $1,300 per child; the card charges $1,500 to $2,000. So Riverside's first-place NPV is also the most exposed: best economics, thinnest household incomes, worst tuition-to-income ratio (0.27). The California result is real only if the card collects, and Riverside carries the most collection risk of the four.</li>
+    <li><strong>It underprices Washington.</strong> Washington market tuition is $2,300 to $2,600, above the card, so applying the card there cuts the Washington premium from roughly $4,500 to $5,000 (Lens A) down to $1,700 to $2,300 (Lens B). In Washington the card should be a floor, not the price. The optimized Washington case keeps market pricing and the higher premium.</li>
+  </ul>
+  <div class="kpis">
+    <div class="kpi"><div class="v">+25% to +60%</div><div class="l">Host card vs prevailing California family-child-care rates</div></div>
+    <div class="kpi"><div class="v">0.27</div><div class="l">Riverside tuition-to-income at the card, the thinnest of the six</div></div>
+    <div class="kpi brand"><div class="v">Floor, not price</div><div class="l">Correct use of the card in Washington, where market tuition is higher</div></div>
+  </div>
+</section>
+
+<section class="slide">
+  <p class="band">Lens B · Care priced at your host card</p>
+  <div class="eyebrow"><span>The ramp</span><span>Where the value leaks</span></div>
+  <h2>The Solo Phase Is a Cost. License at Eight and Compress It.</h2>
+  <p>At the default six-child solo phase the provider cannot cover market rent in five of six counties (premium −$1,016 in Orange to +$88 in Riverside), so every month spent at X=6 before the assistant arrives burns owner premium. On the King baseline the owner NPV falls about $1,800 for each extra month of the solo phase. Two levers fix it: license at eight children (a California small home permits eight with the required age mix), which turns the solo phase positive at +$340 per month, and compress Y with the state director-experience waiver where it can be granted.</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th scope="col">Solo capacity X</th><th class="num" scope="col">Solo-phase premium / mo</th><th class="num" scope="col">NPV, Y = 6 mo</th><th class="num" scope="col">NPV, Y = 12 mo</th><th class="num" scope="col">NPV, Y = 24 mo</th></tr></thead>
+    <tbody>
+    <tr><td>X = 4</td><td class="num">−$2,822</td><td class="num">$79,408</td><td class="num">$57,339</td><td class="num">$14,942</td></tr>
+    <tr><td>X = 6 (default)</td><td class="num">−$556</td><td class="num">$90,925</td><td class="num">$79,841</td><td class="num">$58,390</td></tr>
+    <tr class="pos"><td>X = 8</td><td class="num">+$340</td><td class="num">$95,480</td><td class="num">$88,742</td><td class="num">$75,577</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="note">King baseline, host card. The optimization is unambiguous: shorter solo phase and higher solo capacity both raise NPV; X=8 with a short Y is the design target where licensing allows it.</p>
+</section>
+
+<section class="slide">
+  <p class="band">Lens B · Care priced at your host card</p>
+  <div class="eyebrow"><span>Washington zones</span><span>Effort-6 eligible ZIPs, host card</span></div>
+  <h2>Where the Product Lands First in Washington</h2>
+  <p>Ranking the Washington zones the prior research already scored (slot gap and school composite, with research-derived per-ZIP rents) at the host card: the same lowest-rent-wins logic applies, and the slot-gap severity lifts utilization from 85 to 90 percent in the tightest ZIPs.</p>
+  <div class="chart" role="img" aria-label="Owner 10-year NPV by Washington ZIP under the host card. 98012 Bothell highest at 123 thousand, then 98029 Issaquah 93 thousand, 98021 Bothell 87 thousand, 98074 Sammamish 71 thousand, 98052 Redmond 57 thousand, 98077 Woodinville 42 thousand, 98075 Sammamish 35 thousand.">
+    <div class="legend"><span><span class="sw" style="background:var(--data-b)"></span>Owner 10-yr NPV per conversion, host card</span></div>
+    <div class="bar-row"><span class="lab">98012 Bothell</span><div class="track"><div class="fill b" style="width:100%"></div></div><span class="val">$123,049</span></div>
+    <div class="bar-row"><span class="lab">98029 Issaquah</span><div class="track"><div class="fill b" style="width:76%"></div></div><span class="val">$93,155</span></div>
+    <div class="bar-row"><span class="lab">98021 Bothell</span><div class="track"><div class="fill b" style="width:71%"></div></div><span class="val">$87,315</span></div>
+    <div class="bar-row"><span class="lab">98074 Sammamish</span><div class="track"><div class="fill b" style="width:57%"></div></div><span class="val">$70,734</span></div>
+    <div class="bar-row"><span class="lab">98052 Redmond</span><div class="track"><div class="fill b" style="width:47%"></div></div><span class="val">$57,420</span></div>
+    <div class="bar-row"><span class="lab">98077 Woodinville</span><div class="track"><div class="fill b" style="width:35%"></div></div><span class="val">$42,473</span></div>
+    <div class="bar-row"><span class="lab">98075 Sammamish</span><div class="track"><div class="fill b" style="width:28%"></div></div><span class="val">$35,000</span></div>
+  </div>
+  <p class="note">98012 Bothell leads on the host card (241 kids per 100 slots, 90 percent utilization, 15-month payback, $34/sqft/yr). Note the tension with Lens A: high-rent Sammamish ranks near the bottom here because the card fixes revenue, whereas at market pricing its higher tuition would rank it up. The first conversion should be a 98012-class ZIP under either lens.</p>
+</section>
+
+<section class="slide">
+  <p class="band">Synthesis · Both lenses</p>
+  <div class="eyebrow"><span>Reconciliation</span><span>Where the two lenses agree and split</span></div>
+  <h2>Reading the Two Lenses Together</h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th scope="col">County</th><th scope="col">Lens A · market pricing</th><th scope="col">Lens B · host card</th><th scope="col">Reconciled read</th></tr></thead>
+    <tbody>
+    <tr class="pos"><td>King</td><td>Sells, NPV $382K</td><td>Positive, NPV $80K (card underprices)</td><td><span class="flag yes">launch</span></td></tr>
+    <tr class="pos"><td>Snohomish</td><td>Sells, NPV $345K</td><td>Positive, NPV $125K (card underprices)</td><td><span class="flag yes">launch</span></td></tr>
+    <tr class="warn"><td>Orange</td><td>Thin, NPV $32K</td><td>Positive, NPV $63K</td><td><span class="flag cond">survey tuition</span></td></tr>
+    <tr class="warn"><td>Riverside</td><td>No product, −$1,373</td><td>Best NPV $147K, highest collection risk</td><td><span class="flag cond">prove the card</span></td></tr>
+    <tr class="warn"><td>San Diego</td><td>No product, −$1,123</td><td>Positive, NPV $83K</td><td><span class="flag cond">prove the card</span></td></tr>
+    <tr class="warn"><td>Los Angeles</td><td>No product, −$1,215</td><td>Positive, NPV $75K</td><td><span class="flag cond">prove the card</span></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p><strong>Where they agree:</strong> Washington is a launch market under both lenses. It is the only place the product is robust to the pricing question, which is exactly why it goes first. <strong>Where they split:</strong> all four California counties flip from "no product" to "positive" purely because the card charges more than the market does. That is not new demand; it is a price assumption. California therefore is not a market decision, it is a pricing test: run it, do not assume it.</p>
+</section>
+
+<section class="slide">
+  <p class="band">Synthesis · Both lenses</p>
+  <div class="eyebrow"><span>Platform economics</span><span>Green-Lappe's own business, Washington ramp</span></div>
+  <h2>The Fee Stack Compounds Per Door, Independent of Lens</h2>
+  <p>Green-Lappe earns a 10 percent services fee on gross tuition plus a 9 percent management fee on premium rent, plus $10,000 one-time per conversion. On market pricing that is $37,020 per year in Snohomish and $41,849 in King; on the host card it is lower per door but the structure is identical. Ramp of 1, 3, 6, 10, 15 cumulative doors over five years, blended across the two Washington counties, at market pricing:</p>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th scope="col">Year</th><th class="num" scope="col">Doors</th><th class="num" scope="col">Revenue</th><th class="num" scope="col">Fixed costs</th><th class="num" scope="col">EBITDA</th><th class="num" scope="col">Platform hours</th><th class="num" scope="col">Cumulative cash</th></tr></thead>
+    <tbody>
+    <tr><td>1</td><td class="num">1</td><td class="num">$49,434</td><td class="num">$30,000</td><td class="num">$19,434</td><td class="num">270</td><td class="num">$19,434</td></tr>
+    <tr><td>2</td><td class="num">3</td><td class="num">$138,304</td><td class="num">$30,900</td><td class="num">$107,404</td><td class="num">690</td><td class="num">$126,838</td></tr>
+    <tr><td>3</td><td class="num">6</td><td class="num">$266,607</td><td class="num">$31,827</td><td class="num">$234,780</td><td class="num">1,260</td><td class="num">$361,618</td></tr>
+    <tr><td>4</td><td class="num">10</td><td class="num">$434,345</td><td class="num">$32,782</td><td class="num">$401,563</td><td class="num">1,980</td><td class="num">$763,181</td></tr>
+    <tr class="pos"><td>5</td><td class="num">15</td><td class="num">$641,518</td><td class="num">$33,765</td><td class="num">$607,752</td><td class="num">2,850</td><td class="num">$1,370,933</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Platform labor is 120 hours per conversion plus 3 hours per week per active door: deal-making, licensing liaison, and compliance, not care work. At year 5 that is 2,850 hours against $607,752 of EBITDA, about $213 per platform hour. The margin lives in the conversion and the ongoing services, and it compounds per door.</p>
+</section>
+
+<section class="slide">
+  <p class="band">Synthesis · Both lenses</p>
+  <div class="eyebrow"><span>What to do</span><span>Sequence that follows from the numbers</span></div>
+  <h2>The Plan Both Lenses Support</h2>
+  <ul>
+    <li><strong>Launch in Washington now, priced at market, not at the card.</strong> King and Snohomish clear every test under both lenses; pricing at market keeps the full $4,500-plus premium. First conversion in a 98012-class ZIP. The year-one milestone is one signed provider-owner pair, because provider recruiting, not demand, is the binding Washington constraint.</li>
+    <li><strong>Design the ramp to X=8 with the shortest legal solo phase.</strong> The solo phase destroys value at X=6; licensing at eight and compressing Y with the director-experience waiver is worth tens of thousands of NPV per door.</li>
+    <li><strong>Do not enter California on the model. Enter on a two-week tuition survey.</strong> Survey Newport Beach, Irvine, and Costa Mesa (Orange) and the Riverside target ZIPs for actual collectible rates. Above about $1,515 per child, Orange opens under both lenses; the card's California NPVs become real only where the survey confirms $1,500-plus collects. Riverside, the paper winner, needs the most proof.</li>
+    <li><strong>Treat the host card as a floor, not a ceiling.</strong> Where market tuition exceeds the card (all of Washington, possibly affluent Orange ZIPs), price to market and pocket the difference; the card protects the downside, it should not cap the upside.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <p class="band">Supporting analysis</p>
+  <div class="eyebrow"><span>Assumptions</span><span>What each verdict rests on</span></div>
+  <h2>The Load-Bearing Assumptions</h2>
+  <ul>
+    <li><strong>The California verdict rests entirely on tuition.</strong> Under Lens A it is the escalated 2019 to 2022 county medians; under Lens B it is whether the $2,000 / $1,500 card collects at 25 to 60 percent above those medians. This one input, in both directions, is the single largest uncertainty and the cheapest to resolve with primary work.</li>
+    <li><strong>The Washington verdict rests on provider supply, not demand.</strong> Premiums of $4,500-plus require providers willing and licensed at 12-child capacity. The recruiting pipeline (DCYF Welcome Team, Wonderschool, training cohorts) is the mechanism; it is a recruiting bet, not a market bet.</li>
+    <li><strong>The two-principal operating capacity is unproven.</strong> Prior research prices operator time at $125 per hour and flags 150 to 250 door capacity for two principals as the central unvalidated assumption; the platform ramp above assumes it holds.</li>
+    <li><strong>The provider-continuity haircut (8 percent) is a proxy</strong> from licensing churn data (12 to 14 percent annual closures). The structural floor caps the damage: a departed provider returns the property to market-tenant rent, the rent it earns today.</li>
+    <li><strong>Option C, assisted care, is outlined not modeled.</strong> Six-bed board-and-care grosses $4,000 to $6,500 per resident per month but carries 24/7 staffing, an 80-hour administrator certification, a 4 to 18 month licensing timeline, and mandatory $1M/$3M liability. The same affordability-ceiling test applies with an RCFE operator; inputs are staged, the run is pending.</li>
+  </ul>
+</section>
+
+<section class="slide">
+  <p class="band">Supporting analysis</p>
+  <div class="eyebrow"><span>Provenance</span><span>Sources and verification</span></div>
+  <h2>Where Every Number Comes From</h2>
+  <ul>
+    <li><strong>Models</strong>: green_lappe_model_v2.py (market pricing) and green_lappe_model_v3.py (host card and ramp), both recomputed for this file; every table and chart ties to their JSON output to the dollar.</li>
+    <li><strong>Market data (searched July 2026)</strong>: HUD FY2025 and FY2026 FMR; Zillow ZORI county and SFR (June 2026); Census HVS Q1 2026 and ACS 2024 1-year (LA, Orange, Riverside, San Diego tenure and structure); Zumper July 2026; Freddie Mac PMMS 6.55 percent; Bankrate HELOC 7.43 percent (NPV discount rate).</li>
+    <li><strong>Child care</strong>: 2023 California Child Care Portfolio county sheets; CDSS RMR ceiling (confirmed frozen at January 2022); CACFP 2025-26; CDSS and DCYF fee schedules; 22 CCR 102369 and 102417; WA DCYF licensed-family-home base rates (July 2025).</li>
+    <li><strong>Statutes in primary text</strong>: CIV 1947.12, 1950.5; B&amp;P 10130, 10131; HSC 1596.78, 1597.41, 1569; RCW 18.85; WA HB 1217.</li>
+    <li><strong>Prior Green-Lappe research (recovered from repository history)</strong>: two-county Washington program (107 ZIP scoring, per-door economics, FCC wedge strategy, GTM plan); the 98012 Bothell property file; the Orange County childcare TAM.</li>
+    <li><strong>Verification</strong>: 30 time-sensitive claims re-checked against primary sources by independent passes, 29 confirmed and 1 corrected (Seattle FY2026 FMR).</li>
+  </ul>
+  <p class="note">Prepared for Green-Lappe Properties, model and source files retained alongside this file. Internal decision support; not licensed real-estate, tax, legal, or child-care-licensing advice. California licensing and residence-to-facility conversion rules (HSC 1596.78 own-residence FCCH, 1597.41 renter notice, large-home experience gate, 22 CCR fire and fencing) are summarized here and are the subject of the companion licensing brief.</p>
+</section>
+
+</div>
