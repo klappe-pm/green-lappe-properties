@@ -13,7 +13,8 @@
       "**/*.css",
       "package-lock.json",
       ".devcontainer/**",
-      "environments/**"
+      "environments/**",
+      "docs/**"
     ]
   },
   "organizeImports": { "enabled": true },
