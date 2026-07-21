@@ -1,0 +1,232 @@
+{
+ "tuition": {
+  "npt": 2000.0,
+  "pt": 1500.0,
+  "npt_cap": 4
+ },
+ "ramp": {
+  "x": 6,
+  "y_months": 12,
+  "z": 12
+ },
+ "counties": {
+  "orange": {
+   "ceiling_small": 3296,
+   "ceiling_large": 6055,
+   "premium_small": -1016,
+   "premium_large": 1523,
+   "owner_npv": 62831,
+   "viable": true,
+   "payback_mo": 23,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 27299
+  },
+  "san-diego": {
+   "ceiling_small": 3296,
+   "ceiling_large": 6016,
+   "premium_small": -740,
+   "premium_large": 1763,
+   "owner_npv": 82698,
+   "viable": true,
+   "payback_mo": 20,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 27257
+  },
+  "riverside": {
+   "ceiling_small": 3296,
+   "ceiling_large": 5977,
+   "premium_small": 88,
+   "premium_large": 2555,
+   "owner_npv": 147379,
+   "viable": true,
+   "payback_mo": 14,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 27215
+  },
+  "los-angeles": {
+   "ceiling_small": 3296,
+   "ceiling_large": 6006,
+   "premium_small": -832,
+   "premium_large": 1662,
+   "owner_npv": 74579,
+   "viable": true,
+   "payback_mo": 21,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 27247
+  },
+  "snohomish": {
+   "ceiling_small": 3296,
+   "ceiling_large": 5745,
+   "premium_small": -4,
+   "premium_large": 2249,
+   "owner_npv": 124682,
+   "viable": true,
+   "payback_mo": 16,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 26964
+  },
+  "king": {
+   "ceiling_small": 3296,
+   "ceiling_large": 5745,
+   "premium_small": -556,
+   "premium_large": 1697,
+   "owner_npv": 79841,
+   "viable": true,
+   "payback_mo": 21,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 26964
+  }
+ },
+ "wa_zips": {
+  "98012 Bothell (Sno)": {
+   "ceiling_small": 3535,
+   "ceiling_large": 6370,
+   "premium_small": -336,
+   "premium_large": 2272,
+   "owner_npv": 123049,
+   "viable": true,
+   "payback_mo": 15,
+   "gl_fees_small": 15938,
+   "gl_fees_large": 28720,
+   "util": 0.9,
+   "slot_gap": 241,
+   "school": 86.5,
+   "rent": 3900,
+   "psf": 34.0
+  },
+  "98021 Bothell (Sno)": {
+   "ceiling_small": 3296,
+   "ceiling_large": 5745,
+   "premium_small": -464,
+   "premium_large": 1789,
+   "owner_npv": 87315,
+   "viable": true,
+   "payback_mo": 20,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 26964,
+   "util": 0.85,
+   "slot_gap": 190,
+   "school": 84.0,
+   "rent": 3800,
+   "psf": 30.6
+  },
+  "98074 Sammamish (King)": {
+   "ceiling_small": 3535,
+   "ceiling_large": 6370,
+   "premium_small": -980,
+   "premium_large": 1628,
+   "owner_npv": 70734,
+   "viable": true,
+   "payback_mo": 22,
+   "gl_fees_small": 15938,
+   "gl_fees_large": 28720,
+   "util": 0.9,
+   "slot_gap": 203,
+   "school": 99.2,
+   "rent": 4600,
+   "psf": 34.0
+  },
+  "98075 Sammamish (King)": {
+   "ceiling_small": 3296,
+   "ceiling_large": 5745,
+   "premium_small": -1108,
+   "premium_large": 1145,
+   "owner_npv": 35000,
+   "viable": true,
+   "payback_mo": 31,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 26964,
+   "util": 0.85,
+   "slot_gap": 196,
+   "school": 99.2,
+   "rent": 4500,
+   "psf": 30.6
+  },
+  "98029 Issaquah (King)": {
+   "ceiling_small": 3535,
+   "ceiling_large": 6370,
+   "premium_small": -704,
+   "premium_large": 1904,
+   "owner_npv": 93155,
+   "viable": true,
+   "payback_mo": 18,
+   "gl_fees_small": 15938,
+   "gl_fees_large": 28720,
+   "util": 0.9,
+   "slot_gap": 237,
+   "school": 99.2,
+   "rent": 4300,
+   "psf": 34.0
+  },
+  "98052 Redmond (King)": {
+   "ceiling_small": 3296,
+   "ceiling_large": 5745,
+   "premium_small": -832,
+   "premium_large": 1421,
+   "owner_npv": 57420,
+   "viable": true,
+   "payback_mo": 25,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 26964,
+   "util": 0.85,
+   "slot_gap": 197,
+   "school": 95.0,
+   "rent": 4200,
+   "psf": 30.6
+  },
+  "98077 Woodinville (King)": {
+   "ceiling_small": 3296,
+   "ceiling_large": 5745,
+   "premium_small": -1016,
+   "premium_large": 1237,
+   "owner_npv": 42473,
+   "viable": true,
+   "payback_mo": 28,
+   "gl_fees_small": 15139,
+   "gl_fees_large": 26964,
+   "util": 0.85,
+   "slot_gap": 180,
+   "school": 92.0,
+   "rent": 4400,
+   "psf": 30.6
+  }
+ },
+ "ramp_sensitivity": {
+  "x4_y6": {
+   "owner_npv": 79408,
+   "premium_small": -2822
+  },
+  "x4_y12": {
+   "owner_npv": 57339,
+   "premium_small": -2822
+  },
+  "x4_y24": {
+   "owner_npv": 14942,
+   "premium_small": -2822
+  },
+  "x6_y6": {
+   "owner_npv": 90925,
+   "premium_small": -556
+  },
+  "x6_y12": {
+   "owner_npv": 79841,
+   "premium_small": -556
+  },
+  "x6_y24": {
+   "owner_npv": 58390,
+   "premium_small": -556
+  },
+  "x8_y6": {
+   "owner_npv": 95480,
+   "premium_small": 340
+  },
+  "x8_y12": {
+   "owner_npv": 88742,
+   "premium_small": 340
+  },
+  "x8_y24": {
+   "owner_npv": 75577,
+   "premium_small": 340
+  }
+ }
+}
