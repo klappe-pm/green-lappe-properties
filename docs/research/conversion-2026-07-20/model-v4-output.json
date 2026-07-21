@@ -1,0 +1,168 @@
+{
+ "orange": {
+  "CA-L14": {
+   "gross_mo": 19125,
+   "staff_mo": 3815,
+   "ceiling": 6694,
+   "premium": 2110,
+   "owner_npv": 135977,
+   "payback_mo": 17,
+   "gl_fees_yr": 30179,
+   "viable": true,
+   "psf": 35.7
+  },
+  "CA-L12": {
+   "gross_mo": 17000,
+   "staff_mo": 3815,
+   "ceiling": 5789,
+   "premium": 1278,
+   "owner_npv": 68306,
+   "payback_mo": 28,
+   "gl_fees_yr": 26652,
+   "viable": true,
+   "psf": 30.9
+  }
+ },
+ "san-diego": {
+  "CA-L14": {
+   "gross_mo": 19125,
+   "staff_mo": 3859,
+   "ceiling": 6694,
+   "premium": 2386,
+   "owner_npv": 158424,
+   "payback_mo": 15,
+   "gl_fees_yr": 30179,
+   "viable": true,
+   "psf": 35.7
+  },
+  "CA-L12": {
+   "gross_mo": 17000,
+   "staff_mo": 3859,
+   "ceiling": 5746,
+   "premium": 1514,
+   "owner_npv": 87516,
+   "payback_mo": 23,
+   "gl_fees_yr": 26606,
+   "viable": true,
+   "psf": 30.6
+  }
+ },
+ "riverside": {
+  "CA-L14": {
+   "gross_mo": 19125,
+   "staff_mo": 3898,
+   "ceiling": 6694,
+   "premium": 3214,
+   "owner_npv": 225764,
+   "payback_mo": 11,
+   "gl_fees_yr": 30179,
+   "viable": true,
+   "psf": 35.7
+  },
+  "CA-L12": {
+   "gross_mo": 17000,
+   "staff_mo": 3898,
+   "ceiling": 5707,
+   "premium": 2306,
+   "owner_npv": 151913,
+   "payback_mo": 15,
+   "gl_fees_yr": 26563,
+   "viable": true,
+   "psf": 30.4
+  }
+ },
+ "los-angeles": {
+  "CA-L14": {
+   "gross_mo": 19125,
+   "staff_mo": 3868,
+   "ceiling": 6694,
+   "premium": 2294,
+   "owner_npv": 150942,
+   "payback_mo": 15,
+   "gl_fees_yr": 30179,
+   "viable": true,
+   "psf": 35.7
+  },
+  "CA-L12": {
+   "gross_mo": 17000,
+   "staff_mo": 3868,
+   "ceiling": 5736,
+   "premium": 1413,
+   "owner_npv": 79298,
+   "payback_mo": 25,
+   "gl_fees_yr": 26595,
+   "viable": true,
+   "psf": 30.6
+  }
+ },
+ "snohomish": {
+  "WA-H12": {
+   "gross_mo": 17850,
+   "staff_mo": 4130,
+   "ceiling": 6240,
+   "premium": 2704,
+   "owner_npv": 186597,
+   "payback_mo": 13,
+   "gl_fees_yr": 28159,
+   "viable": true,
+   "psf": 33.3
+  },
+  "WA-H16": {
+   "gross_mo": 22950,
+   "staff_mo": 8260,
+   "ceiling": 6496,
+   "premium": 2940,
+   "owner_npv": 192291,
+   "payback_mo": 16,
+   "gl_fees_yr": 34555,
+   "viable": true,
+   "psf": 34.6
+  },
+  "WA-C28": {
+   "gross_mo": 39100,
+   "staff_mo": 22813,
+   "ceiling": 4184,
+   "premium": 813,
+   "owner_npv": -12794,
+   "payback_mo": 104,
+   "gl_fees_yr": 51438,
+   "viable": true,
+   "psf": 22.3
+  }
+ },
+ "king": {
+  "WA-H12": {
+   "gross_mo": 17850,
+   "staff_mo": 4130,
+   "ceiling": 6240,
+   "premium": 2152,
+   "owner_npv": 141236,
+   "payback_mo": 16,
+   "gl_fees_yr": 28159,
+   "viable": true,
+   "psf": 33.3
+  },
+  "WA-H16": {
+   "gross_mo": 22950,
+   "staff_mo": 8260,
+   "ceiling": 6496,
+   "premium": 2388,
+   "owner_npv": 147397,
+   "payback_mo": 20,
+   "gl_fees_yr": 34555,
+   "viable": true,
+   "psf": 34.6
+  },
+  "WA-C28": {
+   "gross_mo": 39100,
+   "staff_mo": 22813,
+   "ceiling": 4184,
+   "premium": 261,
+   "owner_npv": -56752,
+   "payback_mo": 324,
+   "gl_fees_yr": 51438,
+   "viable": true,
+   "psf": 22.3
+  }
+ }
+}
