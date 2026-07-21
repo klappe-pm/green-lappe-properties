@@ -6,23 +6,24 @@ This folder holds the Green-Lappe residence-to-childcare conversion analysis, st
 
 Green-Lappe converts other owners' single-family and small residential properties to licensed family child care use: the owner keeps the property and earns premium rent, a licensed resident provider operates the care business, and Green-Lappe coordinates conversion, placement, and services for fees. Washington (King and Snohomish) is the launch market under both pricing lenses. California is a pricing test, not a market decision: it only works if a provider can collect roughly $1,500 to $2,000 per child per month, which a two-week tuition survey settles.
 
-## Two overlapping renderings, one model
+## One model, one canonical analysis, distinct artifact types
 
-This folder now contains work from two sessions that ran the same six-county model in parallel. They agree on the verdict and draw on the same inputs, but they are not yet deduplicated. Reconcile them before anything graduates to a permanent location.
+Two sessions ran the same six-county model in parallel; the outputs are now deduplicated by role, so nothing here is a second competing analysis. Every number traces to the two Python models, and one document is canonical for the analysis:
 
-- Session A (this branch): the decision deck, the California conversion brief, the strategy in before/after/outcome/measure/plan form, and the two Python models.
-- Session B (merged earlier via #73): `2026-07-20-use-of-asset-conversion-analysis.md`, a markdown rendering of the same analysis, plus `2026-07-20-conversion-analysis-continuation-prompt.md` and the raw search results under `docs/research/conversion-2026-07-20/`.
-
-The deck and Session B's markdown analysis are two views of the same numbers. Pick one as canonical, or merge them; do not maintain both.
+- Canonical written analysis: `2026-07-20-use-of-asset-conversion-analysis.md`.
+- Its visual companion (same numbers, presentation form): `green-lappe-combined-deck.html`.
+- Execution plan (distinct type): `childcare-operator-property-model-strategy.md` plus `childcare/`.
+- Regulatory port: `ca-residence-to-childcare-conversion-brief.md`.
+- Market study and input register: `orange-county-childcare-tam.md`, `model-inputs-consolidated.md`, with raw search results under `docs/research/conversion-2026-07-20/`.
 
 ## Reading order
 
 1. `green-lappe-combined-deck.html` starts here. The 15-slide decision deck: both pricing lenses, the reconciled verdict, and the supporting analysis. Open in a browser.
-2. `2026-07-20-use-of-asset-conversion-analysis.md` the sibling session's full markdown analysis of the same model (status REVIEW). Read alongside the deck; reconcile the two.
+2. `2026-07-20-use-of-asset-conversion-analysis.md` the canonical written analysis of the same model (status REVIEW). The deck and this file are two views of one model, not two analyses.
 3. `ca-residence-to-childcare-conversion-brief.md` the Washington-to-California regulatory port: license types, the three rental structures, and how to convert a residence to a care facility (FCCH light, center heavy).
-4. `childcare-operator-property-model-strategy.md` the strategy in the project's before and after, outcome, measure, plan format, with links to the implementing plan docs in `childcare/`.
+4. `childcare-operator-property-model-strategy.md` the execution plan in before/after, outcome, measure, plan format, with links to the plan docs in `childcare/`. It defers to the canonical analysis for market numbers and the geography verdict.
 5. `orange-county-childcare-tam.md` the market study behind the California demand picture.
-6. `model-inputs-consolidated.md` the full input register: every fact, model output, assumption, and search result feeding the numbers, with type tags and sources. The raw search results behind it are under `docs/research/conversion-2026-07-20/`.
+6. `model-inputs-consolidated.md` the full input register: every fact, model output, assumption, and search result feeding the numbers, with type tags and sources.
 
 ## The numbers
 
