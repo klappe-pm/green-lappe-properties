@@ -11,7 +11,9 @@
       ".lighthouseci",
       "**/*.astro",
       "**/*.css",
-      "package-lock.json"
+      "package-lock.json",
+      ".devcontainer/**",
+      "environments/**"
     ]
   },
   "organizeImports": { "enabled": true },

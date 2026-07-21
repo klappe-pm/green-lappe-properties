@@ -1,0 +1,28 @@
+# Trivy suppressions: not-affected (VEX) dispositions for the Green PM site.
+#
+# This is a static Astro site (astro.config.mjs: output: 'static'), built on
+# Linux and deployed to GitHub Pages. It ships no server runtime and runs no
+# dev server in production. Each CVE below is in a build-time, dev-server, or
+# server-runtime code path that this deployment does not expose, so it is
+# not-affected here rather than accepted-risk.
+#
+# Revisit and remove the relevant lines if the site ever adopts SSR, server
+# islands, on-demand rendering, or is served by the Vite dev server in an
+# untrusted setting. The proper long-term fix is to upgrade astro, vite, and
+# js-yaml; that is a breaking major migration (astro 4 to 6+ removes
+# @astrojs/tailwind) and requires npm access, tracked separately.
+
+# astro: reflected XSS via server islands. Server islands are an SSR feature;
+# a static build renders none.
+CVE-2025-64764
+# astro: reflected XSS via unescaped slot name. Server-render path only.
+CVE-2026-50146
+# astro: Host header SSRF in the prerendered error page fetch. Requires the
+# Astro server runtime; the static build serves prerendered files with no fetch.
+CVE-2026-54299
+# vite: server.fs.deny bypass on Windows alternate data streams. Affects the
+# Vite dev server only, is Windows-specific, and the build runs on Linux.
+CVE-2026-53571
+# js-yaml: denial of service via crafted YAML. A build-time dependency; no
+# untrusted YAML is parsed at run time on the served static site.
+CVE-2026-59869
