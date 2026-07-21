@@ -1,0 +1,180 @@
+{
+ "counties": {
+  "orange": {
+   "provider_gross_mo": 16453,
+   "rent_ceiling_mo": 5297,
+   "market_rent": 4400,
+   "premium_mo": 897,
+   "psf_base": 23.5,
+   "psf_conv": 28.2,
+   "crossover_tuition": 1515,
+   "gl_fees_yr": 25464,
+   "owner_mean": {
+    "premium_mo": 825,
+    "npv": 32026,
+    "viable": true,
+    "payback_months": 43
+   },
+   "owner_median": {
+    "premium_mo": 825,
+    "npv": 39026,
+    "viable": true,
+    "payback_months": 33
+   }
+  },
+  "san-diego": {
+   "provider_gross_mo": 13923,
+   "rent_ceiling_mo": 2977,
+   "market_rent": 4100,
+   "premium_mo": -1123,
+   "psf_base": 21.9,
+   "psf_conv": 15.9,
+   "crossover_tuition": 1487,
+   "gl_fees_yr": 0,
+   "owner_mean": {
+    "premium_mo": -1123,
+    "npv": null,
+    "viable": false
+   },
+   "owner_median": {
+    "premium_mo": -1123,
+    "npv": null,
+    "viable": false
+   }
+  },
+  "riverside": {
+   "provider_gross_mo": 12689,
+   "rent_ceiling_mo": 1827,
+   "market_rent": 3200,
+   "premium_mo": -1373,
+   "psf_base": 17.1,
+   "psf_conv": 9.7,
+   "crossover_tuition": 1394,
+   "gl_fees_yr": 0,
+   "owner_mean": {
+    "premium_mo": -1373,
+    "npv": null,
+    "viable": false
+   },
+   "owner_median": {
+    "premium_mo": -1373,
+    "npv": null,
+    "viable": false
+   }
+  },
+  "los-angeles": {
+   "provider_gross_mo": 13943,
+   "rent_ceiling_mo": 2985,
+   "market_rent": 4200,
+   "premium_mo": -1215,
+   "psf_base": 22.4,
+   "psf_conv": 15.9,
+   "crossover_tuition": 1499,
+   "gl_fees_yr": 0,
+   "owner_mean": {
+    "premium_mo": -1215,
+    "npv": null,
+    "viable": false
+   },
+   "owner_median": {
+    "premium_mo": -1215,
+    "npv": null,
+    "viable": false
+   }
+  },
+  "snohomish": {
+   "provider_gross_mo": 23460,
+   "rent_ceiling_mo": 8211,
+   "market_rent": 3300,
+   "premium_mo": 4911,
+   "psf_base": 17.6,
+   "psf_conv": 43.8,
+   "crossover_tuition": 1430,
+   "gl_fees_yr": 37020,
+   "owner_mean": {
+    "premium_mo": 4518,
+    "npv": 344902,
+    "viable": true,
+    "payback_months": 8
+   },
+   "owner_median": {
+    "premium_mo": 4518,
+    "npv": 351902,
+    "viable": true,
+    "payback_months": 6
+   }
+  },
+  "king": {
+   "provider_gross_mo": 26520,
+   "rent_ceiling_mo": 9282,
+   "market_rent": 3900,
+   "premium_mo": 5382,
+   "psf_base": 20.8,
+   "psf_conv": 49.5,
+   "crossover_tuition": 1495,
+   "gl_fees_yr": 41849,
+   "owner_mean": {
+    "premium_mo": 4951,
+    "npv": 381612,
+    "viable": true,
+    "payback_months": 7
+   },
+   "owner_median": {
+    "premium_mo": 4951,
+    "npv": 388612,
+    "viable": true,
+    "payback_months": 6
+   }
+  }
+ },
+ "platform": {
+  "fee_per_door_yr": 39434,
+  "ramp": [
+   {
+    "year": 1,
+    "doors": 1,
+    "revenue": 49434,
+    "fixed": 30000,
+    "ebitda": 19434,
+    "hours": 270,
+    "cum_cash": 19434
+   },
+   {
+    "year": 2,
+    "doors": 3,
+    "revenue": 138304,
+    "fixed": 30900,
+    "ebitda": 107404,
+    "hours": 690,
+    "cum_cash": 126838
+   },
+   {
+    "year": 3,
+    "doors": 6,
+    "revenue": 266607,
+    "fixed": 31827,
+    "ebitda": 234780,
+    "hours": 1260,
+    "cum_cash": 361618
+   },
+   {
+    "year": 4,
+    "doors": 10,
+    "revenue": 434345,
+    "fixed": 32782,
+    "ebitda": 401563,
+    "hours": 1980,
+    "cum_cash": 763181
+   },
+   {
+    "year": 5,
+    "doors": 15,
+    "revenue": 641518,
+    "fixed": 33765,
+    "ebitda": 607752,
+    "hours": 2850,
+    "cum_cash": 1370933
+   }
+  ]
+ }
+}
