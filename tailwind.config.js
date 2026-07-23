@@ -1,5 +1,5 @@
 // Title: tailwind.config.js
-// Summary: Tailwind configuration for Green Property Management v3. Mirrors green-pm-tokens.css.
+// Summary: Tailwind configuration for Green Property Solutions v3. Mirrors green-property-solutions-tokens.css.
 // Version: 3.0.0
 // Usage: Astro reads this at build time. Single source of truth for utility class generation.
 //

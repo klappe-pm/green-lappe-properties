@@ -7,8 +7,8 @@
  * build-time default until the Sanity content layer is wired up.
  */
 export const site = {
-  name: 'Green Property Management',
-  shortName: 'Green PM',
+  name: 'Green Property Solutions',
+  shortName: 'Green PS',
   domain: 'greenpmpnw.com',
   url: 'https://greenpmpnw.com',
   tagline: 'Boutique property management for King and Snohomish County owners.',

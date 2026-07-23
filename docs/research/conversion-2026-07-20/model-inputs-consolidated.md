@@ -1,6 +1,6 @@
 # model-inputs-consolidated
 
-Working inputs register for the Green-Lappe use-of-asset market analysis. Sources: recovered repo research (git 47b51ac~1), trust-documents vault, harness research brief, agent digests 2026-07-20. Type tags: FACT (sourced, on-disk), MODELED (derived in prior research), ASSUMPTION (prior research, unvalidated), SEARCH (pending live web research).
+Working inputs register for the Green Property Solutions use-of-asset market analysis. Sources: recovered repo research (git 47b51ac~1), trust-documents vault, harness research brief, agent digests 2026-07-20. Type tags: FACT (sourced, on-disk), MODELED (derived in prior research), ASSUMPTION (prior research, unvalidated), SEARCH (pending live web research).
 
 ## Scope
 
@@ -15,8 +15,8 @@ Options: A = third-party rental PM business; B = large family child care home co
 - Small-owner units: King 228,000 / Snohomish 74,000 / combined 302,000 (MODELED, RHFS shares x ACS; alt narrow estimate 180-200K).
 - Rent roll: $7.64B combined ($5.88B K / $1.75B S). Weighted rent King $2,150, Sno $1,975; SFR King $2,950, Sno $2,650 (MODELED 2025).
 - TAM @10% fee: $763.6M combined (K $588M / S $175M). Greenfield (78% self-managed) $595.6M. Leasing turnover TAM $186M. Practical served market $219M (K $185M / S $34M). King SAM 56,000 doors / $216M.
-- SOM scenarios: bootstrapped Y5 400 doors/$1.5M; funded 1,800-2,500/$7-9.6M; M&A 3,500/$13.5M. GPM base case: Y1 5 doors to Y5 200 doors, $847K rev, EBITDA +$329K Y5, contribution-negative Y1-Y2 (-$13K/-$14K).
-- Fees: $3,850/door/yr King, $3,400 Sno, $3,650 Y3 blend. Mgmt 8-12%; leasing 50-100% of month (model 50%); renewal $250; setup $295. GPM website pricing: 9% + 60% leasing + 0 markup.
+- SOM scenarios: bootstrapped Y5 400 doors/$1.5M; funded 1,800-2,500/$7-9.6M; M&A 3,500/$13.5M. GPS base case: Y1 5 doors to Y5 200 doors, $847K rev, EBITDA +$329K Y5, contribution-negative Y1-Y2 (-$13K/-$14K).
+- Fees: $3,850/door/yr King, $3,400 Sno, $3,650 Y3 blend. Mgmt 8-12%; leasing 50-100% of month (model 50%); renewal $250; setup $295. GPS website pricing: 9% + 60% leasing + 0 markup.
 - Turnover SFR 25-35% (Sno 28%); tenancy 2.5-3.5 yr; vacancy King 3.6%, 98012 ~2.7%; DOM 18-45 days.
 - CAC: owner $1,500-5,000 ($0 Y1 warm network, $500 Y2, $1,500 Y3+); renter $200-800 (model $400). Referral CAC <30% of paid.
 - Ops: direct $750/door/yr Y1-2, $600 Y3+; fixed $30K/45K/70K/120K/220K Y1-Y5. Doors/PM 150-350. EBITDA benchmark 15-20%. Staffing triggers: bookkeeper 25, maint coord 50, leasing 75, 2nd broker 100, controller 150, ops mgr 200.

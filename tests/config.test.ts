@@ -3,8 +3,8 @@ import { site } from '../src/config/site';
 
 describe('site config', () => {
   it('uses the canonical brand + domain', () => {
-    expect(site.name).toBe('Green Property Management');
-    expect(site.shortName).toBe('Green PM');
+    expect(site.name).toBe('Green Property Solutions');
+    expect(site.shortName).toBe('Green PS');
     expect(site.domain).toBe('greenpmpnw.com');
     expect(site.url).toBe('https://greenpmpnw.com');
   });

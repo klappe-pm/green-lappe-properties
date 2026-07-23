@@ -1,7 +1,7 @@
 name: site-ci
 
 # Build, type-check, unit/static-test, E2E (desktop + Android + iOS), and run
-# Lighthouse budgets for the standalone Green Lappe Properties Astro app.
+# Lighthouse budgets for the standalone Green Property Solutions Astro app.
 on:
   push:
     branches: [main]

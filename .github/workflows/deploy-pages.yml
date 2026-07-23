@@ -1,6 +1,6 @@
 name: deploy-pages
 
-# Deploy the standalone Green Lappe Properties Astro app to GitHub Pages.
+# Deploy the standalone Green Property Solutions Astro app to GitHub Pages.
 on:
   push:
     branches: [main]
@@ -35,6 +35,7 @@ jobs:
       - name: Build site
         run: npm run build
         env:
+          # Keep the existing GitHub repository slug until it is renamed remotely.
           SITE_URL: https://klappe-pm.github.io/green-lappe-properties
           BASE_PATH: /green-lappe-properties
 

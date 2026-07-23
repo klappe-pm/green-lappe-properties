@@ -1,4 +1,4 @@
-// Devcontainer for green-lappe-properties (Phase 8 E8.3 migration).
+// Devcontainer for green-property-solutions (Phase 8 E8.3 migration).
 //
 // Seeded from the harness base template (containers/base/devcontainer.template.jsonc).
 // The mounts block is GENERATED from environments/local-dev.access.json by the
@@ -8,7 +8,7 @@
 // dropped, no privilege escalation, no docker socket, workspace plus declared
 // mounts only, no blanket $HOME mount.
 {
-  "name": "green-lappe-properties-dev",
+  "name": "green-property-solutions-dev",
   "image": "harness-base:latest",
 
   "workspaceMount": "source=${localWorkspaceFolder},target=/workspace/${localWorkspaceFolderBasename},type=bind",

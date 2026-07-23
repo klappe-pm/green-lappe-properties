@@ -2,14 +2,14 @@
 
 Competitor landscape + macro inputs, researched 2026-07-20. Source URLs in agent outputs; flags inline.
 
-## Competitors (who does what Green-Lappe proposes)
+## Competitors (who does what Green Property Solutions proposes)
 
 - ONLY property-side player: Mission Driven Finance CARE fund (Care Access Real Estate). Buys/renovates homes, leases to licensed providers, purchase option after ~2 yrs. 25 properties, 4 states, ~488 seats, $14M+ (Apr 2026). Clark Co NV, San Diego Co CA, CO. NO WASHINGTON footprint. Concessionary capital (philanthropy PRIs, credit lines); provider vetting outsourced to nonprofits. REIT ambition.
 - Software/network only, no real estate: Wonderschool (~$49-57M raised, pivoted B2G state contracts, 10% rev share), Upwards/ex-WeeCare ($43M, employer benefits marketplace, LA HQ), Winnie (search marketplace), BridgeCare (govtech SaaS).
 - Dead: MyVillage (defunct ~2020), NeighborSchools (acquired 2022; parent Higher Ground Ch.11 June 2025 after $440M losses). Lesson: services-only home-daycare launch models did not cover CAC.
 - Commercial-center capital, not residential: Fortec+Equiturn ($100M early-ed RE fund, ground-up centers); EPR REIT EXITING education (selling ECE at 7.4% cap).
 - Facility money: CA IGP $350.5M ARPA (finite, via LIIF+CDSS; LIIF new FCC Capital Access Initiative, CA first). WA ELF: 2025 cycle $55.8M for 74 providers/2,056 slots; 325 applications sought $277M = 5x oversubscribed; next cycle Fall 2027.
-- Conclusion: acquiring/leasing SFRs and placing licensed providers in CA/WA is genuine white space, especially WA (no CARE-style landlord, ELF oversubscription proves owner/provider demand). Risks proven by field: needs patient capital; provider vetting is the binding constraint; services-only revenue insufficient.
+- Conclusion: managing or master-leasing owner-held SFRs and placing licensed providers in CA/WA is genuine white space, especially WA (no CARE-style landlord, ELF oversubscription proves owner/provider demand). Property owners retain title in every Green Property Solutions scenario. Risks proven by field: needs patient capital; provider vetting is the binding constraint; services-only revenue insufficient.
 - Unverified: Tiny (likely nonexistent), Otter current status, CCFRF status, MyVillage shutdown date.
 
 ## Macro (July 2026)

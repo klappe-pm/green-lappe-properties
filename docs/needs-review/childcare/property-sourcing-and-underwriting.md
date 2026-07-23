@@ -7,7 +7,7 @@
 
 ## Objective
 
-Source single-family homes that can host a licensed infant and toddler Family Child Care Home and underwrite each one to a declining-child-cohort base case, so no property is acquired or master-leased that only works if the child population holds flat or grows.
+Screen owner-supplied single-family homes entering the market, turning over, or entering management for their highest-value feasible use. A licensed infant-and-toddler Family Child Care Home is one candidate, not the predetermined result. Underwrite each candidate to a declining-child-cohort base case, so no property is accepted for management or master lease as childcare if it fails to beat its conventional-rental control case after real owner costs.
 
 ## Scope
 
@@ -18,7 +18,7 @@ In scope: candidate-home intake, a licensing-feasibility screen, and a financial
 1. Build an intake checklist for a candidate home: single-family or townhome, licensable layout, outdoor space, parking and drop-off feasibility, HOA and lease restrictions on home businesses.
 2. Add a licensing-feasibility screen up front, so a home that cannot be licensed is rejected before any financial work.
 3. Underwrite each home to a base case that assumes the local under-five population falls about 2% per year and requires the site to still clear its costs at a stressed fill rate.
-4. Compare projected net operating income against a comparable straight residential lease for the same home, so the childcare premium is explicit.
+4. Compare each feasible use with a straight residential lease for the same home. Report annual owner net value, annual owner net value per usable square foot, and the incremental result over conventional rental after real owner costs; do not treat gross rent or gross tuition as the outcome.
 
 ## Acceptance
 
@@ -28,9 +28,9 @@ In scope: candidate-home intake, a licensing-feasibility screen, and a financial
 ## Measures
 
 - Pass rate of candidate homes against the declining-cohort stress test.
-- Net operating income per childcare-host property versus a comparable residential lease.
+- Annual owner net value and annual owner net value per usable square foot for every candidate use versus a comparable residential lease.
 - Realized fill rate versus underwritten fill rate, tracked after launch.
 
 ## Open questions
 
-- D4 capital model (own, master-lease, or manage owner-supplied homes) changes the underwrite and must be resolved with the strategy owner.
+- D4 leasehold model (direct management or master lease of owner-supplied homes) changes the underwrite and must be resolved with the strategy owner. Green Property Solutions ownership is out of scope.

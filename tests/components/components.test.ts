@@ -136,7 +136,7 @@ describe('PricingTable', () => {
 describe('Header / Footer', () => {
   it('Header shows the brand and the proposal CTA', async () => {
     const html = await container.renderToString(Header, {});
-    expect(html).toContain('Green PM');
+    expect(html).toContain('Green PS');
     expect(html).toContain('href="/owners/proposal"');
   });
 

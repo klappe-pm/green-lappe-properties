@@ -1,4 +1,4 @@
-<title>Green-Lappe Properties: The Conversion Product, Two Pricing Lenses, Six Counties</title>
+<title>Green Property Solutions: The Conversion Product, Two Pricing Lenses, Six Counties</title>
 <style>
   /* Tokens. Brand primitives per green-pm-style-guide (DESIGN.md): seven primitives, Clay reserved for
      action only (unused here, no CTAs). Surfaces/inks are documented derived tints of Ink/Cream/Paper.
@@ -71,9 +71,9 @@
 <div class="deck">
 
 <section class="slide">
-  <div class="eyebrow"><span>Green-Lappe Properties</span><span>Use-of-asset analysis · 2026-07-20</span></div>
+  <div class="eyebrow"><span>Green Property Solutions</span><span>Use-of-asset analysis · 2026-07-20</span></div>
   <h1>The Conversion Product, Under Two Pricing Lenses, Across Six Counties</h1>
-  <p class="lede">Green-Lappe converts other owners' single-family and small residential properties to licensed family child care use. The owner keeps the property and earns premium rent. A licensed resident provider operates the care business. Green-Lappe handles the conversion, provider placement, and ongoing services for fees. The owner is the customer; the decision metric is dollars of productive rent per square foot per year.</p>
+  <p class="lede">Green Property Solutions converts other owners' single-family and small residential properties to licensed family child care use. The owner keeps the property and earns premium rent. A licensed resident provider operates the care business. Green Property Solutions handles the conversion, provider placement, and ongoing services for fees. The owner is the customer; the decision metric is dollars of productive rent per square foot per year.</p>
   <p>This single file combines the two pricing questions that decide the analysis, and the supporting work behind both. <strong>Lens A</strong> prices care at what providers actually charge in each county today. <strong>Lens B</strong> prices care at a fixed host card of $2,000 per month for a child who is not potty-trained and $1,500 for one who is, with a capacity ramp. The two lenses disagree about California, and that disagreement is the whole decision.</p>
   <p class="note">Counties in decision order: Orange, San Diego, Riverside, Los Angeles, then Snohomish, King. Every figure recomputed from the Python reference models (v2 market-pricing, v3 host-card) before this file was written; time-sensitive inputs searched July 2026 and re-checked against primary sources (29 of 30 claims confirmed, 1 corrected).</p>
 </section>
@@ -104,12 +104,12 @@
     <div>
       <h3>Lens A · Market pricing</h3>
       <p>Care is priced at what family child care actually charges in each county now: California county medians (2019 to 2022 vintage) escalated 30 percent to a 2024 anchor; Washington at prior-research rates of $2,300 to $2,600 per infant. A full 12-child license at 85 percent fill. This is the conservative, evidence-anchored lens.</p>
-      <p class="note">Reference model: green_lappe_model_v2.py.</p>
+      <p class="note">Reference model: green_property_solutions_model_v2.py.</p>
     </div>
     <div>
       <h3>Lens B · Host price card</h3>
       <p>Care is priced at a fixed card you set: $2,000 per month for a child who is not potty-trained (capped at 4 such seats per the infant limit), $1,500 for a potty-trained child. Capacity ramps from X children with one provider, for Y months, to Z children once an assistant is added. Defaults X=6, Y=12, Z=12.</p>
-      <p class="note">Reference model: green_lappe_model_v3.py.</p>
+      <p class="note">Reference model: green_property_solutions_model_v3.py.</p>
     </div>
   </div>
   <p>They disagree because the card is <strong>uniform across counties while market tuition is not</strong>. Under Lens A, California tuition is pinned near the state subsidy ceiling, so the provider's ceiling falls below market rent. Under Lens B, the same $1,667 blended price is charged everywhere, so the only thing that varies is the rent the provider must beat, which inverts the county ranking. The rest of this file works each lens, then reconciles them.</p>
@@ -119,7 +119,7 @@
   <p class="band">Lens A · Care priced at market</p>
   <div class="eyebrow"><span>Mechanism</span><span>The number that decides each county</span></div>
   <h2>The Provider Affordability Ceiling vs Market Rent</h2>
-  <p>The rent a provider can pay is derived, not assumed: gross tuition for 10.2 children (12-child license at 85 percent fill), minus a market-wage assistant, supplies, insurance, a 10 percent Green-Lappe services fee, and a $55,000 living income for herself, with the result capped at 35 percent of gross revenue. Where that ceiling clears market rent, the owner has a reason to convert. Where it does not, a family tenant outbids the provider.</p>
+  <p>The rent a provider can pay is derived, not assumed: gross tuition for 10.2 children (12-child license at 85 percent fill), minus a market-wage assistant, supplies, insurance, a 10 percent Green Property Solutions services fee, and a $55,000 living income for herself, with the result capped at 35 percent of gross revenue. Where that ceiling clears market rent, the owner has a reason to convert. Where it does not, a family tenant outbids the provider.</p>
   <div class="chart" role="img" aria-label="Provider rent ceiling versus market rent per county under market pricing. Ceiling exceeds market rent only in Orange, Snohomish, and King. In San Diego, Riverside, and Los Angeles market rent is higher.">
     <div class="legend"><span><span class="sw" style="background:var(--data-b)"></span>Provider rent ceiling / month</span><span><span class="sw" style="background:var(--data-a)"></span>Market SFR rent / month</span></div>
     <div class="bar-row"><span class="lab">Orange</span><div class="track"><div class="fill b" style="width:57%"></div></div><span class="val">$5,297</span></div>
@@ -285,9 +285,9 @@
 
 <section class="slide">
   <p class="band">Synthesis · Both lenses</p>
-  <div class="eyebrow"><span>Platform economics</span><span>Green-Lappe's own business, Washington ramp</span></div>
+  <div class="eyebrow"><span>Platform economics</span><span>Green Property Solutions's own business, Washington ramp</span></div>
   <h2>The Fee Stack Compounds Per Door, Independent of Lens</h2>
-  <p>Green-Lappe earns a 10 percent services fee on gross tuition plus a 9 percent management fee on premium rent, plus $10,000 one-time per conversion. On market pricing that is $37,020 per year in Snohomish and $41,849 in King; on the host card it is lower per door but the structure is identical. Ramp of 1, 3, 6, 10, 15 cumulative doors over five years, blended across the two Washington counties, at market pricing:</p>
+  <p>Green Property Solutions earns a 10 percent services fee on gross tuition plus a 9 percent management fee on premium rent, plus $10,000 one-time per conversion. On market pricing that is $37,020 per year in Snohomish and $41,849 in King; on the host card it is lower per door but the structure is identical. Ramp of 1, 3, 6, 10, 15 cumulative doors over five years, blended across the two Washington counties, at market pricing:</p>
   <div class="tablewrap">
   <table>
     <thead><tr><th scope="col">Year</th><th class="num" scope="col">Doors</th><th class="num" scope="col">Revenue</th><th class="num" scope="col">Fixed costs</th><th class="num" scope="col">EBITDA</th><th class="num" scope="col">Platform hours</th><th class="num" scope="col">Cumulative cash</th></tr></thead>
@@ -333,14 +333,14 @@
   <div class="eyebrow"><span>Provenance</span><span>Sources and verification</span></div>
   <h2>Where Every Number Comes From</h2>
   <ul>
-    <li><strong>Models</strong>: green_lappe_model_v2.py (market pricing) and green_lappe_model_v3.py (host card and ramp), both recomputed for this file; every table and chart ties to their JSON output to the dollar.</li>
+    <li><strong>Models</strong>: green_property_solutions_model_v2.py (market pricing) and green_property_solutions_model_v3.py (host card and ramp), both recomputed for this file; every table and chart ties to their JSON output to the dollar.</li>
     <li><strong>Market data (searched July 2026)</strong>: HUD FY2025 and FY2026 FMR; Zillow ZORI county and SFR (June 2026); Census HVS Q1 2026 and ACS 2024 1-year (LA, Orange, Riverside, San Diego tenure and structure); Zumper July 2026; Freddie Mac PMMS 6.55 percent; Bankrate HELOC 7.43 percent (NPV discount rate).</li>
     <li><strong>Child care</strong>: 2023 California Child Care Portfolio county sheets; CDSS RMR ceiling (confirmed frozen at January 2022); CACFP 2025-26; CDSS and DCYF fee schedules; 22 CCR 102369 and 102417; WA DCYF licensed-family-home base rates (July 2025).</li>
     <li><strong>Statutes in primary text</strong>: CIV 1947.12, 1950.5; B&amp;P 10130, 10131; HSC 1596.78, 1597.41, 1569; RCW 18.85; WA HB 1217.</li>
-    <li><strong>Prior Green-Lappe research (recovered from repository history)</strong>: two-county Washington program (107 ZIP scoring, per-door economics, FCC wedge strategy, GTM plan); the 98012 Bothell property file; the Orange County childcare TAM.</li>
+    <li><strong>Prior Green Property Solutions research (recovered from repository history)</strong>: two-county Washington program (107 ZIP scoring, per-door economics, FCC wedge strategy, GTM plan); the 98012 Bothell property file; the Orange County childcare TAM.</li>
     <li><strong>Verification</strong>: 30 time-sensitive claims re-checked against primary sources by independent passes, 29 confirmed and 1 corrected (Seattle FY2026 FMR).</li>
   </ul>
-  <p class="note">Prepared for Green-Lappe Properties, model and source files retained alongside this file. Internal decision support; not licensed real-estate, tax, legal, or child-care-licensing advice. California licensing and residence-to-facility conversion rules (HSC 1596.78 own-residence FCCH, 1597.41 renter notice, large-home experience gate, 22 CCR fire and fencing) are summarized here and are the subject of the companion licensing brief.</p>
+  <p class="note">Prepared for Green Property Solutions, model and source files retained alongside this file. Internal decision support; not licensed real-estate, tax, legal, or child-care-licensing advice. California licensing and residence-to-facility conversion rules (HSC 1596.78 own-residence FCCH, 1597.41 renter notice, large-home experience gate, 22 CCR fire and fencing) are summarized here and are the subject of the companion licensing brief.</p>
 </section>
 
 </div>

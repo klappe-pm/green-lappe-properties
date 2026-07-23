@@ -1,13 +1,10 @@
-# Green Lappe Properties
+# Green Property Solutions
 
-Standalone Astro + Tailwind site for Green Property Management marketing,
+Standalone Astro + Tailwind site for Green Property Solutions marketing,
 owner/renter acquisition flows, portal shells, blog routes, legal pages, and
 static brand-book HTML.
 
-This project was extracted from
-`/Users/kevinlappe/Projects/ppi-platform/green-lappe-properties/src/green-pm-site`
-so the website can live as its own repository. Generated dependencies and build
-artifacts are intentionally excluded; install from `package-lock.json`.
+This project was extracted from a prior site project so the website can live as its own repository. Generated dependencies and build artifacts are intentionally excluded; install from `package-lock.json`.
 
 ## What is included
 
@@ -28,13 +25,7 @@ npm run check
 npm test
 ```
 
-The default production URL remains `https://greenpmpnw.com`. For GitHub Pages,
-the deploy workflow sets:
-
-```bash
-SITE_URL=https://klappe-pm.github.io/green-lappe-properties
-BASE_PATH=/green-lappe-properties
-```
+The default production URL remains `https://greenpmpnw.com`. The GitHub Pages repository slug has not been renamed, so deployment keeps the legacy repository path until that external rename occurs.
 
 ## Project Layout
 
