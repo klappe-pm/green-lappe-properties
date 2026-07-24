@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-solutions
 category: research
 sub-category: regulatory-conversion-brief
 date-created: 2026-07-20
@@ -15,7 +15,7 @@ tags:
   - california
   - family-child-care-home
   - residence-conversion
-  - green-lappe
+  - green-property-solutions
 ---
 
 # ca-residence-to-childcare-conversion-brief
@@ -24,7 +24,7 @@ This brief ports the Washington family-child-care conversion model to California
 
 ## What is being ported
 
-The Washington model that the six-county analysis validated is the conversion wedge: Green-Lappe does not operate care and does not buy the building. A property owner keeps the property, a licensed provider resides in the home and operates the child care business, and Green-Lappe coordinates the conversion, places the provider, and runs ongoing services for fees. The owner earns premium rent; the provider owns the care operation and the license. The whole California question is whether that same structure is legal and licensable in California, and what physically and legally has to change to make a residence a care facility.
+The Washington model that the six-county analysis validated is the conversion wedge: Green Property Solutions does not operate care and does not buy the building. A property owner keeps the property, a licensed provider resides in the home and operates the child care business, and Green Property Solutions coordinates the conversion, places the provider, and runs ongoing services for fees. The owner earns premium rent; the provider owns the care operation and the license. The whole California question is whether that same structure is legal and licensable in California, and what physically and legally has to change to make a residence a care facility.
 
 The short answer: the structure ports cleanly. California, like Washington, licenses in-home care through the resident provider, voids most residential restrictions that would block a family child care home, and lets a corporate entity be the applicant only on the separate child care center route. The differences are in the numbers and the agency: California is CDSS and Title 22, Washington is DCYF; California caps a large home at 12 (14 conditional), Washington at 12; California requires a one-year experience gate for the large home that Washington structures differently.
 
@@ -53,7 +53,7 @@ If care will run where no provider resides, it is a child care center, not an FC
 
 ### Structure 3: owner as developer, not operator
 
-Green-Lappe creates value by identifying a suitable property, documenting feasibility, financing permissible improvements, and leasing to an experienced licensee. Keep a real boundary: the tenant or licensee directs care, hires and supervises staff, manages enrollment and tuition, keeps child records, controls capacity, and owns compliance. The moment the owner begins establishing, managing, conducting, or maintaining the child care business, it should assume it may be treated as the operator and use the licensed-center route with the compliance infrastructure that entails. This is the load-bearing line for the Green-Lappe model: coordinator and developer, never operator of the care.
+Green Property Solutions creates value by identifying a suitable property, documenting feasibility, financing permissible improvements, and leasing to an experienced licensee. Keep a real boundary: the tenant or licensee directs care, hires and supervises staff, manages enrollment and tuition, keeps child records, controls capacity, and owns compliance. The moment the owner begins establishing, managing, conducting, or maintaining the child care business, it should assume it may be treated as the operator and use the licensed-center route with the compliance infrastructure that entails. This is the load-bearing line for the Green Property Solutions model: coordinator and developer, never operator of the care.
 
 ## Converting a residence to a care facility
 
@@ -93,7 +93,7 @@ The economic consequence of the last two rows is the whole reason California and
 
 - Ask the CDSS regional office to classify the proposed model in writing: resident FCCH, child care center, or a claimed exemption.
 - Obtain parcel-specific land-use, building, and fire feasibility before any lease or construction.
-- Decide explicitly whether Green-Lappe is landlord and developer only, or the center applicant, then align the entity, lease, insurance, staffing, and parent contracts to that choice. Do not blur the line.
+- Decide explicitly whether Green Property Solutions is landlord and developer only, or the center applicant, then align the entity, lease, insurance, staffing, and parent contracts to that choice. Do not blur the line.
 - For an FCCH, confirm the licensee resides there, count resident children under 10, determine small versus large capacity, and obtain the owner notice or the written consent the planned capacity requires.
 - For a center, identify the applicant entity and the qualified site director before filing; do not rely on an owner without director qualifications to lead the program.
 - Obtain California counsel and insurance advice on lease, general liability, professional liability, abuse and molestation coverage, additional-insured status, lender consent, and local business and tax issues.

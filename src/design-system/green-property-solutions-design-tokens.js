@@ -1,8 +1,8 @@
 /**
- * Green Property Management design tokens.
+ * Green Property Solutions design tokens.
  *
  * This is the JavaScript contract for future components. CSS output uses
- * src/styles/green-pm-tokens.css; Tailwind mirrors the same token values in
+ * src/styles/green-property-solutions-tokens.css; Tailwind mirrors the same token values in
  * tailwind.config.js.
  */
 
@@ -146,7 +146,6 @@ export const audienceModes = {
 };
 
 export const wordsToAvoid = [
-  'solutions',
   'passionate',
   'dedicated',
   'trusted',
@@ -210,7 +209,7 @@ export const components = {
   },
 };
 
-export const gpm = {
+export const gps = {
   primitives,
   derivedNeutrals,
   systemColors,
@@ -226,4 +225,4 @@ export const gpm = {
   components,
 };
 
-export default gpm;
+export default gps;

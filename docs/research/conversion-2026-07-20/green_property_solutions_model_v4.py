@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Green-Lappe model v4: ratio-based capacity from verified CA/WA regulation, host full-time price card.
+"""Green Property Solutions model v4: ratio-based capacity from verified CA/WA regulation, host full-time price card.
 
 Scenarios (search-results-ratios-licensing.md): CA-L14, CA-L12 large FCCH; WA-H12 home, WA-H16 waiver,
 WA-C28 center-in-residence. Providers assumed licensed and qualified day one (recruiting filter).

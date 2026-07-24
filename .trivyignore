@@ -1,4 +1,4 @@
-# Trivy suppressions: not-affected (VEX) dispositions for the Green PM site.
+# Trivy suppressions: not-affected (VEX) dispositions for the Green PS site.
 #
 # This is a static Astro site (astro.config.mjs: output: 'static'), built on
 # Linux and deployed to GitHub Pages. It ships no server runtime and runs no

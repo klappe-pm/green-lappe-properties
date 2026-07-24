@@ -6,7 +6,7 @@ Source of truth: `DESIGN.md`
 
 ## Scope
 
-Audited the current site against `DESIGN.md`, `src/design-system/gpm-design-tokens.js`, `src/styles/green-pm-tokens.css`, `src/styles/modes.css`, and rendered output from local Astro preview.
+Audited the current site against `DESIGN.md`, `src/design-system/green-property-solutions-design-tokens.js`, `src/styles/green-property-solutions-tokens.css`, `src/styles/modes.css`, and rendered output from local Astro preview.
 
 Verification performed:
 
@@ -82,7 +82,7 @@ The rendered site uses negative heading tracking from `--tracking-tight` and dir
 
 Current instances:
 
-- `src/styles/green-pm-tokens.css` defines `--tracking-tight: -0.02em`.
+- `src/styles/green-property-solutions-tokens.css` defines `--tracking-tight: -0.02em`.
 - `src/styles/base.css` applies negative tracking to headings and `.text-display`.
 - `src/features/marketing-home/Hero.astro` applies `tracking-tight`.
 
@@ -186,7 +186,7 @@ Acceptance:
 
 ### Phase 5: Resolve typography tracking governance
 
-1. Decide whether negative heading tracking is part of the Green PM system.
+1. Decide whether negative heading tracking is part of the Green PS system.
 2. If not, set `--tracking-tight` to `0`, remove `tracking-tight` from hero classes, and update heading CSS.
 3. If yes, document it explicitly in `DESIGN.md` and add a narrower allowed-use rule.
 4. Add checker coverage for arbitrary tracking utilities and token drift.

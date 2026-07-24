@@ -1,9 +1,9 @@
 {
-  "name": "green-lappe-properties",
+  "name": "green-property-solutions",
   "version": "0.0.1",
   "private": true,
   "type": "module",
-  "description": "Green Property Management marketing site + portals (Astro + Tailwind + Sanity). Feature-organized.",
+  "description": "Green Property Solutions marketing site + portals (Astro + Tailwind + Sanity). Feature-organized.",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",

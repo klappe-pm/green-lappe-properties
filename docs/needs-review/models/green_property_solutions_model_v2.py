@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Green-Lappe model v2: owner-conversion / platform frame (corrects v1's operator-run miss).
+"""Green Property Solutions model v2: owner-conversion / platform frame (corrects v1's operator-run miss).
 
 Actors: OWNER (client) holds the property; PROVIDER (licensed resident FCCH operator) runs care and
-pays rent; GREEN-LAPPE (platform) converts, places, and services, capturing fees. Per county:
+pays rent; GREEN PROPERTY SOLUTIONS (platform) converts, places, and services, capturing fees. Per county:
 provider P&L -> max supportable rent (affordability ceiling) -> owner conversion premium and
 $/sqft/yr productivity -> owner 10-yr conversion NPV -> GL per-door fees and 60-month portfolio.
 Crossover = tuition/child/month at which the provider matches a market tenant's rent bid.

@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-solutions
 category: prompt
 sub-category: financial-model
 date-created: 2026-07-20
@@ -22,11 +22,11 @@ Paste everything below the divider into a new session. It contains everything de
 
 ---
 
-You are continuing a decision-grade analysis for Green-Lappe Properties. Be a research, thinking, and writing product partner. Do not re-derive settled facts. Do not invent scenario labels. Ask before assuming on anything listed under open decisions.
+You are continuing a decision-grade analysis for Green Property Solutions. Be a research, thinking, and writing product partner. Do not re-derive settled facts. Do not invent scenario labels. Ask before assuming on anything listed under open decisions.
 
 ## The Business (settled)
 
-Green-Lappe converts OTHER owners' single-family and small residential properties into leased child care (daycare, preschool, family child care) for higher productivity per square foot. Green-Lappe owns nothing, pays no property taxes, pays no bills. The owner is the customer. A licensed resident provider operates the care business as lessee. The thesis: owners with sub-3% 30-year fixed mortgages will not sell (rate lock-in) and often want to move, so they need maximum $/sqft from an asset they are keeping. The pitch: lease to a care provider instead of a family tenant, at minimal owner cost.
+Green Property Solutions evaluates other owners' single-family and small residential properties entering the market, turning over, or entering management to find their highest-value feasible use. Green Property Solutions owns nothing; the owner is the customer and retains title. The core result is annual owner net value per usable square foot, after actual owner costs, compared first with a conventional residential rental. Child care is one branch, not a default, and must be ranked against conventional renters and any other owner-approved use. A licensed resident provider operates the care business as lessee only in the family-home branch; a company-operated center is a separate licensed-operating-company branch. The thesis: owners with locked mortgages and owners bringing a property to market may need the highest productive use of square footage without selling. The pitch: GPS gives the owner a defensible, property-specific use decision and executes the winning owner-approved path.
 
 ## Pricing (settled)
 
@@ -34,9 +34,9 @@ $2,000 per child per month not-potty-trained, $1,500 potty-trained, full-time 5 
 
 ## Cost Ownership (settled)
 
-- Conversion capex: owner absorbs, Green-Lappe facilitates (confirmed for WA; a similar CA model is TBD, open decision below).
-- Licensing costs: Green-Lappe.
-- Utilities, cable, internet, variable: operator or Green-Lappe; anything GL fronts passes to the owner at a 10% margin on top of the management fee.
+- Conversion capex: owner absorbs, Green Property Solutions facilitates (confirmed for WA; a similar CA model is TBD, open decision below).
+- Licensing costs: Green Property Solutions.
+- Utilities, cable, internet, variable: operator or Green Property Solutions; anything GL fronts passes to the owner at a 10% margin on top of the management fee.
 - Management fee: model 5, 7, 8, 9, 10, 11, 12 percent of monthly rent, both rental and care facilities.
 - Maintenance: baseline on residential SFH/townhome actuals ($1,000-2,500/unit/yr SoCal benchmark), care-wear multiplier ~1.5x, not invented daycare figures.
 
@@ -47,7 +47,7 @@ $2,000 per child per month not-potty-trained, $1,500 potty-trained, full-time 5 
 - Center-in-residence: WA expressly allowed (WAC 110-300-0010(4)), CA needs local CUP plus fire conversion. FAILS at this price point: a 28-kid config with 4 teachers plus director loses money in both WA counties (staffing $22,813/mo eats the revenue). The 2-staff family-home configurations are the profit frontier. CA best config: L14 (14 kids, 3 npt + 11 pt = $22,500/mo gross at 100%). WA best: H16 waiver (6 npt + 10 pt = $27,000/mo) or H12.
 - Providers assumed licensed and qualified day one (recruiting filter, not a licensing assumption). Owner-occupancy by the provider assumed wherever residency is required.
 
-## Model Results To Date (v5 grid, 2026-07-20; files green_lappe_model_v2/v3/v4.py plus inline v5)
+## Model Results To Date (v5 grid, 2026-07-20; files green_property_solutions_model_v2/v3/v4.py plus inline v5)
 
 - Method: provider affordability ceiling = gross tuition minus assistant (market wage x1.18 load), supplies, insurance, GL fees, $55,000 provider living income, capped at 35% of gross; premium = ceiling minus market SFR rent, x0.92 provider-continuity haircut; owner NPV 10-yr at 7.43%; owner absorbs ~$25K capex; $12K reconversion at exit. Provider time-space tax uplift (+~13% rent capacity) included in v5.
 - Owner NPV per conversion at 5/7/8/9/10/11/12% fee ($K): King 506/495/489/483/478/472/467; Snohomish 456/446/441/436/431/426/421; Riverside 325/318/314/310/307/303/299; San Diego 252/246/243/240/237/234/231; LA 244/238/235/232/230/227/224; Orange 228/222/219/217/214/211/209.
@@ -78,7 +78,7 @@ Fed 3.50-3.75% holding, hawkish SEP; 30-yr mortgage 6.55% (PMMS), forecasts ~6.3
 - Provider: IRC 280A(c)(4) confirmed, renters included (Pub 587 verbatim); deduction = time-space percentage, realistically 30-40% of rent and utilities for a full-time provider, higher only with documented exclusive-use rooms; 280A(c)(5) gross-income limit (no losses from home expenses); standard meal rates (2025: breakfast $1.66, lunch $3.15, snack $0.93); SE tax; QBI applies (not an SSTB). Effective rent subsidy roughly $650-900/mo at a 30% marginal rate.
 - Bifurcated lease (commercial daycare lease plus housing lease): NO supporting authority found; statute cuts against it (280A(a)/(f)(1) keys off the dwelling unit); treat as unsupported form over substance. Worse, designating >20% of gross rent as commercial risks flipping the OWNER's depreciation from 27.5-yr residential to 39-yr under the 168(e)(2)(A) 80% dwelling-unit test. Single market-rate residential lease with a documented exclusive-use-rooms addendum is the defensible structure.
 - Owner: Schedule E; live-in provider keeps the building 27.5-yr residential (statutory-text application, no direct ruling); fencing/land improvements = 15-yr and 100% bonus-eligible federally (OBBBA restored bonus for property placed in service after 2025-01-19; CA does not conform); de minimis safe harbor $2,500/item; Section 179 and QIP unavailable on residential rentals. CA: 7% nonresident withholding on rents over $1,500/yr with the property manager as withholding agent (Form 592; waivers via 588/589). Prop 13: daycare use alone does not reassess, but major conversion work can be assessed as new construction for the altered portion (R&T 70(a)). WA: rent is B&O-exempt to the owner (WAC 458-20-118); no use-based property-tax reclassification.
-- Green-Lappe: fees are ordinary income; WA B&O Service rate 1.5% (<$1M gross), 1.75% ($1-5M), 2.1% ($5M+); marked-up pass-throughs are fully B&O-taxable (WAC 458-20-111 agency exclusion fails on markup); LA city business tax $4.25 per $1,000 on management fees if operating there. WA child-care B&O: providers exempt through 2035 for under-13 care (RCW 82.04.2905), a small tailwind for operators.
+- Green Property Solutions: fees are ordinary income; WA B&O Service rate 1.5% (<$1M gross), 1.75% ($1-5M), 2.1% ($5M+); marked-up pass-throughs are fully B&O-taxable (WAC 458-20-111 agency exclusion fails on markup); LA city business tax $4.25 per $1,000 on management fees if operating there. WA child-care B&O: providers exempt through 2035 for under-13 care (RCW 82.04.2905), a small tailwind for operators.
 - Chain reality: the owner picks up 100% of rent as income while the provider deducts ~30-40%, so the chain is not a net write-off machine; keep every lease at documented market rate and arm's length (related-party and circular structures invite recharacterization). Never let GL take title or master-lease.
 
 ## Open Decisions (decide before building more)
@@ -88,7 +88,7 @@ Fed 3.50-3.75% holding, hawkish SEP; 30-yr mortgage 6.55% (PMMS), forecasts ~6.3
 3. CA cost-ownership structure (WA settled: owner absorbs conversion; CA "similar model TBD").
 4. Whether the CA price of $2,000/$1,500 is validated by a primary tuition survey before any CA commitment (it runs 25-60% above prevailing CA FCCH rates; survey Newport Beach, Irvine, Costa Mesa, and Riverside target ZIPs; roughly 2 weeks of work).
 5. Provider recruiting mechanism and the X=8 / short-Y licensing design (WA needs 2-3+ yr experienced licensees for 12-16 capacity).
-6. Deliverable form: the operator rejected narrative/lens decks and "action maps" as off-target; ask before building the next deliverable shape. Design must use the GPM brand book (`brand-book/gpm-brand-book.html`): mono-label eyebrows, Geist tight-tracked display, Newsreader prose, 4px radii, ink-dark cover, ratio-bar components, status tokens (success #3E7A55, warning #A8741A, error #9C2D1F); never the generic cream-card grid.
+6. Deliverable form: the operator rejected narrative/lens decks and "action maps" as off-target; ask before building the next deliverable shape. Design must use the GPS brand book (`brand-book/green-property-solutions-brand-book.html`): mono-label eyebrows, Geist tight-tracked display, Newsreader prose, 4px radii, ink-dark cover, ratio-bar components, status tokens (success #3E7A55, warning #A8741A, error #9C2D1F); never the generic cream-card grid.
 
 ## Remaining Research
 
@@ -101,7 +101,7 @@ Fed 3.50-3.75% holding, hawkish SEP; 30-yr mortgage 6.55% (PMMS), forecasts ~6.3
 ## File Inventory
 
 - Repo (branch claude/session-20260720-172255, PR #73 open): `docs/needs-review/2026-07-20-use-of-asset-conversion-analysis.md` (v2/v3-era; supersede its scenario labels with this prompt).
-- Scratchpad: `model-inputs-consolidated.md`; `search-results-{ca-rental-pm, ca-childcare, rates-wa, c-stub, competitors-macro, ratios-licensing}.md`; `green_lappe_model_v2/v3/v4.py` plus JSON outputs; recovered research corpus under `recovered/` (194 docs: TAM, effort-0 through effort-6 ZIP scoring, FCC wedge strategy, GTM plan).
+- Scratchpad: `model-inputs-consolidated.md`; `search-results-{ca-rental-pm, ca-childcare, rates-wa, c-stub, competitors-macro, ratios-licensing}.md`; `green_property_solutions_model_v2/v3/v4.py` plus JSON outputs; recovered research corpus under `recovered/` (194 docs: TAM, effort-0 through effort-6 ZIP scoring, FCC wedge strategy, GTM plan).
 - Deck artifact (superseded framing; keep URL for redeploy): claude.ai/code/artifact/93d503c8-aa4f-43b9-bdb5-3da65f11a117.
 - Calibration asset: 4632 146th Pl SE Bothell 98012 (4/2.5, 2,250 sqft, $1M value, $485K @ 2.625%, rent $3,900; files in `~/Vaults/trust-documents/`).
 

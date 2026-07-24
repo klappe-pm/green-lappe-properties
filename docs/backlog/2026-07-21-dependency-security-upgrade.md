@@ -1,5 +1,5 @@
 ---
-domain: green-lappe-properties
+domain: green-property-solutions
 category: backlog
 sub-category: security-maintenance
 date-created: 2026-07-21

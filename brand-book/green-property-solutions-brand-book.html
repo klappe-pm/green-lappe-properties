@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Green Property Management · Brand & Design System v1.0</title>
+<title>Green Property Solutions · Brand & Design System v1.0</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,500;1,9..144,600&display=swap" rel="stylesheet">
@@ -1508,92 +1508,6 @@
     letter-spacing: -0.01em;
   }
 
-  /* ============ Print ============ */
-  @media print {
-    @page {
-      size: 11in 8.5in;
-      margin: 0;
-    }
-    html, body {
-      background: var(--cream) !important;
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
-    }
-    .bb {
-      max-width: none;
-      width: 100%;
-      margin: 0;
-    }
-    .bb__page {
-      break-before: page;
-      break-after: page;
-      page-break-before: always;
-      page-break-after: always;
-      overflow: hidden;
-      padding: 48px 56px 40px;
-      border: 0;
-      width: 11in;
-      height: 8.5in;
-      box-sizing: border-box;
-      position: relative;
-    }
-    .bb__page:first-child {
-      break-before: auto;
-      page-break-before: auto;
-    }
-    /* Force colored backgrounds to print */
-    .bb__page,
-    .bb__page--paper,
-    .bb__page--ink,
-    .bb__page--cedar,
-    .prim,
-    .voice-card,
-    .field-note,
-    .primer-next,
-    .primer-stack,
-    .stmt,
-    .listing,
-    .listing__photo,
-    .callout,
-    .sig-block,
-    .sig-demo,
-    .der,
-    .der__specimen,
-    .sys-card,
-    .mode-card,
-    .mode-card__preview,
-    .rule-card,
-    .btn,
-    .listing__cta,
-    .input,
-    .focus-demo,
-    .photo-tile,
-    .pair,
-    .pair__demo,
-    .pair__foot,
-    .ratio-bar__seg,
-    .cover__crest,
-    .type-specimen__card,
-    .micro-row {
-      -webkit-print-color-adjust: exact;
-      print-color-adjust: exact;
-    }
-    /* Cover scale-down to fit landscape sheet */
-    .cover {
-      min-height: 0;
-      padding: 48px 56px 40px;
-    }
-    .cover__title {
-      font-size: 92px;
-    }
-    .h-1 { font-size: 48px; }
-    .h-display { font-size: 110px; }
-    /* Shrink padding on inner page elements */
-    .prim-grid { min-height: 0; }
-    .prim { min-height: 0; }
-    /* Hide any anchors-only decorative bits — none present */
-  }
-
   /* ============ Field note pattern ============ */
   .field-note {
     background: color-mix(in srgb, var(--cedar) 6%, transparent);
@@ -1751,6 +1665,40 @@
     line-height: 1.5;
   }
   .primer-next__body strong { color: var(--ink); font-weight: 500; }
+
+  /* "For Green Property Solutions" answer block — the concrete bridge from concept to brand. */
+  .primer-answer {
+    margin-top: 36px;
+    padding: 22px 26px;
+    background: var(--cream);
+    border: 1px solid var(--cedar);
+    border-left: 4px solid var(--cedar);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 28px;
+    align-items: baseline;
+  }
+  .primer-answer__label {
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--cedar);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+  .primer-answer__body {
+    margin: 0;
+    font-family: var(--prose);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--ink);
+  }
+  .primer-answer__body strong {
+    color: var(--cedar);
+    font-weight: 600;
+  }
   .micro-row__mode {
     font-family: var(--serif); font-weight: 500;
     font-size: 17px;
@@ -1787,16 +1735,16 @@
 <main class="bb">
 
   <!-- =================== COVER =================== -->
-  <section class="bb__page cover" data-folio="01 / Cover" data-running="Green Property Management · Brand & Design System v1.0">
+  <section id="bb-1" class="bb__page cover" data-folio="01 / Cover" data-running="Green Property Solutions · Brand & Design System v1.0">
     <header class="cover__bar">
-      <span class="cover__bar-mark"><span class="cover__seal"></span>Green Property Management</span>
+      <span class="cover__bar-mark"><span class="cover__seal"></span>Green Property Solutions</span>
       <span>Brand &amp; Design System · v1.0 · May 2026</span>
     </header>
 
     <div class="cover__main">
       <div>
-        <h1 class="cover__title">Green<br /><em>Property</em><br />Management.</h1>
-        <p class="cover__sub">A field guide. Cedar, Cream, Clay · and one named operator who answers the phone.</p>
+        <h1 class="cover__title">Green<br /><em>Property</em><br />Management</h1>
+        <p class="cover__sub">The brand &amp; design system for Green Property Solutions. Read once to understand the brand. Reach for it again whenever a new email, statement, or surface needs to be built.</p>
       </div>
 
       <aside class="cover__crest">
@@ -1824,8 +1772,38 @@
     </dl>
   </section>
 
+  <!-- =================== BRIEF / WHY THIS GUIDE =================== -->
+  <section id="bb-brief" class="bb__page bb__page--paper" data-folio="02 / Brief" data-running="Why a field guide">
+    <p class="eyebrow"><span class="eyebrow__dot"></span>Brief · Why a field guide</p>
+    <h2 class="h-1">A brand that holds<br />together, even when<br />nobody's looking.</h2>
+    <p class="primer-lede">A field guide is not a logo file. It is the operating manual the brand uses to stay consistent across hundreds of small touchpoints — a monthly statement, a Zillow listing, a maintenance update text, a renewal letter, a yard sign. Read this once to understand the brand. Reach for it again whenever a new surface needs to be built.</p>
+
+    <div class="primer-grid">
+      <div class="primer-col">
+        <h4>What this gives you</h4>
+        <p><strong>One voice across every surface.</strong> The cold email and the maintenance push and the lease addendum all sound like the same person wrote them — because the same five principles run through all of them.</p>
+        <p><strong>One palette, one type system, one set of components.</strong> Decisions made once, applied everywhere, no debate on the next email template.</p>
+      </div>
+      <div class="primer-col">
+        <h4>Why it matters</h4>
+        <p><strong>Two audiences are scanning for tells.</strong> Small landlords burned by chains. Renters tired of Greystar units and Craigslist scams. Both walk in skeptical.</p>
+        <p>Consistency is the strongest signal that this is a small operation that takes the work seriously. Trust earned during shopping has to survive a full lease cycle. The system is what makes that possible.</p>
+      </div>
+      <div class="primer-col">
+        <h4>How to use it</h4>
+        <p><strong>Read Part One first</strong> if the concepts of a design system are new. Voice. Color. Typography. Modes. Components.</p>
+        <p><strong>Reach for Part Two</strong> when building a real surface — an email, a statement, a portal screen. Every decision is documented at the token level so the system can be reproduced without re-explaining it.</p>
+      </div>
+    </div>
+
+    <div class="primer-next">
+      <span class="primer-next__label">What's next</span>
+      <p class="primer-next__body">The Contents page on the next spread lays out all eighteen chapters. After that, <strong>six primers</strong> introduce each concept in plain language. Then the system itself.</p>
+    </div>
+  </section>
+
   <!-- =================== CONTENTS =================== -->
-  <section class="bb__page" data-folio="02 / Contents" data-running="Green Property Management · Brand & Design System v1.0">
+  <section id="bb-2" class="bb__page" data-folio="03 / Contents" data-running="Green Property Solutions · Brand & Design System v1.0">
     <p class="eyebrow"><span class="eyebrow__dot"></span>Contents</p>
     <h2 class="h-1">Two parts.<br />Eighteen chapters.</h2>
 
@@ -1841,8 +1819,8 @@
         <li class="toc__item" style="padding-left: 0;"><span class="toc__num">P / 05</span><span class="toc__title">What are audience modes?</span><span class="toc__folio">p. 07</span></li>
         <li class="toc__item" style="padding-left: 0;"><span class="toc__num">P / 06</span><span class="toc__title">What are components?</span><span class="toc__folio">p. 08</span></li>
 
-        <li class="toc__item" style="margin-top: 16px;"><span class="toc__num" style="color: var(--clay);">Part two</span><span class="toc__title">The system<small>The specific decisions for Green Property Management.</small></span><span class="toc__folio">p. 10</span></li>
-        <li class="toc__item"><span class="toc__num">§ 01</span><span class="toc__title">Positioning<small>What Green Property Management is, and what it refuses to be.</small></span><span class="toc__folio">p. 10</span></li>
+        <li class="toc__item" style="margin-top: 16px;"><span class="toc__num" style="color: var(--clay);">Part two</span><span class="toc__title">The system<small>The specific decisions for Green Property Solutions.</small></span><span class="toc__folio">p. 10</span></li>
+        <li class="toc__item"><span class="toc__num">§ 01</span><span class="toc__title">Positioning<small>What Green Property Solutions is, and what it refuses to be.</small></span><span class="toc__folio">p. 10</span></li>
         <li class="toc__item"><span class="toc__num">§ 02</span><span class="toc__title">Voice &amp; terminology<small>Five principles, the words we use, the words we don't.</small></span><span class="toc__folio">p. 11</span></li>
         <li class="toc__item"><span class="toc__num">§ 03</span><span class="toc__title">Color · primitives<small>Seven primitives. No additions without governance.</small></span><span class="toc__folio">p. 12</span></li>
         <li class="toc__item"><span class="toc__num">§ 04</span><span class="toc__title">Color · derived &amp; system<small>Ramps from Ink, system colors for state.</small></span><span class="toc__folio">p. 13</span></li>
@@ -1863,10 +1841,10 @@
   <!-- ===================================================== -->
 
   <!-- =================== PRIMER 01 · ORIENTATION =================== -->
-  <section class="bb__page bb__page--paper" data-folio="P / 01" data-running="Part one · How to read this guide">
+  <section id="bb-3" class="bb__page bb__page--paper" data-folio="P / 01" data-running="Part one · How to read this guide">
     <p class="eyebrow primer-eyebrow"><span class="eyebrow__dot"></span>Part one · 01 · Orientation</p>
     <h2 class="h-1">How to read<br />this guide.</h2>
-    <p class="primer-lede">This document has two halves. <strong style="color: var(--ink);">Part One</strong> explains the concepts a design system is built from. <strong style="color: var(--ink);">Part Two</strong> documents the specific decisions made for Green Property Management. The two halves are written so any reader — and any automated tool — can apply the system without re-explaining it.</p>
+    <p class="primer-lede">This document has two halves. <strong style="color: var(--ink);">Part One</strong> explains the concepts a design system is built from. <strong style="color: var(--ink);">Part Two</strong> documents the specific decisions made for Green Property Solutions. The two halves are written so any reader — and any automated tool — can apply the system without re-explaining it.</p>
 
     <div class="primer-grid">
       <div class="primer-col">
@@ -1888,12 +1866,12 @@
 
     <div class="primer-next">
       <span class="primer-next__label">What's next</span>
-      <p class="primer-next__body">The next five primers cover the concepts a brand is made of, in plain language. <strong>Voice. Color. Typography. Modes. Components.</strong> Then Part Two shows how Green Property Management answers each.</p>
+      <p class="primer-next__body">The next five primers cover the concepts a brand is made of, in plain language. <strong>Voice. Color. Typography. Modes. Components.</strong> Then Part Two shows how Green Property Solutions answers each.</p>
     </div>
   </section>
 
   <!-- =================== PRIMER 02 · VOICE =================== -->
-  <section class="bb__page" data-folio="P / 02" data-running="Part one · What is brand voice">
+  <section id="bb-4" class="bb__page" data-folio="P / 02" data-running="Part one · What is brand voice">
     <p class="eyebrow primer-eyebrow"><span class="eyebrow__dot"></span>Part one · 02 · Voice</p>
     <h2 class="h-1">What is brand voice?</h2>
     <p class="primer-lede">Voice is how the brand sounds, every time it speaks. The same rhythm runs from a cold email subject line to a maintenance push notification to the legal footer of a lease. When the cadence is steady, the brand feels like one person.</p>
@@ -1913,6 +1891,11 @@
       </div>
     </div>
 
+    <div class="primer-answer">
+      <span class="primer-answer__label">For Green Property Solutions</span>
+      <p class="primer-answer__body">The voice is <strong>direct, specific, accountable, local, calm.</strong> Short sentences. Numbers before adjectives. “Bothell,” never “the Puget Sound region.” The brand says <strong>renter</strong> before a lease, <strong>resident</strong> after. Words like <em>boutique</em>, <em>concierge</em>, and <em>passionate</em> never appear.</p>
+    </div>
+
     <div class="primer-next">
       <span class="primer-next__label">In Part Two</span>
       <p class="primer-next__body"><strong>§ 2 · Voice &amp; terminology.</strong> Five principles (Direct, Specific, Accountable, Local, Calm), the renter/resident terminology rule, and a list of words to step around.</p>
@@ -1920,7 +1903,7 @@
   </section>
 
   <!-- =================== PRIMER 03 · COLOR =================== -->
-  <section class="bb__page bb__page--paper" data-folio="P / 03" data-running="Part one · What are color tokens">
+  <section id="bb-5" class="bb__page bb__page--paper" data-folio="P / 03" data-running="Part one · What are color tokens">
     <p class="eyebrow primer-eyebrow"><span class="eyebrow__dot"></span>Part one · 03 · Color</p>
     <h2 class="h-1">What are<br />color tokens?</h2>
     <p class="primer-lede">A <em>token</em> is a named color with a specific job. The brand has a small library of named tokens, organized in three layers, so that an email, a printed sign, and a portal screen always reach for the same paint can.</p>
@@ -1956,6 +1939,11 @@
       </div>
     </div>
 
+    <div class="primer-answer">
+      <span class="primer-answer__label">For Green Property Solutions</span>
+      <p class="primer-answer__body"><strong>Seven primitives</strong> (Cedar, Ink, Cream, Paper, Stone, Clay, Sky), <strong>four derived neutrals</strong> for text hierarchy (ink-80 through ink-20), and <strong>four system colors</strong> for state (success, warning, error, info). Fifteen named tokens total. Production code reaches only through token names; no hex value is referenced directly. Adding a primitive requires governance review.</p>
+    </div>
+
     <div class="primer-next">
       <span class="primer-next__label">In Part Two</span>
       <p class="primer-next__body"><strong>§ 3 · Color.</strong> The seven primitives, the four derived neutrals for text hierarchy, the four system colors for state, the contrast matrix, and the usage budget per audience mode.</p>
@@ -1963,7 +1951,7 @@
   </section>
 
   <!-- =================== PRIMER 04 · TYPE =================== -->
-  <section class="bb__page" data-folio="P / 04" data-running="Part one · How type carries voice">
+  <section id="bb-6" class="bb__page" data-folio="P / 04" data-running="Part one · How type carries voice">
     <p class="eyebrow primer-eyebrow"><span class="eyebrow__dot"></span>Part one · 04 · Typography</p>
     <h2 class="h-1">How type<br />carries voice.</h2>
     <p class="primer-lede">Type is how the brand reads out loud. The system runs on three faces, each with one job: a contemporary grotesque sans for the work, a warm editorial serif for the words, and a single italic accent for the named operator's signature.</p>
@@ -1986,6 +1974,11 @@
       </div>
     </div>
 
+    <div class="primer-answer">
+      <span class="primer-answer__label">For Green Property Solutions</span>
+      <p class="primer-answer__body"><strong>Three faces, three jobs.</strong> Geist runs every headline, button, navigation link, statement number, and form label. Newsreader runs every paragraph, lede, owner letter, and blog post. Fraunces appears once per document, italic, in Cedar, to sign <em>Megan</em> at the close of a letter or proposal.</p>
+    </div>
+
     <div class="primer-next">
       <span class="primer-next__label">In Part Two</span>
       <p class="primer-next__body"><strong>§ 7 · Typography.</strong> The full nine-step type scale, all three specimens at large size, the tracked-out eyebrow pattern, and the signature treatment in context.</p>
@@ -1993,7 +1986,7 @@
   </section>
 
   <!-- =================== PRIMER 05 · MODES =================== -->
-  <section class="bb__page bb__page--paper" data-folio="P / 05" data-running="Part one · What are audience modes">
+  <section id="bb-7" class="bb__page bb__page--paper" data-folio="P / 05" data-running="Part one · What are audience modes">
     <p class="eyebrow primer-eyebrow"><span class="eyebrow__dot"></span>Part one · 05 · Audience modes</p>
     <h2 class="h-1">Same brand,<br />different rooms.</h2>
     <p class="primer-lede">A <em>mode</em> is the brand wearing the right clothes for a context. One brand can speak to a renter scrolling Zillow on the bus and an owner reading a March statement at the kitchen table, without sounding like two companies.</p>
@@ -2015,6 +2008,11 @@
       </div>
     </div>
 
+    <div class="primer-answer">
+      <span class="primer-answer__label">For Green Property Solutions</span>
+      <p class="primer-answer__body"><strong>Five modes</strong>, declared via the <code style="font-family: var(--mono); font-size: 0.92em;">data-audience</code> attribute: <strong>neutral-acquisition</strong> (the landing page), <strong>owner-acquisition</strong> (pricing, sample statements, proposal request), <strong>owner-product</strong> (authenticated owner portal), <strong>renter-acquisition</strong> (the listings and tour flow), <strong>renter-product</strong> (resident portal). Each has a documented surface color, density, imagery rule, and headline pitch.</p>
+    </div>
+
     <div class="primer-next">
       <span class="primer-next__label">In Part Two</span>
       <p class="primer-next__body"><strong>§ 5 · Audience modes.</strong> The five modes (neutral landing, owner acquisition, owner portal, renter acquisition, resident portal) with the surface, density, and copy treatment for each.</p>
@@ -2022,7 +2020,7 @@
   </section>
 
   <!-- =================== PRIMER 06 · COMPONENTS =================== -->
-  <section class="bb__page" data-folio="P / 06" data-running="Part one · What are components">
+  <section id="bb-8" class="bb__page" data-folio="P / 06" data-running="Part one · What are components">
     <p class="eyebrow primer-eyebrow"><span class="eyebrow__dot"></span>Part one · 06 · Components</p>
     <h2 class="h-1">Reusable pieces,<br />not reinvented<br />sentences.</h2>
     <p class="primer-lede">A <em>component</em> is a sentence the brand says, in a fixed grammar. The statement card says "here is what happened this month." The listing card says "here is a real place, at this price, available now." The signature block says "this came from me." Reuse the form; the content changes.</p>
@@ -2040,6 +2038,11 @@
       </div>
     </div>
 
+    <div class="primer-answer">
+      <span class="primer-answer__label">For Green Property Solutions</span>
+      <p class="primer-answer__body"><strong>Six components</strong> carry most of the brand: the <strong>button</strong> (Clay primary, Cedar outlined secondary, quiet underlined tertiary); the <strong>statement card</strong> (Cedar left border on Paper); the <strong>listing card</strong> (full-bleed photo on Cream with one Clay CTA); the <strong>form input</strong> (Cedar focus ring, four states); the <strong>callout</strong> (five color-coded states, always paired with an icon and a label); the <strong>signature block</strong> (Fraunces italic “Megan” closing every letter).</p>
+    </div>
+
     <div class="primer-next">
       <span class="primer-next__label">In Part Two</span>
       <p class="primer-next__body"><strong>§ 9 · Component grammar.</strong> Live examples of every component, with the variant rules. Plus §11 (photography), §12 (accessibility), and §14 (the five rules) close the guide.</p>
@@ -2051,7 +2054,7 @@
   <!-- ===================================================== -->
 
   <!-- =================== § 1 POSITIONING =================== -->
-  <section class="bb__page" data-folio="04 / Positioning" data-running="§ 1 · What Green Property Management is">
+  <section id="bb-9" class="bb__page" data-folio="04 / Positioning" data-running="§ 1 · What Green Property Solutions is">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 1 · Strategic positioning</p>
     <h2 class="h-1">A small operation.<br />Two skeptical audiences.<br />One place to exhale.</h2>
 
@@ -2073,7 +2076,7 @@
       </div>
 
       <div>
-        <p class="mono-label">What Green Property Management is not</p>
+        <p class="mono-label">What Green Property Solutions is not</p>
         <div class="forbidden" style="margin-top: 14px;">
           <span class="forbidden__word">Corporate</span>
           <span class="forbidden__word">&quot;Luxury&quot;</span>
@@ -2096,13 +2099,13 @@
         <tr><td>Apartment REITs</td><td>Grayscale, sterile</td><td>Institutional, generic</td></tr>
         <tr><td>Boutique lifestyle PM</td><td>Sage, beige, sans-serif</td><td>Unserious operationally</td></tr>
         <tr><td>SaaS proptech</td><td>Gradient, geometric, "AI-powered"</td><td>Impersonal, scale-signaling</td></tr>
-        <tr style="background: color-mix(in srgb, var(--cedar) 6%, transparent);"><td class="term-table__key">Green Property Management</td><td>Cedar + Cream/Paper + Clay</td><td>High-trust regional operator with modern systems</td></tr>
+        <tr style="background: color-mix(in srgb, var(--cedar) 6%, transparent);"><td class="term-table__key">Green Property Solutions</td><td>Cedar + Cream/Paper + Clay</td><td>High-trust regional operator with modern systems</td></tr>
       </tbody>
     </table>
   </section>
 
   <!-- =================== § 2 VOICE =================== -->
-  <section class="bb__page bb__page--paper" data-folio="05 / Voice" data-running="§ 2 · Voice & terminology">
+  <section id="bb-10" class="bb__page bb__page--paper" data-folio="05 / Voice" data-running="§ 2 · Voice & terminology">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 2 · Voice &amp; terminology</p>
     <h2 class="h-1">Direct. Specific.<br />Accountable. Local. Calm.</h2>
     <p class="lede" style="margin-top: 24px;">Five principles, applied across acquisition copy, portal microcopy, statements, and notices.</p>
@@ -2187,7 +2190,7 @@
   </section>
 
   <!-- =================== § 3.2 PRIMITIVES =================== -->
-  <section class="bb__page" data-folio="06 / Color" data-running="§ 3 · The primitive palette">
+  <section id="bb-11" class="bb__page" data-folio="06 / Color" data-running="§ 3 · The primitive palette">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 3.2 · Primitive palette</p>
     <h2 class="h-1">Seven primitives.<br />No additions without<br />governance review.</h2>
     <p class="lede" style="margin-top: 24px;">A <em>primitive</em> is a raw, named hex value · the lowest layer of the token stack. Semantic tokens (brand, action, surface) and component tokens map onto these seven; nothing in production references a hex code directly. Change a primitive and the whole system shifts in lockstep.</p>
@@ -2319,7 +2322,7 @@
   </section>
 
   <!-- =================== § 3.3 / 3.4 DERIVED + SYSTEM =================== -->
-  <section class="bb__page bb__page--paper" data-folio="07 / Color" data-running="§ 3 · Derived & system colors">
+  <section id="bb-12" class="bb__page bb__page--paper" data-folio="07 / Color" data-running="§ 3 · Derived & system colors">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 3.3 / 3.4 · Derived &amp; system colors</p>
     <h2 class="h-1">Ramps from Ink.<br />State colors, scoped<br />outside the brand.</h2>
     <p class="lede" style="margin-top: 24px;"><em>Derived neutrals</em> are tints ramped from the Ink primitive, used as foreground text and UI hierarchy on Cream and Paper surfaces. They never act as backgrounds · each step is a typographic role: body emphasis, metadata, disabled, divider.</p>
@@ -2447,7 +2450,7 @@
   </section>
 
   <!-- =================== § 3.5 CONTRAST =================== -->
-  <section class="bb__page" data-folio="08 / Contrast" data-running="§ 3.5 · Contrast matrix">
+  <section id="bb-13" class="bb__page" data-folio="08 / Contrast" data-running="§ 3.5 · Contrast matrix">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 3.5 · Contrast matrix, WCAG 2.1</p>
     <h2 class="h-1">Every text-bearing<br />token, tested.</h2>
     <p class="lede" style="margin-top: 24px;">Clay at the revised #A95C42 value clears AA body text on Cream at 4.5 : 1. The earlier 16 px-and-up size constraint is removed · Clay is now natively accessible at any text size.</p>
@@ -2515,7 +2518,7 @@
   </section>
 
   <!-- =================== § 3.6 USAGE RATIOS =================== -->
-  <section class="bb__page bb__page--paper" data-folio="09 / Ratios" data-running="§ 3.6 · Usage ratios by mode">
+  <section id="bb-14" class="bb__page bb__page--paper" data-folio="09 / Ratios" data-running="§ 3.6 · Usage ratios by mode">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 3.6 · Usage ratios by audience mode</p>
     <h2 class="h-1">Each mode has<br />a color budget.</h2>
     <p class="lede" style="margin-top: 24px;">Cream-led for renter acquisition and the neutral landing. Paper-led everywhere else. Cedar earns the next slice; Clay is a thin reserved band.</p>
@@ -2615,7 +2618,7 @@
   </section>
 
   <!-- =================== § 7 TYPOGRAPHY =================== -->
-  <section class="bb__page" data-folio="10 / Type" data-running="§ 7 · Typography">
+  <section id="bb-15" class="bb__page" data-folio="10 / Type" data-running="§ 7 · Typography">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 7 · Typography</p>
     <h2 class="h-1">Geist for the work.<br />Newsreader for the words.<br />Fraunces for the name.</h2>
     <p class="lede" style="margin-top: 24px;">Three faces, three jobs. Geist carries headlines, navigation, buttons, statements, and every tabular figure. Newsreader carries prose: ledes, owner letters, blog posts, anything that asks the reader to settle in. Fraunces appears once, in italic, to sign the work.</p>
@@ -2687,7 +2690,7 @@
   </section>
 
   <!-- =================== § 8 SPACING / RADIUS / ELEVATION =================== -->
-  <section class="bb__page bb__page--paper" data-folio="11 / Space" data-running="§ 8 · Spacing, radius, elevation">
+  <section id="bb-16" class="bb__page bb__page--paper" data-folio="11 / Space" data-running="§ 8 · Spacing, radius, elevation">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 8 · Spacing, radius, elevation</p>
     <h2 class="h-1">A 4-pixel scale.<br />Soft shadows. Square<br />enough to read.</h2>
 
@@ -2729,7 +2732,7 @@
   </section>
 
   <!-- =================== § 5 AUDIENCE MODES =================== -->
-  <section class="bb__page" data-folio="12 / Modes" data-running="§ 5 · Audience modes">
+  <section id="bb-17" class="bb__page" data-folio="12 / Modes" data-running="§ 5 · Audience modes">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 5 · Audience modes</p>
     <h2 class="h-1">Five modes,<br />two axes.</h2>
     <p class="lede" style="margin-top: 24px;">Audience (owner vs renter) × relationship state (acquisition vs operational), plus one neutral landing. Components stay constant; surface and density shift.</p>
@@ -2866,7 +2869,7 @@
   </section>
 
   <!-- =================== § 9 COMPONENTS =================== -->
-  <section class="bb__page bb__page--paper" data-folio="13 / Components" data-running="§ 9 · Component grammar">
+  <section id="bb-18" class="bb__page bb__page--paper" data-folio="13 / Components" data-running="§ 9 · Component grammar">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 9 · Component grammar</p>
     <h2 class="h-1">Consistent across<br />all four modes.</h2>
     <p class="lede" style="margin-top: 24px;">Surface and content shift between owner and renter, marketing and operational. The component form does not.</p>
@@ -3005,7 +3008,7 @@
   </section>
 
   <!-- =================== § 11 PHOTOGRAPHY =================== -->
-  <section class="bb__page" data-folio="15 / Photography" data-running="§ 11 · Photography direction">
+  <section id="bb-19" class="bb__page" data-folio="15 / Photography" data-running="§ 11 · Photography direction">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 11 · Photography direction</p>
     <h2 class="h-1">The brand has a face.<br />Use it.</h2>
     <p class="lede" style="margin-top: 24px;">Photography earns the brand promise of named accountability. Real PNW homes, including the imperfect parts. No stock.</p>
@@ -3060,7 +3063,7 @@
   </section>
 
   <!-- =================== § 12 ACCESSIBILITY =================== -->
-  <section class="bb__page bb__page--paper" data-folio="16 / A11y" data-running="§ 12 · Accessibility floors">
+  <section id="bb-20" class="bb__page bb__page--paper" data-folio="16 / A11y" data-running="§ 12 · Accessibility floors">
     <p class="eyebrow"><span class="eyebrow__dot"></span>§ 12 · Accessibility floors</p>
     <h2 class="h-1">No hard blockers.<br />Token-level enforcement.</h2>
     <p class="lede" style="margin-top: 24px;">All text-bearing tokens pass WCAG AA body text on canonical light surfaces. Color never carries information alone · every state pairs color with an icon and a text label.</p>
@@ -3119,7 +3122,7 @@
   </section>
 
   <!-- =================== § 14 THE RULES · INK PAGE =================== -->
-  <section class="bb__page bb__page--ink" data-folio="17 / Rules" data-running="§ 14 · The rules">
+  <section id="bb-21" class="bb__page bb__page--ink" data-folio="17 / Rules" data-running="§ 14 · The rules">
     <p class="eyebrow"><span class="eyebrow__dot" style="background: var(--clay);"></span>§ 14 · Quick reference</p>
     <h2 class="h-1" style="color: var(--cream);">Five lines that<br />govern every<br />decision.</h2>
 
@@ -3158,26 +3161,11 @@
 
     <dl class="colophon">
       <div><dt>Document</dt><dd>green-pm-style-guide · v1.0</dd></div>
-      <div><dt>Companion</dt><dd>green-pm-tokens.css</dd></div>
+      <div><dt>Companion</dt><dd>green-property-solutions-tokens.css</dd></div>
     </dl>
   </section>
 
 </main>
-
-<script>
-  (async function() {
-    try {
-      if (document.fonts && document.fonts.ready) {
-        await document.fonts.ready;
-      }
-      await new Promise(r => setTimeout(r, 500));
-      window.print();
-    } catch (e) {
-      console.error('Auto-print failed', e);
-      setTimeout(() => window.print(), 1000);
-    }
-  })();
-</script>
 
 </body>
 </html>

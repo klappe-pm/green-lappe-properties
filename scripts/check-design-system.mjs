@@ -1,14 +1,14 @@
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative } from 'node:path';
-import gpm from '../src/design-system/gpm-design-tokens.js';
+import gps from '../src/design-system/green-property-solutions-design-tokens.js';
 
 const root = process.cwd();
 const failures = [];
 
 const requiredFiles = [
   'DESIGN.md',
-  'src/design-system/gpm-design-tokens.js',
-  'src/styles/green-pm-tokens.css',
+  'src/design-system/green-property-solutions-design-tokens.js',
+  'src/styles/green-property-solutions-tokens.css',
   'src/styles/modes.css',
   'tailwind.config.js',
 ];
@@ -23,23 +23,23 @@ const requiredMarkers = [
 
 const allowedHex = new Set(
   [
-    ...Object.values(gpm.primitives),
-    ...Object.values(gpm.derivedNeutrals),
-    ...Object.values(gpm.systemColors),
+    ...Object.values(gps.primitives),
+    ...Object.values(gps.derivedNeutrals),
+    ...Object.values(gps.systemColors),
   ].map((value) => value.toLowerCase()),
 );
 
 const tokenHexFiles = new Set([
-  'src/design-system/gpm-design-tokens.js',
-  'src/styles/green-pm-tokens.css',
+  'src/design-system/green-property-solutions-design-tokens.js',
+  'src/styles/green-property-solutions-tokens.css',
   'tailwind.config.js',
 ]);
 
 const clayAllowedFiles = new Set([
   'src/components/Button.astro',
   'src/components/Header.astro',
-  'src/design-system/gpm-design-tokens.js',
-  'src/styles/green-pm-tokens.css',
+  'src/design-system/green-property-solutions-design-tokens.js',
+  'src/styles/green-property-solutions-tokens.css',
   'tailwind.config.js',
 ]);
 
@@ -101,8 +101,8 @@ if (exists('DESIGN.md')) {
   }
 }
 
-for (const [name, hex] of Object.entries(gpm.primitives)) {
-  const css = read('src/styles/green-pm-tokens.css');
+for (const [name, hex] of Object.entries(gps.primitives)) {
+  const css = read('src/styles/green-property-solutions-tokens.css');
   if (!css.includes(`--color-${name}:`) || !css.toLowerCase().includes(hex.toLowerCase())) {
     fail(`CSS token layer missing primitive ${name} (${hex}).`);
   }
@@ -160,7 +160,7 @@ const blockedCopyFiles = sourceFiles.filter(
 );
 for (const file of blockedCopyFiles) {
   const text = read(file).toLowerCase();
-  for (const word of gpm.wordsToAvoid) {
+  for (const word of gps.wordsToAvoid) {
     const pattern = new RegExp(
       `(^|[^a-z])${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}([^a-z]|$)`,
       'i',

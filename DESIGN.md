@@ -1,13 +1,13 @@
-# Green Property Management Design System
+# Green Property Solutions Design System
 
-This file is the enforceable style guide for the Green PM site. Code, copy,
+This file is the enforceable style guide for the Green PS site. Code, copy,
 tokens, and future components must follow this contract before merge.
 
 ## Source Files
 
 - `DESIGN.md` - governance, usage rules, and review checklist.
-- `src/design-system/gpm-design-tokens.js` - JavaScript token contract for future components.
-- `src/styles/green-pm-tokens.css` - CSS custom properties used by Astro output.
+- `src/design-system/green-property-solutions-design-tokens.js` - JavaScript token contract for future components.
+- `src/styles/green-property-solutions-tokens.css` - CSS custom properties used by Astro output.
 - `src/styles/modes.css` - audience-mode surface mapping.
 - `tailwind.config.js` - utility mirror of the CSS token layer.
 - `scripts/check-design-system.mjs` - CI/local enforcement gate.

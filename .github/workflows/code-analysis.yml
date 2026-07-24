@@ -1,7 +1,7 @@
 name: code-analysis
 
 # Deterministic secret and dependency/IaC/secret scanning for the standalone
-# Green Lappe Properties app. This mirrors the harness leak-gate structure.
+# Green Property Solutions app. This mirrors the harness leak-gate structure.
 on:
   pull_request:
   push:

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Green-Lappe model v3: host tuition schedule + X->Z capacity ramp + WA per-ZIP optimized scenarios.
+"""Green Property Solutions model v3: host tuition schedule + X->Z capacity ramp + WA per-ZIP optimized scenarios.
 
 Host inputs (2026-07-20): tuition $2,000/mo non-potty-trained (npt), $1,500/mo potty-trained (pt).
 Ramp: X kids per provider for period Y months (single-provider license phase), then Z kids with an

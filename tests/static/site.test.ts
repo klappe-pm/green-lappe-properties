@@ -156,7 +156,7 @@ describe('design-system color wiring', () => {
 });
 
 describe('contrast guardrails (catch low-contrast regressions locally)', () => {
-  // ink-40 fails WCAG AA for normal-size text (see green-pm-tokens.css); it must
+  // ink-40 fails WCAG AA for normal-size text (see green-property-solutions-tokens.css); it must
   // not be used as a text color anywhere in the rendered HTML/CSS. Lighthouse
   // enforces real contrast in CI; this is the fast local guard.
   it('does not use text-ink-40 as body text', () => {

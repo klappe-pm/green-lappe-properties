@@ -21,7 +21,7 @@ test.describe('responsive navigation', () => {
 
   test('header brand links home', async ({ page }) => {
     await page.goto('/owners');
-    await page.locator('header a', { hasText: 'Green PM' }).first().click();
+    await page.locator('header a', { hasText: 'Green PS' }).first().click();
     await expect(page).toHaveURL(/\/$/);
   });
 });

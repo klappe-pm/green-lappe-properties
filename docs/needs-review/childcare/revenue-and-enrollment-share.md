@@ -7,7 +7,7 @@
 
 ## Objective
 
-Define GPM's revenue from a childcare-host property so it scales with enrollment, not just rent, and so the enrollment-linked component rests on a clean, tamper-resistant measurement.
+Define GPS's revenue from a childcare-host property so it scales with enrollment, not just rent, and so the enrollment-linked component rests on a clean, tamper-resistant measurement.
 
 ## Scope
 
@@ -32,4 +32,4 @@ In scope: the revenue components, the enrollment measurement mechanism, and how 
 
 ## Open questions
 
-- D3 sets the size of the enrollment-linked component and whether GPM takes equity or only a fee.
+- D3 sets the size of the enrollment-linked component and whether GPS takes equity or only a fee.

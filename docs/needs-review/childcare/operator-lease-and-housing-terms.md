@@ -7,7 +7,7 @@
 
 ## Objective
 
-Define the agreement under which a licensed childcare operator lives in a GPM host home and runs the FCCH there, with subsidized housing as part of compensation tied to a written child-enrollment commitment, so incentives are aligned and effective vacancy is low.
+Define the agreement under which a licensed childcare operator lives in a GPS host home and runs the FCCH there, with subsidized housing as part of compensation tied to a written child-enrollment commitment, so incentives are aligned and effective vacancy is low.
 
 ## Scope
 
