@@ -3,7 +3,7 @@ domain: green-property-solutions
 category: research
 sub-category: washington-childcare-operating-model
 date-created: 2026-07-22
-date-revised: 2026-07-22
+date-revised: 2026-07-23
 decision-status: OPEN
 jurisdiction: Washington
 status: DRAFT
@@ -61,7 +61,7 @@ The decision tree intentionally contains **no Green Property Solutions ownership
 | Multiple properties | GPS can support multiple independent providers but is not their family-home licensee. | GPS can operate a network, but each location needs its own DCYF approval, capacity, staffing, and operating file. |
 | Main risk | Provider viability and loss of an independent licensee. | Payroll, worker classification, ratios, vacancy, liability, and center compliance. |
 
-Washington defines a family-home program as care for 12 or fewer children in family living quarters where the licensee resides; the licensee is an individual. [WAC 110-300-0005](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0005). DCYF's plain-language guidance says the provider lives in the home. [DCYF provider licensing](https://dcyf.wa.gov/services/early-learning-providers/licensed-provider). Do not call a center a family home simply because a worker lives upstairs.
+Washington defines a family-home program as care for 12 or fewer children in family living quarters where the licensee resides; the licensee is an individual. [WAC 110-300-0005](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0005) is the definitions section; the substantive capacity rule, verified 2026-07-23, is [WAC 110-300-0355](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0355), tiered by provider experience and staffing (under 1 year alone: up to 6; 1 to 2 years alone: up to 8; 1 to 2 years with a qualified assistant: up to 9; 2-plus years alone: up to 10, or 12 school-age only; 2-plus years with a qualified assistant: up to 12), plus a capacity-waiver rule at [WAC 110-300-0358](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0358) allowing 13 to 16 children for providers with 3-plus years' experience. The under-2 sub-cap is tiered the same way, reaching 6 (with two walking independently) only at the top tier. DCYF's plain-language guidance says the provider lives in the home. [DCYF provider licensing](https://dcyf.wa.gov/services/early-learning-providers/licensed-provider). Do not call a center a family home simply because a worker lives upstairs.
 
 ## How the two-story idea works
 
@@ -201,6 +201,19 @@ Use four gates per property:
 3. GPS secures the right resident provider (Model A) or center director, staff, and company-license structure (Model B).
 4. Only after licensing and enrollment conditions are met does the property leave conventional-rental inventory.
 
+## Verified licensing and zoning facts (2026-07-23)
+
+Direct primary-source verification of items this brief and its market-anchored companion had left unconfirmed.
+
+- Space requirements: [WAC 110-300-0354](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0354) requires 35 sq ft of indoor licensed program space per child, plus 15 additional sq ft per child under 24 months. [WAC 110-300-0145](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0145) requires 75 sq ft of outdoor play space per child accessing the play space at any given time, with a rotating-group or department-approved off-site alternative. Both apply to family homes and centers alike.
+- Provider education requirement: [WAC 110-300-0100](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0100) requires a high school diploma or equivalent at application, an ECE initial certificate or equivalent within five years of licensure (or by August 1, 2030, whichever is later), and an ECE short certificate or equivalent within two years after that. The requirement is uniform across family-home capacity tiers; there is no separate, higher ECE-credit threshold for a higher-capacity license.
+- License fees: [WAC 110-300-0401](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0401) sets the family-home annual fee at a flat $30, nonrefundable, due at initial application and annually 30 days before the license anniversary (centers pay $125 for the first 12 children plus $12 per additional child). Not tiered by family-home capacity.
+- Zoning preemption text, confirmed directly from app.leg.wa.gov: RCW 36.70A.450 bars a county from prohibiting a residential dwelling's use as a family day-care provider's home facility in a residentially or commercially zoned area, though it may condition lot size, setbacks, hours, or a loading area. RCW 35.21.688 is the parallel city/town provision, explicitly scoped to homes serving 12 or fewer children. RCW 35.63.185 is a near-identical general-city provision. All three define "family day-care provider" by reference to the current DCYF statute, RCW 43.216.010.
+- Unincorporated Snohomish County code, confirmed against current Ordinance 25-015 (adopted 2026-03-19, effective 2026-03-30): "Family Day Care Home" is an outright permitted use in every listed urban and rural residential zone, with no child-count tier and no conditional-use requirement. The county's use matrix has no separate "mini-day care center" category; a non-family "Day Care Center" use is permitted up to 8,000 sq ft and conditional only above that size, which does not describe a converted single-family home.
+- City of Bothell municipal code: search-snippet evidence (BMC 12.06.140) indicates family day care for 12 or fewer children is a permitted residential use consistent with the state preemption, but the snippet cites the pre-2018 licensing statute (former RCW 74.15.020), which suggests the cited section may be stale. This was not independently confirmed against the live Bothell municipal code site, which blocked direct fetch; confirm directly with the city before relying on it.
+- Jurisdiction of 4632 146th Pl SE: not conclusively determined. "Bothell, WA 98012" is a postal address and does not by itself prove city-limits jurisdiction; both Bothell and unincorporated Snohomish County GIS parcel lookups were not resolvable via web search during this pass. Confirm via the Snohomish County Assessor or SCOPI parcel-ID lookup before deciding which municipal code (BMC vs. SCC) governs, since that determines the permitting desk even though both jurisdictions permit family day care outright.
+- Correction to the market-anchored companion doc's claim that a 12-child DCYF family license maps to a "mini-day care center" bucket under RCW 35.63.170 requiring a conditional use permit: RCW 35.63.170 does define a mini-day care center to include 7 to 12 children in the family abode, so the definitional premise is accurate, but the CUP-risk conclusion does not hold up. Unincorporated Snohomish County's current code does not use that tier and permits family day-care homes outright regardless of count, and RCW 35.21.688 / RCW 36.70A.450 independently bar a local CUP condition on a home serving 12 or fewer children. RCW 35A.63.210, which required code cities to review mini/day-care-center CUP costs, was a one-time 1989 to 1991 compliance mandate pushing cities to eliminate such CUP requirements, not an ongoing authorization to impose one. A CUP risk would only resurface for a true stand-alone center building over 8,000 sq ft, which a converted single-family home is not.
+
 ## Open decisions and evidence required
 
 | ID | Decision / question | Why it matters | Evidence required |
@@ -213,6 +226,7 @@ Use four gates per property:
 | D5 | Is onsite lodging taxable compensation and what terms apply? | Changes payroll cost and operator economics. | CPA/payroll and Washington employment counsel opinion. |
 | D6 | Can the trust enter the related-party lease? | Beneficiaries may have remedies. | Trust instrument and trust-counsel review. |
 | D7 | Is the tuition card and 100% enrollment achievable? | Tuition and occupancy drive the modeled margin. | Competitor survey, lead test, pre-enrollment pipeline. |
+| D8 | Is 4632 inside Bothell city limits or unincorporated Snohomish County? | Determines which municipal code and permitting desk governs; added 2026-07-23, not resolvable from public GIS via web search. | Snohomish County Assessor / SCOPI parcel-ID lookup. |
 
 ## LLM and counsel adversarial prompts
 
@@ -228,11 +242,12 @@ Use four gates per property:
 
 Primary sources control over summaries and prior models:
 
-- [WAC 110-300-0005](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0005) and [WAC 110-300-0410](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0410) for the resident family-home licensee rule.
+- [WAC 110-300-0005](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0005) and [WAC 110-300-0410](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0410) for the resident family-home licensee rule; [WAC 110-300-0355](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0355) and [WAC 110-300-0358](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0358) for the substantive capacity and waiver tiers; [WAC 110-300-0100](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0100) for provider education requirements; [WAC 110-300-0354](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0354) and [WAC 110-300-0145](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0145) for indoor/outdoor space; [WAC 110-300-0401](https://app.leg.wa.gov/wac/default.aspx?cite=110-300-0401) for license fees.
 - [WAC 110-300-0010](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0010), [WAC 110-300-0356](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0356), [WAC 110-300-0402](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0402), and [WAC 110-300-0415](https://app.leg.wa.gov/WAC/default.aspx?cite=110-300-0415) for the center route.
 - [DCYF provider licensing](https://dcyf.wa.gov/services/early-learning-providers/licensed-provider) and [DCYF licensing process](https://dcyf.wa.gov/services/early-learning-providers/licensed-provider/licensing-process).
 - [IRS Publication 15-B](https://www.irs.gov/publications/p15b) for employer-provided lodging and [IRS Publication 587](https://www.irs.gov/publications/p587) for business use of a home.
 - [RCW 11.98.078](https://app.leg.wa.gov/RCW/default.aspx?cite=11.98.078) for trustee duty of loyalty and conflicted transactions.
+- [RCW 36.70A.450](https://app.leg.wa.gov/RCW/default.aspx?cite=36.70A.450), [RCW 35.21.688](https://app.leg.wa.gov/RCW/default.aspx?cite=35.21.688), and [RCW 35.63.185](https://app.leg.wa.gov/RCW/default.aspx?cite=35.63.185) for the local zoning preemption, confirmed 2026-07-23; unincorporated Snohomish County Ordinance 25-015 for the current county use matrix.
 
 ## Relationship to existing Green Property Solutions documents
 
